@@ -1,0 +1,6 @@
+# QuickUSB rules
+SUBSYSTEM=="usb", ATTR{idVendor}=="0fbb", ATTR{idProduct}=="0001", ATTR{manufacturer}=="Bitwise Systems", ACTION=="add", RUN+="/usr/local/bin/qusb_script.sh"
+
+SUBSYSTEM=="usb", SYSFS{idVendor}=="0fbb", SYSFS{idProduct}=="0001", SYSFS{manufacturer}=="Bitwise Systems", ACTION=="add", RUN+="/usr/local/bin/qusb_script.sh"
+
+KERNEL=="QUSB-[0-9]*", MODE="0666"

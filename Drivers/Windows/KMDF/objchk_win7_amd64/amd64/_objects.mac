@@ -1,0 +1,23 @@
+
+
+AMD64_OBJECTS=\
+ $(OBJ_PATH)\$O\driver.obj \
+ $(OBJ_PATH)\$O\device.obj \
+ $(OBJ_PATH)\$O\power.obj \
+ $(OBJ_PATH)\$O\ioctl.obj \
+ $(OBJ_PATH)\$O\control.obj \
+ $(OBJ_PATH)\$O\bulkrwr.obj \
+ $(OBJ_PATH)\$O\util.obj \
+
+
+_RES_FILE=$(OBJ_PATH)\$O\quickusb.res
+
+
+
+# lowercased
+BASEDIR=c:\winddk\7600.16385.1
+OBJECT_ROOT=c:\winddk\7600.16385.1
+MAKEDIR_LOWERCASE=c:\projects\bitwise\quickusb\library\driver\windows\kmdf
+OBJ_PATH=c:\projects\bitwise\quickusb\library\driver\windows\kmdf
+CONCURRENT_MIDL=0
+CONCURRENT_MANIFEST_BUILD=0

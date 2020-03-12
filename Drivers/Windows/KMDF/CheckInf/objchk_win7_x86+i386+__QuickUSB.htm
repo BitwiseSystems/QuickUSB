@@ -1,0 +1,208 @@
+<HTML><HEAD>
+<meta NAME="GENERATOR" CONTENT="ChkInf">
+<TITLE>Summary of ChkInf results for objchk_win7_x86\i386\QuickUSB.inf</TITLE></HEAD>
+<BODY VLINK=#000000>
+<H1>Summary of "<FONT COLOR=#990099>objchk_win7_x86\i386\QuickUSB.inf</FONT>"</H1>
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0>
+	<TR><TD><H3><A HREF="#WARNINGS">Total Warnings:</A></TD>
+	    <TD>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+	    <TD ALIGN=RIGHT><H3><FONT COLOR=BLUE>6</FONT></TD></TR>
+</TABLE><BR>
+	</FONT>
+	<HR>
+	<FONT COLOR=BLUE><H3><A NAME="WARNINGS">Warnings:</A></H3>
+		<LI><A HREF="#Lnum14">Line 14</A>: (W22.1.2202) Unrecognized directive: DriverPackageDisplayName 
+		<LI><A HREF="#Lnum122">Line 122</A>: (W22.1.2083) Section [QUICKUSB_INST.NT.COINSTALLERS] not referenced 
+		<LI><A HREF="#Lnum126">Line 126</A>: (W22.1.2083) Section [COINSTALLER_COPYFILES] not referenced 
+		<LI><A HREF="#Lnum132">Line 132</A>: (W22.1.2083) Section [COINSTALLER_ADDREG] not referenced 
+		<LI><A HREF="#Lnum135">Line 135</A>: (W22.1.2083) Section [QUICKUSB_INST.NT.WDF] not referenced 
+		<LI><A HREF="#Lnum138">Line 138</A>: (W22.1.2083) Section [QUICKUSB_WDFSECT] not referenced 
+	</FONT>
+	<BR><HR>
+<H3>Annotated INF:</H3>
+<PRE>
+<A NAME="Lnum0">
+<A NAME="Lnum1">;</A>
+<A NAME="Lnum2">; Bitwise Systems QuickUSB(R) Driver v2.15.0</A>
+<A NAME="Lnum3">; Copyright (c) 2010 Bitwise Systems</A>
+<A NAME="Lnum4">;</A>
+<A NAME="Lnum5"></A>
+<A NAME="Lnum6">;-------------------------------------------------------------</A>
+<A NAME="Lnum7">; Version Header</A>
+<A NAME="Lnum8">;-------------------------------------------------------------</A>
+<A NAME="Lnum9">[Version]</A>
+<A NAME="Lnum10">Signature="$WINDOWS NT$"</A>
+<A NAME="Lnum11">Class=USB</A>
+<A NAME="Lnum12">ClassGuid={36fc9e60-c465-11cf-8056-444553540000}</A>
+<A NAME="Lnum13">Provider=%BITW%</A>
+<A NAME="Lnum14">DriverPackageDisplayName=%QuickUsbName%</A>
+<FONT COLOR=BLUE>; (W22.1.2202) Unrecognized directive: DriverPackageDisplayName 
+</FONT><A NAME="Lnum15">DriverVer=10/07/2010,6.1.7600.16385</A>
+<A NAME="Lnum16">CatalogFile=QuickUSB.cat</A>
+<A NAME="Lnum17"></A>
+<A NAME="Lnum18"></A>
+<A NAME="Lnum19"></A>
+<A NAME="Lnum20">;-------------------------------------------------------------</A>
+<A NAME="Lnum21">; Device Section</A>
+<A NAME="Lnum22">;-------------------------------------------------------------</A>
+<A NAME="Lnum23">[Manufacturer]</A>
+<A NAME="Lnum24">%BITW%=BITW,NTx86,ntamd64</A>
+<A NAME="Lnum25"></A>
+<A NAME="Lnum26">; For Win2K</A>
+<A NAME="Lnum27">[BITW]</A>
+<A NAME="Lnum28">%QuickUsbDesc%=QuickUsb_Inst, USB\VID_0FBB&PID_0001</A>
+<A NAME="Lnum29">%QuickUsbUnprogrammedDesc%=QuickUsb_Inst, USB\VID_04B4&PID_8613</A>
+<A NAME="Lnum30"></A>
+<A NAME="Lnum31">[BITW.ntx86]</A>
+<A NAME="Lnum32">%QuickUsbDesc%=QuickUsb_Inst, USB\VID_0FBB&PID_0001</A>
+<A NAME="Lnum33">%QuickUsbUnprogrammedDesc%=QuickUsb_Inst.NTX86, USB\VID_04B4&PID_8613</A>
+<A NAME="Lnum34"></A>
+<A NAME="Lnum35">[BITW.ntamd64]</A>
+<A NAME="Lnum36">%QuickUsbDesc%=QuickUsb_Inst.ntamd64, USB\VID_0FBB&PID_0001</A>
+<A NAME="Lnum37">%QuickUsbUnprogrammedDesc%=QuickUsb_Inst.ntamd64, USB\VID_04B4&PID_8613</A>
+<A NAME="Lnum38"></A>
+<A NAME="Lnum39">[DestinationDirs]</A>
+<A NAME="Lnum40">DefaultDestDir = 12</A>
+<A NAME="Lnum41">QuickUsb.Files.dll32x86 = 10,System32</A>
+<A NAME="Lnum42">QuickUsb.Files.dll64amd64 = 10,System32</A>
+<A NAME="Lnum43">QuickUsb.Files.dll32amd64 = 10,SysWOW64</A>
+<A NAME="Lnum44"></A>
+<A NAME="Lnum45">[QuickUsb_EventLog_Inst]</A>
+<A NAME="Lnum46">AddReg = QuickUsb_EventLog_Inst.AddReg </A>
+<A NAME="Lnum47"> </A>
+<A NAME="Lnum48">[QuickUsb_EventLog_Inst.AddReg] </A>
+<A NAME="Lnum49">HKR,,EventMessageFile,%REG_EXPAND_SZ%,"%%SystemRoot%%\System32\IoLogMsg.dll" </A>
+<A NAME="Lnum50">HKR,,TypesSupported,%REG_DWORD%,7</A>
+<A NAME="Lnum51"></A>
+<A NAME="Lnum52"></A>
+<A NAME="Lnum53"></A>
+<A NAME="Lnum54">;-------------------------------------------------------------</A>
+<A NAME="Lnum55">; NTX86 Installer Keys</A>
+<A NAME="Lnum56">;-------------------------------------------------------------</A>
+<A NAME="Lnum57">[SourceDisksNames.x86]</A>
+<A NAME="Lnum58">0=%Desc_x860%</A>
+<A NAME="Lnum59"></A>
+<A NAME="Lnum60">[SourceDisksFiles.x86]</A>
+<A NAME="Lnum61">QuickUSB.sys=0,i386</A>
+<A NAME="Lnum62">QuickUsb.dll=0,i386</A>
+<A NAME="Lnum63"></A>
+<A NAME="Lnum64">[QuickUsb_Inst.NTX86] </A>
+<A NAME="Lnum65">CopyFiles = @QuickUSB.sys, QuickUsb.Files.dll32x86</A>
+<A NAME="Lnum66"></A>
+<A NAME="Lnum67">[QuickUsb_Inst.NTX86.Services] </A>
+<A NAME="Lnum68">AddService = QuickUSB,%SPSVCINST_ASSOCSERVICE%,QuickUsb_Service_Instx86, QuickUsb_EventLog_Inst</A>
+<A NAME="Lnum69"></A>
+<A NAME="Lnum70">[QuickUsb_Service_Instx86] </A>
+<A NAME="Lnum71">DisplayName = %QuickUSB.SvcDesc%</A>
+<A NAME="Lnum72">ServiceType = %SERVICE_KERNEL_DRIVER% </A>
+<A NAME="Lnum73">StartType = %SERVICE_DEMAND_START% </A>
+<A NAME="Lnum74">ErrorControl = %SERVICE_ERROR_NORMAL%</A>
+<A NAME="Lnum75">ServiceBinary = %12%\QuickUSB.sys </A>
+<A NAME="Lnum76">LoadOrderGroup = Base</A>
+<A NAME="Lnum77"></A>
+<A NAME="Lnum78">[QuickUsb.Files.dll32x86]</A>
+<A NAME="Lnum79">QuickUSB.dll, QuickUSB.dll</A>
+<A NAME="Lnum80"></A>
+<A NAME="Lnum81"></A>
+<A NAME="Lnum82"></A>
+<A NAME="Lnum83">;-------------------------------------------------------------</A>
+<A NAME="Lnum84">; NTAMD64 Installer Keys</A>
+<A NAME="Lnum85">;-------------------------------------------------------------</A>
+<A NAME="Lnum86">[SourceDisksNames.amd64]</A>
+<A NAME="Lnum87">0=%Desc_amd640%</A>
+<A NAME="Lnum88"></A>
+<A NAME="Lnum89">[SourceDisksFiles.amd64]</A>
+<A NAME="Lnum90">QuickUsbAMD64.sys=0,amd64</A>
+<A NAME="Lnum91">QuickUsb.dll=0,i386</A>
+<A NAME="Lnum92">QuickUsbamd64.dll=0,amd64</A>
+<A NAME="Lnum93"></A>
+<A NAME="Lnum94">[QuickUsb_Inst.ntamd64] </A>
+<A NAME="Lnum95">CopyFiles = @QuickUsbAMD64.sys, QuickUsb.Files.dll64amd64, QuickUsb.Files.dll32amd64</A>
+<A NAME="Lnum96"></A>
+<A NAME="Lnum97">[QuickUsb_Inst.ntamd64.Services] </A>
+<A NAME="Lnum98">AddService = QuickUsbAMD64,%SPSVCINST_ASSOCSERVICE%,QuickUsb_Service_Instamd64, QuickUsb_EventLog_Inst</A>
+<A NAME="Lnum99"></A>
+<A NAME="Lnum100">[QuickUsb_Service_Instamd64] </A>
+<A NAME="Lnum101">DisplayName = %QuickUSB.SvcDesc%</A>
+<A NAME="Lnum102">ServiceType = %SERVICE_KERNEL_DRIVER% </A>
+<A NAME="Lnum103">StartType =   %SERVICE_DEMAND_START% </A>
+<A NAME="Lnum104">ErrorControl = %SERVICE_ERROR_NORMAL%</A>
+<A NAME="Lnum105">ServiceBinary =  %12%\QuickUsbAMD64.sys </A>
+<A NAME="Lnum106">LoadOrderGroup = Base</A>
+<A NAME="Lnum107"></A>
+<A NAME="Lnum108">[QuickUsb.Files.dll64amd64]</A>
+<A NAME="Lnum109">QuickUSB.dll, QuickUSBamd64.dll</A>
+<A NAME="Lnum110"></A>
+<A NAME="Lnum111">[QuickUsb.Files.dll32amd64]</A>
+<A NAME="Lnum112">QuickUSB.dll, QuickUSB.dll</A>
+<A NAME="Lnum113"></A>
+<A NAME="Lnum114"></A>
+<A NAME="Lnum115"></A>
+<A NAME="Lnum116">;-------------------------------------------------------------</A>
+<A NAME="Lnum117">; WDF Coinstaller Installation</A>
+<A NAME="Lnum118">;-------------------------------------------------------------</A>
+<A NAME="Lnum119">[DestinationDirs]</A>
+<A NAME="Lnum120">CoInstaller_CopyFiles = 11</A>
+<A NAME="Lnum121"></A>
+<A NAME="Lnum122">[QuickUsb_Inst.NT.CoInstallers]</A>
+<FONT COLOR=BLUE>; (W22.1.2083) Section [QUICKUSB_INST.NT.COINSTALLERS] not referenced 
+</FONT><A NAME="Lnum123">AddReg=CoInstaller_AddReg</A>
+<A NAME="Lnum124">CopyFiles=CoInstaller_CopyFiles</A>
+<A NAME="Lnum125"></A>
+<A NAME="Lnum126">[CoInstaller_CopyFiles]</A>
+<FONT COLOR=BLUE>; (W22.1.2083) Section [COINSTALLER_COPYFILES] not referenced 
+</FONT><A NAME="Lnum127">WdfCoInstaller01009.dll</A>
+<A NAME="Lnum128"></A>
+<A NAME="Lnum129">[SourceDisksFiles]</A>
+<A NAME="Lnum130">WdfCoInstaller01009.dll=0 ; make sure the number matches with SourceDisksNames</A>
+<A NAME="Lnum131"></A>
+<A NAME="Lnum132">[CoInstaller_AddReg]</A>
+<FONT COLOR=BLUE>; (W22.1.2083) Section [COINSTALLER_ADDREG] not referenced 
+</FONT><A NAME="Lnum133">HKR,,CoInstallers32,0x00010000, "WdfCoInstaller01009.dll,WdfCoInstaller"</A>
+<A NAME="Lnum134"></A>
+<A NAME="Lnum135">[QuickUsb_Inst.NT.Wdf]</A>
+<FONT COLOR=BLUE>; (W22.1.2083) Section [QUICKUSB_INST.NT.WDF] not referenced 
+</FONT><A NAME="Lnum136">KmdfService = QuickUSB, QuickUSB_wdfsect</A>
+<A NAME="Lnum137"></A>
+<A NAME="Lnum138">[QuickUSB_wdfsect]</A>
+<FONT COLOR=BLUE>; (W22.1.2083) Section [QUICKUSB_WDFSECT] not referenced 
+</FONT><A NAME="Lnum139">KmdfLibraryVersion = 1.9</A>
+<A NAME="Lnum140"></A>
+<A NAME="Lnum141"></A>
+<A NAME="Lnum142"></A>
+<A NAME="Lnum143">;-------------------------------------------------------------</A>
+<A NAME="Lnum144">; Strings</A>
+<A NAME="Lnum145">;-------------------------------------------------------------</A>
+<A NAME="Lnum146">[Strings]</A>
+<A NAME="Lnum147">;  *******Localizable Strings*******</A>
+<A NAME="Lnum148">BITW= "Bitwise Systems™"</A>
+<A NAME="Lnum149">QuickUsbName="QuickUSB®"</A>
+<A NAME="Lnum150">QuickUsbDesc="QuickUSB® Module" </A>
+<A NAME="Lnum151">QuickUsbUnprogrammedDesc= "QuickUSB® Module (Unprogrammed)"</A>
+<A NAME="Lnum152">Desc_x860= "Bitwise Systems QuickUSB® Module" </A>
+<A NAME="Lnum153">Desc_ia640= "Bitwise Systems QuickUSB® Module" </A>
+<A NAME="Lnum154">Desc_amd640= "Bitwise Systems QuickUSB® Module" </A>
+<A NAME="Lnum155">QuickUSB.SvcDesc="QuickUSB® Driver"</A>
+<A NAME="Lnum156">ClassName       = "QuickUSB Device"</A>
+<A NAME="Lnum157"></A>
+<A NAME="Lnum158">;  *******Non Localizable Strings******* </A>
+<A NAME="Lnum159">SERVICE_BOOT_START = 0x0 </A>
+<A NAME="Lnum160">SERVICE_SYSTEM_START = 0x1 </A>
+<A NAME="Lnum161">SERVICE_AUTO_START = 0x2 </A>
+<A NAME="Lnum162">SERVICE_DEMAND_START = 0x3 </A>
+<A NAME="Lnum163">SERVICE_DISABLED = 0x4 </A>
+<A NAME="Lnum164"></A>
+<A NAME="Lnum165">SERVICE_KERNEL_DRIVER = 0x1 </A>
+<A NAME="Lnum166">SERVICE_ERROR_IGNORE = 0x0 </A>
+<A NAME="Lnum167">SERVICE_ERROR_NORMAL = 0x1 </A>
+<A NAME="Lnum168">SERVICE_ERROR_SEVERE = 0x2</A>
+<A NAME="Lnum169">SERVICE_ERROR_CRITICAL = 0x3</A>
+<A NAME="Lnum170"></A>
+<A NAME="Lnum171">SPSVCINST_ASSOCSERVICE= 0x00000002</A>
+<A NAME="Lnum172"></A>
+<A NAME="Lnum173">REG_EXPAND_SZ = 0x00020000 </A>
+<A NAME="Lnum174">REG_DWORD = 0x00010001</A>
+<A NAME="Lnum175"></A>
+<A NAME="Lnum176"></A>
+</PRE>
+</PRE>

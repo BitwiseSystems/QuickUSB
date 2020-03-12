@@ -1,0 +1,1 @@
+SignTool sign /v /ac MSCV-VSClass3.cer /s My /n "Bitwise Systems" /t http://timestamp.verisign.com/scripts/timstamp.dll i386\QuickUSB.dll i386\QuickUsbUtil.dll amd64\QuickUSBamd64.dll amd64\QuickUsbUtilamd64.dll QuickUSB.cat DPInstx86.exe DPInstx64.exe Setup.exe

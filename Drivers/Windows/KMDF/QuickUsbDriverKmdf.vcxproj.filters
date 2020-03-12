@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{b5097ccd-6348-4123-a150-53cb80029788}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{1df9b8dd-4dce-44d4-b17c-793e913660bd}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{d109e45f-bc2e-4ce4-8646-78abfd748455}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bulkrwr.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="control.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="device.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="driver.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ioctl.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="power.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="util.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile.inc">
+      <Filter>Resource files</Filter>
+    </None>
+    <None Include="QuickUSB.inx">
+      <Filter>Resource files</Filter>
+    </None>
+    <None Include="sources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QuickUSB.rc">
+      <Filter>Resource files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Resource files</Filter>
+    </ClInclude>
+    <ClInclude Include="contexts.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="driver.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ioctl.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="prototypes.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

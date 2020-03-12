@@ -1,0 +1,26 @@
+This code will run the parallel port demo for the QUSB device.
+
+Wire up the following circuit:
+
+                               ----- +5V
+                                 |
+                      |- o/ o----|
+                      |
+                      |      1k       LED      4k7
+PORT_A_pins7-0 -->  -----/\/\/\/\/----|>|---/\/\/\/\/-----|
+                      |                                   |
+                      |    47k                            |
+                      |--/\/\/\/\/------------------------|
+                                                          |
+                                                        ----- Ground
+
+(i.e. duplicate this 8 times)
+
++5 V is J2, pin1
+Ground is J2, pin40
+
+PortA 0-7 are J2, pins 3,5,7,9,11,13,15,17 respectively
+
+
+
+Switches 7-4 are inputs, LEDs 3-0 are outputs.

@@ -1,0 +1,42 @@
+QUICKUSB® SOFTWARE LICENSE AGREEMENT
+
+
+NOTICE TO USER:
+
+THIS IS A CONTRACT.  READ IT CAREFULLY.  BY OPENING THIS PACKAGE YOU ACCEPT ALL THE TERMS AND CONDITIONS OF THE QUICKUSB SOFTWARE LICENSE AGREEMENT (“AGREEMENT”).  IF YOU DO NOT AGREE WITH THE TERMS AND CONDITIONS OF THIS AGREEMENT, YOU WILL NOT BE ABLE TO USE THE QUICKUSB SOFTWARE.  IF YOU DO NOT ACCEPT THIS AGREEMENT AND HAVE PROOF OF PAYMENT, YOU MAY RETURN THE QUICKUSB SOFTWARE WITHIN THIRTY (30) DAYS FOR A REFUND.
+
+The QuickUSB Software (“QuickUSB Software”), consisting of (a) firmware (“QuickUSB Firmware”), and (b) software library files and utilities (“QuickUSB Libraries”), related printed materials, and sample files (“QuickUSB Sample Files”) included herein are protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties.  The QuickUSB Firmware, the QuickUSB Libraries, and the QuickUSB Sample Files are licensed, not sold.
+
+1.	GRANT OF LICENSE.  
+	Licensor, Embedded Bitwise Systems, Inc., a California corporation, dba Bitwise Systems, Inc. (“Bitwise Systems”), grants you as the purchaser of a QuickUSB branded product, a non-exclusive, non-transferable license:
+•	To program one (1) copy of the QuickUSB Firmware into a non-volatile memory, subject to the limitations listed below, for the purpose of enabling USB connection functionality in a product or device;
+•	to use, access, run, sell and distribute one (1) copy of the QuickUSB Firmware programmed into non-volatile memory, together with the QuickUSB Libraries, for the purpose of enabling USB connection functionality in a product or device; 
+•	to use, copy, install, access, run, sell and distribute the QuickUSB Libraries, together with the QuickUSB Firmware, for the purpose of enabling USB connection functionality in a product or device; and
+•	to use, copy, install, access, run, sell, distribute, modify, and create derivative works based upon the QuickUSB Sample Files for the purpose of developing software for use in connection with non-volatile memory devices enabled with the QuickUSB Firmware.
+
+	All rights not expressly granted herein are reserved by Bitwise Systems.
+
+2.	LIMITATIONS AND OTHER CLARIFICATIONS.
+•	You may only program the QuickUSB Firmware into a non-volatile memory using the QuickUSB Programmer utility.  Programming a non-volatile memory with the QuickUSB Firmware using any other means is prohibited.
+•	You may not reverse engineer or decompile the QuickUSB Firmware, or QuickUSB Libraries.
+•	The QuickUSB Software is a single product.  Its component parts, including but not limited to, the QuickUSB Firmware and QuickUSB Libraries, may not be separated or used independently.
+•	This Agreement does not grant you any rights in connection with any trademarks or service marks of Bitwise Systems.
+•	Your right to use, program, install, access, run, sell and distribute the QuickUSB Firmware and to use, copy, install, access, run, sell and distribute the QuickUSB Libraries under this Agreement is not transferable, except, where you transfer: (1) this Agreement; (2) the QuickUSB Software, and its component parts, including but not limited to, the QuickUSB Firmware, and QuickUSB Libraries, and related printed materials; and (3) the receiving party accepts the terms and conditions of this Agreement.
+
+3.	SUPPORT SERVICES AND UPDATES.
+	Bitwise Systems, may, at its own discretion, provide support services and firmware updates related to the QuickUSB Software.  Any firmware updates, supplemental software code, or printed materials provided to you as a part of these services shall be considered part of the QuickUSB Software and related printed materials and subject to the terms and conditions of this Agreement.
+
+4.	TERMINATION.
+	Without prejudice to any other rights, Bitwise Systems may terminate this Agreement if you fail to comply with the terms and conditions of this Agreement.  In such event, you must return or destroy the QuickUSB Software, all related component parts, and all related printed materials.
+
+5.	OWNERSHIP.
+	All title and rights under copyright law in and to the QuickUSB Software, including the QuickUSB Firmware and QuickUSB Libraries, the accompanying related printed materials, and QuickUSB Sample Files, are owned by Bitwise Systems or its suppliers.
+
+6.	APPLICABLE LAW.
+	This license agreement is governed by the law of the State of California.
+
+7.	WARRANTY.
+	BITWISE SYSTEMS EXPRESSLY DISCLAIMS ALL WARRANTIES AND CONDITIONS, WHETHER EXPRESS, IMPLIED OR STATUTORY, AS TO ANY ASPECT OF THE QUICKUSB SOFTWARE, OR ITS OPERATION, INCLUDING WITHOUT LIMITATION, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, DESIGN, CONDITION, CAPACITY, PERFORMANCE, TITLE, AND NON-INFRINGEMENT OF THIRD PARTY RIGHTS.  BITWISE SYSTEMS DOES NOT WARRANT THAT THE QUICKUSB SOFTWARE WILL OPERATE ERROR-FREE OR THAT ALL ERRORS WILL BE CORRECTED.  
+
+8.	LIMITATION OF LIABILITY.
+	IN NO EVENT SHALL BITWISE SYSTEMS BE LIABLE TO YOU FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER ARISING OUT OF THE USE OF OR INABILITY TO USE THE QUICKUSB SOFTWARE OR THE PROVISION OR FAILURE TO PROVIDE SUPPORT SERVICES OR FIRMWARE UPDATES.  BITWISE SYSTEMS’ ENTIRE LIABILITY UNDER THIS AGREEMENT SHALL BE LIMITED TO THE AMOUNT ACTUALLY PAID BY YOU FOR THE QUICKUSB SOFTWARE LICENSES. 

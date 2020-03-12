@@ -1,0 +1,14 @@
+There is an error in the documentation:
+
+User Guide, page 16
+
+QuickUsbWritePort(...*length){}
+	
+	length is NOT a pointer. Although the equivalent Read function on the same page DOES have
+	*length as a pointer.
+
+
+
+ALSO, before trying to open the device, we have to call QuickUsbFindModules() first, otherwise it refuses
+      to open the device.  We can discard the result. 
+

@@ -1,0 +1,1 @@
+%WDKPATH%\tools\Chkinf\chkinf.bat Driver-Signing-Sandbox\QuickUSB.inf /O .\CheckInf /B /DC

@@ -1,0 +1,30 @@
+ Last updated by Jason Wolfe on September 7, 2010
+------------------------------------------------
+
+- Before building the merge module, make sure that it has a unique ModuleSignature.  This value must be updated for each and every version change of the driver or the merge module will not be considered a newer version.  The ModuleSignature field is found by selecting the project in the Solution Explorer, then looking in the Properties pane.
+
+- Update the version and description fields to both contain the correct version.
+
+- Update the file system folder to be the correct version.
+
+- Do not have the MM install the VCREDIST/MSVCRT dependencies (they are added in the setup creator)
+
+- Once you build the Visual Studio Merge Module project, a new merge module file will be created ("*.msm file).  You may disregard the warnings about incompatible x64/x86 platform code since we are building a MM that works with both.  Copy the MM to the root directory and rename it following the pattern of the other MMs.
+
+- Open this file with Orca.  You will need to add entries to two tables: ModuleConfiguration and ModuleSubstitution.
+
+- First, add two entires to the ModuleConfiguration that allow a user of the merge module to pass command-line arguments to the DPInst.exe executable custom action on install and uninstall.  They should look like the following:
+
+Name			Format	Type		ContextData		DefaultValue	Attributes	DisplayName 		Description
+_INSTALLCMDLINEARGS	0	Formatted	_InstallParameters			0		Install Parameters	Command-line arguments to pass to DPInst on install
+_UNINSTALLCMDLINEARGS	0	Formatted	_UninstallParameters	/u QuickUSB.inf	0		Uninstall Parameters	Command-line arguments to pass to DPInst on uninstall
+
+- Next, add three entries to the ModuleSubstitution table which look like the following (note that there are two uninstall custom actions):
+Table		Row						Column	Value
+CustomAction	[Action id to cooresponding custom action]	Target	[==_INSTALLCMDLINEARGS]
+CustomAction	[Action id to cooresponding custom action]	Target	[==_UNINSTALLCMDLINEARGS]
+CustomAction	[Action id to cooresponding custom action]	Target	[==_UNINSTALLCMDLINEARGS]
+
+- Now you should be able to use the merge module, which will have configurable options that allow the MM user to pass command-line arguments to the custom action call to the DPInst.exe file.
+
+- If you have problems, open up a working version of the MM in Orca and view the table differences.

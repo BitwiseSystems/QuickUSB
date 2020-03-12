@@ -1,0 +1,182 @@
+;
+; Bitwise Systems QuickUSB(R) Driver
+; Copyright (c) 2012 Bitwise Systems
+;
+
+;-------------------------------------------------------------
+; Version Header
+;-------------------------------------------------------------
+[Version]
+Signature="$WINDOWS NT$"
+Class=USB
+ClassGuid={36fc9e60-c465-11cf-8056-444553540000}
+Provider=%BITW%
+DriverPackageDisplayName=%QuickUsbName%
+CatalogFile=QuickUSB.cat
+
+
+
+;-------------------------------------------------------------
+; Device Section
+;-------------------------------------------------------------
+[Manufacturer]
+%BITW%=BITW,NTx86,ntamd64
+
+; For Win2K
+[BITW]
+%QuickUsbDesc%=QuickUsb_Inst, USB\VID_0FBB&PID_0001
+%QuickUsbUnprogrammedDesc%=QuickUsb_Inst, USB\VID_04B4&PID_8613
+
+[BITW.NTx86]
+%QuickUsbDesc%=QuickUsb_Inst, USB\VID_0FBB&PID_0001
+%QuickUsbUnprogrammedDesc%=QuickUsb_Inst.NTx86, USB\VID_04B4&PID_8613
+
+[BITW.ntamd64]
+%QuickUsbDesc%=QuickUsb_Inst.ntamd64, USB\VID_0FBB&PID_0001
+%QuickUsbUnprogrammedDesc%=QuickUsb_Inst.ntamd64, USB\VID_04B4&PID_8613
+
+[DestinationDirs]
+DefaultDestDir = 12
+QuickUsb.Files.dll32x86 = 10,System32
+QuickUsb.Files.dll64amd64 = 10,System32
+QuickUsb.Files.dll32amd64 = 10,SysWOW64
+QuickUsb.Files.WdfCoInstallerX86 = 11
+QuickUsb.Files.WdfCoInstallerAmd64 = 11
+
+[QuickUsb_EventLog_Inst]
+AddReg = QuickUsb_EventLog_Inst.AddReg 
+ 
+[QuickUsb_EventLog_Inst.AddReg] 
+HKR,,EventMessageFile,%REG_EXPAND_SZ%,"%%SystemRoot%%\System32\IoLogMsg.dll" 
+HKR,,TypesSupported,%REG_DWORD%,7
+
+
+
+;-------------------------------------------------------------
+; NTx86 Installer Keys
+;-------------------------------------------------------------
+[SourceDisksNames.x86]
+0=%Desc_x860%
+
+[SourceDisksFiles.x86]
+QuickUSB.sys=0,i386
+QuickUsb.dll=0,i386
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=0,i386
+
+[QuickUsb_Inst.NTx86.CoInstallers]
+AddReg=CoInstaller_AddRegX86
+CopyFiles=QuickUsb.Files.WdfCoInstallerX86
+
+[QuickUsb_Inst.NTx86] 
+CopyFiles = @QuickUSB.sys, QuickUsb.Files.dll32x86
+
+[QuickUsb_Inst.NTx86.Services] 
+AddService = QuickUSB,%SPSVCINST_ASSOCSERVICE%,QuickUsb_Service_Instx86, QuickUsb_EventLog_Inst
+
+[QuickUsb_Service_Instx86] 
+DisplayName = %QuickUSB.SvcDesc%
+ServiceType = %SERVICE_KERNEL_DRIVER% 
+StartType = %SERVICE_DEMAND_START% 
+ErrorControl = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %12%\QuickUSB.sys 
+LoadOrderGroup = Base
+
+[QuickUsb.Files.dll32x86]
+QuickUSB.dll, QuickUSB.dll
+
+[CoInstaller_AddRegX86]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[QuickUsb.Files.WdfCoInstallerX86]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[QuickUsb_Inst.NTx86.Wdf]
+KmdfService = QuickUSB, QuickUSB_WdfsectX86
+
+[QuickUSB_WdfsectX86]
+KmdfLibraryVersion = $KMDFVERSION$
+
+
+
+;-------------------------------------------------------------
+; NTAMD64 Installer Keys
+;-------------------------------------------------------------
+[SourceDisksNames.amd64]
+0=%Desc_amd640%
+
+[SourceDisksFiles.amd64]
+QuickUsbAMD64.sys=0,amd64
+QuickUsb.dll=0,i386
+QuickUsbamd64.dll=0,amd64
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=0,amd64
+
+[QuickUsb_Inst.NTamd64.CoInstallers]
+AddReg=CoInstaller_AddRegAmd64
+CopyFiles=QuickUsb.Files.WdfCoInstallerAmd64
+
+[QuickUsb_Inst.ntamd64] 
+CopyFiles = @QuickUsbAMD64.sys, QuickUsb.Files.dll64amd64, QuickUsb.Files.dll32amd64
+
+[QuickUsb_Inst.ntamd64.Services] 
+AddService = QuickUsbAMD64,%SPSVCINST_ASSOCSERVICE%,QuickUsb_Service_InstAmd64, QuickUsb_EventLog_Inst
+
+[QuickUsb_Service_InstAmd64] 
+DisplayName = %QuickUSB.SvcDesc%
+ServiceType = %SERVICE_KERNEL_DRIVER% 
+StartType =   %SERVICE_DEMAND_START% 
+ErrorControl = %SERVICE_ERROR_NORMAL%
+ServiceBinary =  %12%\QuickUsbAMD64.sys 
+LoadOrderGroup = Base
+
+[QuickUsb.Files.dll64amd64]
+QuickUSB.dll, QuickUSBamd64.dll
+
+[QuickUsb.Files.dll32amd64]
+QuickUSB.dll, QuickUSB.dll
+
+[CoInstaller_AddRegAmd64]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[QuickUsb.Files.WdfCoInstallerAmd64]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[QuickUsb_Inst.NTamd64.Wdf]
+KmdfService = QuickUsbAMD64, QuickUSB_WdfsectAmd64
+
+[QuickUSB_WdfsectAmd64]
+KmdfLibraryVersion = $KMDFVERSION$
+
+
+
+;-------------------------------------------------------------
+; Strings
+;-------------------------------------------------------------
+[Strings]
+;  *******Localizable Strings*******
+BITW= "Bitwise Systems™"
+QuickUsbName="QuickUSB®"
+QuickUsbDesc="QuickUSB® Module" 
+QuickUsbUnprogrammedDesc= "QuickUSB® Module (Unprogrammed)"
+Desc_x860= "Bitwise Systems QuickUSB® Module" 
+Desc_ia640= "Bitwise Systems QuickUSB® Module" 
+Desc_amd640= "Bitwise Systems QuickUSB® Module" 
+QuickUSB.SvcDesc="QuickUSB® Driver"
+ClassName       = "QuickUSB Device"
+
+;  *******Non Localizable Strings******* 
+SERVICE_BOOT_START = 0x0
+SERVICE_SYSTEM_START = 0x1 
+SERVICE_AUTO_START = 0x2 
+SERVICE_DEMAND_START = 0x3 
+SERVICE_DISABLED = 0x4 
+
+SERVICE_KERNEL_DRIVER = 0x1 
+SERVICE_ERROR_IGNORE = 0x0 
+SERVICE_ERROR_NORMAL = 0x1 
+SERVICE_ERROR_SEVERE = 0x2
+SERVICE_ERROR_CRITICAL = 0x3
+
+SPSVCINST_ASSOCSERVICE= 0x00000002
+
+REG_EXPAND_SZ = 0x00020000 
+REG_DWORD = 0x00010001

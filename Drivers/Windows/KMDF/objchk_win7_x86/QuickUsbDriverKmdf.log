@@ -1,0 +1,39 @@
+﻿Build started 5/23/2015 11:49:39 AM.
+Project "C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUsbDriverKmdf.vcxproj" on node 2 (Build target(s)).
+Build:
+  call C:\WinDDK\7600.16385.1\bin\setenv.bat C:\WinDDK\7600.16385.1 chk win7
+  cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF
+  build
+  path contains nonexistant c:\program files (x86)\microsoft visual studio 12.0\common7\tools\bin, removing
+  BUILD: Compile and Link for x86
+  
+  BUILD: Loading c:\winddk\7600.16385.1\build.dat...
+  
+  BUILD: Computing Include file dependencies:
+  
+  OACR monitor running already
+  BUILD: Start time: Sat May 23 11:49:40 2015
+  BUILD: Examining c:\projects\bitwise\quickusb\library\driver\windows\kmdf directory for files to compile.
+  
+      c:\projects\bitwise\quickusb\library\driver\windows\kmdf 
+  
+  Invalidating OACR warning log for 'root:x86chk'
+  BUILD: Saving c:\winddk\7600.16385.1\build.dat...
+  
+  BUILD: Compiling c:\projects\bitwise\quickusb\library\driver\windows\kmdf directory
+  
+  Configuring OACR for 'root:x86chk' - <OACR on>
+  BUILD: Linking for c:\projects\bitwise\quickusb\library\driver\windows\kmdf directory
+  
+  BUILD: Finish time: Sat May 23 11:49:46 2015
+  BUILD: Done
+  
+  
+  
+      0 files compiled - 1 Warning
+  
+Done Building Project "C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUsbDriverKmdf.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.14

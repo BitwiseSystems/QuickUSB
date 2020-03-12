@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DDKLaunchParams xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DebugConnectionString>vm://Windows XP Professional</DebugConnectionString>
+  <RemoteMachineHostname />
+  <PathOnTarget>%SystemRoot%\System32\Drivers\QuickUSB.sys</PathOnTarget>
+  <StartMode>CommandLine</StartMode>
+  <StartModeArg>net start legacydriver</StartModeArg>
+  <StartModeIntArg>0</StartModeIntArg>
+  <StopMode>CommandLine</StopMode>
+  <StopModeArg>net stop legacydriver</StopModeArg>
+  <StopModeIntArg>0</StopModeIntArg>
+  <KeepSessionWhenDriverUnloads>false</KeepSessionWhenDriverUnloads>
+  <AutoInstallPolicy>AutoInstallInteractive</AutoInstallPolicy>
+</DDKLaunchParams>

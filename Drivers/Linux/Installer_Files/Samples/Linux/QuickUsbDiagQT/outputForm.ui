@@ -1,0 +1,55 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>outputForm</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>outputForm</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>275</width>
+            <height>539</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Input/Output</string>
+    </property>
+    <widget class="QTextEdit">
+        <property name="name">
+            <cstring>outputFormRichEditBox</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>270</width>
+                <height>510</height>
+            </rect>
+        </property>
+        <property name="font">
+            <font>
+                <family>Fixed [Misc]</family>
+            </font>
+        </property>
+        <property name="resizePolicy">
+            <enum>Manual</enum>
+        </property>
+    </widget>
+</widget>
+<includes>
+    <include location="local" impldecl="in implementation">outputForm.ui.h</include>
+</includes>
+<slots>
+    <slot>showForm( int x, int y, int height, outputForm * * ptr )</slot>
+    <slot>setText( QString str )</slot>
+    <slot>showByteData( unsigned char * theData, unsigned long dataLength )</slot>
+    <slot>closeEvent( QCloseEvent * event )</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function returnType="QString">toHex( int decimal, int length )</function>
+</functions>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="QuickUsbDriverKmdf"
+	ProjectGUID="{35FF5D97-5806-4047-861F-7E5B1F701054}"
+	RootNamespace="QuickUsbDriverKmdf"
+	Keyword="MakeFileProj"
+	TargetFrameworkVersion="196613"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+		<Platform
+			Name="x64"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_x86"
+			IntermediateDirectory="C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_x86"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) chk win7&#x0D;&#x0A;cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF&#x0D;&#x0A;build"
+				ReBuildCommandLine="rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_x86&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) chk win7&#x0D;&#x0A;cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF&#x0D;&#x0A;build"
+				CleanCommandLine="rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_x86"
+				Output="C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_x86\i386\QuickUSB.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X86_;_DDK_;_DEBUG;DBG=1"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Debug|x64"
+			OutputDirectory="C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_amd64"
+			IntermediateDirectory="C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_amd64"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) chk x64 win7&#x0D;&#x0A;cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF&#x0D;&#x0A;build"
+				ReBuildCommandLine="rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_amd64&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) chk x64 win7&#x0D;&#x0A;cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF&#x0D;&#x0A;build"
+				CleanCommandLine="rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_amd64"
+				Output="C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_amd64\amd64\QuickUSB.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_AMD64_;_DDK_;_DEBUG;DBG=1"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_x86"
+			IntermediateDirectory="C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_x86"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) fre win7&#x0D;&#x0A;cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF&#x0D;&#x0A;build"
+				ReBuildCommandLine="rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_x86&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) fre win7&#x0D;&#x0A;cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF&#x0D;&#x0A;build"
+				CleanCommandLine="rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_x86"
+				Output="C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_x86\i386\QuickUSB.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_X86_;_DDK_;_NDEBUG;DBG=0"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|x64"
+			OutputDirectory="C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_amd64"
+			IntermediateDirectory="C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_amd64"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="call $(WDKPATH)\bin\setenv.bat $(WDKPATH) fre x64 win7&#x0D;&#x0A;cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF&#x0D;&#x0A;build"
+				ReBuildCommandLine="rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_amd64&#x0D;&#x0A;call $(WDKPATH)\bin\setenv.bat $(WDKPATH) fre x64 win7&#x0D;&#x0A;cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF&#x0D;&#x0A;build"
+				CleanCommandLine="rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_amd64"
+				Output="C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_amd64\amd64\QuickUSB.sys"
+				PreprocessorDefinitions="WIN32;_CONSOLE;_AMD64_;_DDK_;_NDEBUG;DBG=0"
+				IncludeSearchPath="$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source files"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			>
+			<File
+				RelativePath=".\bulkrwr.c"
+				>
+			</File>
+			<File
+				RelativePath=".\control.c"
+				>
+			</File>
+			<File
+				RelativePath=".\device.c"
+				>
+			</File>
+			<File
+				RelativePath=".\driver.c"
+				>
+			</File>
+			<File
+				RelativePath=".\ioctl.c"
+				>
+			</File>
+			<File
+				RelativePath=".\power.c"
+				>
+			</File>
+			<File
+				RelativePath=".\util.c"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
+			>
+			<File
+				RelativePath=".\makefile.inc"
+				>
+			</File>
+			<File
+				RelativePath=".\QuickUSB.inx"
+				>
+			</File>
+			<File
+				RelativePath=".\QuickUSB.rc"
+				>
+			</File>
+			<File
+				RelativePath=".\resource.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			>
+			<File
+				RelativePath=".\contexts.h"
+				>
+			</File>
+			<File
+				RelativePath=".\driver.h"
+				>
+			</File>
+			<File
+				RelativePath=".\ioctl.h"
+				>
+			</File>
+			<File
+				RelativePath=".\prototypes.h"
+				>
+			</File>
+			<File
+				RelativePath=".\version.h"
+				>
+			</File>
+		</Filter>
+		<File
+			RelativePath=".\sources"
+			>
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

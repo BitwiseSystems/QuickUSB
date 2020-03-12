@@ -1,0 +1,4 @@
+To compile and execute the QuickUsbDiagQT project you will need to have QT3 installed on your system.  Then, execute the following at a command line:
+	qmake QuickUsbDiag.pro
+	./make
+	./QuickUsbDiagQT

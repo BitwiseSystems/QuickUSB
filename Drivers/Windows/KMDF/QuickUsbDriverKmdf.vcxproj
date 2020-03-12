@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{35FF5D97-5806-4047-861F-7E5B1F701054}</ProjectGuid>
+    <RootNamespace>QuickUsbDriverKmdf</RootNamespace>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_x86\</OutDir>
+    <IntDir>C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_x86\</IntDir>
+    <NMakeBuildCommandLine>call $(WDKPATH)\bin\setenv.bat $(WDKPATH) chk win7
+cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF
+build</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_x86
+call $(WDKPATH)\bin\setenv.bat $(WDKPATH) chk win7
+cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF
+build</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_x86</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_x86\i386\QuickUSB.sys</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;_CONSOLE;_X86_;_DDK_;_DEBUG;DBG=1;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_amd64\</OutDir>
+    <IntDir>C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_amd64\</IntDir>
+    <NMakeBuildCommandLine>call $(WDKPATH)\bin\setenv.bat $(WDKPATH) chk x64 win7
+cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF
+build</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_amd64
+call $(WDKPATH)\bin\setenv.bat $(WDKPATH) chk x64 win7
+cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF
+build</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_amd64</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objchk_win7_amd64\amd64\QuickUSB.sys</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;_CONSOLE;_AMD64_;_DDK_;_DEBUG;DBG=1;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_x86\</OutDir>
+    <IntDir>C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_x86\</IntDir>
+    <NMakeBuildCommandLine>call $(WDKPATH)\bin\setenv.bat $(WDKPATH) fre win7
+cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF
+build</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_x86
+call $(WDKPATH)\bin\setenv.bat $(WDKPATH) fre win7
+cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF
+build</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_x86</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_x86\i386\QuickUSB.sys</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;_CONSOLE;_X86_;_DDK_;_NDEBUG;DBG=0;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_amd64\</OutDir>
+    <IntDir>C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_amd64\</IntDir>
+    <NMakeBuildCommandLine>call $(WDKPATH)\bin\setenv.bat $(WDKPATH) fre x64 win7
+cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF
+build</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_amd64
+call $(WDKPATH)\bin\setenv.bat $(WDKPATH) fre x64 win7
+cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF
+build</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_amd64</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_amd64\amd64\QuickUSB.sys</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;_CONSOLE;_AMD64_;_DDK_;_NDEBUG;DBG=0;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>$(WDKPATH)\inc\ddk;$(WDKPATH)\inc\api;$(WDKPATH)\inc\crt;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bulkrwr.c" />
+    <ClCompile Include="control.c" />
+    <ClCompile Include="device.c" />
+    <ClCompile Include="driver.c" />
+    <ClCompile Include="ioctl.c" />
+    <ClCompile Include="power.c" />
+    <ClCompile Include="util.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile.inc" />
+    <None Include="QuickUSB.inx" />
+    <None Include="sources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QuickUSB.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="contexts.h" />
+    <ClInclude Include="driver.h" />
+    <ClInclude Include="ioctl.h" />
+    <ClInclude Include="prototypes.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="version.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

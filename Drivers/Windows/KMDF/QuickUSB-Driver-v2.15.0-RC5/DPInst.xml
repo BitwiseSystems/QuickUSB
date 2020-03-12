@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<dpinst>
+
+  <search>
+    <subDirectory>*</subDirectory>
+  </search>
+
+  <language code="0x0401">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0804">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0404">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0405">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0406">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0407">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0408">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0409">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0C0A">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x040B">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x040C">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x040D">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x040E">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0410">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0411">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0412">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0413">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0414">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0415">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0416">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0816">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x0419">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x041D">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <language code="0x041F">
+    <dpinstTitle>Bitwise Systems QuickUSB Driver Installer</dpinstTitle>
+    <welcomeTitle>Bitwise Systems QuickUSB Driver v2.15.0 RC5</welcomeTitle>
+    <welcomeIntro>This wizard will walk you through installing the QuickUSB device drivers.</welcomeIntro>
+    <eulaHeaderTitle>Software License Agreement</eulaHeaderTitle>
+    <eulaYesButton>I &amp;accept this SLA</eulaYesButton>
+    <eulaNoButton>I do &amp;not accept this SLA</eulaNoButton>
+    <installHeaderTitle>Please wait while the wizard installs the QuickUSB driver...</installHeaderTitle>
+    <finishTitle>QuickUSB Driver Install Complete</finishTitle>
+    <eula type="txt" path="QuickUSB SLA.txt" />
+  </language>
+
+  <icon>QuickUSB.ico</icon>
+
+</dpinst>

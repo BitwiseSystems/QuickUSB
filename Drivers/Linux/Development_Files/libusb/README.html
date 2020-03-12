@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>QuickUSB Installation Notes</TITLE>
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080">
+
+<P ALIGN="JUSTIFY"></P>
+<FONT SIZE=6><P ALIGN="CENTER">QuickUSB</P>
+<P ALIGN="CENTER"></P>
+</FONT><P ALIGN="JUSTIFY">The QuickUSB installer on this CD-ROM will install the QuickUSB library, diagnostic software, and source code example onto your computer. </P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">To run the installer either use a file manager and click on the file QuickUSB_Installer.bin, or from the command prompt cd into your CDROM directory</P>
+<P ALIGN="JUSTIFY">and type sh ./QuickUSB_Installer.bin</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">During the installation you will be asked to choose your installation directory and link directory. If you are using gnome and would like icons to be placed on the desktop use the folder /home/&lt;your_account_name&gt;/.gnome-desktop/ as your link directory. On the other hand if you are using KDE edit the path to read /home/&lt;your_account_name&gt;/Desktop . Remember Linux is case sensitive so its important you type in the correct path. </P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">After installation is complete please run the shell script named install.sh in the QuickUSB</P>
+<P ALIGN="JUSTIFY">Directory you specified to update your system’s Hotplug usb.usermap file and to place the QuickUSB script in the correct location.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">The rest of this document is geared towards software developers.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">QuickUSB comes with two driver versions. The static driver libquickusb.a can be used without further installation on your Linux system. </P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">On the other hand libquickusb.so.2.0.0 is a shared library which will need LibUSB 0.1.7 to function properly. Therefore if you wish to use the shared library it is required that you install the libusb-0.1.7.rpm file onto your computer since Redhat 9.0 and Mandrake 9.0, 9.1 come with LibUSB version 0.1.4 </P>
+<P ALIGN="JUSTIFY">To install LibUSB from the CD-ROM type the command </P>
+<P ALIGN="JUSTIFY">&quot;rpm -i --force libusb-0.1.7.rpm&quot; as root. The --force flag is needed because an older version of LibUSB is already installed on your system and rpm will complain about it</P>
+<P ALIGN="JUSTIFY">being replaced with this newer version. </P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">It is advised that you move the files in the libquickusb.a and libquickusb.so.2.0.0 in the Driver directory of your QuickUSB installation to the proper lib directory on your system. For Redhat and Mandrake this is usually /usr/lib. In addition you may want to move the *.h files in the Library directory to your proper include directory, which is usually /usr/include. </P>
+<P ALIGN="JUSTIFY">To aid in linking and compiling your own program(s) it is wise to create symbolic links to the libusb.so.1.0.0 file. Assuming the shared library file exists in /usr/lib type the following commands to create the symbolic links. </P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">ln –s /usr/lib/libquickusb.so.2.0.0 libquickusb.so.2</P>
+<P ALIGN="JUSTIFY">ln –s /usr/lib/libquickusb.so.2.0.0 libquickusb.so</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Once this has all been done you will need to use the /usr/sbin/ldconfig command to update the system driver cache. </P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY"> To recompile the QuickUSB Diagnostic software you will need to have QT Designer 3.2 and above. You can get the latest version of QT Designer from <A HREF="Http://www.Trolltech.com"><FONT SIZE=2>Http://www.Trolltech.com</FONT></A></P>
+<P ALIGN="JUSTIFY">We have supplied two project files and two make files with the diagnostic software. </P>
+<P ALIGN="JUSTIFY">One set is for compiling the program statically while the other pair is for dynamic compilation.</P>
+<P ALIGN="JUSTIFY"><BR>
+To use the static project file type:</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">mv Makefile-STATIC Makefile</P>
+<P ALIGN="JUSTIFY">make</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Or to create a dynamicaly linked version of the software type the following:</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">mv Makefile-SHARED Makefile</P>
+<P ALIGN="JUSTIFY">make</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">If you would like to generate a fresh make file type one of the following depending on which type of makefile you would like:</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">qmake –o Makefile QuickUsbDiagnosticStatic.pro  </P>
+<P ALIGN="JUSTIFY">qmake –o Makefile QuickUsbDiagnosticShared.pro  </P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Troubleshooting:</P>
+<P ALIGN="JUSTIFY">If the install.sh script does not work for you will need to manually do the following:</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">After you have installed the QuickUSB software, you will need to append the following two lines to the end of the  /etc/hotplug/usb.usrmap file</P>
+<P ALIGN="JUSTIFY"></P>
+<PRE>
+# Bitwise Systems QuickUSB module
+QuickUSB               0x0003      0x0FBB   0x0001    0x0000       0x0000       0x00         0x00            0x00            0x00            0x00               0x00               0x00000000
+</PRE>
+</FONT><P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">You now need to move the file QuickUSB located in </P>
+<P ALIGN="JUSTIFY">&lt;your installation directory&gt;\hotplug\  to the following directory /etc/hotplug/usb</P>
+<P ALIGN="JUSTIFY"></P></BODY>
+</HTML>

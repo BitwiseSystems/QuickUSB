@@ -1,0 +1,70 @@
+﻿Build started 5/23/2015 11:44:06 AM.
+Project "C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUsbDriverKmdf.vcxproj" on node 2 (Rebuild target(s)).
+Rebuild:
+  rmdir /s /q C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_x86
+  call C:\WinDDK\7600.16385.1\bin\setenv.bat C:\WinDDK\7600.16385.1 fre win7
+  cd /d C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF
+  build
+  C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\objfre_win7_x86\QuickUsbDriverKmdf.log - The process cannot access the file because it is being used by another process.
+  OACR monitor running already
+  path contains nonexistant c:\program files (x86)\microsoft visual studio 12.0\common7\tools\bin, removing
+  BUILD: Compile and Link for x86
+  
+  BUILD: Loading c:\winddk\7600.16385.1\build.dat...
+  
+  BUILD: Computing Include file dependencies:
+  
+  BUILD: Start time: Sat May 23 11:44:07 2015
+  BUILD: null byte at offset 0x00000001
+  
+  BUILD: 606 null bytes in file
+  
+  BUILD: null byte at offset 0x00000001
+  
+  BUILD: 2418 null bytes in file
+  
+  BUILD: null byte at offset 0x00000003
+  
+  BUILD: 25588 null bytes in file
+  
+  BUILD: null byte at offset 0x00000003
+  
+  BUILD: 25590 null bytes in file
+  
+  BUILD: Examining c:\projects\bitwise\quickusb\library\driver\windows\kmdf directory for files to compile.
+  
+      c:\projects\bitwise\quickusb\library\driver\windows\kmdf 
+  
+      c:\projects\bitwise\quickusb\library\driver\windows\kmdf - 8 source files (3,862 lines)
+  
+  BUILD: Saving c:\winddk\7600.16385.1\build.dat...
+  
+  BUILD: Compiling c:\projects\bitwise\quickusb\library\driver\windows\kmdf directory
+  
+  Configuring OACR for 'root:x86fre' - <OACR on>
+  Compiling resources - quickusb.rc
+  Compiling - driver.c
+  Compiling - device.c
+  Compiling - power.c
+  Compiling - ioctl.c
+  Compiling - control.c
+  Compiling - bulkrwr.c
+  Compiling - util.c
+  Compiling - generating code...
+  BUILD: Linking for c:\projects\bitwise\quickusb\library\driver\windows\kmdf directory
+  
+  Linking Executable - objfre_win7_x86\i386\quickusb.sys
+  BUILD: Finish time: Sat May 23 11:44:10 2015
+  BUILD: Done
+  
+  
+  
+      10 files compiled - 1 Warning - 3,862 LPS
+  
+      1 executable built
+  
+Done Building Project "C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUsbDriverKmdf.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.55
