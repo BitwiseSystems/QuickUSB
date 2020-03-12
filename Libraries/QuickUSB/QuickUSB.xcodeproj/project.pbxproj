@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50A51B5312317603006E652F /* QuickUSB.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A51B3312317603006E652F /* QuickUSB.h */; };
+		50A51B5712317603006E652F /* QuickUsbApiBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50A51B3712317603006E652F /* QuickUsbApiBase.cpp */; };
+		50A51B5912317603006E652F /* QuickUsbApiData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50A51B3912317603006E652F /* QuickUsbApiData.cpp */; };
+		50A51B5E12317603006E652F /* QuickUsbApiFPGA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50A51B3E12317603006E652F /* QuickUsbApiFPGA.cpp */; };
+		50A51B6012317603006E652F /* QuickUsbApiGPIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50A51B4012317603006E652F /* QuickUsbApiGPIO.cpp */; };
+		50A51B6212317603006E652F /* QuickUsbApiIIC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50A51B4212317603006E652F /* QuickUsbApiIIC.cpp */; };
+		50A51B6412317603006E652F /* QuickUsbApiProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50A51B4412317603006E652F /* QuickUsbApiProgram.cpp */; };
+		50A51B6512317603006E652F /* QuickUsbApiProgram.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A51B4512317603006E652F /* QuickUsbApiProgram.h */; };
+		50A51B6612317603006E652F /* QuickUsbApiRS232.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50A51B4612317603006E652F /* QuickUsbApiRS232.cpp */; };
+		50A51B6812317603006E652F /* QuickUsbApiSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50A51B4812317603006E652F /* QuickUsbApiSettings.cpp */; };
+		50A51B6A12317603006E652F /* QuickUsbApiSpi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50A51B4A12317603006E652F /* QuickUsbApiSpi.cpp */; };
+		50A51B6C12317603006E652F /* QuickUsbApiStorage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50A51B4C12317603006E652F /* QuickUsbApiStorage.cpp */; };
+		50A51B6E12317603006E652F /* QuickUSBEeprom.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A51B4E12317603006E652F /* QuickUSBEeprom.h */; };
+		50A51B7B123177C8006E652F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A51B79123177C8006E652F /* CoreFoundation.framework */; };
+		50A51B7C123177C8006E652F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A51B7A123177C8006E652F /* IOKit.framework */; };
+		635A14DA13E30ACD0018CD03 /* QuickUsbVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 635A14D913E30ACD0018CD03 /* QuickUsbVersion.h */; };
+		636C5C8613E31BF5005B3698 /* QuickUsbApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 636C5C8513E31BF5005B3698 /* QuickUsbApi.h */; };
+		636C5C9913E3204D005B3698 /* QuickUsbApiEpcs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 636C5C9713E3204D005B3698 /* QuickUsbApiEpcs.cpp */; };
+		636C5C9A13E3204D005B3698 /* QuickUsbApiEpcs.h in Headers */ = {isa = PBXBuildFile; fileRef = 636C5C9813E3204D005B3698 /* QuickUsbApiEpcs.h */; };
+		636C5D71141821A9005B3698 /* QuickUsbEeprom.h in Headers */ = {isa = PBXBuildFile; fileRef = 636C5D6F141821A9005B3698 /* QuickUsbEeprom.h */; };
+		636C5DE01486BBD2005B3698 /* QuickUsbApiStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 636C5DDE1486BBD2005B3698 /* QuickUsbApiStream.cpp */; };
+		636C5DE11486BBD2005B3698 /* QuickUsbApiStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 636C5DDF1486BBD2005B3698 /* QuickUsbApiStream.h */; };
+		6383BCA314F849BD00B8FC38 /* QuickUsbApiStatistics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6383BCA214F849BD00B8FC38 /* QuickUsbApiStatistics.cpp */; };
+		63B5A217128CAC1D0009ECFA /* QuickUsbUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63B5A215128CAC1D0009ECFA /* QuickUsbUtil.cpp */; };
+		63B5A218128CAC1D0009ECFA /* QuickUsbUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B5A216128CAC1D0009ECFA /* QuickUsbUtil.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50A51B3312317603006E652F /* QuickUSB.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = QuickUSB.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
+		50A51B3712317603006E652F /* QuickUsbApiBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUsbApiBase.cpp; sourceTree = "<group>"; };
+		50A51B3912317603006E652F /* QuickUsbApiData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUsbApiData.cpp; sourceTree = "<group>"; };
+		50A51B3E12317603006E652F /* QuickUsbApiFPGA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUsbApiFPGA.cpp; sourceTree = "<group>"; };
+		50A51B4012317603006E652F /* QuickUsbApiGPIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUsbApiGPIO.cpp; sourceTree = "<group>"; };
+		50A51B4212317603006E652F /* QuickUsbApiIIC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUsbApiIIC.cpp; sourceTree = "<group>"; };
+		50A51B4412317603006E652F /* QuickUsbApiProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUsbApiProgram.cpp; sourceTree = "<group>"; };
+		50A51B4512317603006E652F /* QuickUsbApiProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickUsbApiProgram.h; sourceTree = "<group>"; };
+		50A51B4612317603006E652F /* QuickUsbApiRS232.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUsbApiRS232.cpp; sourceTree = "<group>"; };
+		50A51B4812317603006E652F /* QuickUsbApiSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUsbApiSettings.cpp; sourceTree = "<group>"; };
+		50A51B4A12317603006E652F /* QuickUsbApiSpi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUsbApiSpi.cpp; sourceTree = "<group>"; };
+		50A51B4C12317603006E652F /* QuickUsbApiStorage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUsbApiStorage.cpp; sourceTree = "<group>"; };
+		50A51B4E12317603006E652F /* QuickUSBEeprom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickUSBEeprom.h; sourceTree = "<group>"; };
+		50A51B79123177C8006E652F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		50A51B7A123177C8006E652F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		635A14D913E30ACD0018CD03 /* QuickUsbVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickUsbVersion.h; sourceTree = "<group>"; };
+		636C5C8513E31BF5005B3698 /* QuickUsbApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickUsbApi.h; sourceTree = "<group>"; };
+		636C5C9713E3204D005B3698 /* QuickUsbApiEpcs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUsbApiEpcs.cpp; sourceTree = "<group>"; };
+		636C5C9813E3204D005B3698 /* QuickUsbApiEpcs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickUsbApiEpcs.h; sourceTree = "<group>"; };
+		636C5D6F141821A9005B3698 /* QuickUsbEeprom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickUsbEeprom.h; sourceTree = "<group>"; };
+		636C5DDE1486BBD2005B3698 /* QuickUsbApiStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUsbApiStream.cpp; sourceTree = "<group>"; };
+		636C5DDF1486BBD2005B3698 /* QuickUsbApiStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickUsbApiStream.h; sourceTree = "<group>"; };
+		6383BCA214F849BD00B8FC38 /* QuickUsbApiStatistics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUsbApiStatistics.cpp; sourceTree = "<group>"; };
+		63B5A215128CAC1D0009ECFA /* QuickUsbUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickUsbUtil.cpp; sourceTree = "<group>"; };
+		63B5A216128CAC1D0009ECFA /* QuickUsbUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickUsbUtil.h; sourceTree = "<group>"; };
+		D2AAC0630554660B00DB518D /* libquickusb.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libquickusb.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D289988505E68E00004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A51B7B123177C8006E652F /* CoreFoundation.framework in Frameworks */,
+				50A51B7C123177C8006E652F /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* QuickUSB */ = {
+			isa = PBXGroup;
+			children = (
+				50A51B79123177C8006E652F /* CoreFoundation.framework */,
+				50A51B7A123177C8006E652F /* IOKit.framework */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = QuickUSB;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				636C5DDF1486BBD2005B3698 /* QuickUsbApiStream.h */,
+				636C5D6F141821A9005B3698 /* QuickUsbEeprom.h */,
+				50A51B4512317603006E652F /* QuickUsbApiProgram.h */,
+				636C5C9813E3204D005B3698 /* QuickUsbApiEpcs.h */,
+				636C5C8513E31BF5005B3698 /* QuickUsbApi.h */,
+				635A14D913E30ACD0018CD03 /* QuickUsbVersion.h */,
+				50A51B4E12317603006E652F /* QuickUSBEeprom.h */,
+				63B5A215128CAC1D0009ECFA /* QuickUsbUtil.cpp */,
+				63B5A216128CAC1D0009ECFA /* QuickUsbUtil.h */,
+				50A51B3312317603006E652F /* QuickUSB.h */,
+				50A51B3712317603006E652F /* QuickUsbApiBase.cpp */,
+				50A51B3912317603006E652F /* QuickUsbApiData.cpp */,
+				636C5DDE1486BBD2005B3698 /* QuickUsbApiStream.cpp */,
+				50A51B3E12317603006E652F /* QuickUsbApiFPGA.cpp */,
+				50A51B4012317603006E652F /* QuickUsbApiGPIO.cpp */,
+				50A51B4212317603006E652F /* QuickUsbApiIIC.cpp */,
+				50A51B4412317603006E652F /* QuickUsbApiProgram.cpp */,
+				50A51B4612317603006E652F /* QuickUsbApiRS232.cpp */,
+				50A51B4812317603006E652F /* QuickUsbApiSettings.cpp */,
+				50A51B4A12317603006E652F /* QuickUsbApiSpi.cpp */,
+				50A51B4C12317603006E652F /* QuickUsbApiStorage.cpp */,
+				636C5C9713E3204D005B3698 /* QuickUsbApiEpcs.cpp */,
+				6383BCA214F849BD00B8FC38 /* QuickUsbApiStatistics.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC0630554660B00DB518D /* libquickusb.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC0600554660B00DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A51B5312317603006E652F /* QuickUSB.h in Headers */,
+				50A51B6512317603006E652F /* QuickUsbApiProgram.h in Headers */,
+				50A51B6E12317603006E652F /* QuickUSBEeprom.h in Headers */,
+				63B5A218128CAC1D0009ECFA /* QuickUsbUtil.h in Headers */,
+				635A14DA13E30ACD0018CD03 /* QuickUsbVersion.h in Headers */,
+				636C5C8613E31BF5005B3698 /* QuickUsbApi.h in Headers */,
+				636C5C9A13E3204D005B3698 /* QuickUsbApiEpcs.h in Headers */,
+				636C5D71141821A9005B3698 /* QuickUsbEeprom.h in Headers */,
+				636C5DE11486BBD2005B3698 /* QuickUsbApiStream.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC0620554660B00DB518D /* QuickUSB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "QuickUSB" */;
+			buildPhases = (
+				D2AAC0600554660B00DB518D /* Headers */,
+				D2AAC0610554660B00DB518D /* Sources */,
+				D289988505E68E00004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickUSB;
+			productName = QuickUSB;
+			productReference = D2AAC0630554660B00DB518D /* libquickusb.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "QuickUSB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* QuickUSB */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC0620554660B00DB518D /* QuickUSB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC0610554660B00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A51B5712317603006E652F /* QuickUsbApiBase.cpp in Sources */,
+				50A51B5912317603006E652F /* QuickUsbApiData.cpp in Sources */,
+				50A51B5E12317603006E652F /* QuickUsbApiFPGA.cpp in Sources */,
+				50A51B6012317603006E652F /* QuickUsbApiGPIO.cpp in Sources */,
+				50A51B6212317603006E652F /* QuickUsbApiIIC.cpp in Sources */,
+				50A51B6412317603006E652F /* QuickUsbApiProgram.cpp in Sources */,
+				50A51B6612317603006E652F /* QuickUsbApiRS232.cpp in Sources */,
+				50A51B6812317603006E652F /* QuickUsbApiSettings.cpp in Sources */,
+				50A51B6A12317603006E652F /* QuickUsbApiSpi.cpp in Sources */,
+				50A51B6C12317603006E652F /* QuickUsbApiStorage.cpp in Sources */,
+				63B5A217128CAC1D0009ECFA /* QuickUsbUtil.cpp in Sources */,
+				636C5C9913E3204D005B3698 /* QuickUsbApiEpcs.cpp in Sources */,
+				636C5DE01486BBD2005B3698 /* QuickUsbApiStream.cpp in Sources */,
+				6383BCA314F849BD00B8FC38 /* QuickUsbApiStatistics.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB914B08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PFE_FILE_C_DIALECTS = c;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = quickusb;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VERSION_INFO_BUILDER = "";
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB914C08733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_MODEL_TUNING = G5;
+				GCC_PFE_FILE_C_DIALECTS = c;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = quickusb;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DEB914F08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc64,
+					i386,
+					x86_64,
+					ppc,
+				);
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = "";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = /;
+				EXPORTED_SYMBOLS_FILE = QuickUSBMacSym.txt;
+				GCC_C_LANGUAGE_STANDARD = ansi;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_FAST_OBJC_DISPATCH = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = quickusb;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				STRIPFLAGS = "";
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = universal;
+			};
+			name = Debug;
+		};
+		1DEB915008733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc64,
+					i386,
+					x86_64,
+					ppc,
+				);
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = "";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = /;
+				EXPORTED_SYMBOLS_FILE = QuickUSBMacSym.txt;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_FAST_OBJC_DISPATCH = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = quickusb;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				STRIPFLAGS = "";
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = universal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "QuickUSB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914B08733D8E0010E9CD /* Debug */,
+				1DEB914C08733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "QuickUSB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914F08733D8E0010E9CD /* Debug */,
+				1DEB915008733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

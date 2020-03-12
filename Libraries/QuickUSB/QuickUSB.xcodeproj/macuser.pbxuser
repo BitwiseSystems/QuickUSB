@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = 63DF17C21244265500A3C9D4 /* Executable */;
+		activeTarget = D2AAC0620554660B00DB518D /* QuickUSB */;
+		addToTargets = (
+			D2AAC0620554660B00DB518D /* QuickUSB */,
+		);
+		breakpoints = (
+			63D5ED99128CBF25009D9F8C /* QuickUsbApiBase.cpp:1796 */,
+			63D5EDAB128CC1D9009D9F8C /* QuickUsbUtil.cpp:67 */,
+			63D5EDAF128CC1F0009D9F8C /* QuickUsbApiBase.cpp:1662 */,
+			638645CE14A2777B00550332 /* QuickUsbApiStream.cpp:413 */,
+			6386465214A2C02900550332 /* QuickUsbApiData.cpp:162 */,
+			6383BBCB14C0CD3800B8FC38 /* QuickUsbApiStream.cpp:1406 */,
+			6383BBDE14C0E74F00B8FC38 /* QuickUsbApiBase.cpp:386 */,
+		);
+		codeSenseManager = 63DF17B21244219C00A3C9D4 /* Code sense */;
+		executables = (
+			63DF17C21244265500A3C9D4 /* Executable */,
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					198,
+					20,
+					99,
+					99,
+					29,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					842,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = 1;
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Errors_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					954,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					200,
+					50,
+					894,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					914,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 358381667;
+			PBXWorkspaceStateSaveDate = 358381667;
+		};
+		perUserProjectItems = {
+			631D260F155C78DC0030B884 /* PBXTextBookmark */ = 631D260F155C78DC0030B884 /* PBXTextBookmark */;
+			631D2610155C78DC0030B884 /* XCBuildMessageTextBookmark */ = 631D2610155C78DC0030B884 /* XCBuildMessageTextBookmark */;
+			631D2619155C982A0030B884 /* PBXTextBookmark */ = 631D2619155C982A0030B884 /* PBXTextBookmark */;
+			6383BEBE15225FB800B8FC38 /* PBXTextBookmark */ = 6383BEBE15225FB800B8FC38 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 63DF17B11244219C00A3C9D4 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	50A51B3312317603006E652F /* QuickUSB.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1132, 11947}}";
+			sepNavSelRange = "{20588, 0}";
+			sepNavVisRange = "{19862, 1225}";
+			sepNavWindowFrame = "{{15, 136}, {1318, 737}}";
+		};
+	};
+	50A51B3712317603006E652F /* QuickUsbApiBase.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1340, 30394}}";
+			sepNavSelRange = "{85582, 0}";
+			sepNavVisRange = "{59792, 1036}";
+			sepNavWindowFrame = "{{108, 76}, {722, 796}}";
+		};
+	};
+	50A51B3912317603006E652F /* QuickUsbApiData.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1132, 21216}}";
+			sepNavSelRange = "{17469, 0}";
+			sepNavVisRange = "{16337, 2509}";
+			sepNavWindowFrame = "{{61, 35}, {722, 796}}";
+		};
+	};
+	50A51B3E12317603006E652F /* QuickUsbApiFPGA.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1132, 4576}}";
+			sepNavSelRange = "{6173, 0}";
+			sepNavVisRange = "{5295, 1683}";
+		};
+	};
+	50A51B4012317603006E652F /* QuickUsbApiGPIO.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1340, 8437}}";
+			sepNavSelRange = "{16750, 0}";
+			sepNavVisRange = "{16127, 1478}";
+		};
+	};
+	50A51B4212317603006E652F /* QuickUsbApiIIC.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1340, 2106}}";
+			sepNavSelRange = "{5058, 0}";
+			sepNavVisRange = "{4853, 1214}";
+		};
+	};
+	50A51B4412317603006E652F /* QuickUsbApiProgram.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1223, 19617}}";
+			sepNavSelRange = "{5870, 82}";
+			sepNavVisRange = "{5156, 1656}";
+		};
+	};
+	50A51B4512317603006E652F /* QuickUsbApiProgram.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1132, 871}}";
+			sepNavSelRange = "{2108, 0}";
+			sepNavVisRange = "{423, 1997}";
+			sepNavWindowFrame = "{{107, 52}, {1318, 737}}";
+		};
+	};
+	50A51B4612317603006E652F /* QuickUsbApiRS232.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1340, 3133}}";
+			sepNavSelRange = "{7973, 0}";
+			sepNavVisRange = "{7225, 1247}";
+		};
+	};
+	50A51B4812317603006E652F /* QuickUsbApiSettings.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1127, 4225}}";
+			sepNavSelRange = "{5172, 0}";
+			sepNavVisRange = "{3800, 1662}";
+			sepNavWindowFrame = "{{84, 73}, {1318, 737}}";
+		};
+	};
+	50A51B4A12317603006E652F /* QuickUsbApiSpi.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1132, 1950}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{2280, 2242}";
+		};
+	};
+	50A51B4C12317603006E652F /* QuickUsbApiStorage.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1132, 2171}}";
+			sepNavSelRange = "{1894, 0}";
+			sepNavVisRange = "{2356, 1839}";
+		};
+	};
+	631D260F155C78DC0030B884 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 50A51B3312317603006E652F /* QuickUSB.h */;
+		name = "QuickUSB.h: 740";
+		rLen = 0;
+		rLoc = 20588;
+		rType = 0;
+		vrLen = 1225;
+		vrLoc = 19862;
+	};
+	631D2610155C78DC0030B884 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Cast from 'FILE*' to 'UInt32' loses precision";
+		fRef = 636C5DDE1486BBD2005B3698 /* QuickUsbApiStream.cpp */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 1688;
+		rType = 1;
+	};
+	631D2619155C982A0030B884 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 636C5DDE1486BBD2005B3698 /* QuickUsbApiStream.cpp */;
+		name = "QuickUsbApiStream.cpp: 1689";
+		rLen = 0;
+		rLoc = 63909;
+		rType = 0;
+		vrLen = 1824;
+		vrLoc = 62698;
+	};
+	635A14D913E30ACD0018CD03 /* QuickUsbVersion.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1132, 2600}}";
+			sepNavSelRange = "{5883, 0}";
+			sepNavVisRange = "{81, 1891}";
+		};
+	};
+	636C5C8513E31BF5005B3698 /* QuickUsbApi.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1132, 4524}}";
+			sepNavSelRange = "{3435, 0}";
+			sepNavVisRange = "{2531, 1672}";
+		};
+	};
+	636C5C9713E3204D005B3698 /* QuickUsbApiEpcs.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1340, 10179}}";
+			sepNavSelRange = "{9506, 0}";
+			sepNavVisRange = "{9002, 1097}";
+		};
+	};
+	636C5D6F141821A9005B3698 /* QuickUsbEeprom.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1132, 1313}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 2161}";
+		};
+	};
+	636C5DDE1486BBD2005B3698 /* QuickUsbApiStream.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1340, 38103}}";
+			sepNavSelRange = "{63907, 0}";
+			sepNavVisRange = "{63183, 898}";
+			sepNavWindowFrame = "{{38, 115}, {1318, 737}}";
+		};
+	};
+	636C5DDF1486BBD2005B3698 /* QuickUsbApiStream.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1127, 793}}";
+			sepNavSelRange = "{2298, 0}";
+			sepNavVisRange = "{371, 1927}";
+		};
+	};
+	6383BBCB14C0CD3800B8FC38 /* QuickUsbApiStream.cpp:1406 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 636C5DDE1486BBD2005B3698 /* QuickUsbApiStream.cpp */;
+		functionName = "QuickUsbStopStream(QHANDLE hDevice, QBYTE streamID, QBOOL immediate)";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 1406;
+		location = libquickusb.dylib;
+		modificationTime = 354574516.100858;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	6383BBDE14C0E74F00B8FC38 /* QuickUsbApiBase.cpp:386 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 50A51B3712317603006E652F /* QuickUsbApiBase.cpp */;
+		functionName = "QuickUsbOpenEx(QHANDLE *hDevice, QCHAR *deviceName, QWORD flags)";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 386;
+		location = libquickusb.dylib;
+		modificationTime = 354574516.10093;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	6383BCA214F849BD00B8FC38 /* QuickUsbApiStatistics.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1132, 5889}}";
+			sepNavSelRange = "{10753, 0}";
+			sepNavVisRange = "{0, 2025}";
+			sepNavWindowFrame = "{{15, 136}, {1318, 737}}";
+		};
+	};
+	6383BEBE15225FB800B8FC38 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 63B5A215128CAC1D0009ECFA /* QuickUsbUtil.cpp */;
+		name = "QuickUsbUtil.cpp: 541";
+		rLen = 0;
+		rLoc = 18236;
+		rType = 0;
+		vrLen = 1723;
+		vrLoc = 17402;
+	};
+	638645CE14A2777B00550332 /* QuickUsbApiStream.cpp:413 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 636C5DDE1486BBD2005B3698 /* QuickUsbApiStream.cpp */;
+		functionName = "QuickUsbInitializeStream(QBYTE streamID, PQIOSTREAM stream, QHANDLE hDevice, QULONG numRequests, QWORD numThreads, QWORD threadConcurrency)";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 413;
+		location = libquickusb.dylib;
+		modificationTime = 354574516.306058;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	6386465214A2C02900550332 /* QuickUsbApiData.cpp:162 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 50A51B3912317603006E652F /* QuickUsbApiData.cpp */;
+		functionName = "QuickUsbReadCommand(QHANDLE hDevice, QWORD address, PQBYTE data, PQWORD length)";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 162;
+		location = libquickusb.dylib;
+		modificationTime = 354574516.331019;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	63B5A215128CAC1D0009ECFA /* QuickUsbUtil.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1132, 12753}}";
+			sepNavSelRange = "{18236, 0}";
+			sepNavVisRange = "{17402, 1723}";
+			sepNavWindowFrame = "{{107, 54}, {1318, 737}}";
+		};
+	};
+	63B5A216128CAC1D0009ECFA /* QuickUsbUtil.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1132, 2015}}";
+			sepNavSelRange = "{2842, 0}";
+			sepNavVisRange = "{1374, 2485}";
+			sepNavWindowFrame = "{{15, 136}, {1318, 737}}";
+		};
+	};
+	63D5ED99128CBF25009D9F8C /* QuickUsbApiBase.cpp:1796 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 50A51B3712317603006E652F /* QuickUsbApiBase.cpp */;
+		functionName = "QuickUsbFindModules(QCHAR *nameList, QULONG length)";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 1796;
+		location = libquickusb.dylib;
+		modificationTime = 354574516.100568;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	63D5EDAB128CC1D9009D9F8C /* QuickUsbUtil.cpp:67 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 63B5A215128CAC1D0009ECFA /* QuickUsbUtil.cpp */;
+		functionName = "QuickUsbLoad()";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 67;
+		location = libquickusb.dylib;
+		modificationTime = 354574516.100599;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	63D5EDAF128CC1F0009D9F8C /* QuickUsbApiBase.cpp:1662 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 50A51B3712317603006E652F /* QuickUsbApiBase.cpp */;
+		functionName = "QuickUsbFindModules(QCHAR *nameList, QULONG length)";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 1662;
+		location = libquickusb.dylib;
+		modificationTime = 354574516.1006309;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	63DF17B11244219C00A3C9D4 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	63DF17B21244219C00A3C9D4 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	63DF17C21244265500A3C9D4 /* Executable */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+			"PBXLSLaunchAction-0" = {
+				PBXLSLaunchAction = 0;
+				PBXLSLaunchStartAction = 1;
+				PBXLSLaunchStdioStyle = 2;
+				PBXLSLaunchStyle = 0;
+				class = PBXLSRunLaunchConfig;
+				commandLineArgs = (
+				);
+				displayName = "Executable Runner";
+				environment = {
+				};
+				identifier = com.apple.Xcode.launch.runConfig;
+				remoteHostInfo = "";
+				startActionInfo = "";
+			};
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		launchableReference = 63DF17C31244265500A3C9D4 /* Console */;
+		libgmallocEnabled = 0;
+		name = Executable;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		startupPath = /Projects/Bitwise/QuickUSB/Library/Software/QuickUsbBert;
+		variableFormatDictionary = {
+		};
+	};
+	63DF17C31244265500A3C9D4 /* Console */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = Console;
+		path = /Projects/Bitwise/QuickUSB/Library/Software/QuickUsbBert/QuickUsbBert.cpp;
+		sourceTree = "<absolute>";
+	};
+	D2AAC0620554660B00DB518D /* QuickUSB */ = {
+		activeExec = 0;
+	};
+}

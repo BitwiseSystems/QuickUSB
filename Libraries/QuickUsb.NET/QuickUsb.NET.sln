@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickUsb.NET", "QuickUsb.NET.csproj", "{2D368FEA-002E-4140-93EF-EF188D1EA152}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickUsbCsUnitTest", "QuickUsbCsUnitTest\QuickUsbCsUnitTest.csproj", "{05E54139-E872-461E-A277-A17EDC014D60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{31203459-328A-466E-957B-6A4088A1BB9E}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		QuickUsb.NET.vsmdi = QuickUsb.NET.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = QuickUsb.NET.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D368FEA-002E-4140-93EF-EF188D1EA152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D368FEA-002E-4140-93EF-EF188D1EA152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D368FEA-002E-4140-93EF-EF188D1EA152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D368FEA-002E-4140-93EF-EF188D1EA152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05E54139-E872-461E-A277-A17EDC014D60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05E54139-E872-461E-A277-A17EDC014D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05E54139-E872-461E-A277-A17EDC014D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05E54139-E872-461E-A277-A17EDC014D60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

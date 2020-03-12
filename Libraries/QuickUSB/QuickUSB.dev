@@ -1,0 +1,78 @@
+[Project]
+FileName=QuickUSB.dev
+Name=QuickUSB
+UnitCount=2
+Type=3
+Ver=1
+ObjFiles=
+Includes=
+Libs=
+PrivateResource=QuickUSB_private.rc
+ResourceIncludes=
+MakeIncludes=
+Compiler=-DQUSB_EXPORT_LIBRARY=1_@@__@@_
+CppCompiler=-DQUSB_EXPORT_LIBRARY=1_@@__@@_
+Linker=--no-export-all-symbols --add-stdcall-alias_@@_
+IsCpp=0
+Icon=
+ExeOutput=x86\Release\MinGW
+ObjectOutput=x86\Release\MinGW
+OverrideOutput=1
+OverrideOutputName=QuickUSB.dll
+HostApplication=
+Folders=
+CommandLine=
+UseCustomMakefile=0
+CustomMakefile=
+IncludeVersionInfo=1
+SupportXPThemes=0
+CompilerSet=0
+CompilerSettings=0000000001001000000000
+
+[VersionInfo]
+Major=2
+Minor=14
+Release=2
+Build=0
+LanguageID=1033
+CharsetID=1252
+CompanyName=Bitwise Systems™
+FileVersion=2, 14, 2, 0
+FileDescription=QuickUSB® 32-bit Dynamic Link Library
+InternalName=QuickUSB®
+LegalCopyright=Copyright © 2001-2010
+LegalTrademarks=QuickUSB®
+OriginalFilename=QuickUSB.dll
+ProductName=QuickUSB® 32-bit Dynamic Link Library
+ProductVersion=2, 14, 2, 0
+AutoIncBuildNr=0
+
+[Unit1]
+FileName=QuickUsb.cpp
+CompileCpp=0
+Folder=QuickUSB
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit3]
+FileName=Test.rc
+Folder=QuickUSB
+Compile=1
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit2]
+FileName=QuickUSB.h
+CompileCpp=0
+Folder=QuickUSB
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+

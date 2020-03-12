@@ -1,0 +1,21 @@
+INSTALL_DIR = /usr/lib
+
+#make all
+all:
+	xcodebuild -configuration Release
+
+#make debug
+debug: $(SOURCES)
+	xcodebuild -configuration Debug
+
+#make clean
+clean:
+	xcodebuild clean
+
+#make install
+install: all
+	sudo cp universal/Release/libquickusb.dylib $(INSTALL_DIR)
+
+#make uninstall
+uninstall:
+	rm $(INSTALL_DIR)/libquickusb.dylib 

@@ -1,0 +1,195 @@
+ QuickUsbUtil
+
+ Timestamp is 502011ce (Mon Aug 06 11:49:50 2012)
+
+ Preferred load address is 0000000180000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000327cH .text                   CODE
+ 0001:00003280 00000091H .text$x                 CODE
+ 0002:00000000 000001b0H .idata$5                DATA
+ 0002:000001b0 00000008H .CRT$XCA                DATA
+ 0002:000001b8 00000008H .CRT$XCZ                DATA
+ 0002:000001c0 00000008H .CRT$XIA                DATA
+ 0002:000001c8 00000008H .CRT$XIAA               DATA
+ 0002:000001d0 00000008H .CRT$XIZ                DATA
+ 0002:000001e0 0000007fH .rdata                  DATA
+ 0002:00000260 00000079H .rdata$debug            DATA
+ 0002:000002e0 00000008H .rtc$IAA                DATA
+ 0002:000002e8 00000008H .rtc$IZZ                DATA
+ 0002:000002f0 00000008H .rtc$TAA                DATA
+ 0002:000002f8 00000008H .rtc$TZZ                DATA
+ 0002:00000300 00000594H .xdata                  DATA
+ 0002:00000894 00000028H .idata$2                DATA
+ 0002:000008bc 00000014H .idata$3                DATA
+ 0002:000008d0 000001b0H .idata$4                DATA
+ 0002:00000a80 000003c0H .idata$6                DATA
+ 0002:00000e40 00000147H .edata                  DATA
+ 0003:00000000 00000018H .data                   DATA
+ 0003:00000020 00005200H .bss                    DATA
+ 0004:00000000 000003b4H .pdata                  DATA
+ 0005:00000000 00000058H .rsrc$01                DATA
+ 0005:00000060 00000370H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000180000000     <linker-defined>
+ 0001:00000000       QuickUsbGetDeviceDesc      0000000180001000 f   QuickUsbApiBase.obj
+ 0001:000000d0       QuickUsbOpen               00000001800010d0 f   QuickUsbApiBase.obj
+ 0001:000000e0       QuickUsbOpenEx             00000001800010e0 f   QuickUsbApiBase.obj
+ 0001:00000300       QuickUsbClose              0000000180001300 f   QuickUsbApiBase.obj
+ 0001:000004c0       QuickUsbGetStringDescriptor 00000001800014c0 f   QuickUsbApiBase.obj
+ 0001:00000640       QuickUsbFindModules        0000000180001640 f   QuickUsbApiBase.obj
+ 0001:00000bb0       QuickUsbGetFirmwareVersion 0000000180001bb0 f   QuickUsbApiBase.obj
+ 0001:00000e40       QuickUsbGetLastError       0000000180001e40 f   QuickUsbApiBase.obj
+ 0001:00000e50       QuickUsbAsyncWait          0000000180001e50 f   QuickUsbApiData.obj
+ 0001:00001000       GetI2CError                0000000180002000 f   QuickUsbApiIIC.obj
+ 0001:00001100       QuickUsbWriteEepromData    0000000180002100 f   QuickUsbApiProgram.obj
+ 0001:00001520       QuickUsbReadEepromData     0000000180002520 f   QuickUsbApiProgram.obj
+ 0001:000016d0       QuickUsbWriteRamData       00000001800026d0 f   QuickUsbApiProgram.obj
+ 0001:000017d0       CompleteBulkRequest        00000001800027d0 f   QuickUsbApiStream.obj
+ 0001:000019a0       QuickUsbProcessSTStream    00000001800029a0 f   QuickUsbApiStream.obj
+ 0001:00001a40       StopStream                 0000000180002a40 f   QuickUsbApiStream.obj
+ 0001:00001cb0       QuickUsbStopStream         0000000180002cb0 f   QuickUsbApiStream.obj
+ 0001:00002020       QuickUsbIssueStreamBulkRequest 0000000180003020 f   QuickUsbApiStream.obj
+ 0001:00002300       DllMain                    0000000180003300 f   QuickUsbUtil.obj
+ 0001:00002410       QuickUsbIoctl              0000000180003410 f   QuickUsbUtil.obj
+ 0001:00002560       QuickUsbVendorRequest      0000000180003560 f   QuickUsbUtil.obj
+ 0001:000026f0       TranslateSystemError       00000001800036f0 f   QuickUsbUtil.obj
+ 0001:00002850       IsAtLeastVersion           0000000180003850 f   QuickUsbUtil.obj
+ 0001:00002870       QuickUsbSetResetState      0000000180003870 f   QuickUsbUtil.obj
+ 0001:00002940       __security_check_cookie    0000000180003940 f   MSVCRT:amdsecgs.obj
+ 0001:000029c0       _CRT_INIT                  00000001800039c0 f   MSVCRT:crtdll.obj
+ 0001:00002d54       _DllMainCRTStartup         0000000180003d54 f   MSVCRT:crtdll.obj
+ 0001:00002d94       __report_gsfailure         0000000180003d94 f   MSVCRT:gs_report.obj
+ 0001:00002ee0       __clean_type_info_names    0000000180003ee0 f   MSVCRT:tncleanup.obj
+ 0001:00002eec       _onexit                    0000000180003eec f   MSVCRT:atonexit.obj
+ 0001:00002f9c       atexit                     0000000180003f9c f   MSVCRT:atonexit.obj
+ 0001:00002fb4       _RTC_Initialize            0000000180003fb4 f   MSVCRT:_initsect_.obj
+ 0001:00002fec       _RTC_Terminate             0000000180003fec f   MSVCRT:_initsect_.obj
+ 0001:00003030       _ValidateImageBase         0000000180004030 f   MSVCRT:pesect.obj
+ 0001:00003060       _FindPESection             0000000180004060 f   MSVCRT:pesect.obj
+ 0001:000030b0       _IsNonwritableInCurrentImage 00000001800040b0 f   MSVCRT:pesect.obj
+ 0001:000030f2       _initterm                  00000001800040f2 f   MSVCRT:MSVCR90.dll
+ 0001:000030f8       _initterm_e                00000001800040f8 f   MSVCRT:MSVCR90.dll
+ 0001:000030fe       _amsg_exit                 00000001800040fe f   MSVCRT:MSVCR90.dll
+ 0001:00003104       __C_specific_handler       0000000180004104 f   MSVCRT:MSVCR90.dll
+ 0001:0000310a       __CppXcptFilter            000000018000410a f   MSVCRT:MSVCR90.dll
+ 0001:00003110       __security_init_cookie     0000000180004110 f   MSVCRT:gs_support.obj
+ 0001:000031c4       __crt_debugger_hook        00000001800041c4 f   MSVCRT:MSVCR90.dll
+ 0001:000031ca       __clean_type_info_names_internal 00000001800041ca f   MSVCRT:MSVCR90.dll
+ 0001:000031d0       _unlock                    00000001800041d0 f   MSVCRT:MSVCR90.dll
+ 0001:000031d6       __dllonexit                00000001800041d6 f   MSVCRT:MSVCR90.dll
+ 0001:000031dc       _lock                      00000001800041dc f   MSVCRT:MSVCR90.dll
+ 0001:000031e2       RtlVirtualUnwind           00000001800041e2 f   kernel32:KERNEL32.dll
+ 0001:000031e8       RtlLookupFunctionEntry     00000001800041e8 f   kernel32:KERNEL32.dll
+ 0001:000031ee       memset                     00000001800041ee f   MSVCRT:MSVCR90.dll
+ 0001:000031f4       __GSHandlerCheckCommon     00000001800041f4 f   MSVCRT:gshandler.obj
+ 0001:00003258       __GSHandlerCheck           0000000180004258 f   MSVCRT:gshandler.obj
+ 0001:00003276       memcpy                     0000000180004276 f   MSVCRT:MSVCR90.dll
+ 0002:00000000       __imp_Sleep                0000000180005000     kernel32:KERNEL32.dll
+ 0002:00000008       __imp_GetSystemTimeAsFileTime 0000000180005008     kernel32:KERNEL32.dll
+ 0002:00000010       __imp_GetCurrentProcessId  0000000180005010     kernel32:KERNEL32.dll
+ 0002:00000018       __imp_GetCurrentThreadId   0000000180005018     kernel32:KERNEL32.dll
+ 0002:00000020       __imp_GetTickCount         0000000180005020     kernel32:KERNEL32.dll
+ 0002:00000028       __imp_RtlCaptureContext    0000000180005028     kernel32:KERNEL32.dll
+ 0002:00000030       __imp_RtlLookupFunctionEntry 0000000180005030     kernel32:KERNEL32.dll
+ 0002:00000038       __imp_RtlVirtualUnwind     0000000180005038     kernel32:KERNEL32.dll
+ 0002:00000040       __imp_IsDebuggerPresent    0000000180005040     kernel32:KERNEL32.dll
+ 0002:00000048       __imp_SetUnhandledExceptionFilter 0000000180005048     kernel32:KERNEL32.dll
+ 0002:00000050       __imp_UnhandledExceptionFilter 0000000180005050     kernel32:KERNEL32.dll
+ 0002:00000058       __imp_GetCurrentProcess    0000000180005058     kernel32:KERNEL32.dll
+ 0002:00000060       __imp_TerminateProcess     0000000180005060     kernel32:KERNEL32.dll
+ 0002:00000068       __imp_DeleteCriticalSection 0000000180005068     kernel32:KERNEL32.dll
+ 0002:00000070       __imp_PostQueuedCompletionStatus 0000000180005070     kernel32:KERNEL32.dll
+ 0002:00000078       __imp_CreateFileMappingA   0000000180005078     kernel32:KERNEL32.dll
+ 0002:00000080       __imp_GetQueuedCompletionStatus 0000000180005080     kernel32:KERNEL32.dll
+ 0002:00000088       __imp_UnmapViewOfFile      0000000180005088     kernel32:KERNEL32.dll
+ 0002:00000090       __imp_MapViewOfFile        0000000180005090     kernel32:KERNEL32.dll
+ 0002:00000098       __imp_QueryPerformanceCounter 0000000180005098     kernel32:KERNEL32.dll
+ 0002:000000a0       __imp_DeviceIoControl      00000001800050a0     kernel32:KERNEL32.dll
+ 0002:000000a8       __imp_EnterCriticalSection 00000001800050a8     kernel32:KERNEL32.dll
+ 0002:000000b0       __imp_GetOverlappedResult  00000001800050b0     kernel32:KERNEL32.dll
+ 0002:000000b8       __imp_ReadFile             00000001800050b8     kernel32:KERNEL32.dll
+ 0002:000000c0       __imp_CreateFileA          00000001800050c0     kernel32:KERNEL32.dll
+ 0002:000000c8       __imp_GetLastError         00000001800050c8     kernel32:KERNEL32.dll
+ 0002:000000d0       __imp_CloseHandle          00000001800050d0     kernel32:KERNEL32.dll
+ 0002:000000d8       __imp_WriteFile            00000001800050d8     kernel32:KERNEL32.dll
+ 0002:000000e0       __imp_LeaveCriticalSection 00000001800050e0     kernel32:KERNEL32.dll
+ 0002:000000e8       __imp_CreateEventA         00000001800050e8     kernel32:KERNEL32.dll
+ 0002:000000f0       \177KERNEL32_NULL_THUNK_DATA 00000001800050f0     kernel32:KERNEL32.dll
+ 0002:000000f8       __imp__onexit              00000001800050f8     MSVCRT:MSVCR90.dll
+ 0002:00000100       __imp__lock                0000000180005100     MSVCRT:MSVCR90.dll
+ 0002:00000108       __imp___dllonexit          0000000180005108     MSVCRT:MSVCR90.dll
+ 0002:00000110       __imp__unlock              0000000180005110     MSVCRT:MSVCR90.dll
+ 0002:00000118       __imp___clean_type_info_names_internal 0000000180005118     MSVCRT:MSVCR90.dll
+ 0002:00000120       __imp___crt_debugger_hook  0000000180005120     MSVCRT:MSVCR90.dll
+ 0002:00000128       __imp___CppXcptFilter      0000000180005128     MSVCRT:MSVCR90.dll
+ 0002:00000130       __imp___C_specific_handler 0000000180005130     MSVCRT:MSVCR90.dll
+ 0002:00000138       __imp__amsg_exit           0000000180005138     MSVCRT:MSVCR90.dll
+ 0002:00000140       __imp__decode_pointer      0000000180005140     MSVCRT:MSVCR90.dll
+ 0002:00000148       __imp__encoded_null        0000000180005148     MSVCRT:MSVCR90.dll
+ 0002:00000150       __imp__initterm_e          0000000180005150     MSVCRT:MSVCR90.dll
+ 0002:00000158       __imp__initterm            0000000180005158     MSVCRT:MSVCR90.dll
+ 0002:00000160       __imp__malloc_crt          0000000180005160     MSVCRT:MSVCR90.dll
+ 0002:00000168       __imp__encode_pointer      0000000180005168     MSVCRT:MSVCR90.dll
+ 0002:00000170       __imp_free                 0000000180005170     MSVCRT:MSVCR90.dll
+ 0002:00000178       __imp_strcpy_s             0000000180005178     MSVCRT:MSVCR90.dll
+ 0002:00000180       __imp_strstr               0000000180005180     MSVCRT:MSVCR90.dll
+ 0002:00000188       __imp_strncmp              0000000180005188     MSVCRT:MSVCR90.dll
+ 0002:00000190       __imp_sprintf_s            0000000180005190     MSVCRT:MSVCR90.dll
+ 0002:00000198       __imp_memset               0000000180005198     MSVCRT:MSVCR90.dll
+ 0002:000001a0       __imp_memcpy               00000001800051a0     MSVCRT:MSVCR90.dll
+ 0002:000001a8       \177MSVCR90_NULL_THUNK_DATA 00000001800051a8     MSVCRT:MSVCR90.dll
+ 0002:000001b0       __xc_a                     00000001800051b0     MSVCRT:cinitexe.obj
+ 0002:000001b8       __xc_z                     00000001800051b8     MSVCRT:cinitexe.obj
+ 0002:000001c0       __xi_a                     00000001800051c0     MSVCRT:cinitexe.obj
+ 0002:000001d0       __xi_z                     00000001800051d0     MSVCRT:cinitexe.obj
+ 0002:00000200       _pRawDllMain               0000000180005200     MSVCRT:crtdll.obj
+ 0002:00000200       _pDefaultRawDllMain        0000000180005200     MSVCRT:crtdll.obj
+ 0002:00000218       ??_C@_06DIBEOEIP@?2?2?4?2?$CFs?$AA@ 0000000180005218     QuickUsbApiBase.obj
+ 0002:00000220       ??_C@_05PDJAGGLI@QUSB?9?$AA@ 0000000180005220     QuickUsbApiBase.obj
+ 0002:00000228       ??_C@_04GMMIKMGH@QUSB?$AA@ 0000000180005228     QuickUsbApiBase.obj
+ 0002:00000230       ??_C@_06PICFNMGI@?$CFs?9?$CF1d?$AA@ 0000000180005230     QuickUsbApiBase.obj
+ 0002:00000238       ??_C@_0BA@LGMOHBAL@Bitwise?5Systems?$AA@ 0000000180005238     QuickUsbApiBase.obj
+ 0002:00000248       ??_C@_03EMIMMIHL@?$CK?4?$CK?$AA@ 0000000180005248     QuickUsbApiBase.obj
+ 0002:0000024c       ??_C@_02DKCKIIND@?$CFs?$AA@ 000000018000524c     QuickUsbApiBase.obj
+ 0002:00000250       ??_C@_0P@CCLJNBHE@qusbdllfilemap?$AA@ 0000000180005250     QuickUsbUtil.obj
+ 0002:000002e0       __rtc_iaa                  00000001800052e0     MSVCRT:_initsect_.obj
+ 0002:000002e8       __rtc_izz                  00000001800052e8     MSVCRT:_initsect_.obj
+ 0002:000002f0       __rtc_taa                  00000001800052f0     MSVCRT:_initsect_.obj
+ 0002:000002f8       __rtc_tzz                  00000001800052f8     MSVCRT:_initsect_.obj
+ 0002:00000894       __IMPORT_DESCRIPTOR_MSVCR90 0000000180005894     MSVCRT:MSVCR90.dll
+ 0002:000008a8       __IMPORT_DESCRIPTOR_KERNEL32 00000001800058a8     kernel32:KERNEL32.dll
+ 0002:000008bc       __NULL_IMPORT_DESCRIPTOR   00000001800058bc     MSVCRT:MSVCR90.dll
+ 0003:00000000       __security_cookie          0000000180006000     MSVCRT:gs_cookie.obj
+ 0003:00000008       __security_cookie_complement 0000000180006008     MSVCRT:gs_cookie.obj
+ 0003:00000010       __native_dllmain_reason    0000000180006010     MSVCRT:natstart.obj
+ 0003:00000014       __native_vcclrit_reason    0000000180006014     MSVCRT:natstart.obj
+ 0003:000005a0       ?__type_info_root_node@@3U__type_info_node@@A 00000001800065a0     MSVCRT:tncleanup.obj
+ 0003:000005b0       lastError                  00000001800065b0     QuickUsbUtil.obj
+ 0003:000005b4       lastDriverError            00000001800065b4     QuickUsbUtil.obj
+ 0003:000005b8       initialized                00000001800065b8     QuickUsbUtil.obj
+ 0003:000005c0       QusbDeviceRefCount         00000001800065c0     QuickUsbUtil.obj
+ 0003:000005c8       hMapObject                 00000001800065c8     QuickUsbUtil.obj
+ 0003:000005d0       processCount               00000001800065d0     QuickUsbUtil.obj
+ 0003:000005d4       __native_startup_state     00000001800065d4     <common>
+ 0003:000005d8       __native_startup_lock      00000001800065d8     <common>
+ 0003:000005e0       __onexitend                00000001800065e0     <common>
+ 0003:000005e8       __onexitbegin              00000001800065e8     <common>
+ 0003:000005f0       __dyn_tls_init_callback    00000001800065f0     <common>
+ 0003:00000600       DriverVersion              0000000180006600     <common>
+ 0003:00000620       QusbDeviceInfo             0000000180006620     <common>
+
+ entry point at        0001:00002d54
+
+ Static symbols
+
+ 0001:00002960       pre_c_init                 0000000180003960 f   MSVCRT:crtdll.obj
+ 0001:00002c1c       __DllMainCRTStartup        0000000180003c1c f   MSVCRT:crtdll.obj
+ 0001:00003280       __DllMainCRTStartup$filt$0 0000000180004280 f   MSVCRT:crtdll.obj
+ 0001:000032b0       __DllMainCRTStartup$fin$1  00000001800042b0 f   MSVCRT:crtdll.obj
+ 0001:000032c9       _onexit$fin$0              00000001800042c9 f   MSVCRT:atonexit.obj
+ 0001:000032f0       _IsNonwritableInCurrentImage$filt$0 00000001800042f0 f   MSVCRT:pesect.obj

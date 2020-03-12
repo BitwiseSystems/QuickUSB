@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "${ACTION}" = "add" ] && [ -f "${DEVICE}" ]
+then
+        chown root "${DEVICE}"
+        chgrp QuickUSB "${DEVICE}"
+        chmod 666 "${DEVICE}"
+fi

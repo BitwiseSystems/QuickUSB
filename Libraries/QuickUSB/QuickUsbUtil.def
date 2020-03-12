@@ -1,0 +1,102 @@
+;=============================================================================
+; Title        : QuickUSB.def
+; Description  : QuickUSB Module Definition File for MSC
+; Notes        : None
+; History      :
+;
+; Copyright © 2012 Bitwise Systems.  All rights reserved.
+; This software contains confidential information and trade secrets of
+; Bitwise Systems and is protected by United States and international
+; copyright laws.  Use, disclosure, or reproduction is prohibited without
+; the prior express written permission of Bitwise Systems, except as agreed
+; in the QuickUSB Plug-In Module license agreement.
+;
+; Use, duplication or disclosure by the U.S. Government is subject to
+; restrictions as provided in DFARS 227.7202-1(a) and 227.7202-3(a)
+; (1998), and FAR 12.212, as applicable.  Bitwise Systems, 6489 Calle Real, Suite E
+; Goleta, CA  93117.
+;
+; Bitwise Systems
+; 6489 Calle Real, Suite E
+; Goleta, CA  93117
+; Voice: (805) 683-6469
+; Fax  : (805) 683-4833
+; Web  : www.bitwisesys.com
+; email: support@bitwisesys.com
+;
+; $History: QuickUSB.def $
+; 
+; *****************  Version 18  *****************
+; User: Blake Henry  Date: 11/26/06   Time: 12:18a
+; Updated in $/Projects/Bitwise/QuickUSB/Library/Software/QuickUsb
+; Added first version of QuickUsbReadDataStreamToFile
+; Blocking call.  Need to convert it to a threaded call controlled by
+; another function.
+; 
+; *****************  Version 17  *****************
+; User: Bob Jacobson Date: 10/18/05   Time: 2:46p
+; Updated in $/Projects/Bitwise/QuickUSB/Software/QuickUsb
+; Bump DLL version number.
+; Remove QuickUSB timer functions.
+; Move some proprietary #defines out of quickusb.h.
+; Add #defines for all QuickUSB settings.
+; 
+; *****************  Version 16  *****************
+; User: Bob Jacobson Date: 10/11/05   Time: 11:50a
+; Updated in $/Projects/Bitwise/QuickUSB/Software/QuickUsb
+; Add new API functions QuickUsbGetSpeedCode and QuickUsbGetChipCode.
+; 
+; *****************  Version 15  *****************
+; User: Bob Jacobson Date: 10/06/05   Time: 11:09a
+; Updated in $/Projects/Bitwise/QuickUSB/Software/QuickUsb
+; In FindModules, look for Bitwise in string 6 in addition to string 1.
+; Add new API function, QuickUsbGetFirmwareVersion, which returns the
+; DID.
+; Bump DLL version number.
+; 
+; *****************  Version 14  *****************
+; User: Bob Jacobson Date: 9/21/05    Time: 5:22p
+; Updated in $/Projects/Bitwise/QuickUSB/Software/QuickUsb
+; Add API functions to read and write defaults.
+; Bump version to 2.10.1
+; 
+; *****************  Version 13  *****************
+; User: Blake Henry  Date: 7/26/04    Time: 3:17p
+; Updated in $/Projects/Bitwise/QuickUSB/Software/QuickUsb
+; Fixed FindModules problem that set deviceHandle to 0
+; Fixed 64MB transfer problem for non-async operation
+; 
+; *****************  Version 1  *****************
+; User: Jay Towson   Date: 3/30/04    Time: 2:02p
+; Created in $/Projects/Bitwise/QuickUSB/Software/Driver/QuickUsb
+; 
+; *****************  Version 5  *****************
+; User: Blake Henry  Date: 2/17/04    Time: 6:39p
+; Updated in $/Projects/Bitwise/QuickUSB/Software/QuickUsb
+; First cut of asynchronous DLL code
+; 
+; *****************  Version 4  *****************
+; User: Blake Henry  Date: 8/07/03    Time: 7:13p
+; Updated in $/Projects/Bitwise/QuickUSB/Software/QuickUsb
+; Added timer support
+; Bumped rev to 2.00
+; 
+; *****************  Version 3  *****************
+; User: Blake Henry  Date: 6/11/03    Time: 9:40a
+; Updated in $/Projects/Bitwise/QuickUSB/Software/QuickUsb
+; Changed header comment characters
+;
+;=============================================================================
+LIBRARY QuickUsbUtil
+EXPORTS
+    QuickUsbFindModules
+    QuickUsbOpen
+    QuickUsbClose
+    QuickUsbGetLastError
+
+    ; Non-API Exports
+    QuickUsbWriteEepromData
+    QuickUsbReadEepromData
+    QuickUsbWriteRamData
+    QuickUsbSetResetState
+    QuickUsbGetDeviceDesc

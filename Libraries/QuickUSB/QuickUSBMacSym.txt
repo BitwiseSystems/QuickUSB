@@ -1,0 +1,104 @@
+# Base API
+_QuickUsbGetLastError
+_QuickUsbGetLastDriverError
+_QuickUsbFindModules
+_QuickUsbOpen
+_QuickUsbOpenEx
+_QuickUsbClose
+_QuickUsbGetStringDescriptor
+_QuickUsbSetTimeout
+_QuickUsbGetDllVersion
+_QuickUsbGetDriverVersion
+_QuickUsbGetFirmwareVersion
+
+# FPGA API
+_QuickUsbStartFpgaConfiguration
+_QuickUsbWriteFpgaData
+_QuickUsbIsFpgaConfigured
+_QuickUsbConfigureFpga
+
+# Setting/Default API
+_QuickUsbReadSetting
+_QuickUsbWriteSetting
+_QuickUsbReadDefault
+_QuickUsbWriteDefault
+
+# Command API
+_QuickUsbReadCommand
+_QuickUsbWriteCommand
+
+# Data API
+_QuickUsbReadData
+_QuickUsbReadDataEx
+_QuickUsbWriteData
+_QuickUsbWriteDataEx
+_QuickUsbReadDataAsync
+_QuickUsbWriteDataAsync
+_QuickUsbAsyncWait
+_QuickUsbReadBulkDataAsync
+_QuickUsbWriteBulkDataAsync
+_QuickUsbBulkWait
+_QuickUsbSetNumAsyncThreads
+_QuickUsbGetNumAsyncThreads
+_QuickUsbBulkAbort
+
+# Streaming API
+_QuickUsbAllocateDataBuffer
+_QuickUsbFreeDataBuffer
+_QuickUsbReadBulkDataStartStream
+_QuickUsbWriteBulkDataStartStream
+_QuickUsbReadBulkDataStartStreamToFile
+_QuickUsbWriteBulkDataStartStreamFromFile
+_QuickUsbStopStream
+_QuickUsbProcessStream
+_QuickUsbPauseStream
+_QuickUsbResumeStream
+_QuickUsbGetStreamStatus
+
+# GPIO API
+_QuickUsbReadPortDir
+_QuickUsbWritePortDir
+_QuickUsbReadPort
+_QuickUsbWritePort
+
+# RS232 API
+_QuickUsbSetRS232BaudRate
+_QuickUsbGetNumRS232
+_QuickUsbFlushRS232
+_QuickUsbReadRS232
+_QuickUsbWriteRS232
+
+# SPI API
+_QuickUsbReadSpi
+_QuickUsbWriteSpi
+_QuickUsbWriteReadSpi
+
+# I2C API
+_QuickUsbReadI2C
+_QuickUsbWriteI2C
+_QuickUsbCachedWriteI2C
+
+# Storage API
+_QuickUsbWriteStorage
+_QuickUsbReadStorage
+
+# Programming API
+_QuickUsbWriteFirmware
+_QuickUsbVerifyFirmware
+
+# EPCS API
+_QuickUsbIdentifyEpcs
+_QuickUsbConfigureEpcs
+_QuickUsbVerifyEpcs
+_QuickUsbEraseEpcs
+
+# Statistics API
+_QuickUsbResetStatistic
+_QuickUsbGetStatistic
+
+# Non_API Exports
+_QuickUsbSetResetState
+_QuickUsbWriteRamData
+_QuickUsbReadEepromData
+_QuickUsbWriteEepromData
+#_QuickUsbGetDeviceDesc
