@@ -1,0 +1,23 @@
+# Microsoft Developer Studio Generated Dependency File, included by QuickUsbVstudio.mak
+
+.\QuickUsbVstudio.cpp : \
+	".\quickusb.h"\
+	".\QuickUsbVstudio.h"\
+	".\QuickUsbVstudioDlg.h"\
+	
+
+.\QuickUsbVstudio.rc : \
+	".\QuickUsbVstudio.ico"\
+	".\QuickUsbVstudio.rc2"\
+	
+
+.\QuickUsbVstudioDlg.cpp : \
+	".\quickusb.h"\
+	".\QuickUsbVstudio.h"\
+	".\QuickUsbVstudioDlg.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	

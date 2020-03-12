@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="BitwiseSystems.QuickUsbWpf"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Height="71" Width="402" Focusable="True">
+	<Grid Height="59" Width="391">
+		<ListView Name="quickUsbListView">
+			<ListViewItem>QUSB-0</ListViewItem>
+		</ListView>
+	</Grid>
+</UserControl>

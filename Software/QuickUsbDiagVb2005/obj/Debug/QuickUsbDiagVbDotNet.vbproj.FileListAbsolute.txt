@@ -1,0 +1,10 @@
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVb2005\obj\Debug\QuickUsbDiagVbDotNet.exe
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVb2005\obj\Debug\QuickUsbDiagVbDotNet.xml
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVb2005\obj\Debug\QuickUsbDiagVbDotNet.pdb
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVb2005\bin\QuickUsbDiagVbDotNet.exe
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVb2005\bin\QuickUsbDiagVbDotNet.pdb
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVb2005\bin\QuickUsbDiagVbDotNet.xml
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVb2005\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVb2005\obj\Debug\QuickUsbDiagVbDotNet.Form1.resources
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVb2005\obj\Debug\QuickUsbDiagVbDotNet.QuickUsbCtl.resources
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVb2005\obj\Debug\QuickUsbDiagVbDotNet.vbproj.GenerateResource.Cache

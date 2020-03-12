@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: QuickUsbVstudio - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/QuickUsbVstudio.res" /d "NDEBUG" /d "_AFXDLL" "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbVstudioCpp\QuickUsbVstudio.rc"" 
+Creating temporary file "C:\DOCUME~1\BLAKEH~1\LOCALS~1\Temp\RSP477.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/QuickUsbVstudio.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbVstudioCpp\CQuickUsb.cpp"
+"C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbVstudioCpp\QuickUsbVstudio.cpp"
+"C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbVstudioCpp\QuickUsbVstudioDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\BLAKEH~1\LOCALS~1\Temp\RSP477.tmp" 
+Creating temporary file "C:\DOCUME~1\BLAKEH~1\LOCALS~1\Temp\RSP478.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/QuickUsbVstudio.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbVstudioCpp\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\BLAKEH~1\LOCALS~1\Temp\RSP478.tmp" 
+Creating temporary file "C:\DOCUME~1\BLAKEH~1\LOCALS~1\Temp\RSP479.tmp" with contents
+[
+Release/quickusb.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/QuickUsbVstudio.pdb" /machine:I386 /out:"Release/QuickUsbVstudio.exe" 
+.\Release\CQuickUsb.obj
+.\Release\QuickUsbVstudio.obj
+.\Release\QuickUsbVstudioDlg.obj
+.\Release\StdAfx.obj
+.\Release\QuickUsbVstudio.res
+]
+Creating command line "link.exe @C:\DOCUME~1\BLAKEH~1\LOCALS~1\Temp\RSP479.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CQuickUsb.cpp
+QuickUsbVstudio.cpp
+QuickUsbVstudioDlg.cpp
+C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbVstudioCpp\QuickUsbVstudioDlg.cpp(207) : warning C4101: 'result' : unreferenced local variable
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Release/QuickUsbVstudio.bsc"  .\Release\StdAfx.sbr .\Release\CQuickUsb.sbr .\Release\QuickUsbVstudio.sbr .\Release\QuickUsbVstudioDlg.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+QuickUsbVstudio.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

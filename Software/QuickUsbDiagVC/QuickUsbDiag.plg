@@ -1,0 +1,58 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: QuickUsbDiag - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\BLAKEH~1\LOCALS~1\Temp\RSP170.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC6\QuickUsbDiagDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\BLAKEH~1\LOCALS~1\Temp\RSP170.tmp" 
+Creating temporary file "C:\DOCUME~1\BLAKEH~1\LOCALS~1\Temp\RSP171.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/QuickUsbDiagVC6.pdb" /debug /machine:I386 /out:"Debug/QuickUsbDiagVC6.exe" /pdbtype:sept 
+.\Debug\_collection.obj
+.\Debug\_repcdg.obj
+.\Debug\certadm.obj
+.\Debug\CQuickUsb.obj
+.\Debug\QuickUsbDiag.obj
+.\Debug\QuickUsbDiagDlg.obj
+.\Debug\repository.obj
+.\Debug\repositoryobject.obj
+.\Debug\repositorytransaction.obj
+.\Debug\reposproperties.obj
+.\Debug\reposproperty.obj
+.\Debug\StdAfx.obj
+.\Debug\QuickUsbDiag.res
+.\QuickUsb.lib
+"..\..\..\..\..\..\Program Files\Microsoft Visual Studio\VC98\Lib\WINMM.LIB"
+]
+Creating command line "link.exe @C:\DOCUME~1\BLAKEH~1\LOCALS~1\Temp\RSP171.tmp"
+<h3>Output Window</h3>
+Compiling...
+QuickUsbDiagDlg.cpp
+c:\projects\bitwise\quickusb\library\software\quickusbdiagvc6\quickusbdiagdlg.cpp(238) : error C2065: 'HDEVNOTIFY' : undeclared identifier
+c:\projects\bitwise\quickusb\library\software\quickusbdiagvc6\quickusbdiagdlg.cpp(238) : error C2146: syntax error : missing ';' before identifier 'result'
+c:\projects\bitwise\quickusb\library\software\quickusbdiagvc6\quickusbdiagdlg.cpp(238) : error C2065: 'result' : undeclared identifier
+c:\projects\bitwise\quickusb\library\software\quickusbdiagvc6\quickusbdiagdlg.cpp(272) : error C2065: 'DBT_DEVTYP_DEVICEINTERFACE' : undeclared identifier
+c:\projects\bitwise\quickusb\library\software\quickusbdiagvc6\quickusbdiagdlg.cpp(274) : warning C4305: '=' : truncation from 'const unsigned int' to 'unsigned short'
+c:\projects\bitwise\quickusb\library\software\quickusbdiagvc6\quickusbdiagdlg.cpp(274) : warning C4309: '=' : truncation of constant value
+c:\projects\bitwise\quickusb\library\software\quickusbdiagvc6\quickusbdiagdlg.cpp(275) : warning C4305: '=' : truncation from 'const unsigned int' to 'unsigned short'
+c:\projects\bitwise\quickusb\library\software\quickusbdiagvc6\quickusbdiagdlg.cpp(275) : warning C4309: '=' : truncation of constant value
+c:\projects\bitwise\quickusb\library\software\quickusbdiagvc6\quickusbdiagdlg.cpp(276) : error C2440: '=' : cannot convert from 'const int' to 'unsigned char [8]'
+        There are no conversions to array types, although there are conversions to references or pointers to arrays
+c:\projects\bitwise\quickusb\library\software\quickusbdiagvc6\quickusbdiagdlg.cpp(277) : error C2065: 'RegisterDeviceNotification' : undeclared identifier
+c:\projects\bitwise\quickusb\library\software\quickusbdiagvc6\quickusbdiagdlg.cpp(277) : error C2065: 'DEVICE_NOTIFY_WINDOW_HANDLE' : undeclared identifier
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+QuickUsbDiagVC6.exe - 7 error(s), 4 warning(s)
+</pre>
+</body>
+</html>

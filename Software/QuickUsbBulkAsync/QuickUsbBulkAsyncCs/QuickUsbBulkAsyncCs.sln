@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickUsbBulkAsyncCs", "QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs.csproj", "{FF7F3263-8075-4E2D-8DCB-85D52B1BFD31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF7F3263-8075-4E2D-8DCB-85D52B1BFD31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7F3263-8075-4E2D-8DCB-85D52B1BFD31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7F3263-8075-4E2D-8DCB-85D52B1BFD31}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FF7F3263-8075-4E2D-8DCB-85D52B1BFD31}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FF7F3263-8075-4E2D-8DCB-85D52B1BFD31}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{FF7F3263-8075-4E2D-8DCB-85D52B1BFD31}.Debug|Win32.Build.0 = Debug|Any CPU
+		{FF7F3263-8075-4E2D-8DCB-85D52B1BFD31}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FF7F3263-8075-4E2D-8DCB-85D52B1BFD31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7F3263-8075-4E2D-8DCB-85D52B1BFD31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7F3263-8075-4E2D-8DCB-85D52B1BFD31}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FF7F3263-8075-4E2D-8DCB-85D52B1BFD31}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FF7F3263-8075-4E2D-8DCB-85D52B1BFD31}.Release|Win32.ActiveCfg = Release|Any CPU
+		{FF7F3263-8075-4E2D-8DCB-85D52B1BFD31}.Release|Win32.Build.0 = Release|Any CPU
+		{FF7F3263-8075-4E2D-8DCB-85D52B1BFD31}.Release|x64.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

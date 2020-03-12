@@ -1,0 +1,3230 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuickUsb.NET</name>
+    </assembly>
+    <members>
+        <member name="T:BitwiseSystems.QuickUsb">
+            <summary>
+            QuickUSB Object Class
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Path">
+            <summary>
+            Path to QuickUSB.dll file
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.InfiniteTime">
+            <summary>
+            Constant time value representing infinite time
+            </summary>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbGetLastError(System.UInt32@)">
+            <summary>
+            Return extended error information for the last API call that 
+            returned a value of FALSE (0).
+            </summary>
+            <param name="error">A PLONG pointing to a variable in which to 
+            place the error code</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on 
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbFindModules(System.Byte[],System.UInt32)">
+            <summary>
+            Build a list of all QuickUSB modules connected to the host
+            </summary>
+            <param name="nameList">A PCHAR that points to a buffer in which to
+            store a of QuickUSB module names found by the library. Device names
+            are of the form 'QUSB-XXX' where XXX is the device address (0-126)
+            in decimal. 'nameList' must be large enough to contain all the 
+            device names + 1 character</param>
+            <param name="length">A LONG containing the length of the nameList 
+            buffer in CHARs</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbOpen(System.IntPtr@,System.String)">
+            <summary>
+            Open a QuickUSB device for use by the library
+            </summary>
+            <param name="hDevice">A PHANDLE that points to a HANDLE in which to
+            place the new device ID. If successful, hDevice will contain the 
+            new HANDLE.</param>
+            <param name="deviceName">A PCHAR that points to a null-terminated 
+            CHAR array containing the name of the device. Device names are of 
+            the form 'QUSB-XXX' where XXX is the device address (0-126) in 
+            decimal. The device name should be parsed from the response from 
+            QuickUsbFindModules. For example, if two modules are connected, 
+            devName should contain 'QUSB-0' to select the first module, and 
+            devName should contain 'QUSB-1' to select the second module.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbOpenEx(System.IntPtr@,System.String,System.UInt16)">
+            <summary>
+            Open a QuickUSB device for use by the library
+            </summary>
+            <param name="hDevice">A PHANDLE that points to a HANDLE in which to
+            place the new device ID. If successful, hDevice will contain the 
+            new HANDLE.</param>
+            <param name="deviceName">A PCHAR that points to a null-terminated 
+            CHAR array containing the name of the device. Device names are of 
+            the form 'QUSB-XXX' where XXX is the device address (0-126) in 
+            decimal. The device name should be parsed from the response from 
+            QuickUsbFindModules. For example, if two modules are connected, 
+            devName should contain 'QUSB-0' to select the first module, and 
+            devName should contain 'QUSB-1' to select the second module.</param>
+            <param name="flags"></param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbClose(System.IntPtr)">
+            <summary>
+            Close a QuickUSB device
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbGetStringDescriptor(System.IntPtr,BitwiseSystems.QuickUsb.StringDescriptor,System.IntPtr,System.UInt16)">
+            <summary>
+            Returns the string descriptor for the selected QuickUSB module
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="index">The BYTE string descriptor index</param>
+            <param name="buffer">A PCHAR that points to a buffer in which to 
+            place the string descriptor. The buffer should be at least 128 
+            bytes long.</param>
+            <param name="length">A WORD that contains the length of the buffer 
+            in bytes</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbReadSetting(System.IntPtr,BitwiseSystems.QuickUsb.Setting,System.UInt16@)">
+            <summary>
+            Read QuickUSB module settings
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="address">A WORD containing the setting address 
+            (number)</param>
+            <param name="setting">A PWORD pointing to a variable in which to 
+            place the value of the setting if successful</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWriteSetting(System.IntPtr,BitwiseSystems.QuickUsb.Setting,System.UInt16)">
+            <summary>
+            Write QuickUSB module settings
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="address">A WORD containing the setting address 
+            (number)</param>
+            <param name="setting">A WORD containing the new setting 
+            value</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbStartFpgaConfiguration(System.IntPtr)">
+            <summary>
+            Start the process of FPGA configuration. If the FPGA is in the 
+            process of being configured, the process will restart. If the FPGA 
+            is already configured, it will be reset and reconfigured.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWriteFpgaData(System.IntPtr,System.IntPtr,System.UInt32)">
+            <summary>
+            Sends FPGA configuration data to the FPGA using the QuickUSB FPGA 
+            configuration port
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="data">A PBYTE pointing to a BYTE buffer containing the 
+            FPGA configuration data</param>
+            <param name="length">A ULONG containing the length of the data in
+            bytes</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbIsFpgaConfigured(System.IntPtr,System.UInt16@)">
+            <summary>
+            Check to see if the FPGA is configured
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="isConfigured">A PWORD pointing to a WORD in which to 
+            write the configuration status of the FPGA connected to the QuickUSB 
+            FPGA configuration port. 1 = the FPGA is configured 
+            (CONF_DONE = '1'), 0 = the FPGA is not configured 
+            (CONF_DONE = '0').</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbConfigureFpga(System.IntPtr,System.String)">
+            <summary>
+            Configure an FPGA with a binary configuration file (RBF for Altera
+            and BIN for Xilinx).  You do not need to Call 
+            QuickUsbStartFpgaConfiguration before calling this function.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="filePath">Path to the FPGA configuration file</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbReadCommand(System.IntPtr,System.UInt16,System.IntPtr,System.UInt16@)">
+            <summary>
+            Read a block of command values from the high-speed parallel port 
+            using the QuickUSB module
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="address">A WORD containing the address. This address 
+            is the starting value of the HSPP address bus. If address bit 14 
+            is set (1), then the address bus will not be driven. If address bit
+            15 is set (1), then the address will not be incremented after each 
+            read.</param>
+            <param name="data">A pointer to a buffer in which to place data read
+            from the high-speed parallel port</param>
+            <param name="length">A PWORD pointing to a WORD containing the number
+            of bytes to read from the high-speed parallel port on input and the
+            number of bytes read on return</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWriteCommand(System.IntPtr,System.UInt16,System.IntPtr,System.UInt16)">
+            <summary>
+            Write a block of command values to the high-speed parallel port
+            using the QuickUSB module
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="address">A WORD containing the address. This address
+            is the starting value of the HSPP address bus. If address bit 14
+            is set (1), then the address bus will not be driven. If address bit
+            15 is set (1), then the address will not be incremented after each
+            write.</param>
+            <param name="data">A pointer to a buffer containing the data to
+            write to the high-speed parallel port</param>
+            <param name="length">A WORD containing the number of bytes to write
+            to the high-speed parallel port</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbReadData(System.IntPtr,System.IntPtr,System.UInt32@)">
+            <summary>
+            Read a block of data values from the high-speed parallel port
+            using the QuickUSB module
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="data">A pointer to a buffer in which to place data
+            values read from the HSPP</param>
+            <param name="length">A PULONG to a ULONG containing the number of
+            bytes to read from the HSPP. Additionally, length is overwritten
+            with the number of bytes actually read.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWriteData(System.IntPtr,System.IntPtr,System.UInt32)">
+            <summary>
+            Write a block of data values to the high-speed parallel port
+            using the QuickUSB module.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="data">A pointer to a block of data values to write to
+            the HSPP</param>
+            <param name="length">A ULONG containing the number of bytes to
+            write to the HSPP</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbReadPortDir(System.IntPtr,BitwiseSystems.QuickUsb.Port,System.Byte@)">
+            <summary>
+            Read the data direction of each data port bit for the specified
+            port
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="address">A BYTE containing the port address. Ports are
+            addressed 0 to 4 corresponding to port A-E.</param>
+            <param name="data">A PBYTE to a BYTE in which to place the data
+            direction bit values. Each bit in data corresponds to data bits of
+            the specified port. A data direction bit value of 0=input and
+            1=output (i.e. 0x03 means that bits 0 and 1 are outputs and bits
+            2-7 are inputs).</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWritePortDir(System.IntPtr,BitwiseSystems.QuickUsb.Port,System.Byte)">
+            <summary>
+            Set the data direction of each data port bit for the specified port
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="address">A BYTE containing the port address. Ports are
+            addressed 0 to 4 corresponding to port A-E.</param>
+            <param name="data">A byte that contains the data direction bit
+            values. Each bit in data corresponds to data bits of the specified
+            port. A data direction bit value of 0=input and 1=output.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbReadPort(System.IntPtr,BitwiseSystems.QuickUsb.Port,System.IntPtr,System.UInt16@)">
+            <summary>
+            Read a series of bytes from the specified port
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="address">A BYTE containing the port address. Ports are
+            addressed 0 to 4 corresponding to port A-E.</param>
+            <param name="data">A pointer to an array of bytes in which to place
+            the data. This buffer must be at least „length? bytes long.</param>
+            <param name="length">A pointer to the number of bytes to read from
+            the port. The bytes are read sequentially. The maximum length is
+            64 bytes.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWritePort(System.IntPtr,BitwiseSystems.QuickUsb.Port,System.IntPtr,System.UInt16)">
+            <summary>
+            Write a series of bytes to the specified port
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="address">A BYTE containing the port address. Ports are
+            addressed 0 to 4 corresponding to port A-E.</param>
+            <param name="data">A pointer to an array of bytes to send out the
+            port. This buffer must be at least „length? bytes long.</param>
+            <param name="length">A pointer to the number of bytes to write to
+            the port. The bytes are written sequentially. The maximum length is
+            64 bytes.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbSetRS232BaudRate(System.IntPtr,System.UInt32)">
+            <summary>
+            Set the baud rate for both serial ports. Baud rates are
+            programmable from 4800 to 230k baud. This function sets the baud
+            rate of both serial ports. It is not possible to set the baud rate
+            of each serial port independently.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="baudRate">An unsigned long integer (32-bits)
+            containing the baud rate in bits per second</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbGetNumRS232(System.IntPtr,System.Byte,System.UInt16@)">
+            <summary>
+            Read the number of characters waiting in the receive buffer
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="portNum">The serial port number. Serial port 0 
+            (P1) = 0, serial port 1 (P2) = 1.</param>
+            <param name="length">A pointer to the number of characters to read. 
+            Set to the number of characters actually read on return.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbFlushRS232(System.IntPtr,System.Byte)">
+            <summary>
+            Flush the RS232 port transmit and receive buffers
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="portNum">The serial port number. Serial port 0
+            (P1) = 0, serial port 1 (P2) = 1.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbReadRS232(System.IntPtr,System.Byte,System.IntPtr,System.UInt16@)">
+            <summary>
+            Read a block of characters from the interrupt receive buffer of the
+            specified QuickUSB serial port
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="portNum">The serial port number. Serial port 0
+            (P1) = 0, serial port 1 (P2) = 1.</param>
+            <param name="data">A pointer to a buffer in which to place the data.
+            The buffer must be at least 128 bytes long.</param>
+            <param name="length">A pointer to the number of characters to read.
+            Set to the number of characters actually read on return.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWriteRS232(System.IntPtr,System.Byte,System.IntPtr,System.UInt16)">
+            <summary>
+            Write a block of characters to the specified QuickUSB serial port
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="portNum">The serial port number. Serial port 0
+            (P1) = 0, serial port 1 (P2) = 1.</param>
+            <param name="data">A pointer to a buffer containing the data</param>
+            <param name="length">The number of characters to write</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbReadSpi(System.IntPtr,System.Byte,System.IntPtr,System.UInt16@)">
+            <summary>
+            Read a block of bytes from the specified SPI slave port
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="portNum">The SPI device address (nSS line) to read
+            from</param>
+            <param name="data">A pointer to a buffer in which to place the
+            received data</param>
+            <param name="length">A pointer to the number of bytes to read. The
+            maximum length is 64 bytes.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWriteSpi(System.IntPtr,System.Byte,System.IntPtr,System.UInt16)">
+            <summary>
+            Write a block of bytes to the specified SPI slave port
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="portNum">The SPI device address (nSS line) to write
+            to</param>
+            <param name="data">A pointer to the data to send</param>
+            <param name="length">The number of bytes to send. The maximum
+            length is 64 bytes.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWriteReadSpi(System.IntPtr,System.Byte,System.IntPtr,System.UInt16)">
+            <summary>
+            Simultaneously write and read a block of data to and from the
+            specified SPI slave port
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="portNum">The SPI device address (nSS line) to write to
+            and read from</param>
+            <param name="data">A pointer to the buffer that contains the data
+            to send and in which to place the received data</param>
+            <param name="length">The number of bytes to send and receive. The
+            maximum length is 64 bytes.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbReadI2C(System.IntPtr,System.UInt16,System.IntPtr,System.UInt16@)">
+            <summary>
+            Read for the I2C port
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="address">The device address</param>
+            <param name="data">A pointer to a buffer in which to place the
+            data</param>
+            <param name="length">The length of the data buffer in bytes. The
+            maximum length is 64 bytes.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWriteI2C(System.IntPtr,System.UInt16,System.IntPtr,System.UInt16)">
+            <summary>
+            Write to the I2C port
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="address">The device address</param>
+            <param name="data">A pointer to the data to send</param>
+            <param name="length">The length of the data buffer in bytes. The
+            maximum length is 64 bytes.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbCachedWriteI2C(System.IntPtr,System.UInt16,System.IntPtr,System.UInt16)">
+            <summary>
+            Perform a cached write to the I2C port.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="address">The device address</param>
+            <param name="data">A pointer to the data to send</param>
+            <param name="length">The length of the data buffer in bytes. The
+            maximum length is 64 bytes.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbSetTimeout(System.IntPtr,System.UInt32)">
+            <summary>
+            Set the timeout for QuickUSB read data transfers
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="timeOut">A LONG that specifies the new timeout value
+            in milliseconds</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbGetDriverVersion(System.UInt16@,System.UInt16@,System.UInt16@)">
+            <summary>
+            Determine the version of the QuickUSB driver
+            </summary>
+            <param name="major">A PWORD that points to a variable in which to
+            place the major version number</param>
+            <param name="minor">A PWORD that points to a variable in which to
+            place the minor version number</param>
+            <param name="build">A PWORD that points to a variable in which to
+            place the build number</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbGetDllVersion(System.UInt16@,System.UInt16@,System.UInt16@)">
+            <summary>
+            Determine the version of the QuickUSB DLL (QuickUSB.dll)
+            </summary>
+            <param name="major">A PWORD that points to a variable in which to
+            place the major version number</param>
+            <param name="minor">A PWORD that points to a variable in which to
+            place the minor version number</param>
+            <param name="build">A PWORD that points to a variable in which to
+            place the build number</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbGetFirmwareVersion(System.IntPtr,System.UInt16@,System.UInt16@,System.UInt16@)">
+            <summary>
+            Determine the version of the QuickUSB Firmware is currently in the QuickUSB Module
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="major">A PWORD that points to a variable in which to
+            place the major version number</param>
+            <param name="minor">A PWORD that points to a variable in which to
+            place the minor version number</param>
+            <param name="build">A PWORD that points to a variable in which to
+            place the build number</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWriteDataAsync(System.IntPtr,System.IntPtr,System.UInt32,System.Byte@)">
+            <summary>
+            Write a block of data values to the high-speed parallel port using
+            an asynchronous function call
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="data">A pointer to a block of data values to write to
+            the HSPP</param>
+            <param name="length">A ULONG containing the number of bytes to
+            write to the HSPP</param>
+            <param name="transaction">A PBYTE to a BYTE in which to place the
+            transaction identifier required by QuickUsb.AsyncWait</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbReadDataAsync(System.IntPtr,System.IntPtr,System.UInt32@,System.Byte@)">
+            <summary>
+            Read a block of data values from the high-speed parallel port
+            using an asynchronous function call
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="data">A pointer to a buffer in which to place data
+            read from the HSPP</param>
+            <param name="length">A PULONG containing the number of bytes to
+            read from the HSPP</param>
+            <param name="transaction">A PBYTE to a BYTE in which to place the
+            transaction identifier required by QuickUsbAsyncWait</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbAsyncWait(System.IntPtr,System.UInt32@,System.Byte,System.Byte)">
+            <summary>
+            Wait for an asynchronous transfer to complete
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="length">An PULONG that returns the number of bytes
+            that were transferred as a result of the asynchronous function
+            call. If the asynchronous function call is still pending, "length"
+            will be set to 0. This function must be called until „length? is
+            non-zero otherwise, the driver will not release its internal
+            buffers, thus causing a memory leak and an eventual system crash
+            (Blue Screen of Death). If the asynchronous function call has
+            completed, the number of bytes requested will be stored in 'length'
+            and all internal buffers will be released.</param>
+            <param name="transaction">A BYTE transaction identifier returned by
+            QuickUsbReadDataAsync or QuickUsbWriteDataAsync</param>
+            <param name="immediate">A BYTE value. If non-zero, the driver will
+            not wait the default timeout value for the transaction to complete.
+            If zero, the driver will wait the default timeout period for the
+            transaction to complete.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbReadDefault(System.IntPtr,BitwiseSystems.QuickUsb.Setting,System.UInt16@)">
+            <summary>
+            Read QuickUSB module defaults. The defaults are non-volatile and
+            are read into the settings table on power up.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="address">A WORD containing the default address
+            (number)</param>
+            <param name="setting">A PWORD pointing to a variable in which to
+            place the value of the default if successful</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWriteDefault(System.IntPtr,BitwiseSystems.QuickUsb.Setting,System.UInt16)">
+            <summary>
+            Write QuickUSB module defaults. The defaults are non-volatile and
+            are read into the settings table on power up.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="address">A WORD containing the default address 
+            (number)</param>
+            <param name="setting">A WORD containing the new default
+            value</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbReadStorage(System.IntPtr,System.UInt16,System.IntPtr,System.UInt16)">
+            <summary>
+            Read a block of bytes from memory
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="address">A WORD indicating the byte offset into memory
+            where the read should begin</param>
+            <param name="data">A pointer to a buffer in which to place the
+            received data</param>
+            <param name="bytes">A WORD indicating the number of bytes to
+            read</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWriteStorage(System.IntPtr,System.UInt16,System.IntPtr,System.UInt16)">
+            <summary>
+            Write a block of bytes from memory
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="address">A WORD indicating the byte offset into
+            memory where the write should begin</param>
+            <param name="data">A pointer to the data buffer to write to
+            memory</param>
+            <param name="bytes">A WORD indicating the number of bytes to
+            write</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbReadBulkDataAsync(System.IntPtr,System.IntPtr,System.UInt32,System.IntPtr,BitwiseSystems.QuickUsb.BulkStreamCompletionRoutine,System.IntPtr)">
+            <summary>
+            Issue an asynchronous bulk data read request.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="buffer">The data buffer.  This buffer must remain 
+            valid until the request completes.</param>
+            <param name="bytes">The number of bytes to read.</param>
+            <param name="bulkStream">A pointer to a user-allocated QBULKSTREAM 
+            variable used to store all the information about the request.  
+            This data must remain valid until the request completes.</param>
+            <param name="cRoutine">The completion routine (callback function) 
+            to call when the request completes.  If zero (0) or NULL is 
+            specified, then no completion routine is called at the completion 
+            of the transaction and QuickUsbBulkWait must be called to determine
+            when the transaction has completed.  When multithreading, this 
+            routine executes from another thread and multiple threads may 
+            execute this routine at the same time.  When single-threaded (not 
+            multithreading), the QuickUsbBulkWait must be called to determine 
+            when the transaction has completed, which will then execute the 
+            completion routine.</param>
+            <param name="tag">A user pointer passed on to the completion 
+            routine used to associate user information with the request.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWriteBulkDataAsync(System.IntPtr,System.IntPtr,System.UInt32,System.IntPtr,BitwiseSystems.QuickUsb.BulkStreamCompletionRoutine,System.IntPtr)">
+            <summary>
+            Issue an asynchronous bulk data write request.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="buffer">The data buffer.  This buffer must remain 
+            valid until the request completes.</param>
+            <param name="bytes">The number of bytes to write.</param>
+            <param name="bulkStream">A pointer to a user-allocated QBULKSTREAM 
+            variable used to store all the information about the request.  
+            This data must remain valid until the request completes.</param>
+            <param name="cRoutine">The completion routine (callback function) 
+            to call when the request completes.  If zero (0) or NULL is 
+            specified, then no completion routine is called at the completion 
+            of the transaction and QuickUsbBulkWait must be called to determine
+            when the transaction has completed.  When multithreading, this 
+            routine executes from another thread and multiple threads may 
+            execute this routine at the same time.  When single-threaded (not 
+            multithreading), the QuickUsbBulkWait must be called to determine 
+            when the transaction has completed, which will then execute the 
+            completion routine.</param>
+            <param name="tag">A user pointer passed on to the completion 
+            routine used to associate user information with the request.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbBulkWait(System.IntPtr,System.IntPtr,System.Byte)">
+            <summary>
+            Determine if an asynchronous transaction has completed, wait for an asynchronous transaction to complete, or wait for all pending asynchronous transactions to complete.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="bulkStream">A pointer to a user-allocated QBULKSTREAM 
+            variable that has been associated with a data transaction from a 
+            call to QuickUsbReadBulkDataAsync or QuickUsbWriteBulkDataAsync.  
+            If zero (0) or NULL is specified, then this function will wait 
+            until ALL pending requests complete and execute their completion 
+            routines.</param>
+            <param name="immediate">If false or zero, this function will wait 
+            for the specified request to complete and execute its completion 
+            routine.  If true or non-zero, this function will return 
+            immediately and indicate whether the specified transaction has 
+            completed (or all transactions if bulkStream is zero or NULL) by 
+            either returning true (1) or by returning zero (0) with a call to 
+            QuickUsbGetLastError indicating QUICKUSB_ERROR_NOT_COMPLETED.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbSetNumAsyncThreads(System.IntPtr,System.UInt16,System.UInt16)">
+            <summary>
+            Set the number of threads and the thread concurrency for the 
+            Asynchronous Data API.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="numThreads">A word indicating the number of threads 
+            to allocate for the Asynchronous API.  If numThreads is zero, no 
+            threads are created and the Asynchronous API will be single-
+            threaded.  If numThreads is greater than zero, the Asynchronous API
+            is multithreaded—the indicated number of threads will be created 
+            and dedicated to asynchronously processing completion routines.  
+            When multithreading, the recommended number of threads to maximize 
+            multithreading performance is equal to the number of 
+            processors/cores in the system times two.</param>
+            <param name="concurrency">A word indicating the number of threads 
+            that are allowed to execute completion routines simultaneously.  
+            Specify zero if numThreads is zero.  When multithreading, the 
+            number of threads allowed to execute completion routines 
+            concurrently will be limited by the value of ‘concurrency’, which 
+            must be at least one.  The recommended concurrency to maximize 
+            multithreading performance is equal to the total number of 
+            processors/cores in the system.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbGetNumAsyncThreads(System.IntPtr,System.UInt16@,System.UInt16@)">
+            <summary>
+            Get the number of threads and the thread concurrency for the 
+            Asynchronous Data API.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="numThreads">A pointed to a word indicating the number 
+            of threads allocated for the Asynchronous API.</param>
+            <param name="concurrency">A pointer to a word indicating the number
+            of threads that are allowed to execute completion routines 
+            simultaneously.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbReadBulkDataStartStream(System.IntPtr,System.IntPtr,System.UInt32,System.UInt32,BitwiseSystems.QuickUsb.BulkStreamCompletionRoutine,System.IntPtr,System.Byte@,System.UInt16,System.UInt16)">
+            <summary>
+            Start streaming data into the computer from the QuickUSB device.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="buffers">An array of pointers to the user allocated 
+            buffers used to store the read data.  These buffers must remain 
+            valid until the read stream has been stopped.  If this parameter is
+            zero (0) or NULL then the API will automatically allocate and 
+            manage the memory for the data buffers.</param>
+            <param name="numBuffers">The number of data buffers to use.</param>
+            <param name="bufferSize">The size of each buffer, in bytes.</param>
+            <param name="cRoutine">The completion routine (callback function) 
+            that is called each time a buffer is filled with data.  This 
+            routine executes from another thread and multiple threads may 
+            execute this routine at the same time.</param>
+            <param name="tag">A pointer containing user-specific data that is 
+            passed into the completion routine.  This parameter may optionally 
+            be zero (0) or NULL.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbReadBulkDataStartStream(System.IntPtr,System.IntPtr[],System.UInt32,System.UInt32,BitwiseSystems.QuickUsb.BulkStreamCompletionRoutine,System.IntPtr,System.Byte@,System.UInt16,System.UInt16)">
+            <summary>
+            Start streaming data into the computer from the QuickUSB device.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="buffers">An array of pointers to the user allocated 
+            buffers used to store the read data.  These buffers must remain 
+            valid until the read stream has been stopped.  If this parameter is
+            zero (0) or NULL then the API will automatically allocate and 
+            manage the memory for the data buffers.</param>
+            <param name="numBuffers">The number of data buffers to use.</param>
+            <param name="bufferSize">The size of each buffer, in bytes.</param>
+            <param name="cRoutine">The completion routine (callback function) 
+            that is called each time a buffer is filled with data.  This 
+            routine executes from another thread and multiple threads may 
+            execute this routine at the same time.</param>
+            <param name="tag">A pointer containing user-specific data that is 
+            passed into the completion routine.  This parameter may optionally 
+            be zero (0) or NULL.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWriteBulkDataStartStream(System.IntPtr,System.IntPtr,System.UInt32,System.UInt32,BitwiseSystems.QuickUsb.BulkStreamCompletionRoutine,System.IntPtr,System.Byte@,System.UInt16,System.UInt16)">
+            <summary>
+            Start streaming data from the computer to the QuickUSB device.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="buffers">An array of pointers to the user allocated 
+            buffers used to store the read data.  These buffers must remain 
+            valid until the read stream has been stopped.</param>
+            <param name="numBuffers">The number of data buffers to use.</param>
+            <param name="bufferSize">The size of each buffer, in bytes.</param>
+            <param name="cRoutine">The completion routine (callback function) 
+            that is called each time a buffer has been written to the device.  
+            The buffer must be refilled with new data to write from within the 
+            completion routine.  This routine executes from another thread and 
+            multiple threads may execute this routine at the same time.</param>
+            <param name="tag">A pointer containing user-specific data that is 
+            passed into the completion routine.  tag - A pointer containing 
+            user-specific data that is passed into the completion routine.  
+            This parameter may optionally be zero (0) or NULL.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWriteBulkDataStartStream(System.IntPtr,System.IntPtr[],System.UInt32,System.UInt32,BitwiseSystems.QuickUsb.BulkStreamCompletionRoutine,System.IntPtr,System.Byte@,System.UInt16,System.UInt16)">
+            <summary>
+            Start streaming data from the computer to the QuickUSB device.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="buffers">An array of pointers to the user allocated 
+            buffers used to store the read data.  These buffers must remain 
+            valid until the read stream has been stopped.</param>
+            <param name="numBuffers">The number of data buffers to use.</param>
+            <param name="bufferSize">The size of each buffer, in bytes.</param>
+            <param name="cRoutine">The completion routine (callback function) 
+            that is called each time a buffer has been written to the device.  
+            The buffer must be refilled with new data to write from within the 
+            completion routine.  This routine executes from another thread and 
+            multiple threads may execute this routine at the same time.</param>
+            <param name="tag">A pointer containing user-specific data that is 
+            passed into the completion routine.  tag - A pointer containing 
+            user-specific data that is passed into the completion routine.  
+            This parameter may optionally be zero (0) or NULL.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbStopStream(System.IntPtr,System.Byte,System.Boolean)">
+            <summary>
+            Stop a previously started read or write bulk data stream.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="streamID">The stream ID, as returned from a call to
+            QuickUsbReadBulkDataStartStream or 
+            QuickUsbWriteBulkDataStartStream.</param>
+            <param name="immediate">If zero (or false), this function will 
+            block until the stream has completely stopped and any remaining 
+            completion routines have executed.  If non-zero (or true), the 
+            stream will be marked to shutdown and will return immediately 
+            without waiting for any remaining completion routines to execute.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbProcessStream(System.IntPtr,System.Byte,System.UInt32)">
+            <summary>
+            For single-threaded streams, this function is called to process and
+            re-issue completed requests.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="streamID">The ID of the stream to process, as returned 
+            from a call to QuickUsbReadBulkDataStartStream or 
+            QuickUsbWriteBulkDataStartStream.</param>
+            <param name="milliseconds">The number of milliseconds the caller is 
+            willing to wait until a data request on the indicated stream has 
+            completed and is processed.  If no data request on the indicated 
+            stream has completed within the specified amount of time, the 
+            function will return unsuccessfully and a call to 
+            QuickUsbGetLastError will indicate the error 
+            QUICKUSB_ERROR_TIMEOUT.  If milliseconds is zero, the function will
+            process any requests that are completed or timeout immediately.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbPauseStream(System.IntPtr,System.Byte,System.Boolean)">
+            <summary>
+            Pause the automatic re-issuing of data requests on a stream.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="streamID">streamID: 	The ID of the stream to 
+            process, as returned from a call to 
+            QuickUsbReadBulkDataStartStream or 
+            QuickUsbWriteBulkDataStartStream.</param>
+            <param name="immediate">If zero (or false), this function will 
+            block until the stream has paused and all in-process requests have 
+            completed.  If non-zero (or true), the stream will be marked to 
+            enter the pause state and will return immediately without waiting 
+            for any in-process requests to complete.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbResumeStream(System.IntPtr,System.Byte)">
+            <summary>
+            Resume the automatic re-issuing of data requests on a stream.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="streamID">streamID: 	The ID of the stream to 
+            process, as returned from a call to 
+            QuickUsbReadBulkDataStartStream or 
+            QuickUsbWriteBulkDataStartStream.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbWriteFirmware(System.IntPtr,System.String,System.UInt32,BitwiseSystems.QuickUsb.ProgressDelegate,System.IntPtr)">
+            <summary>
+            Write QuickUSB firmware to a device.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="fileName">The path and file name of the QuickUSB 
+            firmware (QUSB) file.</param>
+            <param name="options">Specify QUICKUSB_PRESERVE_CUSTOMIZATION to 
+            preserve customizations present in the current firmware, 
+            QUICKUSB_PRESERVE_DEFAULTS to preserve default settings present in
+            the current firmware, QUICKUSB_PRESERVE_GPIF to preserve GPIF 
+            customizations, and/or QUICKUSB_PRESERVE_SERIAL to preserve the 
+            serial number.  To specify a new serial number, pass 
+            QUICKUSB_PROGRAM_SERIAL bitwise or’ed (|) together with the new 
+            serial number (must be between 1 and 65535).</param>
+            <param name="callback">A pointer to a QPROGRESS_CALLBACK function 
+            which is called during the programming process to report the 
+            percentage completed.  This may be used to perform background 
+            processes and GUI updates while the programming process takes 
+            place.</param>
+            <param name="tag">A PQVOID variable to store user data that is 
+            passed onto the callback function.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbVerifyFirmware(System.IntPtr,System.String,BitwiseSystems.QuickUsb.ProgressDelegate,System.IntPtr)">
+            <summary>
+            Verify that the firmware contained in the specified device matches 
+            that of the supplied firmware file.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="fileName">The path and file name of the QuickUSB 
+            firmware (QUSB) file.</param>
+            <param name="callback">A pointer to a QPROGRESS_CALLBACK function 
+            which is called during the verify process to report the percentage 
+            completed.  This may be used to perform background processes and 
+            GUI updates while the verify process takes place.</param>
+            <param name="tag">A PQVOID variable to store user data that is 
+            passed onto the callback function.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbIdentifyEpcs(System.IntPtr,System.Byte,BitwiseSystems.QuickUsb.EpcsId@,System.UInt32@,System.UInt32)">
+            <summary>
+            Identify the EPCS device connected to the SPI bus on the specified 
+            nSS line.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="nSS">The nSS SPI line that the EPCS device is
+            connected to (0-9). </param>
+            <param name="epcsId">A pointer to QWORD used to store the ID of the
+            EPCS found.  This will be one of QUICKUSB_EPCS1_ID (0x10), 
+            QUICKUSB_EPCS4_ID (0x12), QUICKUSB_EPCS16_ID (0x14), 
+            QUICKUSB_EPCS64_ID (0x16), or QUICKUSB_EPCS_ID_UNKNOWN (0x00).</param>
+            <param name="epcsByteSize">A pointer to a QULONG used to store the
+            size of the EPCS device, in bytes.</param>
+            <param name="flags">Additional flags controlling the operation of 
+            this function.  Specify QUICKUSB_EPCS_IGNORE_NCE to prevent the 
+            function from automatically asserting the nCE line of the FPGA at 
+            the beginning of the function are de-asserting it at the end of the 
+            function.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbConfigureEpcs(System.IntPtr,System.Byte,System.String,System.UInt32,BitwiseSystems.QuickUsb.ProgressDelegate,System.IntPtr)">
+            <summary>
+            Write the specified FPGA data file to the EPCS device.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="nSS">The nSS SPI line that the EPCS device is
+            connected to (0-9). </param>
+            <param name="filePath">The path and file name of the FPGA data 
+            file.</param>
+            <param name="flags">Additional flags controlling the operation of 
+            this function.  Specify QUICKUSB_EPCS_IGNORE_NCE to prevent the 
+            function from automatically asserting the nCE line of the FPGA at 
+            the beginning of the function are de-asserting it at the end of the
+            function.</param>
+            <param name="callback">A pointer to a QPROGRESS_CALLBACK function 
+            which is called during the configuring process to report the 
+            percentage completed.  This may be used to perform background 
+            processes and GUI updates while the configure process takes place.</param>
+            <param name="tag">A PQVOID variable to store user data that is 
+            passed onto the callback function.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbVerifyEpcs(System.IntPtr,System.Byte,System.String,System.UInt32,BitwiseSystems.QuickUsb.ProgressDelegate,System.IntPtr)">
+            <summary>
+            Verify that the data contained in the EPCS device matches that of 
+            the specified FPGA data file.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="nSS">The nSS SPI line that the EPCS device is
+            connected to (0-9). </param>
+            <param name="filePath">The path and file name of the FPGA data 
+            file.</param>
+            <param name="flags">Additional flags controlling the operation of 
+            this function.  Specify QUICKUSB_EPCS_IGNORE_NCE to prevent the 
+            function from automatically asserting the nCE line of the FPGA at 
+            the beginning of the function are de-asserting it at the end of the
+            function.</param>
+            <param name="callback">A pointer to a QPROGRESS_CALLBACK function 
+            which is called during the verify process to report the percentage 
+            completed.  This may be used to perform background processes and 
+            GUI updates while the verify process takes place.</param>
+            <param name="tag">A PQVOID variable to store user data that is 
+            passed onto the callback function.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.QuickUsbEraseEpcs(System.IntPtr,System.Byte,System.UInt32,BitwiseSystems.QuickUsb.ProgressDelegate,System.IntPtr)">
+            <summary>
+            Perform a bulk erase action of the EPCS device to erase the entire 
+            device to 0xFF.
+            </summary>
+            <param name="hDevice">A HANDLE that was returned from a call to 
+            QuickUsbOpen or QuickUsbOpenEx</param>
+            <param name="nSS">The nSS SPI line that the EPCS device is
+            connected to (0-9). </param>
+            <param name="flags">Additional flags controlling the operation of 
+            this function.  Specify QUICKUSB_EPCS_IGNORE_NCE to prevent the 
+            function from automatically asserting the nCE line of the FPGA at 
+            the beginning of the function are de-asserting it at the end of the
+            function.</param>
+            <param name="callback">A pointer to a QPROGRESS_CALLBACK function 
+            which is called during the erase process to report the percentage 
+            completed.  This may be used to perform background processes and 
+            GUI updates while the erase process takes place.</param>
+            <param name="tag">A PQVOID variable to store user data that is 
+            passed onto the callback function.</param>
+            <returns>A LONG that is either non-zero on success or zero (0) on
+            failure</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="devname">The name of the QuickUSB device as returned
+            by a call to QuickUsbFindModules</param>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.GetLastError">
+            <summary>
+            Get the last API error
+            </summary>
+            <returns>The last error reported by the QuickUSB API</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.FindModules">
+            <summary>
+            Build a list of all connected QuickUSB devices
+            </summary>
+            <returns>A string containing a NULL ('\0' or CHR(0)) delimited list
+            of QuickUSB module names found by the library. The final entry is 
+            designated by two consecutive NULL characters. For example, after 
+            executing this function with one module connected, nameList will 
+            contain "QUSB-0\0\0". If there are two devices plugged in, 
+            nameList will contain "QUSB-0\0QUSB-1\0\0".</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.FindModules(System.Byte[]@)">
+            <summary>
+            Build a list of all connected QuickUSB devices
+            </summary>
+            <returns>A string containing a NULL ('\0' or CHR(0)) delimited list
+            of QuickUSB module names found by the library. The final entry is 
+            designated by two consecutive NULL characters. For example, after 
+            executing this function with one module connected, nameList will 
+            contain "QUSB-0\0\0". If there are two devices plugged in, 
+            nameList will contain "QUSB-0\0QUSB-1\0\0".</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.GetDriverVersion(System.UInt16@,System.UInt16@,System.UInt16@)">
+            <summary>
+            Determine the version of the QuickUSB Driver
+            </summary>
+            <param name="majorVersion">The major version number</param>
+            <param name="minorVersion">The minor version number</param>
+            <param name="buildVersion">The build version number</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.GetDriverVersion(System.Version@)">
+            <summary>
+            Determine the version of the QuickUSB Driver
+            </summary>
+            <param name="version">Variable to hold the version</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.GetDllVersion(System.UInt16@,System.UInt16@,System.UInt16@)">
+            <summary>
+            Determine the version of the QuickUSB DLL
+            </summary>
+            <param name="majorVersion">The major version number</param>
+            <param name="minorVersion">The minor version number</param>
+            <param name="buildVersion">The build version number</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.GetDllVersion(System.Version@)">
+            <summary>
+            Determine the version of the QuickUSB DLL
+            </summary>
+            <param name="version">Variable to hold the version</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.OpenPolitely">
+            <summary>
+            Internal function used to open a device if it is not already opened
+            (with reference counting).
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ClosePolitely">
+            <summary>
+            Internal function used to close a device if it is not already 
+            opened (with reference counting).
+            </summary>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.Open">
+            <summary>
+            Open a QuickUSB device for use by the library
+            </summary>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.Open(System.String)">
+            <summary>
+            Open a QuickUSB device for use by the library
+            </summary>
+            <param name="devname">The name of the QuickUSB device</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.OpenEx(System.String,System.UInt16)">
+            <summary>
+            Open a QuickUSB device for use by the library
+            </summary>
+            <param name="devname">The name of the QuickUSB device</param>
+            <param name="flags">Additional flags</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.Close">
+            <summary>
+            Close a QuickUSB device
+            </summary>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.GetStringDescriptor(BitwiseSystems.QuickUsb.StringDescriptor)">
+            <summary>
+            Returns the string descriptor for the selected QuickUSB module
+            </summary>
+            <param name="stringIndex">The string index to retrieve</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.LastError">
+            <summary>
+            Return extended error information for the last method call that
+            returned a value of false
+            </summary>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.GetFirmwareVersion(System.UInt16@,System.UInt16@,System.UInt16@)">
+            <summary>
+            Determine the version of the QuickUSB Firmware is currently in the
+            QuickUSB Module
+            </summary>
+            <param name="majorVersion">The major version number</param>
+            <param name="minorVersion">The minor version number</param>
+            <param name="buildVersion">The build version number</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.GetFirmwareVersion(System.Version@)">
+            <summary>
+            Determine the version of the QuickUSB Firmware is currently in the
+            QuickUSB Module
+            </summary>
+            <param name="version">Variable to hold the version</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadSetting(BitwiseSystems.QuickUsb.Setting,System.UInt16@)">
+            <summary>
+            Read QuickUSB module settings
+            </summary>
+            <param name="address">The setting address</param>
+            <param name="value">A variable in which to place the value of the
+            setting</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteSetting(BitwiseSystems.QuickUsb.Setting,System.UInt16)">
+            <summary>
+            Write QuickUSB module settings
+            </summary>
+            <param name="address">The setting address</param>
+            <param name="value">The setting value</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadDefault(BitwiseSystems.QuickUsb.Setting,System.UInt16@)">
+            <summary>
+            Read QuickUSB module defaults. The defaults are non-volatile and
+            are read into the settings table on power up.
+            </summary>
+            <param name="address">The default setting address</param>
+            <param name="value">The read default value</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteDefault(BitwiseSystems.QuickUsb.Setting,System.UInt16)">
+            <summary>
+            Write QuickUSB module defaults. The defaults are non-volatile and
+            are read into the settings table on power up.
+            </summary>
+            <param name="address">The default setting address</param>
+            <param name="value">The value to write</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.StartFpgaConfiguration">
+            <summary>
+            Start the process of FPGA configuration. If the FPGA is in the
+            process of being configured, the process will restart. If the FPGA
+            is already configured, it will be reset and reconfigured.
+            </summary>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteFpgaData(System.Byte[],System.UInt32)">
+            <summary>
+            Sends FPGA configuration data to the FPGA using the QuickUSB FPGA
+            configuration port
+            </summary>
+            <param name="fpgadata">The FPGA byte data to write</param>
+            <param name="datalength">The number of bytes to write</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.IsFpgaConfigured(System.Boolean@)">
+            <summary>
+            Check to see if the FPGA is configured
+            </summary>
+            <param name="isConfigured">Outputs true if the FPGA is configured, false otherwise</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ConfigureFpga(System.String)">
+            <summary>
+            Configure an FPGA with an Altera RBF or Xilinx BIN data file
+            </summary>
+            <param name="filePath">The path to the data file</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.UploadFpga(System.String,BitwiseSystems.QuickUsb.PercentCompleteDelegate)">
+            <summary>
+            Configure an FPGA with an Altera RBF or Xilinx BIN data file
+            </summary>
+            <param name="path">The path to the data file.  If the file does 
+            not exist a standard Windows File Browser will be displayed to 
+            prompt the user for the location of the data file.</param>
+            <param name="updateProgress">A callback delegate indicating the 
+            progress of the FPGA configuration</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteCommand(System.UInt16,System.Byte[],System.UInt16)">
+            <summary>
+            Write a block of command values to the high-speed parallel port
+            using the QuickUSB module
+            </summary>
+            <param name="address">This address is the starting value of the 
+            HSPP address bus. If address bit 14 is set (1), then the address 
+            bus will not be driven. If address bit 15 is set (1), then the 
+            address will not be incremented after each write.</param>
+            <param name="data">The buffer containing the data to write</param>
+            <param name="length">The number of bytes to write</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteCommand(System.UInt16,System.UInt16[],System.UInt16)">
+            <summary>
+            Write a block of command values to the high-speed parallel port
+            using the QuickUSB module
+            </summary>
+            <param name="address">This address is the starting value of the 
+            HSPP address bus. If address bit 14 is set (1), then the address 
+            bus will not be driven. If address bit 15 is set (1), then the 
+            address will not be incremented after each write.</param>
+            <param name="data">The buffer containing the data to write</param>
+            <param name="length">The number of ushorts to write</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadCommand(System.UInt16,System.Byte[],System.UInt16@)">
+            <summary>
+            Read a block of data values from the high-speed parallel port using
+            the QuickUSB module
+            </summary>
+            <param name="address">This address is the starting value of the 
+            HSPP address bus. If address bit 14 is set (1), then the address 
+            bus will not be driven. If address bit 15 is set (1), then the 
+            address will not be incremented after each read.</param>
+            <param name="data">The buffer containing the read data</param>
+            <param name="length">The number of bytes to read</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadCommand(System.UInt16,System.UInt16[],System.UInt16@)">
+            <summary>
+            Read a block of command values from the high-speed parallel port
+            using the QuickUSB module
+            </summary>
+            <param name="address">This address is the starting value of the 
+            HSPP address bus. If address bit 14 is set (1), then the address 
+            bus will not be driven. If address bit 15 is set (1), then the 
+            address will not be incremented after each read.</param>
+            <param name="data">The buffer containing the read data</param>
+            <param name="length">The number of ushorts to read</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteData(System.IntPtr,System.UInt32)">
+            <summary>
+            Write a block of data values to the high-speed parallel port using
+            the QuickUSB module
+            </summary>
+            <param name="data">The data to write</param>
+            <param name="length">The number of bytes to write</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteData(System.Byte[],System.UInt32)">
+            <summary>
+            Write a block of data values to the high-speed parallel port using
+            the QuickUSB module
+            </summary>
+            <param name="data">The data to write</param>
+            <param name="length">The number of bytes to write</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteData(System.UInt16[],System.UInt32)">
+            <summary>
+            Write a block of data values to the high-speed parallel port using
+            the QuickUSB module
+            </summary>
+            <param name="data">The data to write</param>
+            <param name="length">The number of words to write</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadData(System.Byte[],System.UInt32@)">
+            <summary>
+            Read a block of data values from the high-speed parallel port using
+            the QuickUSB module
+            </summary>
+            <param name="data">The read data</param>
+            <param name="length">The number of bytes to read</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadData(System.UInt16[],System.UInt32@)">
+            <summary>
+            Read a block of data values from the high-speed parallel port using
+            the QuickUSB module
+            </summary>
+            <param name="data">The read data</param>
+            <param name="length">The number of words to read</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadData(System.IntPtr,System.UInt32@)">
+            <summary>
+            Read a block of data values from the high-speed parallel port using
+            the QuickUSB module
+            </summary>
+            <param name="data">The read data</param>
+            <param name="length">The number of bytes to read</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteDataAsync(System.IntPtr,System.UInt32,System.Byte@)">
+            <summary>
+            Write a block of data values to the high-speed parallel port using
+            an asynchronous function call
+            </summary>
+            <param name="data">The data to write.  This data must be pinned 
+            (unable to be reloacted by the Garbage Collector) and must not be 
+            freed until the request has fully completed as indicated by a call
+            to QuickUsb.AsyncWait.</param>
+            <param name="length">The number of bytes to write</param>
+            <param name="transaction">The transaction ID of the request.  This 
+            ID is used with the QuickUsb.AsyncWait function to determine when 
+            the request has completed.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadDataAsync(System.IntPtr,System.UInt32@,System.Byte@)">
+            <summary>
+            Read a block of data values from the high-speed parallel port using
+            an asynchronous function call
+            </summary>
+            <param name="data">The read data.  This data must be pinned 
+            (unable to be reloacted by the Garbage Collector) and must not be 
+            freed until the request has fully completed as indicated by a call
+            to QuickUsb.AsyncWait.</param>
+            <param name="length">The number of bytes to read</param>
+            <param name="transaction">The transaction ID of the request.  This 
+            ID is used with the QuickUsb.AsyncWait function to determine when 
+            the request has completed.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.AsyncWait(System.UInt32@,System.Byte,System.Byte)">
+            <summary>
+            Wait for an asynchronous transfer to complete
+            </summary>
+            <param name="bytecount">The number of bytes written/read for the 
+            transactions.  This function must be called until bytecount is 
+            not zero or until the transaction times out.</param>
+            <param name="transaction">The transaction ID, as returned by a 
+            call to QuickUsb.WriteDataAsync or QuickUsb.ReadDataAsync.</param>
+            <param name="immediate">If true, the function will check if the 
+            request has completed and return immediately.  If false, the 
+            function will block until the request either completes or times 
+            out.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.AsyncWait(System.UInt32@,System.Byte,System.Boolean)">
+            <summary>
+            Wait for an asynchronous transfer to complete
+            </summary>
+            <param name="bytecount">The number of bytes written/read for the 
+            transactions.  This function must be called until bytecount is 
+            not zero or until the transaction times out.</param>
+            <param name="transaction">The transaction ID, as returned by a 
+            call to QuickUsb.WriteDataAsync or QuickUsb.ReadDataAsync.</param>
+            <param name="immediate">If true, the function will check if the 
+            request has completed and return immediately.  If false, the 
+            function will block until the request either completes or times 
+            out.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadPortDir(BitwiseSystems.QuickUsb.Port,System.Byte@)">
+            <summary>
+            Read the data direction of each data port bit for the specified port
+            </summary>
+            <param name="address">The port address. Ports are addressed 0 to 4
+            corresponding to port A-E.</param>
+            <param name="data">The data direction bit values. Each bit in data 
+            corresponds to data bits of the specified port. A data direction 
+            bit value of 0=input and 1=output (i.e. 0x03 means that bits 0 
+            and 1 are outputs and bits 2-7 are inputs).</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WritePortDir(BitwiseSystems.QuickUsb.Port,System.Byte)">
+            <summary>
+            Set the data direction of each data port bit for the specified port
+            </summary>
+            <param name="address">The port address. Ports are addressed 0 to 4
+            corresponding to port A-E.</param>
+            <param name="data">The data direction bit values. Each bit in data 
+            corresponds to data bits of the specified port. A data direction 
+            bit value of 0=input and 1=output (i.e. 0x03 means that bits 0 
+            and 1 are outputs and bits 2-7 are inputs).</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadPort(BitwiseSystems.QuickUsb.Port,System.Byte@)">
+            <summary>
+            Read a byte from the specified port
+            </summary>
+            <param name="address">The port address. Ports are addressed 0 to 4
+            corresponding to port A-E.</param>
+            <param name="data">The data byte read</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadPort(BitwiseSystems.QuickUsb.Port,System.Byte[],System.UInt16@)">
+            <summary>
+            Read a series of bytes from the specified port
+            </summary>
+            <param name="address">The port address. Ports are addressed 0 to 4
+            corresponding to port A-E.</param>
+            <param name="data">The data read from the port, byte-by-byte</param>
+            <param name="length">The number of bytes to read.  Also, outputs 
+            the number of bytes actually read.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WritePort(BitwiseSystems.QuickUsb.Port,System.Byte)">
+            <summary>
+            Read a byte from the specified port
+            </summary>
+            <param name="address">The port address. Ports are addressed 0 to 4
+            corresponding to port A-E.</param>
+            <param name="data">The data byte to write</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WritePort(BitwiseSystems.QuickUsb.Port,System.Byte[],System.UInt16)">
+            <summary>
+            Read a series of bytes from the specified port
+            </summary>
+            <param name="address">The port address. Ports are addressed 0 to 4
+            corresponding to port A-E.</param>
+            <param name="data">The data to write to the port, byte-by-byte</param>
+            <param name="length">The number of bytes to write</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.SetRS232BaudRate(System.UInt32)">
+            <summary>
+            Set the baud rate for both serial ports. Baud rates are
+            programmable from 4800 to 230k baud. This function sets the baud
+            rate of both serial ports. It is not possible to set the baud rate
+            of each serial port independently.
+            </summary>
+            <param name="baudrate">The baud rate</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadRS232(System.Byte,System.Byte[],System.UInt16@)">
+            <summary>
+            Read a block of characters from the interrupt receive buffer of the
+            specified QuickUSB serial port
+            </summary>
+            <param name="portNum">The serial port number. Serial port 0 
+            (P1) = 0, serial port 1 (P2) = 1.</param>
+            <param name="data">The buffer to place the read data. The buffer 
+            must be at least 128 bytes long.</param>
+            <param name="length">The number of bytes to read</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteRS232(System.Byte,System.Byte[],System.UInt16)">
+            <summary>
+            Write a block of characters to the specified QuickUSB serial port
+            </summary>
+            <param name="portNum">The serial port number. Serial port 0 
+            (P1) = 0, serial port 1 (P2) = 1.</param>
+            <param name="data">The data to write</param>
+            <param name="length">The number of bytes to write</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.FlushRS232(System.Byte)">
+            <summary>
+            Flush the RS232 port transmit and receive buffers
+            </summary>
+            <param name="portNum">The serial port number. Serial port 0 
+            (P1) = 0, serial port 1 (P2) = 1.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.GetNumRS232(System.Byte,System.UInt16@)">
+            <summary>
+            Read the number of characters waiting in the receive buffer
+            </summary>
+            <param name="portNum">The serial port number. Serial port 0 
+            (P1) = 0, serial port 1 (P2) = 1.</param>
+            <param name="length">The number of characters that may be read</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadI2C(System.UInt16,System.Byte[],System.UInt16@)">
+            <summary>
+            Read the I2C port
+            </summary>
+            <param name="address">The device address</param>
+            <param name="data">The read data</param>
+            <param name="length">the number of bytes to read</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadI2C(System.UInt16,System.Byte,System.UInt16[],System.UInt16@)">
+            <summary>
+            Read the I2C port by first writing a register index, then 
+            performing a read
+            </summary>
+            <param name="address">The device address</param>
+            <param name="regaddr">The register index</param>
+            <param name="data">The read data</param>
+            <param name="length">The number of words to read.  Also, outputs 
+            the number of bytes actually read.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteI2C(System.UInt16,System.Byte[],System.UInt16)">
+            <summary>
+            Write the I2C port
+            </summary>
+            <param name="address">The device address</param>
+            <param name="data">The data to write</param>
+            <param name="length">The number of bytes to write</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteI2C(System.UInt16,System.Byte,System.UInt16[],System.UInt16)">
+            <summary>
+            Write the I2C port by first writing a register index, then by 
+            writing the data
+            </summary>
+            <param name="address">The device address</param>
+            <param name="regaddr">The register index</param>
+            <param name="data">The data to write</param>
+            <param name="length">The number of words to write</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.CachedWriteI2C(System.UInt16,System.Byte[],System.UInt16)">
+            <summary>
+            Perform a cached-write (repeated-start) on the I2C port
+            </summary>
+            <param name="address">The device address</param>
+            <param name="data">The data to write</param>
+            <param name="length">The number of bytes to write</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadStorage(System.UInt16,System.Byte[],System.UInt16)">
+            <summary>
+            Read a block of bytes from memory
+            </summary>
+            <param name="address">The byte offset into memory where the read 
+            should begin</param>
+            <param name="data">The data read</param>
+            <param name="bytes">The number of bytes to read</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteStorage(System.UInt16,System.Byte[],System.UInt16)">
+            <summary>
+            Write a block of bytes to memory
+            </summary>
+            <param name="address">The byte offset into memory where the write 
+            should begin</param>
+            <param name="data">The data to write</param>
+            <param name="bytes">The number of bytes to write</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.SetTimeout(System.UInt32)">
+            <summary>
+            Set the timeout for QuickUSB read data transfers
+            </summary>
+            <param name="timeOut">The timeout value, in milliseconds</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadSPI(System.Byte,System.Byte[],System.UInt16@)">
+            <summary>
+            Read a block of bytes from the specified SPI slave port
+            </summary>
+            <param name="portNum">The SPI device address (nSS line) to read 
+            from</param>
+            <param name="data">The data to read</param>
+            <param name="length">The number of bytes to read.  Also, outputs 
+            the number of bytes actually read.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteSPI(System.Byte,System.Byte[],System.UInt16)">
+            <summary>
+            Write a block of bytes to the specified SPI slave port
+            </summary>
+            <param name="portNum">The SPI device address (nSS line) to read 
+            from</param>
+            <param name="data">The data to write</param>
+            <param name="length">The number of bytes to write</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteReadSPI(System.Byte,System.Byte[],System.UInt16)">
+            <summary>
+            Simultaneously write and read a block of data to and from the
+            specified SPI slave port
+            </summary>
+            <param name="portNum">The SPI device address (nSS line) to read 
+            from</param>
+            <param name="data">The data to write.  The buffer is overwritten 
+            with the read data.</param>
+            <param name="length">The number of bytes to write/read</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadBulkDataAsync(System.IntPtr,System.UInt32,BitwiseSystems.QuickUsb.BulkStream,BitwiseSystems.QuickUsb.BulkStreamCompletionRoutine,System.IntPtr)">
+            <summary>
+            Perform an asynchronous read with the option of having a callback 
+            routine
+            </summary>
+            <param name="data">The data to read.  This buffer must remain 
+            valid until the request completes.</param>
+            <param name="bytes">The number of bytes to read</param>
+            <param name="bulkStream">A pointer to a pinned 
+            QuickUsb.BulkStream object.  This object must not be able to be 
+            relocated by the Garbage Collector and must exist until the 
+            request completes.</param>
+            <param name="completion">(Optional) The completion routine to call 
+            when the request completes.  To not use, specifiy IntPtr.Zero.</param>
+            <param name="tag">(Optional) A user pointer passed on to the 
+            completion rountine used to associate user information with the 
+            request.  To not use, specifiy IntPtr.Zero.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteBulkDataAsync(System.IntPtr,System.UInt32,BitwiseSystems.QuickUsb.BulkStream,BitwiseSystems.QuickUsb.BulkStreamCompletionRoutine,System.IntPtr)">
+            <summary>
+            Perform an asynchronous write with the option of having a 
+            callback routine
+            </summary>
+            <param name="data">The data to write.  This buffer must remain 
+            valid until the request completes.</param>
+            <param name="bytes">The number of bytes to write</param>
+            <param name="bulkStream">A pointer to a pinned 
+            QuickUsb.BulkStream object.  This object must not be able to be 
+            relocated by the Garbage Collector and must exist until the 
+            request completes.</param>
+            <param name="completion">(Optional) The completion routine to call 
+            when the request completes.  To not use, specifiy IntPtr.Zero.</param>
+            <param name="tag">(Optional) A user pointer passed on to the 
+            completion rountine used to associate user information with the 
+            request.  To not use, specifiy IntPtr.Zero.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.BulkWait(BitwiseSystems.QuickUsb.BulkStream,System.Boolean)">
+            <summary>
+            Check if a asynchronous transaction (made with either 
+            QuickUsb.WriteBulkDataAsync or QuickUsb.ReadBulkDataAsync) has 
+            completed, or wait for the transaction to complete
+            </summary>
+            <param name="bulkStream">The QuickUsbBulkStream object passed into
+            the corresponding QuickUsb.WriteBulkDataAsync or 
+            QuickUsb.ReadBulkDataAsync function call.  This object must not be
+            able to be relocated by the Garbage Collector and must exist until
+            the request completes.</param>
+            <param name="immediate">If false, the function will block until the 
+            request completes and executes its completion routine (if any).  
+            If true, the function will check if the indicated request has 
+            already completed and executed its associated completion routine 
+            (if any) and return immediately.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.SetNumAsyncThreads(System.UInt16,System.UInt16)">
+            <summary>
+            Set the number of threads and the thread concurrency for the 
+            Asynchronous Data API.
+            </summary>
+            <param name="numThreads">A word indicating the number of threads 
+            to allocate for the Asynchronous API.  If numThreads is zero, no 
+            threads are created and the Asynchronous API will be 
+            single-threaded.  If numThreads is greater than zero, the 
+            Asynchronous API is multithreaded—the indicated number of threads 
+            will be created and dedicated to asynchronously processing 
+            completion routines.  When multithreading, the recommended number 
+            of threads to maximize multithreading performance is equal to the 
+            number of processors/cores in the system times two.</param>
+            <param name="concurrency">A word indicating the number of threads 
+            that are allowed to execute completion routines simultaneously.  
+            Specify zero if numThreads is zero.  When multithreading, the 
+            number of threads allowed to execute completion routines 
+            concurrently will be limited by the value of ‘concurrency’, which 
+            must be at least one.  The recommended concurrency to maximize 
+            multithreading performance is equal to the total number of 
+            processors/cores in the system.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.GetNumAsyncThreads(System.UInt16@,System.UInt16@)">
+            <summary>
+            Get the number of threads and the thread concurrency for the 
+            Asynchronous Data API.
+            </summary>
+            <param name="numThreads">A pointed to a word indicating the number 
+            of threads allocated for the Asynchronous API.</param>
+            <param name="concurrency">A pointer to a word indicating the 
+            number of threads that are allowed to execute completion routines 
+            simultaneously.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadBulkDataStartStream(System.IntPtr,System.UInt32,System.UInt32,BitwiseSystems.QuickUsb.BulkStreamCompletionRoutine,System.IntPtr,System.Byte@,System.UInt16,System.UInt16)">
+            <summary>
+            Start streaming data into the computer from the QuickUSB device.
+            </summary>
+            <param name="buffers">(Optional) An array of pointers to the user allocated
+            buffers used to store the read data.  These buffers must 
+            remain valid until the read stream has been stopped.  If this
+            parameter is null then the API will allocate and managed the 
+            memory for the data buffers.  </param>
+            <param name="numBuffers">The number of buffers.</param>
+            <param name="bufferSize">The byte size of each buffer.</param>
+            <param name="cRoutine">The completion routine (callback function) that is
+            called each time a buffer is filled with data.</param>
+            <param name="tag">(Optional) A pointer containing user-specific data that is
+            passed into the completion routine.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ReadBulkDataStartStream(System.IntPtr[],System.UInt32,System.UInt32,BitwiseSystems.QuickUsb.BulkStreamCompletionRoutine,System.IntPtr,System.Byte@,System.UInt16,System.UInt16)">
+            <summary>
+            Start streaming data into the computer from the QuickUSB device.
+            </summary>
+            <param name="buffers">(Optional) An array of pointers to the user allocated
+            buffers used to store the read data.  These buffers must 
+            remain valid until the read stream has been stopped.  If this
+            parameter is null then the API will allocate and managed the 
+            memory for the data buffers.  </param>
+            <param name="numBuffers">The number of buffers.</param>
+            <param name="bufferSize">The byte size of each buffer.</param>
+            <param name="cRoutine">The completion routine (callback function) that is
+            called each time a buffer is filled with data.</param>
+            <param name="tag">(Optional) A pointer containing user-specific data that is
+            passed into the completion routine.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteBulkDataStartStream(System.IntPtr,System.UInt32,System.UInt32,BitwiseSystems.QuickUsb.BulkStreamCompletionRoutine,System.IntPtr,System.Byte@,System.UInt16,System.UInt16)">
+            <summary>
+            Start streaming data from the computer to the QuickUSB device.
+            </summary>
+            <param name="buffers">An array of pointers to the user allocated buffers  
+            holding the data to write.  These buffers must remain valid 
+            until the read stream has been stopped.</param>
+            <param name="numBuffers">The number of buffers.</param>
+            <param name="bufferSize">The byte size of each buffer.</param>
+            <param name="cRoutine">The completion routine (callback function) that is
+             called each time a buffer has been written.  This buffer must
+             be refilled with the new data to write from within the 
+             completion routine.</param>
+            <param name="tag">(Optional) A pointer containing user-specific data that is
+            passed into the completion routine.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteBulkDataStartStream(System.IntPtr[],System.UInt32,System.UInt32,BitwiseSystems.QuickUsb.BulkStreamCompletionRoutine,System.IntPtr,System.Byte@,System.UInt16,System.UInt16)">
+            <summary>
+            Start streaming data from the computer to the QuickUSB device.
+            </summary>
+            <param name="buffers">An array of pointers to the user allocated buffers  
+            holding the data to write.  These buffers must remain valid 
+            until the read stream has been stopped.</param>
+            <param name="numBuffers">The number of buffers.</param>
+            <param name="bufferSize">The byte size of each buffer.</param>
+            <param name="cRoutine">The completion routine (callback function) that is
+             called each time a buffer has been written.  This buffer must
+             be refilled with the new data to write from within the 
+             completion routine.</param>
+            <param name="tag">(Optional) A pointer containing user-specific data that is
+            passed into the completion routine.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.StopStream(System.Byte,System.Boolean)">
+            <summary>
+            Stop a previously started read or write data stream.
+            </summary>
+            <param name="streamID">The ID of the stream to process, as returned
+            from a call to QuickUsbReadBulkDataStartStream or 
+            QuickUsbWriteBulkDataStartStream.</param>
+            <param name="immediate">If false, this function will block until the stream has
+            completely stopped and any remaining callbacks have been
+            called.  If true, the stream will be marked to shutdown and
+            will return without blocking.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ProcessStream(System.Byte,System.UInt32)">
+            <summary>
+            For single-threaded streams, this function is called to process and
+            re-issue completed requests.
+            </summary>
+            <param name="streamID">The ID of the stream to process, as returned
+            from a call to QuickUsbReadBulkDataStartStream or 
+            QuickUsbWriteBulkDataStartStream.</param>
+            <param name="milliseconds">The number of milliseconds the caller is
+            willing to wait until a data request on the indicated stream has 
+            completed and is processed.  If no data request on the indicated 
+            stream has completed within the specified amount of time, the 
+            function will return unsuccessfully and a call to 
+            QuickUsbGetLastError will indicate the error 
+            QUICKUSB_ERROR_TIMEOUT.  If milliseconds is zero, the function will
+            process any requests that are completed or timeout immediately.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.PauseStream(System.Byte,System.Boolean)">
+            <summary>
+            Pause the automatic re-issuing of data requests on a stream.
+            </summary>
+            <param name="streamID">The ID of the stream to process, as returned
+            from a call to QuickUsbReadBulkDataStartStream or 
+            QuickUsbWriteBulkDataStartStream.</param>
+            <param name="immediate"></param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ResumeStream(System.Byte)">
+            <summary>
+            Resume the automatic re-issuing of data requests on a stream.
+            </summary>
+            <param name="streamID">The ID of the stream to process, as returned
+            from a call to QuickUsbReadBulkDataStartStream or 
+            QuickUsbWriteBulkDataStartStream.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.WriteFirmware(System.String,BitwiseSystems.QuickUsb.Programming,BitwiseSystems.QuickUsb.ProgressDelegate,System.IntPtr)">
+            <summary>
+            Write QuickUSB firmware to a device
+            </summary>
+            <param name="fileName">The path and file name of the QuickUSB 
+            firmware (QUSB) file</param>
+            <param name="options">Specify QuickUsb.PreserveCustomization to 
+            preserve customizations present in the current firmware, 
+            QuickUsb.PreserveDefaults to preserve default settings present 
+            in the current firmware, QuickUsb.PreserveGpif to preserve GPIF 
+            customizations, and/or QuickUsb.PreserveSerial to preserve the 
+            serial number.  To specify a new serial number, pass 
+            QuickUsb.ProgramSerial bitwise or'ed (|) together with the new 
+            serial number (must be between 1 and 65535).</param>
+            <param name="callback">(Optional) A function to call during the 
+            programming process to report the percentage completed.  This 
+            may be used to perform background processes and GUI updates 
+            while the programming process takes place.</param>
+            <param name="tag">(Optional) A pointer to user data that is 
+            passed onto the callback function.  Specify IntPtr.Zero to 
+            ignore.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.VerifyFirmware(System.String,BitwiseSystems.QuickUsb.ProgressDelegate,System.IntPtr)">
+            <summary>
+            Verify that the firmware contained in the specified device matches
+            that of the supplied firmware file
+            </summary>
+            <param name="fileName">The path and file name of the QuickUSB 
+            firmware (QUSB) file</param>
+            <param name="callback">(Optional) A callback function to call 
+            during the verify process to report the percentage completed.  
+            This may be used to perform background processes and GUI updates 
+            while the verify process takes place.</param>
+            <param name="tag">(Optional) A pointer to user data that is 
+            passed onto the callback function.  Specify IntPtr.Zero to 
+            ignore.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.IdentifyEpcs(System.Byte,BitwiseSystems.QuickUsb.EpcsId@,System.UInt32@,BitwiseSystems.QuickUsb.EpcsFlags)">
+            <summary>
+            Identify the EPCS device connected to the SPI bus on the specified
+            nSS line
+            </summary>
+            <param name="nSS">The nSS SPI line that the EPCS device is 
+            connected to (0-9)</param>
+            <param name="epcsId">The ID of the EPCS device</param>
+            <param name="epcsByteSize">Outputs the ID of the EPCS device 
+            found.  This will be one of EpcsId.Epcs1 (0x10), EpcsId.Epcs4 
+            (0x12), EpcsId.Epcs16 (0x14), EpcsId.Epcs64 (0x16), or 
+            EpcsId.Unknown (0x00).</param>
+            <param name="flags">Additional flags.  Specify 
+            QUICKUSB_EPCS_IGNORE_NCE (0x0001) to prevent the function from 
+            automatically asserting the nCE line of the FPGA at the 
+            beginning of the function are re-asserting is at the end of 
+            the function.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.ConfigureEpcs(System.Byte,System.String,BitwiseSystems.QuickUsb.EpcsFlags,BitwiseSystems.QuickUsb.ProgressDelegate,System.IntPtr)">
+            <summary>
+            Write the specified FPGA data file to the EPCS device
+            </summary>
+            <param name="nSS">The nSS SPI line that the EPCS device is 
+            connected to (0-9)</param>
+            <param name="filePath">The path and file name of the FPGA data file</param>
+            <param name="flags">Additional flags.  Specify 
+            QUICKUSB_EPCS_IGNORE_NCE (0x0001) to prevent the function from 
+            automatically asserting the nCE line of the FPGA at the 
+            beginning of the function are re-asserting is at the end of 
+            the function.  Specify QUICKUSB_EPCS_SKIP_ERASE (0x0002) to 
+            prevent the bulk erase step prior to writing the device.</param>
+            <param name="callback">(Optional) A callback function to call 
+            during the verify process to report the percentage completed.  
+            This may be used to perform background processes and GUI updates 
+            while the verify process takes place.</param>
+            <param name="tag">(Optional) A pointer to user data that is 
+            passed onto the callback function.  Specify IntPtr.Zero to 
+            ignore.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.VerifyEpcs(System.Byte,System.String,BitwiseSystems.QuickUsb.EpcsFlags,BitwiseSystems.QuickUsb.ProgressDelegate,System.IntPtr)">
+            <summary>
+            Verify that the data contained in the EPCS device matches that of 
+            the specified FPGA data file
+            </summary>
+            <param name="nSS">The nSS SPI line that the EPCS device is 
+            connected to (0-9)</param>
+            <param name="filePath">The path and file name of the FPGA data file</param>
+            <param name="flags">Additional flags.  Specify 
+            QUICKUSB_EPCS_IGNORE_NCE (0x0001) to prevent the function from 
+            automatically asserting the nCE line of the FPGA at the 
+            beginning of the function are re-asserting is at the end of 
+            the function.</param>
+            <param name="callback">(Optional) A callback function to call 
+            during the verify process to report the percentage completed.  
+            This may be used to perform background processes and GUI updates 
+            while the verify process takes place.</param>
+            <param name="tag">(Optional) A pointer to user data that is 
+            passed onto the callback function.  Specify IntPtr.Zero to 
+            ignore.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsb.EraseEpcs(System.Byte,BitwiseSystems.QuickUsb.EpcsFlags,BitwiseSystems.QuickUsb.ProgressDelegate,System.IntPtr)">
+            <summary>
+            Perform the bulk erase action of the EPCS device to erase the
+            entire device to 0xFF
+            </summary>
+            <param name="nSS">The nSS SPI line that the EPCS device is 
+            connected to (0-9)</param>
+            <param name="flags">Additional flags controlling the operation of 
+            this function.  Specify QUICKUSB_EPCS_IGNORE_NCE (0x0001) to 
+            prevent the function from automatically asserting the nCE line of 
+            the FPGA at the beginning of the function are re-asserting is at 
+            the end of the function.</param>
+            <param name="callback">(Optional) A callback function to call 
+            during the verify process to report the percentage completed.  
+            This may be used to perform background processes and GUI updates 
+            while the verify process takes place.</param>
+            <param name="tag">(Optional) A pointer to user data that is 
+            passed onto the callback function.  Specify IntPtr.Zero to 
+            ignore.</param>
+            <returns>True on success or false on failure.  Get extended error
+            information with QuickUsb.LastError().</returns>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsb.Handle">
+            <summary>
+            A read-only property containing the QuickUSB handle to the device, if opened
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsb.IsOpened">
+            <summary>
+            A read-only property which indicates if the module is currently opened by the API
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsb.Name">
+            <summary>
+            The name of the QuickUSB device
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsb.Make">
+            <summary>
+            The make of the QuickUSB device (as returned by QuickUsb.GetStringDescriptor)
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsb.Model">
+            <summary>
+            The model of the QuickUSB device (as returned by QuickUsb.GetStringDescriptor)
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsb.Serial">
+            <summary>
+            The serial number of the QuickUSB device (as returned by QuickUsb.GetStringDescriptor)
+            </summary>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsb.Port">
+            <summary>
+            QuickUSB Ports Enumeration
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Port.PORT_A">
+            <summary>
+            Port A index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Port.A">
+            <summary>
+            Port A index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Port.PORT_B">
+            <summary>
+            Port B index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Port.B">
+            <summary>
+            Port B index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Port.PORT_C">
+            <summary>
+            Port C index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Port.C">
+            <summary>
+            Port C index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Port.PORT_D">
+            <summary>
+            Port D index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Port.D">
+            <summary>
+            Port D index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Port.PORT_E">
+            <summary>
+            Port E index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Port.E">
+            <summary>
+            Port E index
+            </summary>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsb.StringDescriptor">
+            <summary>
+            QuickUSB String Descriptor Enumeration
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.StringDescriptor.MAKE">
+            <summary>
+            Make string descriptor index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.StringDescriptor.Make">
+            <summary>
+            Make string descriptor index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.StringDescriptor.MODEL">
+            <summary>
+            Model string descriptor index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.StringDescriptor.Model">
+            <summary>
+            Model string descriptor index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.StringDescriptor.SERIAL">
+            <summary>
+            Serial string descriptor index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.StringDescriptor.Serial">
+            <summary>
+            Serial string descriptor index
+            </summary>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsb.Setting">
+            <summary>
+            QuickUSB Settings Enumeration
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_EP26CONFIG">
+            <summary>
+            Ep26Config setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.Ep26Config">
+            <summary>
+            Ep26Config setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_WORDWIDE">
+            <summary>
+            WordWide setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.WordWide">
+            <summary>
+            WordWide setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_DATAADDRESS">
+            <summary>
+            DataAddress setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.DataAddress">
+            <summary>
+            DataAddress setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_FIFO_CONFIG">
+            <summary>
+            FifoConfig setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.FifoConfig">
+            <summary>
+            FifoConfig setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_FPGATYPE">
+            <summary>
+            FpgaType setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.FpgaType">
+            <summary>
+            FpgaType setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_CPUCONFIG">
+            <summary>
+            CpuConfig setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.CpuConfig">
+            <summary>
+            CpuConfig setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_SPICONFIG">
+            <summary>
+            SpiConfig setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SpiConfig">
+            <summary>
+            SpiConfig setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_SLAVEFIFOFLAGS">
+            <summary>
+            SlaveFifoFlags setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SlaveFifoFlags">
+            <summary>
+            SlaveFifoFlags setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_I2CTL">
+            <summary>
+            I2Ctl setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.I2Ctl">
+            <summary>
+            I2Ctl setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_PORTA">
+            <summary>
+            PortA setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.PortA">
+            <summary>
+            PortA setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_PORTB">
+            <summary>
+            PortB setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.PortB">
+            <summary>
+            PortB setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_PORTC">
+            <summary>
+            PortC setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.PortC">
+            <summary>
+            PortC setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_PORTD">
+            <summary>
+            PortD setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.PortD">
+            <summary>
+            PortD setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_PORTE">
+            <summary>
+            PortE setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.PortE">
+            <summary>
+            PortE setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_PORTACCFG">
+            <summary>
+            PortACCfg setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.PortACCfg">
+            <summary>
+            PortACCfg setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_PINFLAGS">
+            <summary>
+            PinFlags setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.PinFlags">
+            <summary>
+            PinFlags setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_VERSIONBUILD">
+            <summary>
+            VersionBuild setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.VersionBuild">
+            <summary>
+            VersionBuild setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_VERSIONSPEED">
+            <summary>
+            VersionSpeed setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.VersionSpeed">
+            <summary>
+            VersionSpeed setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_TIMEOUT_HIGH">
+            <summary>
+            TimeoutHigh setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.TimeoutHigh">
+            <summary>
+            TimeoutHigh setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.SETTING_TIMEOUT_LOW">
+            <summary>
+            TimeoutLow setting index
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Setting.TimeoutLow">
+            <summary>
+            TimeoutLow setting index
+            </summary>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsb.FpgaConfType">
+            <summary>
+            QuickUSB FPGA Configuration Type Enumeration
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.FpgaConfType.FPGATYPE_ALTERAPS">
+            <summary>
+            AlteraPS configuration type
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.FpgaConfType.AlteraPS">
+            <summary>
+            AlteraPS configuration type
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.FpgaConfType.FPGATYPE_XILINXSS">
+            <summary>
+            Xilinx configuration type
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.FpgaConfType.XilinxSS">
+            <summary>
+            Xilinx configuration type
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.FpgaConfType.FPGATYPE_JTAG">
+            <summary>
+            JTAG configuration type
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.FpgaConfType.Jtag">
+            <summary>
+            JTAG configuration type
+            </summary>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsb.EpcsId">
+            <summary>
+            EPCS ID Enumeration
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.EpcsId.EpcsUnknown">
+            <summary>
+            An unknown EPCS device
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.EpcsId.Epcs1">
+            <summary>
+            An EPCS1 device
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.EpcsId.Epcs4">
+            <summary>
+            An EPCS4 device
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.EpcsId.Epcs16">
+            <summary>
+            An EPCS16 device
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.EpcsId.Epcs64">
+            <summary>
+            An EPCS64 device
+            </summary>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsb.EpcsFlags">
+            <summary>
+            EPCS Flags Enumeration
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.EpcsFlags.None">
+            <summary>
+            Default operation
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.EpcsFlags.IgnoreNCE">
+            <summary>
+            Ignore the nCE line
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.EpcsFlags.SkipErase">
+            <summary>
+            An EPCS1 device
+            </summary>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsb.Programming">
+            <summary>
+            Programming Firmware Enumeration
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Programming.ProgramSerial">
+            <summary>
+            Program a new serial number.  Bitwise or (|) this together 
+            with the serial number to program a new serial.  The serial 
+            number must be between 1 and 65535.
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Programming.PreserveCustomization">
+            <summary>
+            Preserve any customizations performed by the QuickUSB 
+            Customizer
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Programming.PreserveDefaults">
+            <summary>
+            Preserve defaults (they are not preserved if the IO Model 
+            changes)
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Programming.PreserveGpif">
+            <summary>
+            Preserve the GPIF
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Programming.PreserveSerial">
+            <summary>
+            Preserve the serial
+            </summary>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsb.Error">
+            <summary>
+            QuickUSB Error Enumeration
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.ERROR_NO_ERROR">
+            <summary>
+            No error
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.NoError">
+            <summary>
+            No error
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.ERROR_OUT_OF_MEMORY">
+            <summary>
+            Out of memory error
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.OutOfMemory">
+            <summary>
+            Out of memory error
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.ERROR_CANNOT_OPEN_MODULE">
+            <summary>
+            Cannot open module
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.CannotOpenModule">
+            <summary>
+            Cannot open module
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.ERROR_CANNOT_FIND_DEVICE">
+            <summary>
+            Cannot find specified QuickUSB device
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.CannotFindDevice">
+            <summary>
+            Cannot find specified QuickUSB device
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.ERROR_IOCTL_FAILED">
+            <summary>
+            IOCTL failed
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.IoctlFailed">
+            <summary>
+            IOCTL failed
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.ERROR_INVALID_PARAMETER">
+            <summary>
+            Invalid parameter
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.InvalidParameter">
+            <summary>
+            Invalid parameter
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.ERROR_TIMEOUT">
+            <summary>
+            Operation timed out
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.Timeout">
+            <summary>
+            Operation timed out
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.ERROR_FUNCTION_NOT_SUPPORTED">
+            <summary>
+            Function not supported
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.FunctionNotSupported">
+            <summary>
+            Function not supported
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.ERROR_I2C_BUS_ERROR">
+            <summary>
+            I2C bus error
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.I2cBusError">
+            <summary>
+            I2C bus error
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.ERROR_I2C_NO_ACK">
+            <summary>
+            No ACK received from I2C device
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.I2cNoAck">
+            <summary>
+            No ACK received from I2C device
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.ERROR_I2C_SLAVE_WAIT">
+            <summary>
+            An I2C slave device is holding SCL low
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.I2cSlaveWait">
+            <summary>
+            An I2C slave device is holding SCL low
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.ERROR_I2C_TIMEOUT">
+            <summary>
+            Timeout on the I2C bus
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.I2cTimeout">
+            <summary>
+            Timeout on the I2C bus
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_UNKNOWN_DRIVER_TYPE">
+            <summary>
+            Unknown driver
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.UnknownDriverType">
+            <summary>
+            Unknown driver
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_ALREADY_OPENED">
+            <summary>
+            The QuickUSB device has already been opened
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.AlreadyOpened">
+            <summary>
+            The QuickUSB device has already been opened
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_CANNOT_CLOSE_MODULE">
+            <summary>
+            The QuickUSB device has already been closed or was never opened
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.CannotCloseModule">
+            <summary>
+            The QuickUSB device has already been closed or was never opened
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_FPGA_INIT_FAILED">
+            <summary>
+            Unable to initialize the FPGA configuration process
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.FpgaInitFailed">
+            <summary>
+            Unable to initialize the FPGA configuration process
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_PACKET_NOT_MULTIPLE_512">
+            <summary>
+            The requested amount of data was not a multiple of 512 bytes
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.PacketNotMultiple512">
+            <summary>
+            The requested amount of data was not a multiple of 512 bytes
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_PACKET_NOT_MULTIPLE_64">
+            <summary>
+            The requested amount of data was not a multiple of 64 bytes
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.PacketNotMultiple64">
+            <summary>
+            The requested amount of data was not a multiple of 64 bytes
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_UNKNOWN_SYSTEM_ERROR">
+            <summary>
+            Unknown system error
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.UnknownSystemError">
+            <summary>
+            Unknown system error
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_ABORTED">
+            <summary>
+            Operation was aborted
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.Aborted">
+            <summary>
+            Operation was aborted
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_DEPRECATED">
+            <summary>
+            Function has been deprecated
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.Deprecated">
+            <summary>
+            Function has been deprecated
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_INVALID_SERIAL">
+            <summary>
+            Invalid serial number
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.InvalidSerial">
+            <summary>
+            Invalid serial number
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_CANNOT_OPEN_FILE">
+            <summary>
+            Cannot open file
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.CannotOpenFile">
+            <summary>
+            Cannot open file
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_VERIFY_FAILED">
+            <summary>
+            Firmware verify failed
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.VerifyFailed">
+            <summary>
+            Firmware verify failed
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_FIRMWARE_ERROR">
+            <summary>
+            Firmware error
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.FirmwareError">
+            <summary>
+            Firmware error
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_ALREADY_COMPLETED">
+            <summary>
+            Operation already completed
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.AlreadyCompleted">
+            <summary>
+            Operation already completed
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_NOT_COMPLETED">
+            <summary>
+            Operation not yet completed
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.NotCompleted">
+            <summary>
+            Operation not yet completed
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_FPGA_CONFIG_FAILED">
+            <summary>
+            FPGA configuration failed
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.FpgaConfigFailed">
+            <summary>
+            FPGA configuration failed
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_INVALID_OPERATION">
+            <summary>
+            Invalid operation
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.InvalidOperation">
+            <summary>
+            Invalid operation
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_TOO_MANY_REQUESTS">
+            <summary>
+            Too many outstanding async requests have been issued
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.TooManyRequests">
+            <summary>
+            Too many outstanding async requests have been issued
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_EPCS_NOT_FOUND">
+            <summary>
+            An EPCS device was not found
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.EpcsNotFound">
+            <summary>
+            An EPCS device was not found
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_EPCS_TOO_SMALL">
+            <summary>
+            The EPCS device is not large enough to fit all of the specified data
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.EpcsTooSmall">
+            <summary>
+            The EPCS device is not large enough to fit all of the specified data
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.QUICKUSB_ERROR_NOT_STREAMING">
+            <summary>
+            The API is currently not streaming data
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.Error.NotStreaming">
+            <summary>
+            The API is currently not streaming data
+            </summary>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsb.BulkStream">
+            <summary>
+            QuickUSB BulkStream Structure
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.BulkStream.InternalData">
+            <summary>
+            Reserved
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.BulkStream.Handle">
+            <summary>
+            Handle to QuickUSB device
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.BulkStream.Buffer">
+            <summary>
+            Data buffer
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.BulkStream.CompletionRoutine">
+            <summary>
+            Completion routine
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.BulkStream.Tag">
+            <summary>
+            User data
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.BulkStream.InternalReserved">
+            <summary>
+            Reserved
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.BulkStream.BytesRequested">
+            <summary>
+            The number of bytes requested
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.BulkStream.BytesTransferred">
+            <summary>
+            The number of bytes actually transferred
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.BulkStream.Error">
+            <summary>
+            The error associated with this request
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.BulkStream.InternalStatus">
+            <summary>
+            Reserved
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.BulkStream.StreamID">
+            <summary>
+            The ID of the stream associated with this request
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.BulkStream.RequestID">
+            <summary>
+            The ID of this request
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.BulkStream.Reserved">
+            <summary>
+            Reserved
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.BulkStream.StreamType">
+            <summary>
+            Reserved
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.BulkStream.StructSize">
+            <summary>
+            This size of this structure
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsb.BulkStream.CompletionType">
+            <summary>
+            Reserved
+            </summary>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsb.PercentCompleteDelegate">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsb.BulkStreamCompletionRoutine">
+            <summary>
+            
+            </summary>
+            <param name="bulkStream"></param>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsb.ProgressDelegate">
+            <summary>
+            
+            </summary>
+            <param name="hDevice"></param>
+            <param name="percentComplete"></param>
+            <param name="tag"></param>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsbWinForms">
+            <summary>
+            QuickUSB Control Class
+            </summary>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsbWinForms.InsertColumnData(System.String,BitwiseSystems.QuickUsbWinForms.ColumnDataType,System.Int32)">
+            <summary>
+            Insert a new column of data for the detail view
+            </summary>
+            <param name="title">The column header text</param>
+            <param name="type">The data to place in the column</param>
+            <param name="index">The index to insert this column before.  
+            Use -1 to append the column at then end of all columns.</param>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsbWinForms.RemoveColumnData(System.String)">
+            <summary>
+            Remove the column by the column header text
+            </summary>
+            <param name="title">The column header text</param>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsbWinForms.RemoveAllColumnData">
+            <summary>
+            Remove all column headers and data
+            </summary>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsbWinForms.#ctor">
+            <summary>
+            QuickUSB Windows Form Control
+            </summary>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsbWinForms.FlushDevices">
+            <summary>
+            Remove all devices in the control and perform a full rescan for 
+            all devices
+            </summary>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsbWinForms.RescanForModules">
+            <summary>
+            Force a scan for QuickUsb modules.  This is automatically called by the timer.
+            </summary>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsbWinForms.ShowModule(BitwiseSystems.QuickUsb)">
+            <summary>
+            You may prevent QuickUsb modules connected to the host from being shown in the control.  This method will mark a hidden QuickUsb as now visible.
+            </summary>
+            <param name="qusb">The QuickUsb to show</param>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsbWinForms.HideModule(BitwiseSystems.QuickUsb)">
+            <summary>
+            You may prevent QuickUsb modules connected to the host from being shown in the control.  This method will mark a visible QuickUsb as now hidden.
+            </summary>
+            <param name="qusb">The QuickUsb to hide</param>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsbWinForms.ShowAllModules">
+            <summary>
+            You may prevent QuickUsb modules connected to the host from being shown in the control.  This method will marks all modules as visible.
+            </summary>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsbWinForms.HideAllModules">
+            <summary>
+            You may prevent QuickUsb modules connected to the host from being shown in the control.  This method will marks all modules as hidden.
+            </summary>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsbWinForms.IsModuleVisible(BitwiseSystems.QuickUsb)">
+            <summary>
+            Check to see if a particular QuickUsb is visible on the control
+            </summary>
+            <param name="qusb">The QuickUsb to check</param>
+            <returns></returns>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsbWinForms.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsbWinForms.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsbWinForms.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="E:BitwiseSystems.QuickUsbWinForms.ModuleConnected">
+            <summary>
+            The event that gets fired when a new QuickUSB is discovered by the control
+            </summary>
+        </member>
+        <member name="E:BitwiseSystems.QuickUsbWinForms.ModuleDisconnected">
+            <summary>
+            The event that gets fired when a QuickUSB in the control is removed from the host
+            </summary>
+        </member>
+        <member name="E:BitwiseSystems.QuickUsbWinForms.SelectionChanged">
+            <summary>
+            The event that gets fired when the currently selected QuickUSB has changed
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsbWinForms.Modules">
+            <summary>
+            A property holding a list of all connected QuickUSB modules
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsbWinForms.ModuleNames">
+            <summary>
+            A property holding a list of all connect QuickUSB modules by their name
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsbWinForms.ModuleNamesDict">
+            <summary>
+            A property holding a dictionary of all QuickUSB names (key) to QuickUSB objects (value)
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsbWinForms.SelectedModule">
+            <summary>
+            A property holding the currently selected QuickUSB object.  If more than one QuickUSB is selected, this is the first QuickUSB in the list.
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsbWinForms.SelectedModules">
+            <summary>
+            A property holding a list of all the currently selected QuickUSB objects
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsbWinForms.ShowUnprogrammedDevices">
+            <summary>
+            Enable the control to include listing unprogrammed QuickUSB devices.  Note that you
+            will not be able to communicate with these devices are they are not yet licensed
+            and do not contain valid QuickUSB firmware.
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsbWinForms.ScanEnabled">
+            <summary>
+            Enable the scan timer which issues a scan for connected/disconnected QuickUSB modules
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsbWinForms.ScanInterval">
+            <summary>
+            The the timer interval for the scan timer  which issues a scan for connected/disconnected QuickUSB modules
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsbWinForms.ScanOnLoad">
+            <summary>
+            Indicates whether the control should scan for connected modules on control creation
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsbWinForms.Scrollable">
+            <summary>
+            Determines if the QuickUSB control has a scrollbar if the QuickUSB icons do not fit in the client area of the control
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsbWinForms.AutoSelectFirstItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BitwiseSystems.QuickUsbWinForms.View">
+            <summary>
+            Get or set the current view (see the listview control) of the QuickUSB control.  Only three views are supported: Small icons, large icons, and detail.
+            </summary>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsbWinForms.ColumnDataType">
+            <summary>
+            Enumeration used to specify column headers
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsbWinForms.ColumnDataType.Name">
+            <summary>
+            The name of the QuickUSB device
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsbWinForms.ColumnDataType.Make">
+            <summary>
+            The make of the QuickUSB device, as returned from 
+            QuickUsb.GetStringDescriptor for StringDescriptor.Make
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsbWinForms.ColumnDataType.PrivateMake">
+            <summary>
+            The read-only make of the QuickUSB device.  This is always set
+            to 'Bitwise Systems'
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsbWinForms.ColumnDataType.Model">
+            <summary>
+            The make of the QuickUSB device, as returned from 
+            QuickUsb.GetStringDescriptor for StringDescriptor.Model
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsbWinForms.ColumnDataType.PrivateModel">
+            <summary>
+            The private model of the QuickUSB device.  This is typically
+            set to a string describing the firmware, such as 'QuickUSB 
+            QUSB2 Module v2.15.0 (FIFO Handshake)'
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsbWinForms.ColumnDataType.Serial">
+            <summary>
+            The make of the QuickUSB device, as returned from 
+            QuickUsb.GetStringDescriptor for StringDescriptor.Serial
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsbWinForms.ColumnDataType.PrivateSerial">
+            <summary>
+            The private serial number of the QuickUSB device
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsbWinForms.ColumnDataType.FirmwareVersion">
+            <summary>
+            The version of firmware in the QuickUSB device
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsbWinForms.ColumnDataType.DriverVersion">
+            <summary>
+            The driver version
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsbWinForms.ColumnDataType.LibraryVersion">
+            <summary>
+            The version of the DLLs currently in use
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsbWinForms.ColumnDataType.VID">
+            <summary>
+            The USB Vendor ID of the device.  Unless the device has been 
+            customized, this will be '0x0FBB'.
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsbWinForms.ColumnDataType.PID">
+            <summary>
+            The USB Product ID of the device.  Unless the device has been
+            customized, this will be '0x0001'.
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsbWinForms.ColumnDataType.IOModel">
+            <summary>
+            The name of the firmware IO Model, such as 'Simple I/O'
+            </summary>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsbWinForms.ConnectedHandler">
+            <summary>
+            The module connected event handler delegate
+            </summary>
+            <param name="sender">The issuing object</param>
+            <param name="e">The event args</param>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsbWinForms.DisconnectedHandler">
+            <summary>
+            The module disconnected event handler delegate
+            </summary>
+            <param name="sender">The issuing object</param>
+            <param name="e">The event args</param>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsbWinForms.SelectionChangedHandler">
+            <summary>
+            The selection changed event handler delegate
+            </summary>
+            <param name="sender">The issuing object</param>
+            <param name="e">The event args</param>
+        </member>
+        <member name="T:BitwiseSystems.QuickUsbWinForms.ModuleEventArgs">
+            <summary>
+            The module event arguments
+            </summary>
+        </member>
+        <member name="F:BitwiseSystems.QuickUsbWinForms.ModuleEventArgs.qusb">
+            <summary>
+            The QuickUsb object the event refers to
+            </summary>
+        </member>
+        <member name="M:BitwiseSystems.QuickUsbWinForms.ModuleEventArgs.#ctor(BitwiseSystems.QuickUsb)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="qusb">The disconnected QuickUsb object</param>
+        </member>
+    </members>
+</doc>

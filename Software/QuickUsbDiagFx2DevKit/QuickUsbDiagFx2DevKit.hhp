@@ -1,0 +1,38 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=QuickUsbDiagFx2DevKit.chm
+Contents file=Table of Contents.hhc
+Default topic=Welcome.htm
+Display compile progress=Yes
+Error log file=Log1.log
+Full-text search=Yes
+Index file=Index.hhk
+Language=0x409 English (United States)
+Title=QuickUSB Diagnostics for the EZUSB-FX2 Development Kit
+
+
+[FILES]
+Welcome.htm
+High-Speed Parallel Port.htm
+IO Ports.htm
+RS232 ports.htm
+I2C Port.htm
+About QuickUSB.htm
+Diagnostics.htm
+
+[ALIAS]
+IDH_HIGH_SPEED_PORT=High-Speed Parallel Port.htm
+IDH_I2C_PORT=I2C Port.htm
+IDH_IO_PORT=IO Ports.htm
+IDH_RS232_PORT=RS232 ports.htm
+
+[MAP]
+#include QuickUsbDiagFx2DevKit.h
+
+[TEXT POPUPS]
+QuickUsbDiagFx2DevKit.h
+QuickUsbDiagFx2DevKit.txt
+
+[INFOTYPES]
+

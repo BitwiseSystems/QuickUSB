@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[QuickUsbDiag.dsp]
+SCC_Aux_Path = "\\Server\VSS\"
+SCC_Project_Name = "$/Projects/Bitwise/QuickUSB/Library/Software/QuickUsbDiagVC6", SOHAAAAA
+
+[QuickUsbDiag.dsw]
+SCC_Aux_Path = "\\Server\VSS\"
+SCC_Project_Name = "$/Projects/Bitwise/QuickUSB/Library/Software/QuickUsbDiagVC6", SOHAAAAA

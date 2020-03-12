@@ -1,0 +1,899 @@
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsb.NET\bin\Release\QuickUsb.NET.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\Assembly\QuickUsb.NET.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs\QuickUsb.NET.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\QuickUsb.NET.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs\QuickUsb.NET.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\QuickUsb.NET.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbStorageCs\QuickUsbStorageCs\QuickUsb.NET.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\QuickUsb.NET.dll
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsb.NET\bin\Release\QuickUsb.NET.XML
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\Assembly\QuickUsb.NET.XML
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs\QuickUsb.NET.XML
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\QuickUsb.NET.XML
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs\QuickUsb.NET.XML
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\QuickUsb.NET.XML
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbStorageCs\QuickUsbStorageCs\QuickUsb.NET.XML
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\QuickUsb.NET.XML
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUSB\QuickUSB.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\C++ Builder\QuickUSB.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\MatLab\QuickUSB.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\VC\QuickUSB.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\QuickUSB.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Mingw\QuickUsbMingw\QuickUSB.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\CQuickUsb\CQuickUsb.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\C++ Builder\CQuickUsb.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\VC\CQuickUsb.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\CQuickUsb.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\CQuickUsb.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\CQuickUsb\CQuickUsb.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\C++ Builder\CQuickUsb.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\VC\CQuickUsb.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\CQuickUsb.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\CQuickUsb.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Doc\User Guides\Getting Started with QuickUSB.pdf
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Doc\Getting Started with QuickUSB.pdf
+Source Enabled C:\Projects\Bitwise\QuickUSB\Doc\User Guides\QuickUSB Diagnostics User Guide.pdf
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Doc\QuickUSB Diagnostics User Guide.pdf
+Source Enabled C:\Projects\Bitwise\QuickUSB\Doc\User Guides\QuickUSB Programmer User Guide.pdf
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Doc\QuickUSB Programmer User Guide.pdf
+Source Enabled C:\Projects\Bitwise\QuickUSB\Doc\User Guides\QuickUSB User Guide.pdf
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Doc\QuickUSB User Guide.pdf
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\Doc\QuickUSB Customizer User Guide.pdf
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Doc\QuickUSB Customizer User Guide.pdf
+Source Enabled C:\Projects\Bitwise\QuickUSB\Doc\QuickUSB Datasheet Rev B.pdf
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Doc\QuickUSB Datasheet Rev B.pdf
+Source Enabled C:\Projects\Bitwise\QuickUSB\Doc\QuickUSB Schematic Rev A1.pdf
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Doc\QuickUSB Schematic Rev A1.pdf
+Source Enabled C:\Projects\Bitwise\QuickUSB\Doc\QuickUSB Schematic Rev B.pdf
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Doc\QuickUSB Schematic Rev B.pdf
+Source Enabled C:\Projects\Bitwise\QuickUSB\Hardware\Module\Doc\QuickUSB Schematic Rev -.pdf
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Doc\QuickUSB Schematic Rev -.pdf
+Source Enabled C:\Projects\Bitwise\QuickUSB\Hardware\Module\Doc\QuickUSB Target Interface Rev B.pdf
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Doc\QuickUSB Target Interface Rev B.pdf
+Source Enabled C:\Projects\Bitwise\QuickUSB\Hardware\Module\Mechanical\QUSB2 Rev B Mechanical Drawing.pdf
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Doc\QUSB2 Rev B Mechanical Drawing.pdf
+Source Enabled C:\Projects\Bitwise\QuickUSB\Hardware\Module\Mechanical\QuickUSB.step
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\CAD\QuickUSB.stp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsb.NET\QuickUsb.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\Assembly\QuickUsb.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUSB\x86\Release\Windows\QuickUsbBorland.lib
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\C++ Builder\x86\QuickUsbBorland.lib
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\QuickUsbBorland.lib
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Delphi\QuickUsbDiagDelphi\QuickUsbBorland.lib
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUSB\x86\Release\Windows\QuickUSB.lib
+	Link Disabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\DLL\amd64\QuickUSB.lib
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\DLL\i386\QuickUSB.lib
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUSB\x64\Release\Windows\QuickUSB.lib
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\DLL\amd64\QuickUSB.lib
+	Link Disabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\DLL\i386\QuickUSB.lib
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbPy\QuickUsb.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\Python\QuickUsb.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\Console\QuickUsb.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\QuickUsb.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbPy\setup.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\Python\setup.py
+	Link Disabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\setup.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\DPInst.xml
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\DPInst.xml
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\DPInstx64.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\DPInstx64.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\DPInstx86.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\DPInstx86.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\QuickUSB SLA.txt
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\QuickUSB SLA.txt
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\QuickUSB.cat
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\QuickUSB.cat
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\QuickUSB.ico
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\QuickUSB.ico
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\QuickUSB.inf
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\QuickUSB.inf
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\Setup.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\Setup.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\amd64\QuickUSBamd64.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\amd64\QuickUSBamd64.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\DLL\amd64\QuickUSB.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\amd64\QuickUSBamd64.dll
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\amd64\QuickUSBamd64.sys
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\amd64\QuickUSBamd64.sys
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\amd64\QuickUSBamd64.sys
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\amd64\QuickUsbUtilamd64.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\amd64\QuickUsbUtilamd64.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\amd64\QuickUsbUtilamd64.dll
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\amd64\vcredist_x64.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\amd64\vcredist_x64.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\amd64\WdfCoInstaller01009.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\amd64\WdfCoInstaller01009.dll
+	Link Disabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\i386\WdfCoInstaller01009.dll
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\i386\QuickUSB.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\i386\QuickUSB.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\DLL\i386\QuickUSB.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\QuickUSB.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\i386\QuickUSB.dll
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\i386\QuickUSB.sys
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\i386\QuickUSB.sys
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\i386\QuickUSB.sys
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\i386\QuickUsbUtil.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\i386\QuickUsbUtil.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\i386\QuickUsbUtil.dll
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\i386\vcredist_x86.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\i386\vcredist_x86.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSB-Driver-v2.15.2\i386\WdfCoInstaller01009.dll
+	Link Disabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\amd64\WdfCoInstaller01009.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\i386\WdfCoInstaller01009.dll
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\Boot Sector FAT.tpl
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\Boot Sector FAT.tpl
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\Boot Sector FAT32.tpl
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\Boot Sector FAT32.tpl
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\Boot Sector NTFS.tpl
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\Boot Sector NTFS.tpl
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\chars.dat
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\chars.dat
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\Ext Directory Entry.tpl
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\Ext Directory Entry.tpl
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\Ext Group Descriptor.tpl
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\Ext Group Descriptor.tpl
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\Ext Inode.tpl
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\Ext Inode.tpl
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\Ext Superblock.tpl
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\Ext Superblock.tpl
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\FAT Directory Entry.tpl
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\FAT Directory Entry.tpl
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\FAT LFN Entry.tpl
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\FAT LFN Entry.tpl
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\File Type Signatures Search.txt
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\File Type Signatures Search.txt
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\HFS+ Volume Header.tpl
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\HFS+ Volume Header.tpl
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\language.dat
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\language.dat
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\Master Boot Record.tpl
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\Master Boot Record.tpl
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\NTFS FILE Record.tpl
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\NTFS FILE Record.tpl
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\polish2.dat
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\polish2.dat
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\Sample script.whs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\Sample script.whs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\setup.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\setup.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\Text file conversion UNIX - Windows.whs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\Text file conversion UNIX - Windows.whs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\Text file conversion Windows - UNIX.whs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\Text file conversion Windows - UNIX.whs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\timezone.dat
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\timezone.dat
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\winhex-d.cnt
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\winhex-d.cnt
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\winhex-d.hlp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\winhex-d.hlp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\winhex.cnt
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\winhex.cnt
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\winhex.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\winhex.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\winhex.hlp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\winhex.hlp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\zlib1.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\zlib1.dll
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\DriverTemplate\DPInstx64.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\DPInstx64.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\DriverTemplate\DPInstx86.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\DPInstx86.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\DriverTemplate\QuickUSB SLA.txt
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\QuickUSB SLA.txt
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\DriverTemplate\QuickUSB.ico
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\QuickUSB.ico
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\DriverTemplate\QuickUSB.inf
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\QuickUSB.inf
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\DriverTemplate\Setup.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\Setup.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\DriverTemplate\amd64\vcredist_x64.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\amd64\vcredist_x64.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\DriverTemplate\amd64\WdfCoInstaller01009.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\amd64\WdfCoInstaller01009.dll
+	Link Disabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\i386\WdfCoInstaller01009.dll
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\DriverTemplate\i386\vcredist_x86.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\i386\vcredist_x86.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\DriverTemplate\i386\WdfCoInstaller01009.dll
+	Link Disabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\amd64\WdfCoInstaller01009.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\i386\WdfCoInstaller01009.dll
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\Tools\Inf2Cat.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\Tools\Inf2Cat.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\Tools\Microsoft.Whos.Shared.IO.Cabinets.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\Tools\Microsoft.Whos.Shared.IO.Cabinets.dll
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\Tools\Microsoft.Whos.Shared.IO.Catalogs.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\Tools\Microsoft.Whos.Shared.IO.Catalogs.dll
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\Tools\Microsoft.Whos.Shared.Xml.InfReader.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\Tools\Microsoft.Whos.Shared.Xml.InfReader.dll
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\Tools\Microsoft.Whos.Winqual.Submissions.SubmissionBuilder.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\Tools\Microsoft.Whos.Winqual.Submissions.SubmissionBuilder.dll
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\Tools\Microsoft.Whos.Xml.NonXmlDataReader.dll
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\Tools\Microsoft.Whos.Xml.NonXmlDataReader.dll
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\Tools\SignTool.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\Tools\SignTool.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\Tools\WindowsProtectedFiles.xml
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\Tools\WindowsProtectedFiles.xml
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbStorageCs\QuickUsbStorageCs.sln
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbStorageCs\QuickUsbStorageCs.sln
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbStorageCs\QuickUsbStorageCs\Program.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbStorageCs\QuickUsbStorageCs\Program.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbStorageCs\QuickUsbStorageCs\QuickUsbStorageCs.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbStorageCs\QuickUsbStorageCs\QuickUsbStorageCs.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbStorageCs\QuickUsbStorageCs\QuickUsbStorageCs.csproj
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbStorageCs\QuickUsbStorageCs\QuickUsbStorageCs.csproj
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbStorageCs\QuickUsbStorageCs\QuickUsbStorageCs.Designer.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbStorageCs\QuickUsbStorageCs\QuickUsbStorageCs.Designer.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbStorageCs\QuickUsbStorageCs\QuickUsbStorageCs.resx
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbStorageCs\QuickUsbStorageCs\QuickUsbStorageCs.resx
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbStorageCs\QuickUsbStorageCs\Properties\AssemblyInfo.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbStorageCs\QuickUsbStorageCs\Properties\AssemblyInfo.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbStorageCs\QuickUsbStorageCs\Properties\Resources.Designer.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbStorageCs\QuickUsbStorageCs\Properties\Resources.Designer.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbStorageCs\QuickUsbStorageCs\Properties\Resources.resx
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbStorageCs\QuickUsbStorageCs\Properties\Resources.resx
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbStorageCs\QuickUsbStorageCs\Properties\Settings.Designer.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbStorageCs\QuickUsbStorageCs\Properties\Settings.Designer.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbStorageCs\QuickUsbStorageCs\Properties\Settings.settings
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbStorageCs\QuickUsbStorageCs\Properties\Settings.settings
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\AboutBox.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\AboutBox.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\AboutBox.Designer.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\AboutBox.Designer.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\AboutBox.resx
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\AboutBox.resx
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\app.config
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\app.config
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\BitTwiddler.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\BitTwiddler.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\BitTwiddler.Designer.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\BitTwiddler.Designer.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\BitTwiddler.resx
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\BitTwiddler.resx
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\Program.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\Program.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\QuickUsbDiag.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\QuickUsbDiag.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\QuickUsbDiag.Designer.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\QuickUsbDiag.Designer.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\QuickUsbDiag.resx
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\QuickUsbDiag.resx
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\QuickUsbDiagCs.csproj
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\QuickUsbDiagCs.csproj
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\QuickUsbDiagCs.csproj.user
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\QuickUsbDiagCs.csproj.user
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\QuickUsbDiagCs.idc
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\QuickUsbDiagCs.idc
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\QuickUsbDiagCs.sln
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\QuickUsbDiagCs.sln
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\Settings.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\Settings.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\Embedded Resources\tooltips.txt
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\Embedded Resources\tooltips.txt
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\Properties\app.manifest
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\Properties\app.manifest
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\Properties\AssemblyInfo.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\Properties\AssemblyInfo.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\Properties\Resources.Designer.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\Properties\Resources.Designer.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\Properties\Resources.resx
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\Properties\Resources.resx
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\Properties\Settings.Designer.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\Properties\Settings.Designer.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\Properties\Settings.settings
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\Properties\Settings.settings
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\Resources\LITENING.ICO
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbDiagCs\Resources\LITENING.ICO
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs.sln
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs.sln
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\mainForm.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\mainForm.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\mainForm.Designer.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\mainForm.Designer.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\mainForm.resx
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\mainForm.resx
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\Program.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\Program.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs.csproj
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs.csproj
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\Properties\AssemblyInfo.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\Properties\AssemblyInfo.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\Properties\Resources.Designer.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\Properties\Resources.Designer.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\Properties\Resources.resx
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\Properties\Resources.resx
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\Properties\Settings.Designer.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\Properties\Settings.Designer.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\Properties\Settings.settings
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamWinCs\QuickUsbBulkStreamWinCs\Properties\Settings.settings
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs.sln
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs.sln
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs\Program.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs\Program.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs.csproj
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs.csproj
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs.csproj.user
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs.csproj.user
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs.idc
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs.idc
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs\Properties\AssemblyInfo.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkStreamCs\QuickUsbBulkStreamCs\Properties\AssemblyInfo.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStream\QuickUsbBulkStream.sln
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbBulkStream\QuickUsbBulkStream.sln
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStream\QuickUsbBulkStream\main.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbBulkStream\QuickUsbBulkStream\main.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStream\QuickUsbBulkStream\QuickUsbBulkStream.idc
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbBulkStream\QuickUsbBulkStream\QuickUsbBulkStream.idc
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkStream\QuickUsbBulkStream\QuickUsbBulkStream\QuickUsbBulkStream.vcproj
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbBulkStream\QuickUsbBulkStream\QuickUsbBulkStream.vcproj
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsync\QuickUsbBulkAsync.sln
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbBulkAsync\QuickUsbBulkAsync.sln
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsync\QuickUsbBulkAsync\main.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbBulkAsync\QuickUsbBulkAsync\main.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsync\QuickUsbBulkAsync\QuickUsbBulkAsync.idc
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbBulkAsync\QuickUsbBulkAsync\QuickUsbBulkAsync.idc
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsync\QuickUsbBulkAsync\QuickUsbBulkAsync.vcproj
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbBulkAsync\QuickUsbBulkAsync\QuickUsbBulkAsync.vcproj
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs.sln
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs.sln
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs\Program.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs\Program.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs.csproj
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs.csproj
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs.csproj.user
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs.csproj.user
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs.idc
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs.idc
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs\Properties\AssemblyInfo.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncCs\QuickUsbBulkAsyncCs\Properties\AssemblyInfo.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs.sln
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs.sln
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\mainForm.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\mainForm.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\mainForm.Designer.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\mainForm.Designer.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\mainForm.resx
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\mainForm.resx
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\Program.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\Program.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs.csproj
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs.csproj
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs.csproj.user
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs.csproj.user
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\Properties\AssemblyInfo.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\Properties\AssemblyInfo.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\Properties\Resources.Designer.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\Properties\Resources.Designer.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\Properties\Resources.resx
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\Properties\Resources.resx
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\Properties\Settings.Designer.cs
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\Properties\Settings.Designer.cs
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBulkAsync\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\Properties\Settings.settings
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VC#\QuickUsbBulkAsyncWinCs\QuickUsbBulkAsyncWinCs\Properties\Settings.settings
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCppb\AboutForm.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\AboutForm.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCppb\AboutForm.dfm
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\AboutForm.dfm
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCppb\AboutForm.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\AboutForm.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCppb\BitCheckBox.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\BitCheckBox.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCppb\BitCheckBox.dfm
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\BitCheckBox.dfm
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCppb\BitCheckBox.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\BitCheckBox.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCppb\DisplayCode.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\DisplayCode.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCppb\DisplayCode.dfm
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\DisplayCode.dfm
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCppb\DisplayCode.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\DisplayCode.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCppb\OutputTextBox.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\OutputTextBox.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCppb\OutputTextBox.dfm
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\OutputTextBox.dfm
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCppb\OutputTextBox.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\OutputTextBox.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCppb\QuickUsbDiagCppb.cbproj
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\QuickUsbDiagCppb.cbproj
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCppb\QuickUsbDiagCppb.cbproj.local
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\QuickUsbDiagCppb.cbproj.local
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCppb\QuickUsbDiagCppb.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\QuickUsbDiagCppb.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCppb\QuickUsbDiagCppb.res
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C++ Builder\QuickUsbDiagCppb\QuickUsbDiagCppb.res
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\certadm.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\certadm.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\certadm.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\certadm.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\QuickUsbDiag.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\QuickUsbDiag.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\QuickUsbDiag.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\QuickUsbDiag.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\QuickUsbDiag.rc
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\QuickUsbDiag.rc
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\QuickUsbDiag.sln
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\QuickUsbDiag.sln
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\QuickUsbDiag.vcproj
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\QuickUsbDiag.vcproj
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\QuickUsbDiagDlg.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\QuickUsbDiagDlg.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\QuickUsbDiagDlg.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\QuickUsbDiagDlg.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\repository.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\repository.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\repository.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\repository.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\repositoryobject.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\repositoryobject.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\repositoryobject.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\repositoryobject.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\repositorytransaction.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\repositorytransaction.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\repositorytransaction.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\repositorytransaction.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\reposproperties.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\reposproperties.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\reposproperties.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\reposproperties.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\reposproperty.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\reposproperty.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\reposproperty.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\reposproperty.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\resource.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\resource.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\StdAfx.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\StdAfx.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\StdAfx.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\StdAfx.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\_collection.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\_collection.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\_collection.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\_collection.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\_repcdg.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\_repcdg.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\_repcdg.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\_repcdg.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\res\QuickUsbDiag.ico
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\res\QuickUsbDiag.ico
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVC\res\QuickUsbDiag.rc2
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbDiag\res\QuickUsbDiag.rc2
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbConsole\main.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C\QuickUsbConsole\main.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbConsole\Makefile.lnx
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C\QuickUsbConsole\Makefile.lnx
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbConsole\Makefile.mac
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C\QuickUsbConsole\Makefile.mac
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbConsole\Makefile.win
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C\QuickUsbConsole\Makefile.win
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbConsole\QuickUsbConsole.dev
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C\QuickUsbConsole\QuickUsbConsole.dev
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbConsole\QuickUsbConsole.sln
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C\QuickUsbConsole\QuickUsbConsole.sln
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbConsole\QuickUsbConsole.vcproj
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C\QuickUsbConsole\QuickUsbConsole.vcproj
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbConsole\QuickUsbConsole_private.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C\QuickUsbConsole\QuickUsbConsole_private.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbConsole\QuickUsbConsole_private.rc
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\C\QuickUsbConsole\QuickUsbConsole_private.rc
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncWriteTest\AsyncWriteTest.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncWriteTest\AsyncWriteTest.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncWriteTest\AsyncWriteTest.sln
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncWriteTest\AsyncWriteTest.sln
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncWriteTest\AsyncWriteTest.vcproj
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncWriteTest\AsyncWriteTest.vcproj
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncWriteTest\StdAfx.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncWriteTest\StdAfx.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncWriteTest\StdAfx.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncWriteTest\StdAfx.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncReadTest\AsyncReadTest.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncReadTest\AsyncReadTest.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncReadTest\AsyncReadTest.sln
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncReadTest\AsyncReadTest.sln
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncReadTest\AsyncReadTest.vcproj
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncReadTest\AsyncReadTest.vcproj
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncReadTest\StdAfx.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncReadTest\StdAfx.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncReadTest\StdAfx.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncReadTest\StdAfx.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncReadTestMulti\AsyncReadTestMulti.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncReadTestMulti\AsyncReadTestMulti.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncReadTestMulti\AsyncReadTestMulti.sln
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncReadTestMulti\AsyncReadTestMulti.sln
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncReadTestMulti\AsyncReadTestMulti.vcproj
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncReadTestMulti\AsyncReadTestMulti.vcproj
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncReadTestMulti\StdAfx.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncReadTestMulti\StdAfx.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncReadTestMulti\StdAfx.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncReadTestMulti\StdAfx.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncTest\AsyncTest.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncTest\AsyncTest.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncTest\AsyncTest.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncTest\AsyncTest.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncTest\AsyncTest.rc
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncTest\AsyncTest.rc
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncTest\AsyncTest.sln
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncTest\AsyncTest.sln
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncTest\AsyncTest.vcproj
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncTest\AsyncTest.vcproj
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncTest\AsyncTestDlg.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncTest\AsyncTestDlg.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncTest\AsyncTestDlg.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncTest\AsyncTestDlg.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncTest\resource.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncTest\resource.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncTest\StdAfx.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncTest\StdAfx.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncTest\StdAfx.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncTest\StdAfx.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncTest\Res\AsyncTest.ico
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncTest\Res\AsyncTest.ico
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncTest\Res\AsyncTest.rc2
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\AsyncTest\Res\AsyncTest.rc2
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example.sln
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example.sln
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example\ApplicationEvents.vb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example\ApplicationEvents.vb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example\Display.Designer.vb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example\Display.Designer.vb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example\Display.resx
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example\Display.resx
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example\Display.vb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example\Display.vb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example\Form1.Designer.vb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example\Form1.Designer.vb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example\Form1.resx
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example\Form1.resx
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example\Form1.vb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example\Form1.vb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example\VB.NET Example.vbproj
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example\VB.NET Example.vbproj
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example\My Project\app.manifest
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example\My Project\app.manifest
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example\My Project\Application.Designer.vb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example\My Project\Application.Designer.vb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example\My Project\Application.myapp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example\My Project\Application.myapp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example\My Project\AssemblyInfo.vb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example\My Project\AssemblyInfo.vb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example\My Project\Resources.Designer.vb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example\My Project\Resources.Designer.vb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example\My Project\Resources.resx
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example\My Project\Resources.resx
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example\My Project\Settings.Designer.vb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example\My Project\Settings.Designer.vb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\VB.NET Example\VB.NET Example\My Project\Settings.settings
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\VB.NET\VB.NET Example\VB.NET Example\My Project\Settings.settings
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\BitTwiddler.plug-in.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\BitTwiddler.plug-in.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\BitTwiddler.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\BitTwiddler.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\frameAbout.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\frameAbout.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\frameMain.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\frameMain.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\panelCommand.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\panelCommand.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\panelData.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\panelData.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\panelGeneral.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\panelGeneral.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\panelI2C.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\panelI2C.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\panelPorts.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\panelPorts.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\panelRS232.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\panelRS232.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\panelSettings.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\panelSettings.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\panelSPI.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\panelSPI.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\QuickUSB.ico
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\QuickUSB.ico
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\QuickUsbCtrl.plug-in.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\QuickUsbCtrl.plug-in.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\QuickUsbCtrl.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\QuickUsbCtrl.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\QuickUsbDiag.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\QuickUsbDiag.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\QuickUsbLogo.bmp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\QuickUsbLogo.bmp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagPy\setup.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\QuickUsbDiagPy\setup.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbPy\Console.py
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Python\Console\Console.py
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbMingw\Console.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Mingw\QuickUsbMingw\Console.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbMingw\console.dev
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Mingw\QuickUsbMingw\console.dev
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbMingw\console_private.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Mingw\QuickUsbMingw\console_private.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbMingw\console_private.rc
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Mingw\QuickUsbMingw\console_private.rc
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbMingw\Makefile.win
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Mingw\QuickUsbMingw\Makefile.win
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbMingw\StdAfx.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Mingw\QuickUsbMingw\StdAfx.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbMatlab\QuickUSB.m
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\MatLab\QuickUSB.m
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\MatLab\QuickUSB.m
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbMatlab\QuickUsbSpiTest.m
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\MatLab\QuickUsbSpiTest.m
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagDelphi\DisplayUnit.dfm
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Delphi\QuickUsbDiagDelphi\DisplayUnit.dfm
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagDelphi\DisplayUnit.pas
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Delphi\QuickUsbDiagDelphi\DisplayUnit.pas
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagDelphi\QuickUSB.pas
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Delphi\QuickUsbDiagDelphi\QuickUSB.pas
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\Delphi\QuickUSB.pas
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagDelphi\QuickUsbDiag.dfm
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Delphi\QuickUsbDiagDelphi\QuickUsbDiag.dfm
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagDelphi\QuickUsbDiag.dpr
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Delphi\QuickUsbDiagDelphi\QuickUsbDiag.dpr
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagDelphi\QuickUsbDiag.pas
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Delphi\QuickUsbDiagDelphi\QuickUsbDiag.pas
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagDelphi\QuickUsbDiag.res
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\Delphi\QuickUsbDiagDelphi\QuickUsbDiag.res
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\QuickUsbProgrammer.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\QuickUsbProgrammer.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\245 Slave FIFO\quickusb-245 v2.11.13.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\245 Slave FIFO\quickusb-245 v2.11.13.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\245 Slave FIFO\quickusb-245 v2.14.0.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\245 Slave FIFO\quickusb-245 v2.14.0.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Block Handshake\quickusb-blockhs v2.11.10.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Block Handshake\quickusb-blockhs v2.11.10.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Block Handshake\quickusb-blockhs v2.11rc5.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Block Handshake\quickusb-blockhs v2.11rc5.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Block Handshake\quickusb-blockhs v2.11rc7.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Block Handshake\quickusb-blockhs v2.11rc7.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Block Handshake\quickusb-blockhs v2.11rc8.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Block Handshake\quickusb-blockhs v2.11rc8.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Block Handshake\quickusb-blockhs v2.11rc9.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Block Handshake\quickusb-blockhs v2.11rc9.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Block Handshake\quickusb-blockhs v2.14.0.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Block Handshake\quickusb-blockhs v2.14.0.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\EPP 1.9 Emulation\quickusb-epp19 v2.12.0.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\EPP 1.9 Emulation\quickusb-epp19 v2.12.0.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\EPP 1.9 Emulation\quickusb-epp19 v2.14.0.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\EPP 1.9 Emulation\quickusb-epp19 v2.14.0.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v.2.12.3.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v.2.12.3.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v2.11.10.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v2.11.10.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v2.11rc5.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v2.11rc5.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v2.11rc7.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v2.11rc7.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v2.11rc8.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v2.11rc8.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v2.11rc9.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v2.11rc9.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v2.14.0.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v2.14.0.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Full Handshake\quickusb-fullhs v2.11.10.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Full Handshake\quickusb-fullhs v2.11.10.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Full Handshake\quickusb-fullhs v2.11rc5.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Full Handshake\quickusb-fullhs v2.11rc5.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Full Handshake\quickusb-fullhs v2.11rc9.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Full Handshake\quickusb-fullhs v2.11rc9.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Full Handshake\quickusb-fullhs v2.14.0.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Full Handshake\quickusb-fullhs v2.14.0.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Pipeline IO\quickusb-pipe1 v2.11.10.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Pipeline IO\quickusb-pipe1 v2.11.10.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Pipeline IO\quickusb-pipe1 v2.11rc5.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Pipeline IO\quickusb-pipe1 v2.11rc5.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Pipeline IO\quickusb-pipe1 v2.11rc7.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Pipeline IO\quickusb-pipe1 v2.11rc7.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Pipeline IO\quickusb-pipe1 v2.11rc8.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Pipeline IO\quickusb-pipe1 v2.11rc8.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Pipeline IO\quickusb-pipe1 v2.11rc9.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Pipeline IO\quickusb-pipe1 v2.11rc9.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Pipeline IO\quickusb-pipe1 v2.14.0.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Pipeline IO\quickusb-pipe1 v2.14.0.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Simple\quickusb-simple v2.11.10.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Simple\quickusb-simple v2.11.10.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Simple\quickusb-simple v2.11rc5.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Simple\quickusb-simple v2.11rc5.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Simple\quickusb-simple v2.11rc7.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Simple\quickusb-simple v2.11rc7.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Simple\quickusb-simple v2.11rc8.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Simple\quickusb-simple v2.11rc8.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Simple\quickusb-simple v2.11rc9.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Simple\quickusb-simple v2.11rc9.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\Simple\quickusb-simple v2.14.0.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Simple\quickusb-simple v2.14.0.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.14.1\quickusb-245 v2.14.1.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\245 Slave FIFO\quickusb-245 v2.14.1.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.14.1\quickusb-blockhs v2.14.1.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Block Handshake\quickusb-blockhs v2.14.1.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.14.1\quickusb-epp19 v2.14.1.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\EPP 1.9 Emulation\quickusb-epp19 v2.14.1.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.14.1\quickusb-fifohs v2.14.1.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v2.14.1.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.14.1\quickusb-fullhs v2.14.1.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Full Handshake\quickusb-fullhs v2.14.1.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.14.1\quickusb-pipe1 v2.14.1.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Pipeline IO\quickusb-pipe1 v2.14.1.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.14.1\quickusb-simple v2.14.1.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Simple\quickusb-simple v2.14.1.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.15.1\quickusb-245 v2.15.1.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\245 Slave FIFO\quickusb-245 v2.15.1.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.15.1\quickusb-blockhs v2.15.1.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Block Handshake\quickusb-blockhs v2.15.1.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.15.1\quickusb-epp19 v2.15.1.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\EPP 1.9 Emulation\quickusb-epp19 v2.15.1.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.15.1\quickusb-fifohs v2.15.1.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v2.15.1.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.15.1\quickusb-fullhs v2.15.1.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Full Handshake\quickusb-fullhs v2.15.1.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.15.1\quickusb-pipe1 v2.15.1.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Pipeline IO\quickusb-pipe1 v2.15.1.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.15.1\quickusb-simple v2.15.1.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Simple\quickusb-simple v2.15.1.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.15.2\quickusb-245 v2.15.2.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\245 Slave FIFO\quickusb-245 v2.15.2.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.15.2\quickusb-blockhs v2.15.2.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Block Handshake\quickusb-blockhs v2.15.2.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.15.2\quickusb-epp19 v2.15.2.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\EPP 1.9 Emulation\quickusb-epp19 v2.15.2.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.15.2\quickusb-fifohs v2.15.2.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\FIFO Handshake\quickusb-fifohs v2.15.2.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.15.2\quickusb-fullhs v2.15.2.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Full Handshake\quickusb-fullhs v2.15.2.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.15.2\quickusb-pipe1 v2.15.2.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Pipeline IO\quickusb-pipe1 v2.15.2.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Firmware\QuickUSB Firmware v2.15.2\quickusb-simple v2.15.2.qusb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbProgrammer\Simple\quickusb-simple v2.15.2.qusb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\README.txt
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\README.txt
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\dir.mnu
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\dir.mnu
+	Link Disabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\dir.mnu
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\QuickUSB.lvlib
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\QuickUSB.lvlib
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\Report.html
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\Report.html
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\dir.mnu
+	Link Disabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\dir.mnu
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\dir.mnu
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Async Wait.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Async Wait.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Bulk Data Stop Stream.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Bulk Data Stop Stream.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Cached Write I2C.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Cached Write I2C.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Close.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Close.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Configure Fpga.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Configure Fpga.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Find Modules.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Find Modules.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Flush RS232.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Flush RS232.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Get Dll Version.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Get Dll Version.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Get Driver Version.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Get Driver Version.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Get Firmware Version.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Get Firmware Version.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Get Last Error.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Get Last Error.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Get Num RS232.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Get Num RS232.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Get String Descriptor.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Get String Descriptor.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Is Fpga Configured.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Is Fpga Configured.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Open Ex.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Open Ex.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Open.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Open.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Read Command.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Read Command.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Read Data Async.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Read Data Async.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Read Data.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Read Data.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Read Default.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Read Default.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Read I2C.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Read I2C.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Read Port Dir.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Read Port Dir.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Read Port.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Read Port.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Read RS232.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Read RS232.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Read Setting.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Read Setting.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Read Spi.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Read Spi.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Read Storage.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Read Storage.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Set RS232Baud Rate.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Set RS232Baud Rate.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Set Timeout.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Set Timeout.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Start Fpga Configuration.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Start Fpga Configuration.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Write Command.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Write Command.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Write Data Async.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Write Data Async.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Write Data.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Write Data.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Write Default.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Write Default.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Write Fpga Data.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Write Fpga Data.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Write I2C.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Write I2C.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Write Port Dir.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Write Port Dir.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Write Port.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Write Port.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Write Read Spi.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Write Read Spi.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Write RS232.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Write RS232.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Write Setting.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Write Setting.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Write Spi.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Write Spi.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\Shared Library Import\VIs\Quick Usb Write Storage.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\Shared Library Import\VIs\Quick Usb Write Storage.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\User Contributed\ASCII Character.ctl
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\User Contributed\ASCII Character.ctl
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\User Contributed\QuickUsbGetLastError.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\User Contributed\QuickUsbGetLastError.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\User Contributed\QuickUsbReadCommand.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\User Contributed\QuickUsbReadCommand.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\User Contributed\QuickUSB_VI.llb
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\User Contributed\QuickUSB_VI.llb
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\User Contributed\STRING_Add_Padding_and_Justify.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\User Contributed\STRING_Add_Padding_and_Justify.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\User Contributed\STRING_ASCII_Character.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\User Contributed\STRING_ASCII_Character.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\User Contributed\STRING_Hex_Dot_Notation_to_U8_Array.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\User Contributed\STRING_Hex_Dot_Notation_to_U8_Array.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\User Contributed\STRING_Hex_String_to_U8_Array.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\User Contributed\STRING_Hex_String_to_U8_Array.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\User Contributed\STRING_Parse_at_ASCII_Delimiter _to_Array.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\User Contributed\STRING_Parse_at_ASCII_Delimiter _to_Array.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\User Contributed\STRING_Remove_Leading_Non-Printable_Characters.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\User Contributed\STRING_Remove_Leading_Non-Printable_Characters.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\User Contributed\STRING_Remove_Non-Printable_Characters.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\User Contributed\STRING_Remove_Non-Printable_Characters.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\User Contributed\STRING_Remove_Trailing_Non-Printable_Characters.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\User Contributed\STRING_Remove_Trailing_Non-Printable_Characters.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\LabVIEW\User Contributed\STRING_U8_Array_to_Hex_Dot_Notation.vi
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\User Contributed\STRING_U8_Array_to_Hex_Dot_Notation.vi
+Source Enabled C:\Projects\Bitwise\QuickUSB\Software\QuickUsbCustomizerCs\bin\Release\QuickUsbCustomizerCs.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\QuickUsbCustomizerCs.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\bin\Release\QuickUsbDiagCs.exe
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbDiag\QuickUsbDiagCs.exe
+Source Enabled C:\Projects\Bitwise\QuickUSB\Doc\QuickUSB SLA.pdf
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUSB SLA.pdf
+Source Enabled C:\Projects\Bitwise\QuickUSB\Doc\QuickUSB SLA.rtf
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUSB SLA.rtf
+Source Enabled C:\Projects\Bitwise\QuickUSB\Doc\QuickUSB SLA.txt
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUSB SLA.txt
+	Link Disabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\v2.15.2\QuickUSB SLA.txt
+	Link Disabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\QuickUsbCustomizer\DriverTemplate\QuickUSB SLA.txt
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbMatlab\README.txt
+	Link Disabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\LabVIEW\README.txt
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Library\MatLab\README.txt
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVB6\hex\HEX.CFG
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\hex\HEX.CFG
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVB6\hex\HEX.EXE
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\hex\HEX.EXE
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVB6\hex\HEX.HLP
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\hex\HEX.HLP
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Driver\Windows\KMDF\QuickUSBDriverUtil\QuickUSBDriverMM\QuickUSBDriver_v2.15.2.msm
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Drivers\Merge Modules\QuickUSBDriver_v2.15.2.msm
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBert\PlatformIndependentTimer.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbBulkAsync\QuickUsbBulkAsync\PlatformIndependentTimer.h
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbBulkStream\QuickUsbBulkStream\PlatformIndependentTimer.h
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbBert\PlatformIndependentTimer.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbBulkAsync\QuickUsbBulkAsync\PlatformIndependentTimer.cpp
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Samples\CPP\QuickUsbBulkStream\QuickUsbBulkStream\PlatformIndependentTimer.cpp
+Source Enabled C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagCs\winhex\GUID Partition Table.tpl
+	Link Enabled C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles\Tools\winhex\GUID Partition Table.tpl

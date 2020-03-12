@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[AsyncWriteTest.dsp]
+SCC_Aux_Path = "\\Server\VSS\"
+SCC_Project_Name = "$/Projects/Bitwise/QuickUSB/Software/AsyncWriteTest", WYFAAAAA
+
+[AsyncWriteTest.dsw]
+SCC_Aux_Path = "\\Server\VSS\"
+SCC_Project_Name = "$/Projects/Bitwise/QuickUSB/Software/AsyncWriteTest", WYFAAAAA

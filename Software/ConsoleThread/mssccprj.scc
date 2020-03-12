@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[ConsoleThread.dsp]
+SCC_Aux_Path = "\\Server\vss\"
+SCC_Project_Name = "$/Projects/Bitwise/QuickUSB/Software/ConsoleThread", AXBAAAAA

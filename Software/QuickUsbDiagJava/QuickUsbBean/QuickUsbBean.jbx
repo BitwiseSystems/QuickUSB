@@ -1,0 +1,13 @@
+[PropertyInfo]
+DescriptionTextField,JTextField,false,false, , ,false,<default>
+DescriptionTextField1,JTextField,false,false, , ,false,<default>
+gridBagLayout1,GridBagLayout,false,false, , ,false,<default>
+jLabel1,JLabel,false,false, , ,false,<default>
+jLabel2,JLabel,false,false, , ,false,<default>
+jLabel3,JLabel,false,false, , ,false,<default>
+ModuleComboBox,JComboBox,false,false, , ,false,<default>
+[IconNames]
+
+
+
+

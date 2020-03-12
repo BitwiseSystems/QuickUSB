@@ -1,0 +1,11 @@
+ Throughput Test - Sat Nov 07 13:26:20 2015
+
+--------------------------------------------------------------------------------
+File: C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbThroughputTest\Logs\Windows-Simple IO Streaming Read.txt
+Program Compiled As: x86
+IO Model: Simple IO
+NumThreads: 4
+Concurrency: 2
+
+Processing Rate: 0.0000 MS/MB
+Request Size (Bytes)	'4 Buffers

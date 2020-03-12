@@ -1,0 +1,97 @@
+(saveFormat "7.0")
+(date "Wed 03/May/2006 09:21:05 ")
+(veerev "7.51.7801.0")
+(platform "PC")
+(execMode v6)
+(filterNAN 0)
+(workspaceStackingOrder M)
+(sysconfig)
+(SaveCF no)
+(device 0 ROOTCONTEXT
+(assemblyRefs
+(assemblyRef 1
+(displayName
+"QuickUsbAssy, Version=2.11.0.0, Culture=neutral, PublicKeyToken=null")
+(desc "QuickUSB .NET Assembly")
+(filename
+"C:\\Bhenry\\Projects\\Bitwise\\QuickUSB\\Library\\Software\\QuickUsbVeeCtl\\QuickUsbAssy.dll"
+))
+(selectedNamespaces "QuickUsbAssy,"))
+(properties
+(trigMode deg)
+(nextID 9)
+(popupTitleText "Untitled")
+(popupMoveable 1))
+(deviceList
+(UserFunctions
+(nextID 1)
+(context 0
+(properties
+(name "QuickUsbCtl_ConnectionChanged")
+(trigMode deg)
+(nextID 0)
+(popupMoveable 1))
+(interface
+(input 1
+(name "Connected")
+(optional yes)))
+(deviceList
+(configuration))
+(contextCarrier
+(active detail)
+(detail
+(extent 419 221)
+(anchorPt 0 0)
+(configuration)))))
+(device 2 DOTNETCONTROL
+(properties
+(name "QuickUsbCtl")
+(variableName QuickUsbCtl)
+(assemblyName "QuickUsbAssy")
+(objectType "QuickUsbAssy.QuickUsbCtl"))
+(implementation
+(state 385 #H
+0001000000FFFFFFFF010000000000000004010000001C53797374656D2E436F6C6C656374696F6E
+732E486173687461626C65070000000A4C6F6164466163746F720756657273696F6E08436F6D7061
+7265721048617368436F646550726F7669646572084861736853697A65044B6579730656616C7565
+73000003030005050B081C53797374656D2E436F6C6C656374696F6E732E49436F6D706172657224
+53797374656D2E436F6C6C656374696F6E732E4948617368436F646550726F766964657208EC5138
+3F060000000A0A0B000000090200000009030000001002000000060000000604000000076465764E
+616D6506050000000453697A650606000000084C6F636174696F6E060700000008546162496E6465
+780608000000044E616D65060900000009436F6E6E6563746564100300000006000000060A000000
+06515553422D30060B000000073337342C203536060C00000004302C2030060D0000000130060E00
+00000B517569636B55736243746C060F00000004547275650B
+)))
+(configuration)
+(ShowOnExecPanel))
+(contextCarrier
+(wndOrigin 17 34)
+(wndState res)
+(active panel)
+(panel
+(extent 638 477)
+(drawGrid "on")
+(widget 0 detail
+(relativeOrigin 13 3)
+(PID 0)
+(title off)
+(tabStop off)
+(tabIndex 0)
+(borderStyle flat)
+(extent 374 56)))
+(detail
+(extent 638 477)
+(anchorPt 19 174)
+(configuration
+(devCarrierFor 2
+(active open)
+(icon
+(extent 75 0))
+(open
+(extent 374 56))
+(pinCenter 170 -90))))
+(numberFormats
+(realFormat standard)
+(realSigDigits 4)
+(realRadixSpec 4)
+(integerBase decimal))))

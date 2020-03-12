@@ -1,0 +1,17 @@
+ PyInstaller Notes
+-------------------
+The PyInstaller source is a pre-release snapshot taken on Sept. 13, 2010 from the SVN repository at http://svn.pyinstaller.org/trunk.
+
+
+ How to build executable with PyInstaller
+------------------------------------------
+Windows
+    - Run the build-win32.cmd script located in the PyInstaller directory
+    - The resultant executable is: PyInstaller\QuickUsbDiagPy\dist\QuickUsbDiagPy.exe
+
+Mac
+    - 
+
+Linux
+    - Run './Build-linux' in the PyInstaller directory
+    - The resultant executable is: PyInstaller\QuickUsbDiagPy\dist\QuickUsbDiagPy

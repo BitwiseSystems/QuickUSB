@@ -1,0 +1,76 @@
+;
+; Installation inf for the Bitwise Systems QuickUSB Module
+;
+; (c) Copyright 2002 Bitwise Systems
+;
+
+[Strings]
+BITW="Bitwise Systems"
+MfgName="Bitwise Systems"
+USB\VID_0FBB&PID_0001.DeviceDesc="QuickUSB QUSB2 Module"
+USB\VID_04B4&PID_8613.DeviceDesc="QuickUSB QUSB2 Module (Unprogrammed)"
+QuickUSB.SvcDesc="QuickUSB(tm) Driver"
+DiskName="QuickUSB Installation Disk"
+
+
+[Version]
+Signature="$CHICAGO$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+;CatalogFile=QuickUSB.cat
+Provider=%BITW%
+DriverVer=02/14/2006,0002.11
+
+[SourceDisksNames]
+1=%DiskName%,,,
+
+[SourceDisksFiles]
+QuickUSB.sys = 1
+;QuickUSB.inf = 1
+
+[Manufacturer]
+%MfgName%=Bitwise
+
+[Bitwise]
+%USB\VID_0FBB&PID_0001.DeviceDesc%=QuickUSB.Dev, USB\VID_0FBB&PID_0001
+%USB\VID_04B4&PID_8613.DeviceDesc%=QuickUSB.Dev, USB\VID_04B4&PID_8613
+
+;[PreCopySection]
+;HKR,,NoSetupUI,,1
+
+[DestinationDirs]
+QuickUSB.Files.Ext = 10,System32\Drivers
+;QuickUSB.Files.Inf = 10,INF
+
+[QuickUSB.Dev]
+CopyFiles=QuickUSB.Files.Ext
+AddReg=QuickUSB.AddReg
+
+[QuickUSB.Dev.NT]
+CopyFiles=QuickUSB.Files.Ext
+AddReg=QuickUSB.AddReg
+
+[QuickUSB.Dev.NT.Services]
+Addservice = QuickUSB, 0x00000002, QuickUSB.AddService
+
+[QuickUSB.AddService]
+DisplayName    = %QuickUSB.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\QuickUSB.sys
+LoadOrderGroup = Base
+
+[QuickUSB.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,QuickUSB.sys
+
+[QuickUSB.Files.Ext]
+QuickUSB.sys,,,
+
+;[QuickUSB.Files.Inf]
+;QuickUSB.Inf,,,
+
+
+;---------------------------------------------------------------;
+

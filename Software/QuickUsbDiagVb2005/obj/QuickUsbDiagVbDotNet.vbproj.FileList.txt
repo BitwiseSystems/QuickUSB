@@ -1,0 +1,16 @@
+bin\QuickUsbDiagVbDotNet.exe
+bin\QuickUsbDiagVbDotNet.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\QuickUsbDiagVbDotNet.Form1.resources
+obj\Release\QuickUsbDiagVbDotNet.QuickUsbCtl.resources
+obj\Release\QuickUsbDiagVbDotNet.vbproj.GenerateResource.Cache
+obj\Release\QuickUsbDiagVbDotNet.exe
+obj\Release\QuickUsbDiagVbDotNet.xml
+bin\QuickUsbDiagVbDotNet.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\QuickUsbDiagVbDotNet.Form1.resources
+obj\Debug\QuickUsbDiagVbDotNet.QuickUsbCtl.resources
+obj\Debug\QuickUsbDiagVbDotNet.vbproj.GenerateResource.Cache
+obj\Debug\QuickUsbDiagVbDotNet.exe
+obj\Debug\QuickUsbDiagVbDotNet.xml
+obj\Debug\QuickUsbDiagVbDotNet.pdb

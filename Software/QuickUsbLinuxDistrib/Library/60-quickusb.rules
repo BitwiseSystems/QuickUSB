@@ -1,0 +1,2 @@
+#Bitwise Systems QuickUSB
+SUBSYSTEM=="usb", ATTR{idVendor}=="0fbb", ATTR{idProduct}=="0001", ATTR{manufacturer}="Bitwise Systems", MODE="0666", SYMLINK="qusb/%n"

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="QuickUsbDiagVbDotNet">
+</Property><Property Name="Solution File" Value="C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVbDotNet\QuickUsbDiagVbDotNet.sln">
+</Property><Property Name="User Options File" Value="C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVbDotNet\QuickUsbDiagVbDotNet.suo">
+</Property><Property Name="Date" Value="Tuesday, April 24, 2007">
+</Property><Property Name="Time" Value="16:40 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="QuickUsbDiagVbDotNet.sln" Description="File successfully backed up as C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVbDotNet\Backup\QuickUsbDiagVbDotNet.sln">
+</Event><Event ErrorLevel="0" Project="" Source="QuickUsbDiagVbDotNet.suo" Description="File successfully backed up as C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVbDotNet\Backup\QuickUsbDiagVbDotNet.suo">
+</Event><Event ErrorLevel="0" Project="QuickUsbDiagVbDotNet" Source="QuickUsbDiagVbDotNet.vbproj" Description="Project file successfully backed up as C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVbDotNet\Backup\QuickUsbDiagVbDotNet.vbproj">
+</Event><Event ErrorLevel="0" Project="QuickUsbDiagVbDotNet" Source="QuickUsbDiagVbDotNet.vbproj.user" Description="Project user file successfully backed up as C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVbDotNet\Backup\QuickUsbDiagVbDotNet.vbproj.user">
+</Event><Event ErrorLevel="0" Project="QuickUsbDiagVbDotNet" Source="AssemblyInfo1.vb" Description="File successfully backed up as C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVbDotNet\Backup\AssemblyInfo1.vb">
+</Event><Event ErrorLevel="0" Project="QuickUsbDiagVbDotNet" Source="Form1.vb" Description="File successfully backed up as C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVbDotNet\Backup\Form1.vb">
+</Event><Event ErrorLevel="0" Project="QuickUsbDiagVbDotNet" Source="QuickUsbCtl.vb" Description="File successfully backed up as C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVbDotNet\Backup\QuickUsbCtl.vb">
+</Event><Event ErrorLevel="0" Project="QuickUsbDiagVbDotNet" Source="Form1.resx" Description="File successfully backed up as C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVbDotNet\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="QuickUsbDiagVbDotNet" Source="QuickUsbCtl.resx" Description="File successfully backed up as C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbDiagVbDotNet\Backup\QuickUsbCtl.resx">
+</Event><Event ErrorLevel="0" Project="QuickUsbDiagVbDotNet" Source="QuickUsbDiagVbDotNet.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="QuickUsbDiagVbDotNet" Source="QuickUsbDiagVbDotNet.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="QuickUsbDiagVbDotNet.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="QuickUsbDiagVbDotNet.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="QuickUsbDiagVbDotNet" Source="QuickUsbDiagVbDotNet.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

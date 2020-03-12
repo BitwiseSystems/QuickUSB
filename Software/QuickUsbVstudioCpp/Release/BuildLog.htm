@@ -1,0 +1,60 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: QuickUsbVstudio, Configuration: Release|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbVstudioCpp\Release\RSP000001.rsp" with contents
+[
+/O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FD /EHsc /MD /Yc"stdafx.h" /Fp".\Release/QuickUsbVstudio.pch" /Fo".\Release/" /Fd".\Release/" /FR".\Release/" /W3 /c /TP
+.\StdAfx.cpp
+]
+Creating command line "cl.exe @c:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbVstudioCpp\Release\RSP000001.rsp /nologo"
+Creating temporary file "c:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbVstudioCpp\Release\RSP000002.rsp" with contents
+[
+/O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FD /EHsc /MD /Yu"stdafx.h" /Fp".\Release/QuickUsbVstudio.pch" /Fo".\Release/" /Fd".\Release/" /FR".\Release/" /W3 /c /TP
+.\QuickUsbVstudioDlg.cpp
+.\QuickUsbVstudio.cpp
+.\CQuickUsb.cpp
+]
+Creating command line "cl.exe @c:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbVstudioCpp\Release\RSP000002.rsp /nologo"
+Creating command line "rc.exe /d "NDEBUG" /d "_AFXDLL" /l 0x409 /fo".\Release/QuickUsbVstudio.res" .\QuickUsbVstudio.rc"
+Creating temporary file "c:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbVstudioCpp\Release\RSP000003.rsp" with contents
+[
+/OUT:".\Release/QuickUsbVstudio.exe" /INCREMENTAL:NO /NOLOGO /PDB:".\Release/QuickUsbVstudio.pdb" /SUBSYSTEM:WINDOWS /MACHINE:X86 Release/quickusb.lib
+.\Release\CQuickUsb.obj
+.\Release\QuickUsbVstudio.obj
+.\Release\QuickUsbVstudio.res
+.\Release\QuickUsbVstudioDlg.obj
+.\Release\StdAfx.obj
+]
+Creating command line "link.exe @c:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbVstudioCpp\Release\RSP000003.rsp"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+StdAfx.cpp
+ WINVER not defined. Defaulting to 0x0501 (Windows XP and Windows .NET Server)
+Compiling...
+QuickUsbVstudioDlg.cpp
+QuickUsbVstudioDlg.cpp(207) : warning C4101: 'result' : unreferenced local variable
+QuickUsbVstudio.cpp
+QuickUsbVstudio.cpp(53) : warning C4996: 'CWinApp::Enable3dControls' was declared deprecated
+        C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\atlmfc\include\afxwin.h(4369) : see declaration of 'CWinApp::Enable3dControls'
+CQuickUsb.cpp
+Generating Code...
+Compiling resources...
+Linking...
+LINK : warning LNK4089: all references to 'OLEAUT32.dll' discarded by /OPT:REF
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbVstudioCpp\Release\BuildLog.htm"
+QuickUsbVstudio - 0 error(s), 3 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

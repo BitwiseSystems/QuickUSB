@@ -1,0 +1,2 @@
+.topic IDH_HIGH_SPEED_PORT
+QuickUSB provides easy access to the high-speed parallel port (FD0-15) of the FX2.  The QuickUSB Library calls are QuickUsbReadData and QuickUsbWriteData.

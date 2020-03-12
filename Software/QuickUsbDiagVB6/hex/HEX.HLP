@@ -1,0 +1,519 @@
+5.2b
+%[200]
+DKGREEN{{ALTERNATE EDITOR}}## Alternate editor    DKGREEN{{HELP}}## Help!           DKGREEN{{MARK}}## Begin Select
+DKGREEN{{CONVERTER}}## Convert numbers     DKGREEN{{INFO}}## Product info    DKGREEN{{ABORT SELECT}}## Abort Select
+DKGREEN{{COUNT OCCURRENCES}}## Count occurences    DKGREEN{{SEARCH}}## Search          DKGREEN{{COLORS}}## Colors   
+DKGREEN{{EDIT NEW FILE}}## Load another file   DKGREEN{{SEARCH AGAIN}}## Search again..  DKGREEN{{LOCK TOTAL}}## Lock total? 
+DKGREEN{{GOTO OFFSET}}## Goto an offset      DKGREEN{{EBCDIC/ASCII}}## EBCDIC/ASCII    DKGREEN{{PRINT TO FILE}}## Print to file 
+DKGREEN{{INSERT MODE}}## Toggle insert mode  DKGREEN{{SAVE SELECTION}}## Save Selection  DKGREEN{{SAVE TO CLIPBOARD}}## Copy/Paste
+DKGREENAlt M   ## Key mapping         DKGREEN<SPACE>##  Bit Edit Mode
+DKGREEN{{GOTO PAGE}}## Goto page##                                    DKGREEN{{SAVE}}## Save## work
+DKGREEN{{VIEW TEXT}}## View as text file##                            DKGREEN{{EXIT}}## Exit
+                                                      DKGREEN{{SHELL}}## Shell
+DKGREEN{{SRCH COLOR TOGGLE}}##Srch Color Toggle                    
+
+
+
+
+
+
+
+DKGREEN<GREENCDKGREENonfiguration>##    See 'Readme.txt' for more information  DKGREEN<GREENMDKGREENovement>## DKGREEN<GREENTDKGREENips>## 
+
+
+%[200]
+%[1]
+
+                             DKWHITEWHITEGET HELP##
+
+           Do exactly what you did to get here! (Press MAGENTA{{HELP}}}## key)
+%[1]
+%[3]
+
+                          DKWHITEWHITEPRODUCT INFO##
+
+       This key shows information about editor, conditions and me.
+%[3]
+%[4]
+                          DKWHITEWHITEABORT SELECT##
+
+The MAGENTA{{ABORT SELECT}}}## key aborts the current selection. Whatever is currently
+marked, will become unmarked. No data is lost. The MAGENTAESC## will work
+as well.
+%[4]
+%[11]
+DKWHITE                       WHITEPASTE TO CLIPBOARD##
+
+
+The MAGENTA{{SAVE TO CLIPBOARD}}}## key allows the user to copy the selected text to the clipboard.
+The user may later insert the text into the document using the MAGENTA{{INSERT}}}## key.
+The MAGENTA<Del>## key will save the selected text to the clipboard as well
+as deleting it.
+%[11]
+%[12]
+DKWHITE                            WHITEMOVEMENT##
+
+
+These are other non-configurable keystrokes that Hex uses for movement:
+
+
+Home            Top of page
+Ctrl-Home       Top of file
+
+End             End of page
+Ctrl-End        End of document
+
+Shift,Arrow     Select text  (Same as MAGENTA{{MARK}}}## or click and drag)
+Page up,down    Pages up, down
+
+<Tab>           Switches between Hex/Dec mode
+
+%[12]
+%[13]
+DKWHITE                              WHITETIPS##
+
+- Use MAGENTA{{LOCK TOTAL}}}## key if you want to be able to create 'space'
+  when moving beyond the end of file.
+
+- Use the MAGENTA<TAB>## key to toggle between Hex and Dec mode.
+
+- For cutting and pasting, use MAGENTA{{SAVE TO CLIPBOARD}}}##/MAGENTA<Del>## and MAGENTA{{INSERT}}}##
+
+- If you are low on memory, doing either of the following will decrease
+  the amount of conventional memory that Hex uses:
+
+     -From DOS prompt, set HEXMEM=10000
+     -Lower MEMORY setting in the Options/Misc Config menu
+
+- The MAGENTA{{INSERT MODE}}}## key toggles between Overwrite and Insert mode.
+
+- Have a browse through the help screens.
+
+- Make sure you have paid for this version.
+%[13]
+%[14]
+DKWHITE                            WHITEREGISTER##
+
+
+The Registered Version of this program can be purchased and received 
+immediately on the Internet at Albert's Ambry.  Registration at Albert's
+also eliminates shipping and handling costs.  Please go to:  
+
+       http://www.alberts.com
+
+Search on: hextool.zip
+
+Click on the "Buy It" Hotlink to register this software.
+
+Thank you for registering this program.
+
+%[14]
+%[30]
+DKWHITE                 WHITEVIEW FILE WITH ANOTHER EDITOR##
+
+
+This key will allow the user to view the file using the editor defined in
+hex.cfg.
+
+%[30]
+%[31]
+DKWHITE                           WHITECONVERTER##
+
+
+This feature is nice for quickly finding the value of a number in another
+base. Simply select a base using the arrow keys and enter a valid number.
+After you hit Enter, the corresponding values will appear for the other
+bases.
+%[31]
+%[32]
+DKWHITE                       WHITECOUNT OCCURENCES##
+
+
+This key will allow the user to count the number of occurences of a pattern
+starting from the current position. The cursor does not move.
+
+
+
+%[32]
+%[34]
+DKWHITE                         WHITEEDIT NEW FILE##
+
+
+This key will allow the user to start editing a new file. If changes have
+not been saved, a warning box appears. 
+%[34]
+%[36]
+DKWHITE                           WHITEGOTO OFFSET##
+
+
+This key will allow the user to move the cursor to the offset specified.
+
+%[36]
+%[38]
+DKWHITE                      WHITETOGGLE INSERT MODE##
+
+
+This key will allow the user to switch between overwrite and insert mode.
+The current status is shown at right of the screen. The word WHITEINSERT## will
+appear if insert mode is on.
+%[38]
+%[49]
+DKWHITE                       WHITEVIEW AS TEXT FILE##
+
+
+This key will allow the user to view the portion that is curretnly being
+viewed to be seen in normal text file. This is almost the same as {{ALTERNATE EDITOR}}
+except that this viewer is built in and thus takes ALOT less memory. It is
+VERY quick too!
+%[49]
+%[54]
+DKWHITE                            WHITEDOS SHELL##
+
+
+This key will allow the user to enter a dos shell. Type EXIT to return to
+this beautiful editor.
+%[54]
+%[10]
+DKWHITE
+                         WHITESAVE SELECTION##
+
+
+This key will allow the user to save WHITEONLY## the text that is selected, and
+delete the rest! Be careful with this one.
+%[10]
+%[9]
+DKWHITE
+                         WHITEPRINT TO FILE##
+
+
+This key will allow the user to print entire file to a file using the format
+that is used on the screen.
+
+%[9]
+%[2]
+DKWHITE                          WHITESTART SELECT
+##
+
+This key allows the user to choose where a selection is to begin. One may 
+also use the mouse to do this. Pressing the left button and dragging the
+mouse will select text. Once the mouse button is released, the user may save
+or delete it. To unselect the text, one may press DKESC##, or use the mouse
+and click anywhere in the work area.
+
+%[2]
+%[5]
+DKWHITE
+                              WHITESEARCH
+
+##
+This key allows you to search for a HEX value or a word. If the cursor is
+currently on the Hex side (MAGENTAHex Mode## will appear at right of screen), then 
+the search is done using hexadecimal digits. If the cursor is on the Char
+side (MAGENTAChar Mode##), a normal word is searched.
+
+The DKGREENSEARCH AGAIN## key may be pressed to search for the next occurence. One
+may wish to count the number of times a certain pattern occurs. The
+DKGREENCOUNT_OCCURENCES ## key enables this to be done. A pattern to be searched is 
+entered and the Search Counter will reveal the number of times it occurs
+AFTER and including the current position.
+
+%[5]
+%[6]
+DKWHITE
+                          WHITECHANGE COLORS
+
+##
+This option allows you to change the colors of the screen. Use the vertical  
+arrows to choose an option. At this point, you can use the horizontal arrows
+to scroll through the colors or you can hit 'Enter' to select from the valid
+options.
+
+DKGREENF4##       Set screen to default colors
+
+DKGREENF10##      Exit, saving changes made. 
+         Use Options/Save Desktop to save to disk.
+
+DKGREEN<ESC>##    Exit, without saving changes
+
+DKGREEN<SPACE>## or DKGREEN<Middle Mouse Button>## Toggles BLINKFlash## mode 
+
+%[6]
+
+%[7]
+DKWHITE
+                           WHITELOCKED TOTAL
+
+##
+When in WHITEFREE## mode, new characters are created when you cursor down
+or page down. As soon as you have created the space you need, it is
+recommended that you switch back to WHITELOCKED## mode. Trust me.
+
+
+%[7]
+%[8]
+DKWHITE
+                          WHITEEBCDIC / ASCII
+
+##
+This toggles between EBCDIC and ASCII file viewing.
+%[8]
+%[45]
+DKWHITE
+                            WHITEGOTO PAGE
+
+##
+This key will allow the user to switch to the page number specified. A page 
+is not defined by where the cursor is. The page number changes as soon as
+the previous page is not longer showing.
+
+%[45]
+%[52]
+DKWHITE
+                              WHITESAVE##
+
+
+This key will allow the user to save the document currently being worked on. 
+It is assumed that you are renaming the file rather than overwriting it, due
+to the fact that editing binary editing binary files is often dangerous.
+
+
+%[52]
+%[53]
+DKWHITE
+                              WHITEEXIT
+ 
+##
+The DKGREENEXIT## key will allow the user to exit the program. If changes have been
+made, you are asked if you are sure you want to exit to exit without saving.
+
+
+%[53]
+%[42]
+DKWHITE
+                            WHITEMAPPING
+ 
+##
+The DKCYANALT M## key will allow to map keys to other keys. 
+
+DKCYAN{{CHANGE CONFIG}}##   Change configuration options
+DKCYAN{{SAVE CONFIG}}##   Save desktop settings. (Colors, mappings..)
+
+Currently, keys cannot be mapped in file selection mode
+
+
+%[42]
+%[208]
+DKWHITE
+                   WHITEFILE SELECTION MODE (Page 1)
+
+DKCYANAlt-A     ##     View file with a text editor (defined in hex.cfg)
+DKCYANAlt-B     ##     Base converter. Convert between Octal, Hex, Decimal & Binary
+DKCYANAlt-D     ##     Deletes File Without Query (When AUTO DELETE Set)
+DKCYANAlt-F     ##     Load a File, Change Directory or view *.??? files
+DKCYANAlt-I     ##     Information About Directory and Disk
+DKCYANAlt-N     ##     Edit a New File
+DKCYANAlt-R     ##     Run the highlighted program. Replaces HEX editor
+DKCYANAlt-S     ##     Exit (Stay in Current Directory)
+
+DKCYANESC       ##     Exit
+DKCYANF8        ##     Select Number of Lines (Usually 25 or 50)
+
+
+
+
+
+Click on Drive Letters at top of screen to change drives.
+
+                                                                DKGREEN<Page Down>
+%[208]
+%[56]
+DKWHITE
+                   WHITEFILE SELECTION MODE (Page 2)
+ 
+##
+DKCYANCtrl-Home ##     Goto First File
+DKCYANCtrl-End  ##     Goto Last File
+DKCYANArrows Keys##    Press <Enter> to Edit File Selected
+DKCYANMouse     ##     Click Left Button Once to Pick. Twice to Load.
+DKCYAN<a-z,0-9> ##     Finds Next File Which Begins With That Character.
+
+
+
+DKCYANCopy File ##     Copy the selected file to another name.
+DKCYAN<Delete>  ##     Prompt Before Deleting File
+DKCYAN<SPC BAR> ##     Change File Attributes (or Right Mouse Button)
+DKCYAN  *.*     ##     Files being viewed. Same as Alt-F.
+
+
+
+
+
+
+DKGREEN<GREENCDKGREENonfiguration Help>##                                            DKGREEN< Page Up >
+
+%[56]
+%[57]
+DKWHITE
+                          WHITEAUTO DELETE
+ 
+##
+The file selection mode will allow the user to delete files by 
+selecting a file a file and either clicking on the RED<Delete>##
+or by hitting the delete key. 
+
+One may also use <Alt-D> to delete a file. If the WHITEAUTO DELETE## is set 
+to 'Y', you will not be asked if you are sure. This is handy if you 
+are deleting a whole bunch of files.
+
+REDNote:## The WHITEAUTO DELETE## variable only affects Alt-D.
+%[57]
+%[58]
+DKWHITE
+                            WHITEBIG FILE
+ 
+##
+When you load a file, a temporary file is created so that your 
+changes are not saved directly to the original file. This also  
+allows Hex to do the disk swapping it needs in order to be able to  
+edit files of any size. If you are loading a very large file,you
+may not always want to create a temp file (may take a while).
+The WHITEBIG FILE## option says how many bytes is considered to be a
+big file. If the file being loaded is bigger than this, the user
+will be asked if they want to see the file in read-only mode
+only. Using the read-only mode will not create a tempfile, and
+thus it is extremely fast!
+
+%[58]
+%[59]
+DKWHITE
+                            WHITEEDITOR
+ 
+##
+The WHITEEDITOR## option lets you specify the name of another
+editor which you can use to look at the current file. This is
+useful when looking at textual parts of the file. The built in
+text viewer function will allow very quick viewing although it
+is very basic purely for viewing.
+
+%[59]
+%[60]
+DKWHITE
+                             WHITELINES
+ 
+##
+This variables tells Hex how many lines you would like to use. 
+If you are working in 25 line mode, this should be set to 25. If
+this setting is set to AUTO, Hex will use whatever mode was
+being used before entering Hex.
+
+%[60]
+%[61]
+DKWHITE
+                            WHITEMEMORY
+ 
+##
+Hex uses disk swapping in order to edit files of any size. 
+Normally, an editor will grab a bunch of memory and if you have 
+a file bigger than this amount, you cannot edit it. The WHITEMEMORY##
+setting allows you to specify the amount of memory you would
+like to use before needing to go to the disk. A tenth of this
+amount is used as an overflow buffer, so if you use 50000 as
+your WHITEMEMORY## setting, Hex will not need to go to the disk
+until you surpass the 45000 byte mark. So the lower the value
+is, the more Hex needs to go disk, but inserting and deleting
+will be quicker. So, you can choose! Usually, around 40000 or
+50000 is good. I am planning to eventually rewrite the disk
+swapping algorithm so that it will be quick no matter what you
+choose. 
+
+%[61]
+%[62]
+DKWHITE
+                            WHITEOVERWRITE
+ 
+##
+When the WHITEOVERWRITE## is set to 'Y', text will be overwritten. When
+it is set to 'N', text is inserted instead.
+%[62]
+%[63]
+DKWHITE
+                          WHITEPAUSE TIME
+ 
+##
+
+This decides the length in time, in 1/1000ths of a seconds that
+the little informative boxes stay up. These boxes are a little
+silly. The originaly intent was to let the user know what he had
+done by coming out and telling them. They are probably more
+annoying than anything though.
+%[63]
+%[64]
+DKWHITE
+                            WHITESCRTIME
+ 
+##
+This is the length of time in seconds before the screen saver
+will kick in. If there is no activity from mouse or keyboard for
+this length of time, it will start up. Hitting a key,clicking or
+moving the mouse will return back to Hex. The default is three
+hundred (5 minutes).
+%[64]
+%[65]
+DKWHITE
+                             WHITETEMP
+ 
+##
+This is the directory in which temp files should be written. If
+you use a RAMdrive, this speeds up things big time when using
+larger files (you will need enough space to hold the file's length). 
+If TEMP=AUTO, then the TEMP environment variable is always used
+instead. This means that it will never need to 'hard code' it
+in the hex.cfg file
+%[65]
+%[66]
+DKGREEN                      WHITEConfiguration Options##
+
+DKGREEN<GREENA##UTO DELETE>    
+DKGREEN<GREENB##IG FILE>       
+DKGREEN<GREENC##ASE SENSITIVE>       
+DKGREEN<GREENE##DITOR>
+DKGREEN<GREENL##INES>
+DKGREEN<GREENM##EMORY>
+DKGREEN<GREENO##VERWRITE>
+DKGREEN<GREENP##AUSE TIME>
+DKGREEN<GREENS##CRTIME>
+DKGREEN<GREENT##EMP>
+
+DKWHITEThese are settings which are saved in the Hex.cfg file. These
+settings allow you to customize your desktop as well as
+optimizing performance. These can be changed while in file edit
+mode by using the Options pull down menu (or Alt-O).
+
+
+
+DKGREEN< Home >                                                        DKGREEN< Page Up >
+
+
+%[66] 
+%[67]
+DKWHITE
+                         WHITECASE SENSITIVE
+ 
+##
+     This specifies whether searches are case sensitive or not.
+%[67]
+%[69]
+DKWHITE
+                         WHITEBIT EDIT MODE 
+ 
+##
+When you hit the space bar while on the Hex (left) side of the screen,
+you will enter bit edit mode. The next 16 bytes are shown in binary.
+You can then edit the bytes on a bit level. Not many people use this
+feature mind you. 
+
+You can also use the bit insert and bit delete utilities when dealing
+with larger pieces of data.
+%[69]
+
+

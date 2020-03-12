@@ -1,0 +1,5 @@
+Line 201: Class MSComctlLib.Slider of control BrightnessSlider was not a loaded control class.
+Line 216: Class MSComctlLib.Slider of control ContrastSlider was not a loaded control class.
+Line 231: Class MSComctlLib.Slider of control EvSlider was not a loaded control class.
+Line 314: Class MSComctlLib.Slider of control WriteValueSlider was not a loaded control class.
+Line 441: Class MSComctlLib.StatusBar of control StatusBar was not a loaded control class.

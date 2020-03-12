@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011/08/16 09:13:14.000.452,=C:\Users\Jason Wolfe\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2011/08/16 09:13:14.000.433,=C:\Users\Jason Wolfe\Documents\RAD Studio\Projects\Project1.res</Transaction>
+    <Transaction>2011/08/16 09:13:51.000.888,=C:\Users\Jason Wolfe\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2011/08/16 09:13:51.000.870,=C:\Users\Jason Wolfe\Documents\RAD Studio\Projects\Project1.res</Transaction>
+    <Transaction>2011/08/16 09:14:11.000.576,C:\Users\Jason Wolfe\Documents\RAD Studio\Projects\QuickUsbDiagCppB.cbproj=C:\Users\Jason Wolfe\Documents\RAD Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2011/08/16 09:14:57.000.853,C:\Users\Jason Wolfe\Documents\RAD Studio\Projects\QuickUsbDiagCppBe.cbproj=C:\Users\Jason Wolfe\Documents\RAD Studio\Projects\QuickUsbDiagCppB.cbproj</Transaction>
+    <Transaction>2011/08/16 09:15:01.000.534,C:\Users\Jason Wolfe\Documents\RAD Studio\Projects\QuickUsbDiagCppb.cbproj=C:\Users\Jason Wolfe\Documents\RAD Studio\Projects\QuickUsbDiagCppBe.cbproj</Transaction>
+    <Transaction>2011/08/16 09:15:21.000.652,C:\Users\Jason Wolfe\Desktop\QuickUsbDiagCppb\QuickUsbDiagCppb.cbproj=C:\Users\Jason Wolfe\Documents\RAD Studio\Projects\QuickUsbDiagCppb.cbproj</Transaction>
+    <Transaction>2011/08/16 09:16:04.000.323,=C:\Users\Jason Wolfe\Desktop\QuickUsbDiagCppb\AboutForm.cpp</Transaction>
+    <Transaction>2011/08/16 09:16:11.000.779,=C:\Users\Jason Wolfe\Desktop\QuickUsbDiagCppb\DisplayCode.cpp</Transaction>
+    <Transaction>2011/08/16 09:16:30.000.511,=C:\Users\Jason Wolfe\Desktop\QuickUsbDiagCppb\BitCheckBox.cpp</Transaction>
+    <Transaction>2011/08/16 09:20:30.000.424,=C:\Users\Jason Wolfe\Desktop\QuickUsbDiagCppb\OutputTextBox.cpp</Transaction>
+    <Transaction>2011/08/16 09:36:08.000.724,=C:\Users\Jason Wolfe\Desktop\QuickUsbDiagCppb\QuickUsbBoarland.lib</Transaction>
+    <Transaction>2011/08/16 09:37:27.000.638,C:\Users\Jason Wolfe\Desktop\QuickUsbDiagCppb\QuickUsbBoarland.lib=</Transaction>
+    <Transaction>2011/08/16 09:37:51.000.460,=C:\Users\Jason Wolfe\Desktop\QuickUsbDiagCppb\QuickUsbBorland.lib</Transaction>
+    <Transaction>2011/08/16 09:38:27.000.332,=C:\Users\Jason Wolfe\Desktop\QuickUsbDiagCppb\CQuickUsb.cpp</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="DisplayCode.cpp"/>
+    <File Path="DisplayCode.cpp"/>
+    <File Path="DisplayCode.dfm"/>
+    <File Path="DisplayCode.h"/>
+    <File Path="AboutForm.cpp"/>
+    <File Path="AboutForm.cpp"/>
+    <File Path="AboutForm.dfm"/>
+    <File Path="AboutForm.h"/>
+    <File Path="BitCheckBox.cpp"/>
+    <File Path="BitCheckBox.cpp"/>
+    <File Path="BitCheckBox.dfm"/>
+    <File Path="BitCheckBox.h"/>
+    <File Path="OutputTextBox.cpp"/>
+    <File Path="OutputTextBox.cpp"/>
+    <File Path="OutputTextBox.dfm"/>
+    <File Path="OutputTextBox.h"/>
+    <File Path="CQuickUsb.cpp"/>
+    <File Path="QuickUsbDiagCppb.cpp"/>
+    <File Path="QuickUsbDiagCppb.res"/>
+    <File Path="QuickUsbBorland.lib"/>
+  </ProjectSortOrder>
+</BorlandProject>

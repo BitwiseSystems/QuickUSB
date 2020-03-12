@@ -1,0 +1,41 @@
+Mandrake 9.0 9.1 Redhat 9.0 password for alon = friday
+Mandrake 9.0 9.1 password for root = root
+Redhat 9.0 password for root = rootroot
+
+
+Mandrake 9.0 HD:
+Programming directory = /home/alon/Programming/BitwiseSys/Linux
+For building the QuickUSB driver you can use the make file in the directory 
+/home/alon/Programming/BitwiseSys/Linux/CQuickUsb-and-Driver
+
+
+the QT direcotry is /usr/local/qt
+the bin files are in /usr/local/qt/bin
+we were using QT designer version 3.2 on mandrake which I installed from a tar.gz file
+Mandrake comes with 2.x and Redhat comes with QT 3.1. QT 3.1 had problems compiling the about box
+
+to turn on libusb debugging level you have to edit the QuickUsbDiag.ui.h file
+At the top of the file in the init function you will need to uncomment the labeled lines
+to allow libusb debugging.
+
+// setenv("USB_DEBUG", "2", 1);
+
+
+use 
+qmake -o Makefile QuickUsbDiagnosticStatic.pro
+or
+qmake -o Makefile QuickUsbDiagnosticShared.pro 
+
+to make a make fresh make file on your system
+and then type make to compile the Diag program
+
+or use the existing makefiles by just renaming them to Makefile
+
+
+Hotplug directory = /etc/hotplug/
+Need to edit the file /etc/hotplug/usb.usermap to add the line
+# Bitwise Systems QuickUSB Module
+QuickUSB_Module 0x0003 0x0FBB 0x01 0x0000 0x0000 0x00 0x00 0x00 0x00 0x00 0x00  0x00000000
+so hotplug will detect a QuickUSB module 
+
+Need to add the QuickUSB hotplug script to /etc/hotplug/usb/

@@ -1,0 +1,10 @@
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbXilinxProg\QuickUsbXilinxProg\bin\Debug\QuickUsbXilinxProg.exe
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbXilinxProg\QuickUsbXilinxProg\bin\Debug\QuickUsbXilinxProg.pdb
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbXilinxProg\QuickUsbXilinxProg\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbXilinxProg\QuickUsbXilinxProg\obj\Debug\QuickUsbXilinxProg.Properties.Resources.resources
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbXilinxProg\QuickUsbXilinxProg\obj\Debug\QuickUsbXilinxProg.csproj.GenerateResource.Cache
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbXilinxProg\QuickUsbXilinxProg\obj\Debug\QuickUsbXilinxProg.exe
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbXilinxProg\QuickUsbXilinxProg\obj\Debug\QuickUsbXilinxProg.pdb
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbXilinxProg\QuickUsbXilinxProg\bin\Debug\QuickUsb.NET.dll
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbXilinxProg\QuickUsbXilinxProg\bin\Debug\QuickUsb.NET.pdb
+C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbXilinxProg\QuickUsbXilinxProg\obj\Debug\QuickUsbXilinxProg.Form1.resources

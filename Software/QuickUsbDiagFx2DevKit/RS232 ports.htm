@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>I/O Ports</TITLE>
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080">
+
+<B><FONT FACE="Verdana" SIZE=4><P>RS-232 Ports</P>
+</B></FONT><FONT FACE="Verdana" SIZE=2><P>The RS-232 (SIO) ports can be written to and read from using the diagnostics.  All transfers are at 8 data bits, no parity and 1 stop bit.  This cannot be changed in the diagnostics.</P>
+<P>This is accomplished using the following QuickUSB Library functions:<BR>
+<U>QuickUsbSetRS232Baud</U> - Sets the baud rate of both ports.<BR>
+<U> QuickUsbWriteRS232</U> - Writes a block of binary data to an RS-232 port.<BR>
+<U> QuickUsbReadRS232</U> - Reads a block of binary data from an RS-232 port.  Both ports have interrupt-driven buffers inside the FX2 and this routine reads those buffers.<BR>
+<U>QuickUsbFlushRS232</U> - Flushes a port's interrupt driven receive buffer.<BR>
+<U>QuickUsbGetNumRS232</U> - Returns the number of characters waiting in a receive buffer.</P>
+<P>The RS-232 tab is shown below:</P>
+</FONT><P><IMG SRC="Image8.gif" WIDTH=487 HEIGHT=476></P>
+<B><U><FONT FACE="Verdana"><P>Port<BR>
+</B></U></FONT><FONT FACE="Verdana" SIZE=2>Selects either SIO-0 or SIO-1.</P>
+</FONT><B><U><FONT FACE="Verdana"><P>Baud Rate<BR>
+</B></U></FONT><FONT FACE="Verdana" SIZE=2>Selects the baud rate for both the RS-232 ports.</P>
+</FONT><B><U><FONT FACE="Verdana"><P>Terminal Window<BR>
+</B></U></FONT><FONT FACE="Verdana" SIZE=2>You can type text into the terminal window and it will be sent to the selected SIO port at the selected baud rate.  Likewise, data received on the SIO port will be displayed in the terminal window surrounded with parenthesis.</P></FONT></BODY>
+</HTML>

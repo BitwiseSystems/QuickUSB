@@ -1,0 +1,10 @@
+% QuickUSB SPI Test
+
+modules = QuickUSB.FindModules;
+
+qusb = QuickUSB(modules{1,1});
+qusb.Open();
+bytes = [32,3];
+qusb.WriteSpiBytes(0, bytes);
+qusb.Close();
+

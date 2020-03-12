@@ -1,0 +1,105 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="QuickUsbDiagCs.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FpgaFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CommandReadAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0x00</Value>
+    </Setting>
+    <Setting Name="CommandReadBytes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="CommandWriteAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0x00</Value>
+    </Setting>
+    <Setting Name="CommandWriteBytes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="CommandWriteData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0x00 0x01 0x02 0x03 0x04 0x05 0x06 0x07</Value>
+    </Setting>
+    <Setting Name="DataReadBytes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">65536</Value>
+    </Setting>
+    <Setting Name="DataReadFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">data_read.bin</Value>
+    </Setting>
+    <Setting Name="DataReadStartAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0x0000</Value>
+    </Setting>
+    <Setting Name="DataWriteBytes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">65536</Value>
+    </Setting>
+    <Setting Name="DataWriteEntireFile" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DataWriteFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">data_write.bin</Value>
+    </Setting>
+    <Setting Name="DataWriteStartAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0x0000</Value>
+    </Setting>
+    <Setting Name="RS232WriteData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0x00 0x01</Value>
+    </Setting>
+    <Setting Name="SpiReadBytes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="SpiWriteData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0x00 0x01</Value>
+    </Setting>
+    <Setting Name="I2cReadAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0x60</Value>
+    </Setting>
+    <Setting Name="I2cReadBytes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="I2cWriteAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0x60</Value>
+    </Setting>
+    <Setting Name="I2cWriteData" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0x00 0x01</Value>
+    </Setting>
+    <Setting Name="SelectedTabIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="EpcsFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RepeatInterval" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="DataStreamReadFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">streaming_read.bin</Value>
+    </Setting>
+    <Setting Name="DataStreamWriteFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">streaming_write.bin</Value>
+    </Setting>
+    <Setting Name="StreamBytes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">65536</Value>
+    </Setting>
+    <Setting Name="StreamNumBuffers" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="StreamNumThreads" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="StreamThreadConcurrency" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="StreamMaxBytes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1048576</Value>
+    </Setting>
+    <Setting Name="StreamReadMemFileSize" Type="System.String" Scope="User">
+      <Value Profile="(Default)">16777216</Value>
+    </Setting>
+    <Setting Name="StreamWriteMemFileSize" Type="System.String" Scope="User">
+      <Value Profile="(Default)">16777216</Value>
+    </Setting>
+    <Setting Name="DataOutOfOrder" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,9 @@
+# Project: QuickUSB Console Demo
+
+CPP = g++
+DEBUGFLAGS=-g
+CPPFLAGS = -fpic -Wall -lc $(DEBUGFFLAGS)
+
+all: main.cpp
+	$(CPP) $(CPPFLAGS) -lquickusb -o Console main.cpp
+

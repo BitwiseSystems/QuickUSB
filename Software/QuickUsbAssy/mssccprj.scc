@@ -1,0 +1,13 @@
+SCC = This is a Source Code Control file
+
+[QuickUsbAssy.sln]
+SCC_Aux_Path = "\\Server\VSS\"
+SCC_Project_Name = "$/Projects/Bitwise/QuickUSB/Library/Software/QuickUsbAssy", CYHAAAAA
+
+[QuickUsbAssy.vbproj]
+SCC_Aux_Path = "\\Server\VSS\"
+SCC_Project_Name = "$/Projects/Bitwise/QuickUSB/Library/Software/QuickUsbAssy", CYHAAAAA
+
+[QuickUsbDiagVbDotNet.vbproj]
+SCC_Aux_Path = "\\Server\VSS\"
+SCC_Project_Name = "$/Projects/Bitwise/QuickUSB/Library/Software/QuickUsbAssy.root/QuickUsbAssy", CYHAAAAA

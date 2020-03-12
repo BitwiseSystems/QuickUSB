@@ -1,0 +1,338 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\QuickUsbDiag.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\QuickUsbDiag.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About QuickUsbDiag"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "QuickUsbDiagVC6 Version 2.11.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006 Bitwise Systems",IDC_STATIC,40,25,
+                    119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_QUICKUSBDIAG_DIALOG DIALOGEX 0, 0, 456, 276
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "QuickUsbDiag"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "General",IDC_STATIC,3,3,221,73
+    COMBOBOX        ModuleComboBox,58,12,59,49,CBS_DROPDOWNLIST | CBS_SORT | 
+                    CBS_NOINTEGRALHEIGHT | CBS_DISABLENOSCROLL | WS_VSCROLL
+    LTEXT           "Module",IDC_STATIC,9,16,24,8
+    LTEXT           "Serial Number",IDC_STATIC,124,17,48,8
+    EDITTEXT        SerialNumberEditBox,174,14,44,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Description",IDC_STATIC,9,31,39,8
+    EDITTEXT        ModuleDescriptionEditBox,58,28,160,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "HW Revision",IDC_STATIC,9,46,45,8
+    EDITTEXT        HwRevEditBox,58,43,160,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "Bus Speed",IDC_STATIC,9,62,39,8
+    EDITTEXT        BusSpeedEditBox,58,58,160,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    GROUPBOX        "FPGA",IDC_STATIC,3,78,221,38
+    PUSHBUTTON      "Browse",FpgaBrowseButton,9,88,42,14
+    EDITTEXT        FpgaFileEditBox,56,88,111,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Upload",FpgaUploadButton,172,88,34,14
+    PUSHBUTTON      "?",FpgaStatusButton,209,88,10,14
+    CONTROL         "Progress1",FpgaLoadProgressBar,"msctls_progress32",
+                    PBS_SMOOTH | WS_BORDER,9,106,209,6
+    GROUPBOX        "I2C",IDC_STATIC,231,183,221,77
+    LTEXT           "Address",IDC_STATIC,237,194,26,8
+    EDITTEXT        I2CAddressTextBox,269,192,37,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Length",IDC_STATIC,313,195,23,8
+    EDITTEXT        I2CLengthTextBox,341,192,37,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "Read",I2CReadButton,384,192,28,14
+    PUSHBUTTON      "Write",I2CWriteButton,417,192,28,14
+    EDITTEXT        I2CDataTextBox,236,209,210,45,ES_MULTILINE | WS_VSCROLL
+    GROUPBOX        "Read / Write Data",IDC_STATIC,3,118,222,87
+    PUSHBUTTON      "Output File",DataReadBrowseButton,9,129,42,14
+    EDITTEXT        DataReadFileTextBox,56,129,121,14,ES_AUTOHSCROLL
+    LTEXT           "Address",IDC_STATIC,90,169,26,8
+    EDITTEXT        DataAddressTextBox,121,166,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Length",IDC_STATIC,9,169,23,8
+    EDITTEXT        DataLengthTextBox,47,166,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "Read",DataReadButton,181,130,38,14
+    PUSHBUTTON      "Write",DataWriteButton,181,147,38,14
+    CONTROL         "Inc Address",IncrementAddressCheckBox,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,167,165,52,10
+    CONTROL         "Async",AsyncCheckBox,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,167,174,35,10
+    LTEXT           "Buffer Size",BufferSizeLabel,9,188,35,8
+    EDITTEXT        BufferSizeTextBox,48,186,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    LTEXT           "Buffer Count",BufferCountLabel,93,189,40,8
+    EDITTEXT        BufferCountTextBox,138,186,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    EDITTEXT        StatusMessage,0,264,456,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "Input File",DataWriteBrowseButton,9,147,42,14
+    EDITTEXT        DataWriteFileTextBox,56,147,121,14,ES_AUTOHSCROLL
+    GROUPBOX        "SPI",IDC_STATIC,231,3,222,81
+    COMBOBOX        SpiPortComboBox,257,15,28,53,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Port",IDC_STATIC,238,17,15,8
+    LTEXT           "Length",IDC_STATIC,291,17,24,8
+    EDITTEXT        SpiLengthTextBox,319,14,31,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Read",SpiReadButton,355,14,23,14
+    PUSHBUTTON      "Write",SpiWriteButton,381,14,24,14
+    PUSHBUTTON      "WriteRead",SpiWriteReadButton,408,14,39,14
+    EDITTEXT        SpiDataTextBox,236,33,211,45,ES_MULTILINE | WS_VSCROLL
+    GROUPBOX        "RS-232",IDC_STATIC,231,84,222,96
+    LTEXT           "Port",IDC_STATIC,239,99,15,8
+    COMBOBOX        Rs232PortComboBox,259,96,28,33,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Baud",IDC_STATIC,292,98,17,8
+    COMBOBOX        Rs232BaudComboBox,314,96,47,78,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Read",Rs232ReadButton,363,96,24,14
+    PUSHBUTTON      "Write",Rs232WriteButton,390,96,27,14
+    PUSHBUTTON      "Flush",Rs232FlushButton,420,96,27,14
+    EDITTEXT        Rs232DataTextBox,236,129,211,45,ES_MULTILINE
+    LTEXT           "Chars Waiting",IDC_STATIC,237,114,47,8
+    EDITTEXT        Rs232CharsWaitingTextBox,288,112,27,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,11,1,0
+ PRODUCTVERSION 2,11,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "QuickUSB Diagnostics\0"
+            VALUE "CompanyName", "Bitwise Systems\0"
+            VALUE "FileDescription", "QuickUsbDiag MFC Application\0"
+            VALUE "FileVersion", "2, 11, 1, 0\0"
+            VALUE "InternalName", "QuickUsbDiag\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "QuickUSB(tm), Bitwise Systems(tm)\0"
+            VALUE "OriginalFilename", "QuickUsbDiag.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "QuickUsbDiag Application\0"
+            VALUE "ProductVersion", "2, 11, 1, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_QUICKUSBDIAG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 449
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 269
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_QUICKUSBDIAG_DIALOG DLGINIT
+BEGIN
+    SpiPortComboBox, 0x403, 2, 0
+0x0030, 
+    SpiPortComboBox, 0x403, 2, 0
+0x0031, 
+    SpiPortComboBox, 0x403, 2, 0
+0x0032, 
+    SpiPortComboBox, 0x403, 2, 0
+0x0033, 
+    SpiPortComboBox, 0x403, 2, 0
+0x0034, 
+    SpiPortComboBox, 0x403, 2, 0
+0x0035, 
+    SpiPortComboBox, 0x403, 2, 0
+0x0036, 
+    SpiPortComboBox, 0x403, 2, 0
+0x0037, 
+    SpiPortComboBox, 0x403, 2, 0
+0x0038, 
+    SpiPortComboBox, 0x403, 2, 0
+0x0039, 
+    Rs232PortComboBox, 0x403, 2, 0
+0x0030, 
+    Rs232PortComboBox, 0x403, 2, 0
+0x0031, 
+    Rs232BaudComboBox, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    Rs232BaudComboBox, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    Rs232BaudComboBox, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    Rs232BaudComboBox, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    Rs232BaudComboBox, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    Rs232BaudComboBox, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    Rs232BaudComboBox, 0x403, 7, 0
+0x3332, 0x3430, 0x3030, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About QuickUsbDiag..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\QuickUsbDiag.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AsyncTest - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/AsyncTest.res" /d "NDEBUG" /d "_AFXDLL" "C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncTest\AsyncTest.rc"" 
+Creating temporary file "C:\DOCUME~1\BLAKEH~1\LOCALS~1\Temp\RSPAE.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/AsyncTest.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncTest\AsyncTest.cpp"
+"C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncTest\AsyncTestDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\BLAKEH~1\LOCALS~1\Temp\RSPAE.tmp" 
+Creating temporary file "C:\DOCUME~1\BLAKEH~1\LOCALS~1\Temp\RSPAF.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/AsyncTest.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Projects\Bitwise\QuickUSB\Library\Software\AsyncTest\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\BLAKEH~1\LOCALS~1\Temp\RSPAF.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/AsyncTest.pdb" /machine:I386 /out:"Release/AsyncTest.exe"  .\Release\AsyncTest.obj .\Release\AsyncTestDlg.obj .\Release\StdAfx.obj .\Release\AsyncTest.res .\QuickUsb.lib "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AsyncTest.cpp
+AsyncTestDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+AsyncTest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

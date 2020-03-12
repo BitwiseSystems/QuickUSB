@@ -1,0 +1,457 @@
+ QuickUSB
+
+ Timestamp is 4fd76a5b (Tue Jun 12 09:12:11 2012)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00008880H .text                   CODE
+ 0002:00000000 00000124H .idata$5                DATA
+ 0002:00000124 00000004H .CRT$XCA                DATA
+ 0002:00000128 00000004H .CRT$XCZ                DATA
+ 0002:0000012c 00000004H .CRT$XIA                DATA
+ 0002:00000130 00000004H .CRT$XIAA               DATA
+ 0002:00000134 00000004H .CRT$XIZ                DATA
+ 0002:00000140 00000168H .rdata                  DATA
+ 0002:000002a8 00000083H .rdata$debug            DATA
+ 0002:00000330 00000004H .rdata$sxdata           DATA
+ 0002:00000334 00000004H .rtc$IAA                DATA
+ 0002:00000338 00000004H .rtc$IZZ                DATA
+ 0002:0000033c 00000004H .rtc$TAA                DATA
+ 0002:00000340 00000004H .rtc$TZZ                DATA
+ 0002:00000348 00000064H .xdata$x                DATA
+ 0002:000003ac 00000028H .idata$2                DATA
+ 0002:000003d4 00000014H .idata$3                DATA
+ 0002:000003e8 00000124H .idata$4                DATA
+ 0002:0000050c 000004d6H .idata$6                DATA
+ 0002:000009f0 0000090bH .edata                  DATA
+ 0003:00000000 00000018H .data                   DATA
+ 0003:00000020 00003778H .bss                    DATA
+ 0004:00000000 00000058H .rsrc$01                DATA
+ 0004:00000060 00000370H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00000001       ___safe_se_handler_count   00000001     <absolute>
+ 0000:00009876       __ldused                   00009876     <absolute>
+ 0000:00009876       __fltused                  00009876     <absolute>
+ 0000:00000000       ___ImageBase               10000000     <linker-defined>
+ 0001:00000000       _TestQusbOpen              10001000 f   QuickUsbApiBase.obj
+ 0001:00000090       _QuickUsbGetDeviceHandle   10001090 f   QuickUsbApiBase.obj
+ 0001:000000e0       _QuickUsbRetrieveDeviceHandle 100010e0 f   QuickUsbApiBase.obj
+ 0001:00000140       _QuickUsbClose@4           10001140 f   QuickUsbApiBase.obj
+ 0001:00000250       _QuickUsbGetStringDescriptor@16 10001250 f   QuickUsbApiBase.obj
+ 0001:00000350       _QuickUsbFindModules@8     10001350 f   QuickUsbApiBase.obj
+ 0001:00000690       _QuickUsbGetDriverVersion@12 10001690 f   QuickUsbApiBase.obj
+ 0001:00000720       _QuickUsbGetDllVersion@12  10001720 f   QuickUsbApiBase.obj
+ 0001:00000750       _QuickUsbGetFirmwareVersion@16 10001750 f   QuickUsbApiBase.obj
+ 0001:00000810       _QuickUsbGetLastError@4    10001810 f   QuickUsbApiBase.obj
+ 0001:00000830       _QuickUsbGetLastDriverError@4 10001830 f   QuickUsbApiBase.obj
+ 0001:00000850       _QuickUsbOpenEx@12         10001850 f   QuickUsbApiBase.obj
+ 0001:00000a40       _QuickUsbSetTimeout@8      10001a40 f   QuickUsbApiBase.obj
+ 0001:00000b30       _QuickUsbOpen@8            10001b30 f   QuickUsbApiBase.obj
+ 0001:00000b50       _QuickUsbWriteCommand@16   10001b50 f   QuickUsbApiData.obj
+ 0001:00000bd0       _QuickUsbReadCommand@16    10001bd0 f   QuickUsbApiData.obj
+ 0001:00000c60       _QuickUsbWriteData@12      10001c60 f   QuickUsbApiData.obj
+ 0001:00000db0       _QuickUsbWriteDataEx@16    10001db0 f   QuickUsbApiData.obj
+ 0001:00000e70       _QuickUsbReadData@12       10001e70 f   QuickUsbApiData.obj
+ 0001:00000fd0       _QuickUsbReadDataEx@16     10001fd0 f   QuickUsbApiData.obj
+ 0001:00001090       _QuickUsbReadDataAsync@16  10002090 f   QuickUsbApiData.obj
+ 0001:00001210       _QuickUsbWriteDataAsync@16 10002210 f   QuickUsbApiData.obj
+ 0001:00001390       _QuickUsbAsyncWait@16      10002390 f   QuickUsbApiData.obj
+ 0001:00001530       _QuickUsbReadBulkDataAsync@24 10002530 f   QuickUsbApiData.obj
+ 0001:00001660       _QuickUsbWriteBulkDataAsync@24 10002660 f   QuickUsbApiData.obj
+ 0001:00001790       _QuickUsbBulkWait@12       10002790 f   QuickUsbApiData.obj
+ 0001:00001a50       _QuickUsbSetNumAsyncThreads@12 10002a50 f   QuickUsbApiData.obj
+ 0001:00001b20       _QuickUsbGetNumAsyncThreads@12 10002b20 f   QuickUsbApiData.obj
+ 0001:00001ba0       _QuickUsbBulkAbort@8       10002ba0 f   QuickUsbApiData.obj
+ 0001:00001d00       _BitFlip                   10002d00 f   QuickUsbApiEpcs.obj
+ 0001:00001d30       _QuickUsbIdentifyEpcs@20   10002d30 f   QuickUsbApiEpcs.obj
+ 0001:00002000       _QuickUsbConfigureEpcs@24  10003000 f   QuickUsbApiEpcs.obj
+ 0001:000024d0       _QuickUsbVerifyEpcs@24     100034d0 f   QuickUsbApiEpcs.obj
+ 0001:000028c0       _QuickUsbEraseEpcs@20      100038c0 f   QuickUsbApiEpcs.obj
+ 0001:00002c10       _QuickUsbStartFpgaConfiguration@4 10003c10 f   QuickUsbApiFPGA.obj
+ 0001:00002c80       _QuickUsbWriteFpgaData@12  10003c80 f   QuickUsbApiFPGA.obj
+ 0001:00002d30       _QuickUsbIsFpgaConfigured@8 10003d30 f   QuickUsbApiFPGA.obj
+ 0001:00002db0       _QuickUsbConfigureFpga@8   10003db0 f   QuickUsbApiFPGA.obj
+ 0001:00003070       _QuickUsbReadPortDir@12    10004070 f   QuickUsbApiGPIO.obj
+ 0001:000030e0       _QuickUsbWritePortDir@12   100040e0 f   QuickUsbApiGPIO.obj
+ 0001:00003150       _QuickUsbReadPort@16       10004150 f   QuickUsbApiGPIO.obj
+ 0001:000031f0       _QuickUsbWritePort@16      100041f0 f   QuickUsbApiGPIO.obj
+ 0001:00003270       _GetI2CError               10004270 f   QuickUsbApiIIC.obj
+ 0001:00003300       _QuickUsbReadI2C@16        10004300 f   QuickUsbApiIIC.obj
+ 0001:000033a0       _QuickUsbWriteI2C@16       100043a0 f   QuickUsbApiIIC.obj
+ 0001:00003430       _QuickUsbCachedWriteI2C@16 10004430 f   QuickUsbApiIIC.obj
+ 0001:00003450       _QuickUsbWriteEepromData@16 10004450 f   QuickUsbApiProgram.obj
+ 0001:00003680       _QuickUsbReadEepromData@16 10004680 f   QuickUsbApiProgram.obj
+ 0001:00003700       _IicExpand                 10004700 f   QuickUsbApiProgram.obj
+ 0001:000037c0       _IicCompress               100047c0 f   QuickUsbApiProgram.obj
+ 0001:00003840       _FindSection               10004840 f   QuickUsbApiProgram.obj
+ 0001:000038b0       _QuickUsbWriteFirmware@20  100048b0 f   QuickUsbApiProgram.obj
+ 0001:00004500       _QuickUsbVerifyFirmware@16 10005500 f   QuickUsbApiProgram.obj
+ 0001:00004cc0       _QuickUsbSetRS232BaudRate@8 10005cc0 f   QuickUsbApiRS232.obj
+ 0001:00004d30       _QuickUsbGetNumRS232@12    10005d30 f   QuickUsbApiRS232.obj
+ 0001:00004dc0       _QuickUsbFlushRS232@8      10005dc0 f   QuickUsbApiRS232.obj
+ 0001:00004e40       _QuickUsbReadRS232@16      10005e40 f   QuickUsbApiRS232.obj
+ 0001:00004f10       _QuickUsbWriteRS232@16     10005f10 f   QuickUsbApiRS232.obj
+ 0001:00004fd0       _FindDefaultsInEeprom      10005fd0 f   QuickUsbApiSettings.obj
+ 0001:00005170       _QuickUsbReadSetting@12    10006170 f   QuickUsbApiSettings.obj
+ 0001:000051e0       _QuickUsbWriteSetting@12   100061e0 f   QuickUsbApiSettings.obj
+ 0001:00005240       _QuickUsbReadDefault@12    10006240 f   QuickUsbApiSettings.obj
+ 0001:00005330       _QuickUsbWriteDefault@12   10006330 f   QuickUsbApiSettings.obj
+ 0001:00005520       _QuickUsbReadSpi@16        10006520 f   QuickUsbApiSpi.obj
+ 0001:000055c0       _QuickUsbWriteSpi@16       100065c0 f   QuickUsbApiSpi.obj
+ 0001:00005650       _QuickUsbWriteReadSpi@16   10006650 f   QuickUsbApiSpi.obj
+ 0001:00005710       _QuickUsbResetStatistic@8  10006710 f   QuickUsbApiStatistics.obj
+ 0001:00005830       _QuickUsbGetStatistic@20   10006830 f   QuickUsbApiStatistics.obj
+ 0001:00005cd0       _QuickUsbWriteStorage@16   10006cd0 f   QuickUsbApiStorage.obj
+ 0001:00005ea0       _QuickUsbReadStorage@16    10006ea0 f   QuickUsbApiStorage.obj
+ 0001:00006000       _QuickUsbIssueStreamBulkRequest 10007000 f   QuickUsbApiStream.obj
+ 0001:000061d0       _QuickUsbAllocateDataBuffer@8 100071d0 f   QuickUsbApiStream.obj
+ 0001:00006220       _QuickUsbFreeDataBuffer@4  10007220 f   QuickUsbApiStream.obj
+ 0001:00006260       _CompleteFileStream@4      10007260 f   QuickUsbApiStream.obj
+ 0001:00006400       _QuickUsbGetStreamStatus@16 10007400 f   QuickUsbApiStream.obj
+ 0001:000064f0       _QuickUsbOpenMemoryFile@20 100074f0 f   QuickUsbApiStream.obj
+ 0001:00006620       _QuickUsbCloseMemoryFile@16 10007620 f   QuickUsbApiStream.obj
+ 0001:00006690       _CompleteBulkRequest       10007690 f   QuickUsbApiStream.obj
+ 0001:00006830       _QuickUsbProcessSTStream   10007830 f   QuickUsbApiStream.obj
+ 0001:000068c0       _StopStream                100078c0 f   QuickUsbApiStream.obj
+ 0001:00006a40       _QuickUsbStopStream@12     10007a40 f   QuickUsbApiStream.obj
+ 0001:00006ca0       _QuickUsbProcessStream@12  10007ca0 f   QuickUsbApiStream.obj
+ 0001:00006d00       _QuickUsbStreamThread@4    10007d00 f   QuickUsbApiStream.obj
+ 0001:00006d70       _QuickUsbInitializeStream  10007d70 f   QuickUsbApiStream.obj
+ 0001:00006fb0       _QuickUsbStartStream       10007fb0 f   QuickUsbApiStream.obj
+ 0001:00007090       _QuickUsbPauseStream@12    10008090 f   QuickUsbApiStream.obj
+ 0001:000071e0       _QuickUsbResumeStream@8    100081e0 f   QuickUsbApiStream.obj
+ 0001:00007290       _QuickUsbReadBulkDataStartStream@36 10008290 f   QuickUsbApiStream.obj
+ 0001:000074c0       _QuickUsbWriteBulkDataStartStream@36 100084c0 f   QuickUsbApiStream.obj
+ 0001:00007740       _QuickUsbReadBulkDataStartStreamToFile@28 10008740 f   QuickUsbApiStream.obj
+ 0001:00007920       _QuickUsbWriteBulkDataStartStreamFromFile@28 10008920 f   QuickUsbApiStream.obj
+ 0001:00007b10       _DllMain@12                10008b10 f   QuickUsbUtil.obj
+ 0001:00007c00       _TranslateSystemError      10008c00 f   QuickUsbUtil.obj
+ 0001:00007d50       _IsAtLeastVersion          10008d50 f   QuickUsbUtil.obj
+ 0001:00007d90       _QuickUsbIoctl             10008d90 f   QuickUsbUtil.obj
+ 0001:00007e80       _QuickUsbVendorRequest     10008e80 f   QuickUsbUtil.obj
+ 0001:00007fa0       _QuickUsbSetResetState@8   10008fa0 f   QuickUsbUtil.obj
+ 0001:00007ff3       @__security_check_cookie@4 10008ff3 f   MSVCRT:secchk.obj
+ 0001:00008002       _memset                    10009002 f   MSVCRT:MSVCR90.dll
+ 0001:00008010       _memcpy                    10009010 f   MSVCRT:MSVCR90.dll
+ 0001:00008065       __CRT_INIT@12              10009065 f   MSVCRT:crtdll.obj
+ 0001:000083a1       __DllMainCRTStartup@12     100093a1 f   MSVCRT:crtdll.obj
+ 0001:000083c4       ___report_gsfailure        100093c4 f   MSVCRT:gs_report.obj
+ 0001:000084ca       ___clean_type_info_names   100094ca f   MSVCRT:tncleanup.obj
+ 0001:000084d6       __onexit                   100094d6 f   MSVCRT:atonexit.obj
+ 0001:0000857b       _atexit                    1000957b f   MSVCRT:atonexit.obj
+ 0001:00008592       __RTC_Initialize           10009592 f   MSVCRT:_initsect_.obj
+ 0001:000085b8       __RTC_Terminate            100095b8 f   MSVCRT:_initsect_.obj
+ 0001:000085e0       __ValidateImageBase        100095e0 f   MSVCRT:pesect.obj
+ 0001:00008620       __FindPESection            10009620 f   MSVCRT:pesect.obj
+ 0001:00008670       __IsNonwritableInCurrentImage 10009670 f   MSVCRT:pesect.obj
+ 0001:0000872e       __initterm                 1000972e f   MSVCRT:MSVCR90.dll
+ 0001:00008734       __initterm_e               10009734 f   MSVCRT:MSVCR90.dll
+ 0001:0000873a       __amsg_exit                1000973a f   MSVCRT:MSVCR90.dll
+ 0001:00008740       ___CppXcptFilter           10009740 f   MSVCRT:MSVCR90.dll
+ 0001:00008748       __SEH_prolog4              10009748 f   MSVCRT:sehprolg4.obj
+ 0001:0000878d       __SEH_epilog4              1000978d f   MSVCRT:sehprolg4.obj
+ 0001:000087a1       __except_handler4          100097a1 f   MSVCRT:chandler4gs.obj
+ 0001:000087c6       ___security_init_cookie    100097c6 f   MSVCRT:gs_support.obj
+ 0001:0000885c       __crt_debugger_hook        1000985c f   MSVCRT:MSVCR90.dll
+ 0001:00008862       ___clean_type_info_names_internal 10009862 f   MSVCRT:MSVCR90.dll
+ 0001:00008868       __unlock                   10009868 f   MSVCRT:MSVCR90.dll
+ 0001:0000886e       ___dllonexit               1000986e f   MSVCRT:MSVCR90.dll
+ 0001:00008874       __lock                     10009874 f   MSVCRT:MSVCR90.dll
+ 0001:0000887a       __except_handler4_common   1000987a f   MSVCRT:MSVCR90.dll
+ 0002:00000000       __imp__GetLastError@0      1000a000     kernel32:KERNEL32.dll
+ 0002:00000004       __imp__GetSystemTimeAsFileTime@4 1000a004     kernel32:KERNEL32.dll
+ 0002:00000008       __imp__GetCurrentProcessId@0 1000a008     kernel32:KERNEL32.dll
+ 0002:0000000c       __imp__GetCurrentThreadId@0 1000a00c     kernel32:KERNEL32.dll
+ 0002:00000010       __imp__GetTickCount@0      1000a010     kernel32:KERNEL32.dll
+ 0002:00000014       __imp__IsDebuggerPresent@0 1000a014     kernel32:KERNEL32.dll
+ 0002:00000018       __imp__SetUnhandledExceptionFilter@4 1000a018     kernel32:KERNEL32.dll
+ 0002:0000001c       __imp__UnhandledExceptionFilter@4 1000a01c     kernel32:KERNEL32.dll
+ 0002:00000020       __imp__GetCurrentProcess@0 1000a020     kernel32:KERNEL32.dll
+ 0002:00000024       __imp__TerminateProcess@8  1000a024     kernel32:KERNEL32.dll
+ 0002:00000028       __imp__InterlockedCompareExchange@12 1000a028     kernel32:KERNEL32.dll
+ 0002:0000002c       __imp__InterlockedExchange@8 1000a02c     kernel32:KERNEL32.dll
+ 0002:00000030       __imp__CreateIoCompletionPort@16 1000a030     kernel32:KERNEL32.dll
+ 0002:00000034       __imp__InitializeCriticalSection@4 1000a034     kernel32:KERNEL32.dll
+ 0002:00000038       __imp__CreateThread@24     1000a038     kernel32:KERNEL32.dll
+ 0002:0000003c       __imp__PostQueuedCompletionStatus@16 1000a03c     kernel32:KERNEL32.dll
+ 0002:00000040       __imp__DeleteCriticalSection@4 1000a040     kernel32:KERNEL32.dll
+ 0002:00000044       __imp__GetQueuedCompletionStatus@20 1000a044     kernel32:KERNEL32.dll
+ 0002:00000048       __imp__UnmapViewOfFile@4   1000a048     kernel32:KERNEL32.dll
+ 0002:0000004c       __imp__CreateFileMappingA@24 1000a04c     kernel32:KERNEL32.dll
+ 0002:00000050       __imp__OpenFileMappingA@12 1000a050     kernel32:KERNEL32.dll
+ 0002:00000054       __imp__MapViewOfFile@20    1000a054     kernel32:KERNEL32.dll
+ 0002:00000058       __imp__SetFilePointer@16   1000a058     kernel32:KERNEL32.dll
+ 0002:0000005c       __imp__QueryPerformanceFrequency@4 1000a05c     kernel32:KERNEL32.dll
+ 0002:00000060       __imp__QueryPerformanceCounter@4 1000a060     kernel32:KERNEL32.dll
+ 0002:00000064       __imp__GetModuleHandleA@4  1000a064     kernel32:KERNEL32.dll
+ 0002:00000068       __imp__GetProcAddress@8    1000a068     kernel32:KERNEL32.dll
+ 0002:0000006c       __imp__CancelIo@4          1000a06c     kernel32:KERNEL32.dll
+ 0002:00000070       __imp__Sleep@4             1000a070     kernel32:KERNEL32.dll
+ 0002:00000074       __imp__EnterCriticalSection@4 1000a074     kernel32:KERNEL32.dll
+ 0002:00000078       __imp__LeaveCriticalSection@4 1000a078     kernel32:KERNEL32.dll
+ 0002:0000007c       __imp__ReadFile@20         1000a07c     kernel32:KERNEL32.dll
+ 0002:00000080       __imp__DeviceIoControl@32  1000a080     kernel32:KERNEL32.dll
+ 0002:00000084       __imp__CreateEventA@16     1000a084     kernel32:KERNEL32.dll
+ 0002:00000088       __imp__WriteFile@20        1000a088     kernel32:KERNEL32.dll
+ 0002:0000008c       __imp__CreateFileA@28      1000a08c     kernel32:KERNEL32.dll
+ 0002:00000090       __imp__CloseHandle@4       1000a090     kernel32:KERNEL32.dll
+ 0002:00000094       __imp__GetOverlappedResult@16 1000a094     kernel32:KERNEL32.dll
+ 0002:00000098       \177KERNEL32_NULL_THUNK_DATA 1000a098     kernel32:KERNEL32.dll
+ 0002:0000009c       __imp___except_handler4_common 1000a09c     MSVCRT:MSVCR90.dll
+ 0002:000000a0       __imp___onexit             1000a0a0     MSVCRT:MSVCR90.dll
+ 0002:000000a4       __imp___lock               1000a0a4     MSVCRT:MSVCR90.dll
+ 0002:000000a8       __imp____dllonexit         1000a0a8     MSVCRT:MSVCR90.dll
+ 0002:000000ac       __imp___unlock             1000a0ac     MSVCRT:MSVCR90.dll
+ 0002:000000b0       __imp____clean_type_info_names_internal 1000a0b0     MSVCRT:MSVCR90.dll
+ 0002:000000b4       __imp___crt_debugger_hook  1000a0b4     MSVCRT:MSVCR90.dll
+ 0002:000000b8       __imp____CppXcptFilter     1000a0b8     MSVCRT:MSVCR90.dll
+ 0002:000000bc       __imp___adjust_fdiv        1000a0bc     MSVCRT:MSVCR90.dll
+ 0002:000000c0       __imp___amsg_exit          1000a0c0     MSVCRT:MSVCR90.dll
+ 0002:000000c4       __imp___initterm_e         1000a0c4     MSVCRT:MSVCR90.dll
+ 0002:000000c8       __imp___initterm           1000a0c8     MSVCRT:MSVCR90.dll
+ 0002:000000cc       __imp___decode_pointer     1000a0cc     MSVCRT:MSVCR90.dll
+ 0002:000000d0       __imp___encoded_null       1000a0d0     MSVCRT:MSVCR90.dll
+ 0002:000000d4       __imp___malloc_crt         1000a0d4     MSVCRT:MSVCR90.dll
+ 0002:000000d8       __imp___encode_pointer     1000a0d8     MSVCRT:MSVCR90.dll
+ 0002:000000dc       __imp___swab               1000a0dc     MSVCRT:MSVCR90.dll
+ 0002:000000e0       __imp___itoa_s             1000a0e0     MSVCRT:MSVCR90.dll
+ 0002:000000e4       __imp__memcpy              1000a0e4     MSVCRT:MSVCR90.dll
+ 0002:000000e8       __imp__feof                1000a0e8     MSVCRT:MSVCR90.dll
+ 0002:000000ec       __imp__fopen_s             1000a0ec     MSVCRT:MSVCR90.dll
+ 0002:000000f0       __imp__fseek               1000a0f0     MSVCRT:MSVCR90.dll
+ 0002:000000f4       __imp__ftell               1000a0f4     MSVCRT:MSVCR90.dll
+ 0002:000000f8       __imp__fclose              1000a0f8     MSVCRT:MSVCR90.dll
+ 0002:000000fc       __imp__fread               1000a0fc     MSVCRT:MSVCR90.dll
+ 0002:00000100       __imp__clock               1000a100     MSVCRT:MSVCR90.dll
+ 0002:00000104       __imp__malloc              1000a104     MSVCRT:MSVCR90.dll
+ 0002:00000108       __imp__free                1000a108     MSVCRT:MSVCR90.dll
+ 0002:0000010c       __imp__strncmp             1000a10c     MSVCRT:MSVCR90.dll
+ 0002:00000110       __imp__memset              1000a110     MSVCRT:MSVCR90.dll
+ 0002:00000114       __imp__strcpy_s            1000a114     MSVCRT:MSVCR90.dll
+ 0002:00000118       __imp__strstr              1000a118     MSVCRT:MSVCR90.dll
+ 0002:0000011c       __imp__sprintf_s           1000a11c     MSVCRT:MSVCR90.dll
+ 0002:00000120       \177MSVCR90_NULL_THUNK_DATA 1000a120     MSVCRT:MSVCR90.dll
+ 0002:00000124       ___xc_a                    1000a124     MSVCRT:cinitexe.obj
+ 0002:00000128       ___xc_z                    1000a128     MSVCRT:cinitexe.obj
+ 0002:0000012c       ___xi_a                    1000a12c     MSVCRT:cinitexe.obj
+ 0002:00000134       ___xi_z                    1000a134     MSVCRT:cinitexe.obj
+ 0002:0000015c       ??_C@_06DIBEOEIP@?2?2?4?2?$CFs?$AA@ 1000a15c     QuickUsbApiBase.obj
+ 0002:00000164       ??_C@_02DKCKIIND@?$CFs?$AA@ 1000a164     QuickUsbApiBase.obj
+ 0002:00000168       ??_C@_03EMIMMIHL@?$CK?4?$CK?$AA@ 1000a168     QuickUsbApiBase.obj
+ 0002:0000016c       ??_C@_0BA@LGMOHBAL@Bitwise?5Systems?$AA@ 1000a16c     QuickUsbApiBase.obj
+ 0002:0000017c       ??_C@_06PICFNMGI@?$CFs?9?$CF1d?$AA@ 1000a17c     QuickUsbApiBase.obj
+ 0002:00000184       ??_C@_04GMMIKMGH@QUSB?$AA@ 1000a184     QuickUsbApiBase.obj
+ 0002:0000018c       ??_C@_05PDJAGGLI@QUSB?9?$AA@ 1000a18c     QuickUsbApiBase.obj
+ 0002:00000198       __real@408f400000000000    1000a198     QuickUsbApiData.obj
+ 0002:000001a0       __real@4f800000            1000a1a0     QuickUsbApiData.obj
+ 0002:000001a4       ??_C@_0L@COJLGOAG@CancelIoEx?$AA@ 1000a1a4     QuickUsbApiData.obj
+ 0002:000001b0       ??_C@_0N@MDJJJHMB@kernel32?4dll?$AA@ 1000a1b0     QuickUsbApiData.obj
+ 0002:000001c0       ??_C@_02JDPG@rb?$AA@       1000a1c0     QuickUsbApiEpcs.obj
+ 0002:000001c4       __real@42880000            1000a1c4     QuickUsbApiEpcs.obj
+ 0002:000001c8       __real@41880000            1000a1c8     QuickUsbApiEpcs.obj
+ 0002:000001cc       __real@40a00000            1000a1cc     QuickUsbApiEpcs.obj
+ 0002:000001d0       __real@40400000            1000a1d0     QuickUsbApiEpcs.obj
+ 0002:000001d4       ??_C@_04LGGJDDML@INIT?$AA@ 1000a1d4     QuickUsbApiProgram.obj
+ 0002:000001dc       ??_C@_04LBJAEDOA@FLOW?$AA@ 1000a1dc     QuickUsbApiProgram.obj
+ 0002:000001e4       ??_C@_04HFHJMNCD@WAVE?$AA@ 1000a1e4     QuickUsbApiProgram.obj
+ 0002:000001ec       ??_C@_04LHEHFKGI@DSCR?$AA@ 1000a1ec     QuickUsbApiProgram.obj
+ 0002:000001f4       ??_C@_04PMKPNBEF@STRS?$AA@ 1000a1f4     QuickUsbApiProgram.obj
+ 0002:000001fc       ??_C@_04INIGBNHO@DFLT?$AA@ 1000a1fc     QuickUsbApiProgram.obj
+ 0002:00000208       __real@3f50000000000000    1000a208     QuickUsbApiStatistics.obj
+ 0002:00000210       __real@3e10000000000000    1000a210     QuickUsbApiStatistics.obj
+ 0002:00000218       __real@3eb0000000000000    1000a218     QuickUsbApiStatistics.obj
+ 0002:00000220       __real@404e000000000000    1000a220     QuickUsbApiStatistics.obj
+ 0002:00000228       __real@40ac200000000000    1000a228     QuickUsbApiStatistics.obj
+ 0002:00000230       __real@41cdcd6500000000    1000a230     QuickUsbApiStatistics.obj
+ 0002:00000238       __real@412e848000000000    1000a238     QuickUsbApiStatistics.obj
+ 0002:00000240       ??_C@_0P@CCLJNBHE@qusbdllfilemap?$AA@ 1000a240     QuickUsbUtil.obj
+ 0002:00000250       __pDefaultRawDllMain       1000a250     MSVCRT:crtdll.obj
+ 0002:00000250       __pRawDllMain              1000a250     MSVCRT:crtdll.obj
+ 0002:00000260       __load_config_used         1000a260     MSVCRT:loadcfg.obj
+ 0002:00000330       ___safe_se_handler_table   1000a330     <linker-defined>
+ 0002:00000334       ___rtc_iaa                 1000a334     MSVCRT:_initsect_.obj
+ 0002:00000338       ___rtc_izz                 1000a338     MSVCRT:_initsect_.obj
+ 0002:0000033c       ___rtc_taa                 1000a33c     MSVCRT:_initsect_.obj
+ 0002:00000340       ___rtc_tzz                 1000a340     MSVCRT:_initsect_.obj
+ 0002:000003ac       __IMPORT_DESCRIPTOR_MSVCR90 1000a3ac     MSVCRT:MSVCR90.dll
+ 0002:000003c0       __IMPORT_DESCRIPTOR_KERNEL32 1000a3c0     kernel32:KERNEL32.dll
+ 0002:000003d4       __NULL_IMPORT_DESCRIPTOR   1000a3d4     MSVCRT:MSVCR90.dll
+ 0003:00000000       _Timeout                   1000c000     QuickUsbUtil.obj
+ 0003:00000004       ___security_cookie         1000c004     MSVCRT:gs_cookie.obj
+ 0003:00000008       ___security_cookie_complement 1000c008     MSVCRT:gs_cookie.obj
+ 0003:00000010       ___native_dllmain_reason   1000c010     MSVCRT:natstart.obj
+ 0003:00000014       ___native_vcclrit_reason   1000c014     MSVCRT:natstart.obj
+ 0003:00000020       _GlobalStreamFlags         1000c020     QuickUsbApiStream.obj
+ 0003:00000024       _lastError                 1000c024     QuickUsbUtil.obj
+ 0003:00000028       _lastDriverError           1000c028     QuickUsbUtil.obj
+ 0003:0000002c       _initialized               1000c02c     QuickUsbUtil.obj
+ 0003:00000030       _QusbDeviceRefCount        1000c030     QuickUsbUtil.obj
+ 0003:00000034       _hMapObject                1000c034     QuickUsbUtil.obj
+ 0003:00000038       _processCount              1000c038     QuickUsbUtil.obj
+ 0003:00000364       ?__type_info_root_node@@3U__type_info_node@@A 1000c364     MSVCRT:tncleanup.obj
+ 0003:00000370       _DriverVersion             1000c370     <common>
+ 0003:00000380       _QusbDeviceInfo            1000c380     <common>
+ 0003:00003780       __adjust_fdiv              1000f780     <common>
+ 0003:00003784       ___native_startup_state    1000f784     <common>
+ 0003:00003788       ___native_startup_lock     1000f788     <common>
+ 0003:0000378c       ___onexitend               1000f78c     <common>
+ 0003:00003790       ___onexitbegin             1000f790     <common>
+ 0003:00003794       ___dyn_tls_init_callback   1000f794     <common>
+
+ entry point at        0001:000083a1
+
+ Static symbols
+
+ 0001:00008016       _pre_c_init                10009016 f   MSVCRT:crtdll.obj
+ 0001:0000828b       ___DllMainCRTStartup       1000928b f   MSVCRT:crtdll.obj
+
+ Exports
+
+  ordinal    name
+
+        1    _QuickUsbAllocateDataBuffer@8
+               exported name: QuickUsbAllocateDataBuffer
+        2    _QuickUsbAsyncWait@16
+               exported name: QuickUsbAsyncWait
+        3    _QuickUsbBulkAbort@8
+               exported name: QuickUsbBulkAbort
+        4    _QuickUsbBulkWait@12
+               exported name: QuickUsbBulkWait
+        5    _QuickUsbCachedWriteI2C@16
+               exported name: QuickUsbCachedWriteI2C
+        6    _QuickUsbClose@4
+               exported name: QuickUsbClose
+        7    _QuickUsbConfigureEpcs@24
+               exported name: QuickUsbConfigureEpcs
+        8    _QuickUsbConfigureFpga@8
+               exported name: QuickUsbConfigureFpga
+        9    _QuickUsbEraseEpcs@20
+               exported name: QuickUsbEraseEpcs
+       10    _QuickUsbFindModules@8
+               exported name: QuickUsbFindModules
+       11    _QuickUsbFlushRS232@8
+               exported name: QuickUsbFlushRS232
+       12    _QuickUsbFreeDataBuffer@4
+               exported name: QuickUsbFreeDataBuffer
+       13    _QuickUsbGetDllVersion@12
+               exported name: QuickUsbGetDllVersion
+       14    _QuickUsbGetDriverVersion@12
+               exported name: QuickUsbGetDriverVersion
+       15    _QuickUsbGetFirmwareVersion@16
+               exported name: QuickUsbGetFirmwareVersion
+       16    _QuickUsbGetLastDriverError@4
+               exported name: QuickUsbGetLastDriverError
+       17    _QuickUsbGetLastError@4
+               exported name: QuickUsbGetLastError
+       18    _QuickUsbGetNumAsyncThreads@12
+               exported name: QuickUsbGetNumAsyncThreads
+       19    _QuickUsbGetNumRS232@12
+               exported name: QuickUsbGetNumRS232
+       20    _QuickUsbGetStatistic@20
+               exported name: QuickUsbGetStatistic
+       21    _QuickUsbGetStreamStatus@16
+               exported name: QuickUsbGetStreamStatus
+       22    _QuickUsbGetStringDescriptor@16
+               exported name: QuickUsbGetStringDescriptor
+       23    _QuickUsbIdentifyEpcs@20
+               exported name: QuickUsbIdentifyEpcs
+       24    _QuickUsbIsFpgaConfigured@8
+               exported name: QuickUsbIsFpgaConfigured
+       25    _QuickUsbOpen@8
+               exported name: QuickUsbOpen
+       26    _QuickUsbOpenEx@12
+               exported name: QuickUsbOpenEx
+       27    _QuickUsbPauseStream@12
+               exported name: QuickUsbPauseStream
+       28    _QuickUsbProcessStream@12
+               exported name: QuickUsbProcessStream
+       29    _QuickUsbReadBulkDataAsync@24
+               exported name: QuickUsbReadBulkDataAsync
+       30    _QuickUsbReadBulkDataStartStream@36
+               exported name: QuickUsbReadBulkDataStartStream
+       31    _QuickUsbReadBulkDataStartStreamToFile@28
+               exported name: QuickUsbReadBulkDataStartStreamToFile
+       32    _QuickUsbReadCommand@16
+               exported name: QuickUsbReadCommand
+       33    _QuickUsbReadData@12
+               exported name: QuickUsbReadData
+       34    _QuickUsbReadDataAsync@16
+               exported name: QuickUsbReadDataAsync
+       35    _QuickUsbReadDataEx@16
+               exported name: QuickUsbReadDataEx
+       36    _QuickUsbReadDefault@12
+               exported name: QuickUsbReadDefault
+       37    _QuickUsbReadI2C@16
+               exported name: QuickUsbReadI2C
+       38    _QuickUsbReadPort@16
+               exported name: QuickUsbReadPort
+       39    _QuickUsbReadPortDir@12
+               exported name: QuickUsbReadPortDir
+       40    _QuickUsbReadRS232@16
+               exported name: QuickUsbReadRS232
+       41    _QuickUsbReadSetting@12
+               exported name: QuickUsbReadSetting
+       42    _QuickUsbReadSpi@16
+               exported name: QuickUsbReadSpi
+       43    _QuickUsbReadStorage@16
+               exported name: QuickUsbReadStorage
+       44    _QuickUsbResetStatistic@8
+               exported name: QuickUsbResetStatistic
+       45    _QuickUsbResumeStream@8
+               exported name: QuickUsbResumeStream
+       46    _QuickUsbSetNumAsyncThreads@12
+               exported name: QuickUsbSetNumAsyncThreads
+       47    _QuickUsbSetRS232BaudRate@8
+               exported name: QuickUsbSetRS232BaudRate
+       48    _QuickUsbSetResetState@8
+               exported name: QuickUsbSetResetState
+       49    _QuickUsbSetTimeout@8
+               exported name: QuickUsbSetTimeout
+       50    _QuickUsbStartFpgaConfiguration@4
+               exported name: QuickUsbStartFpgaConfiguration
+       51    _QuickUsbStopStream@12
+               exported name: QuickUsbStopStream
+       52    _QuickUsbVerifyEpcs@24
+               exported name: QuickUsbVerifyEpcs
+       53    _QuickUsbVerifyFirmware@16
+               exported name: QuickUsbVerifyFirmware
+       54    _QuickUsbWriteBulkDataAsync@24
+               exported name: QuickUsbWriteBulkDataAsync
+       55    _QuickUsbWriteBulkDataStartStream@36
+               exported name: QuickUsbWriteBulkDataStartStream
+       56    _QuickUsbWriteBulkDataStartStreamFromFile@28
+               exported name: QuickUsbWriteBulkDataStartStreamFromFile
+       57    _QuickUsbWriteCommand@16
+               exported name: QuickUsbWriteCommand
+       58    _QuickUsbWriteData@12
+               exported name: QuickUsbWriteData
+       59    _QuickUsbWriteDataAsync@16
+               exported name: QuickUsbWriteDataAsync
+       60    _QuickUsbWriteDataEx@16
+               exported name: QuickUsbWriteDataEx
+       61    _QuickUsbWriteDefault@12
+               exported name: QuickUsbWriteDefault
+       62    _QuickUsbWriteFirmware@20
+               exported name: QuickUsbWriteFirmware
+       63    _QuickUsbWriteFpgaData@12
+               exported name: QuickUsbWriteFpgaData
+       64    _QuickUsbWriteI2C@16
+               exported name: QuickUsbWriteI2C
+       65    _QuickUsbWritePort@16
+               exported name: QuickUsbWritePort
+       66    _QuickUsbWritePortDir@12
+               exported name: QuickUsbWritePortDir
+       67    _QuickUsbWriteRS232@16
+               exported name: QuickUsbWriteRS232
+       68    _QuickUsbWriteReadSpi@16
+               exported name: QuickUsbWriteReadSpi
+       69    _QuickUsbWriteSetting@12
+               exported name: QuickUsbWriteSetting
+       70    _QuickUsbWriteSpi@16
+               exported name: QuickUsbWriteSpi
+       71    _QuickUsbWriteStorage@16
+               exported name: QuickUsbWriteStorage

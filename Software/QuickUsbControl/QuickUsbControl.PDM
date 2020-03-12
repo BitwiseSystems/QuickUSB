@@ -1,0 +1,88 @@
+[Root]
+Most Recent Package=QuickUSB ActiveX Control Packaging Script
+
+[Package|QuickUSB ActiveX Control Packaging Script|IconGroups]
+Group0=Bitwise Systems
+PrivateGroup0=0
+Parent0=$(Programs)
+
+
+[Package|QuickUSB ActiveX Control Packaging Script|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbControl\Package
+Controls Design-Time Support=Yes
+
+[Package|QuickUSB ActiveX Control Packaging Script|Configure DAO ISAMs]
+Applicable=No
+
+[Package|QuickUSB ActiveX Control Packaging Script|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|QuickUSB ActiveX Control Packaging Script|Files Found]
+
+[Package|QuickUSB ActiveX Control Packaging Script|Files Released]
+
+[Package|QuickUSB ActiveX Control Packaging Script|Missing Dependency Information]
+C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbControl\QuickUSB.dll=
+
+[Package|QuickUSB ActiveX Control Packaging Script|Out-of-Date Dependency Information]
+
+[Package|QuickUSB ActiveX Control Packaging Script|Files Added]
+c:\windows\system32\msstkprp.dll=This file is needed for usercontrol design-time support.
+
+[Package|QuickUSB ActiveX Control Packaging Script|Files Removed]
+
+[Package|QuickUSB ActiveX Control Packaging Script|Files In Project]
+C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbControl\QuickUsbControl.ocx=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbControl\QuickUSB.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\WINDOWS\system32\MSSTKPRP.DLL=Yes
+
+[Package|QuickUSB ActiveX Control Packaging Script|Configure Registry Files]
+Applicable=No
+
+[Package|QuickUSB ActiveX Control Packaging Script|Configure Remote Servers]
+Applicable=No
+
+[Package|QuickUSB ActiveX Control Packaging Script|Install Locations]
+C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbControl\QuickUsbControl.ocx=$(WinSysPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbControl\QuickUSB.dll=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\WINDOWS\system32\MSSTKPRP.DLL=$(WinSysPath)
+
+[Package|QuickUSB ActiveX Control Packaging Script|Configure Shared Files]
+Applicable=No
+
+[Package|QuickUSB ActiveX Control Packaging Script|Distribution]
+Type=single
+Size=
+Title=Bitwise Systems QuickUsb ActiveX Control
+
+[Package|QuickUSB ActiveX Control Packaging Script|Package]
+PackageFolder=C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbControl\Package
+ProjectFolder=C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbControl
+ServerSideCab=
+File1=C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbControl\Package\setup.exe
+File2=C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbControl\Package\Setup.Lst
+File3=C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbControl\Package\QuickUsbControl.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

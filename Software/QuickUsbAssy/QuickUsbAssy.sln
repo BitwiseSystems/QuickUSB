@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "QuickUsbAssy", "QuickUsbAssy.vbproj", "{F81BFC7B-A2EC-4DA9-89BA-8C3E970E23F0}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = true
+		SolutionUniqueID = {2F85135E-9BB5-420F-82C5-BA09F8097B92}
+		SccProjectUniqueName1 = QuickUsbAssy.vbproj
+		SccLocalPath1 = .
+		CanCheckoutShared = true
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F81BFC7B-A2EC-4DA9-89BA-8C3E970E23F0}.Debug.ActiveCfg = Debug|.NET
+		{F81BFC7B-A2EC-4DA9-89BA-8C3E970E23F0}.Debug.Build.0 = Debug|.NET
+		{F81BFC7B-A2EC-4DA9-89BA-8C3E970E23F0}.Release.ActiveCfg = Release|.NET
+		{F81BFC7B-A2EC-4DA9-89BA-8C3E970E23F0}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

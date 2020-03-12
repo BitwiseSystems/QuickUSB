@@ -1,0 +1,174 @@
+unit QuickUSB;
+{-----------------------------------------------------------------------------
+  Title       : QuickUSB.pas
+  Description : Delphi Unit for the QuickUSB Library DLL
+  Author      : bhenry
+  
+  $History:$
+------------------------------------------------------------------------------}
+interface
+
+uses Windows, Classes, SysUtils, comctrls;
+
+function FindModules: TStringList;
+function UploadFpgaFile(hDevice: THandle; fileName: String; progressBar: TProgressBar): Boolean;
+
+const
+   { QuickUSB String Descriptor Indices }
+   QUICKUSB_MAKE = $01;
+   QUICKUSB_MODEL = $02;
+
+   { QuickUSB vendor specific requests }
+   QUICKUSB_SETTING = $B0;
+   QUICKUSB_FPGA = $B1;
+   QUICKUSB_COMMAND = $B2;
+   QUICKUSB_PORT = $B3;
+   QUICKUSB_RS232 = $B4;
+   QUICKUSB_I2C = $B5;
+   QUICKUSB_SPI = $B6;
+   QUICKUSB_READDATALEN = $B7;
+
+   { QuickUSB settings (wIndex values for QUICKUSB_SETTING }
+   SETTING_WORDWIDE = $1;          { *wbuf = 1 is 16 bit transfers, 0 is 8 bits  }
+   SETTING_DATAADDRESS = $2;       { *wbuf = Data transfer address.  }
+                                   { If the high bit is set, don't increment addresses  }
+   SETTING_FIFOCONFIG = $3;        { *wbuf: 0xFB=Slave, 0xFA=Master mode  }
+   SETTING_FPGATYPE = $4;          { FPGA configuration type  }
+   SETTING_CPUCONFIG = $5;         { Sets/Reads CPUCS  }
+
+   { FIFO config settings }
+   FIFOCONFIG_GPIF = $FA;
+   FIFOCONFIG_SLAVE = $03;
+
+   { FPGA type settings }
+   FPGATYPE_ALTERAPS = $0;         { Altera or Xilinx passive serial }
+
+
+{ External DLL Function Declarations }
+function QuickUsbFindModules(namelist: PChar; length: Longint): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbOpen(hDevice: PHandle; deviceName: PChar): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbClose(hDevice: THandle): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbGetStringDescriptor(hDevice: THandle; index: Byte; buffer: PChar; length: Word): Integer; stdcall; external 'QuickUsb.dll';
+
+function QuickUsbReadSetting(hDevice: THandle; address: Word; value: PWord): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbWriteSetting(hDevice: THandle; address: Word; value: Word): Integer; stdcall; external 'QuickUsb.dll';
+
+function QuickUsbStartFpgaConfiguration(hDevice: THandle): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbWriteFpgaData(hDevice: THandle; fpgaData: Pointer; length: LongWord): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbIsFpgaConfigured(hDevice: THandle; isConfigured: PWord): Integer; stdcall; external 'QuickUsb.dll';
+
+function QuickUsbReadCommand(hDevice: THandle; address: Word; data: Pointer; length: PWord): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbWriteCommand(hDevice: THandle; address: Word; data: Pointer; length: Word): Integer; stdcall; external 'QuickUsb.dll';
+
+function QuickUsbReadData(hDevice: THandle; data: Pointer; length: PLongWord): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbWriteData(hDevice: THandle; data: Pointer; length: LongWord): Integer; stdcall; external 'QuickUsb.dll';
+
+function QuickUsbReadPortDir(hDevice: THandle; address: Word; data: PByte): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbWritePortDir(hDevice: THandle; address: Word; data: Byte): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbReadPort(hDevice: THandle; address: Word; data: Pointer; length: PWord): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbWritePort(hDevice: THandle; address: Word; data: Pointer; length: Word): Integer; stdcall; external 'QuickUsb.dll';
+
+function QuickUsbSetRS232BaudRate(hDevice: THandle; baudrate: LongWord): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbGetNumRS232(hDevice: THandle; portNum: Byte; length: PWord): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbFlushRS232(hDevice: THandle; portNum: Byte): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbReadRS232(hDevice: THandle; portNum: Byte; data: Pointer; length: PWord): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbWriteRS232(hDevice: THandle; portNum: Byte; data: Pointer; length: Word): Integer; stdcall; external 'QuickUsb.dll';
+
+function QuickUsbReadSpi(hDevice: THandle; portNum: Byte; data: Pointer; length: PWord): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbWriteSpi(hDevice: THandle; portNum: Byte; data: Pointer; length: Word): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbWriteReadSpi(hDevice: THandle; portNum: Byte; data: Pointer; length: Word): Integer; stdcall; external 'QuickUsb.dll';
+
+function QuickUsbReadI2C(hDevice: THandle; address: Word; data: Pointer; length: PWord): Integer; stdcall; external 'QuickUsb.dll';
+function QuickUsbWriteI2C(hDevice: THandle; address: Word; data: Pointer; length: Word): Integer; stdcall; external 'QuickUsb.dll';
+
+
+implementation
+
+
+function FindModules: TStringList;
+{-----------------------------------------------------------------------------
+ Purpose : Find all the QuickUSB modules in a system
+ Returns : A TStringList containging the module names.
+ Notes   : Very handy for poplating a listbox or combobox.
+------------------------------------------------------------------------------}
+var list: TStringList;
+var ptr: PChar;
+var name, namelist: AnsiString;
+begin
+   { Create the string list }
+   list := TStringList.Create;
+
+   { Make space for the name list }
+   SetLength(namelist, 256);
+
+   { Call the Find Modules routine }
+   QuickUsbFindModules(PChar(namelist), Length(namelist));
+
+   { Scan the result and make a list of strings from it }
+   ptr := PChar(namelist);
+   repeat
+      { Assign the ANSI string to a string}
+      name := ptr;
+
+      { If its not empty, add it to the list }
+      if (name <> '') then begin
+         list.Append(name);
+      end;
+
+      { Look for the next string in the list }
+      ptr := ptr + length(name) + 1;
+   until (name = '');
+
+   { Return the list }
+   FindModules := list;
+end;
+
+
+
+function UploadFpgaFile(hDevice: THandle; filename: String; progressBar: TProgressBar): Boolean;
+{-----------------------------------------------------------------------------
+ Purpose :
+ Returns :
+ Notes   :
+------------------------------------------------------------------------------}
+var fpgaFile: File;
+var index, fileLen, numRead: Integer;
+var data: array[0..64] of byte;
+var retVal: integer;
+var isConfigured: word;
+begin
+   { Start the FPGA configuration process}
+   retVal := QuickUsbStartFpgaConfiguration(hDevice);
+   if (retVal <> 1) then begin
+      UploadFpgaFile := False;
+      exit;
+   end;
+
+   { Open the file }
+   AssignFile(fpgaFile, fileName);
+   Reset(fpgaFile);
+
+   { Get the length of the file}
+   fileLen := FileSize(fpgaFile);
+   index := 0;
+   progressBar.Max := fileLen;
+
+   { Send the file in blocks of 64 bytes }
+   while (index < fileLen) do begin
+      BlockRead(fpgaFile, data, 64, numRead);
+      index := index + numRead;
+      QuickUsbWriteFpgaData(hDevice, @data, numRead);
+      progressBar.position := index;
+   end;
+
+   { Close the file }
+   CloseFile(fpgaFile);
+
+   { Check to see if the FPGA really got configured }
+   QuickUsbIsFpgaConfigured(hDevice, @isConfigured);
+
+   UploadFpgaFile := True;
+end;
+
+
+end.

@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="QuickUsbFileUpdate.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SetupFileDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Projects\Bitwise\QuickUSB\Library\Setup\Setup_v2.15.2\WindowsFiles</Value>
+    </Setting>
+    <Setting Name="QuickUSBProjectDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Projects\Bitwise\QuickUSB</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

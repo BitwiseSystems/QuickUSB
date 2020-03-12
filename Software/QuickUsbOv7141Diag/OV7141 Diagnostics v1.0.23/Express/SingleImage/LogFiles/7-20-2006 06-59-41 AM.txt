@@ -1,0 +1,220 @@
+================= Logging started at 7/20/2006 06:59:41 AM ==================
+Created release folders
+AdminExecuteSequence table successfully built
+AdminUISequence table successfully built
+AdvtExecuteSequence table successfully built
+AdvtUISequence table successfully built
+InstallExecuteSequence table successfully built
+InstallUISequence table successfully built
+Directory table successfully built
+Feature table successfully built
+FeatureComponents table successfully built
+Component table successfully built
+Loading File table
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\AVIFile256.bas"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.sys"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\mssccprj.scc"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141.txt"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\ov7141diag.vbp"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.inf"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\BitCheckBox.ctl"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\CAMERA.ICO"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\frmAbout.frm"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Grayscale.ctl"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Doc\OV7640AA.pdf"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23.ism"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.bas"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.dll"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.dll"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\frmAbout.frx"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141Diag.vbw"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141.txt"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Display.frm"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Display.frx"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUsbOV7141Diag.exe"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Doc\OV7640_IG (1.3).pdf"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Doc\ds_note.pdf"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Doc\ds_7140_7640.pdf"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Doc\QuickUSB Adapter Board to OV7141 Board.pdf"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.inf"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.sys"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUsbCtl.ctl"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUsbOV7141Diag.exe"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\QuickUsbProgrammer.exe"
+	** Error: -6103: Could not find file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\quickusb-ov7141 v2.11rc4.iic"
+Building File table
+Merging modules...
+Merging Microsoft Component Category Manager Library: C:\Program Files\InstallShield\Express\Modules\i386\COMCAT.MSM
+Merging Visual Basic Virtual Machine: C:\Program Files\InstallShield\Express\Modules\i386\MSVBVM60.MSM
+Merging Microsoft OLE 2.40  for Windows NT(TM) and Windows 95(TM) Operating Systems: C:\Program Files\InstallShield\Express\Modules\i386\OLEAUT32.MSM
+Merging modules...
+Merging Microsoft (R) C Runtime Library: C:\Program Files\InstallShield\Express\Modules\i386\MSVCRT.MSM
+File table successfully built
+Building MsiFileHash table
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\AVIFile256.bas not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\BitCheckBox.ctl not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\CAMERA.ICO not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Display.frm not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Display.frx not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Grayscale.ctl not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141.txt not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141.txt not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141Diag.vbw not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23.ism not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Doc\OV7640AA.pdf not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Doc\OV7640_IG (1.3).pdf not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.bas not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.dll not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.dll not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.inf not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.inf not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.sys not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.sys not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Doc\QuickUSB Adapter Board to OV7141 Board.pdf not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUsbCtl.ctl not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUsbOV7141Diag.exe not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUsbOV7141Diag.exe not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\QuickUsbProgrammer.exe not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Doc\ds_7140_7640.pdf not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Doc\ds_note.pdf not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\frmAbout.frm not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\frmAbout.frx not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\mssccprj.scc not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\ov7141diag.vbp not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+	** Error: -6271: File C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\quickusb-ov7141 v2.11rc4.iic not found. An error occurred building the MsiFileHash table record for this file. Verify that the file exists in the specified location.
+MsiFileHash table successfully built
+Class table successfully built
+Extension table successfully built
+ODBCDataSource table successfully built
+ODBCDriver table successfully built
+ActionText table successfully built
+AppSearch table successfully built
+BindImage table successfully built
+CCPSearch table successfully built
+Condition table successfully built
+AppId table successfully built
+	** Error: -1024: The source file "C:\Bhenry\Projects\Promet\Demo\Software\CAMERA.ICO" for an icon does not exist.
+Property table successfully built
+BBControl table successfully built
+Billboard table successfully built
+Binary table successfully built
+CompLocator table successfully built
+Complus table successfully built
+ControlCondition table successfully built
+ControlEvent table successfully built
+CreateFolder table successfully built
+CustomAction table successfully built
+Error table successfully built
+DrLocator table successfully built
+DuplicateFile table successfully built
+Environment table successfully built
+EventMapping table successfully built
+FileSFPCatalog table successfully built
+Font table successfully built
+IniFile table successfully built
+IniLocator table successfully built
+IsolatedComponent table successfully built
+LaunchCondition table successfully built
+LockPermissions table successfully built
+MIME table successfully built
+MoveFile table successfully built
+MsiAssembly table successfully built
+MsiAssemblyName table successfully built
+MsiDigitalCertificate table successfully built
+MsiDigitalSignature table successfully built
+ODBCAttribute table successfully built
+ODBCSourceAttribute table successfully built
+ODBCTranslator table successfully built
+PatchPackage table successfully built
+ProgId table successfully built
+PublishComponent table successfully built
+Registry table successfully built
+RegLocator table successfully built
+RemoveFile table successfully built
+RemoveIniFile table successfully built
+RemoveRegistry table successfully built
+ReserveCost table successfully built
+SelfReg table successfully built
+ServiceControl table successfully built
+ServiceInstall table successfully built
+SFPCatalog table successfully built
+	** Error: -1024: The source file "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUsbOV7141Diag.exe" for an icon does not exist.
+	** Error: -1024: The source file "C:\Bhenry\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\QuickUsbProgrammer.exe" for an icon does not exist.
+Shortcut table successfully built
+Signature table successfully built
+TextStyle table successfully built
+TypeLib table successfully built
+UIText table successfully built
+Upgrade table successfully built
+Verb table successfully built
+_Validation table successfully built
+Searching project for extract-at-build components...
+Dialog AdminChangeFolder for language English (United States) built
+Dialog AdminNetworkLocation for language English (United States) built
+Dialog AdminWelcome for language English (United States) built
+Dialog CancelSetup for language English (United States) built
+Dialog CustomSetup for language English (United States) built
+Dialog CustomSetupTips for language English (United States) built
+Dialog CustomerInformation for language English (United States) built
+Dialog DatabaseFolder for language English (United States) built
+Dialog DestinationFolder for language English (United States) built
+Dialog DiskSpaceRequirements for language English (United States) built
+Dialog FilesInUse for language English (United States) built
+Dialog InstallChangeFolder for language English (United States) built
+Dialog InstallWelcome for language English (United States) built
+Dialog LicenseAgreement for language English (United States) built
+Dialog MaintenanceType for language English (United States) built
+Dialog MaintenanceWelcome for language English (United States) built
+Dialog OutOfSpace for language English (United States) built
+Dialog ReadmeInformation for language English (United States) built
+Dialog ReadyToInstall for language English (United States) built
+Dialog ReadyToRemove for language English (United States) built
+Dialog SetupCompleteError for language English (United States) built
+Dialog SetupCompleteSuccess for language English (United States) built
+Dialog SetupError for language English (United States) built
+Dialog SetupInitialization for language English (United States) built
+Dialog SetupInterrupted for language English (United States) built
+Dialog SetupProgress for language English (United States) built
+Dialog SetupResume for language English (United States) built
+Dialog SetupType for language English (United States) built
+Dialog SplashBitmap for language English (United States) built
+Resolving strings...
+Language English (United States) built
+Building CAB files...
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141.txt" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.inf" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.sys" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\quickusb-ov7141 v2.11rc4.iic" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.dll" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUsbOV7141Diag.exe" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Software\QuickUsbProgrammer\QuickUsbProgrammer.exe" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Doc\OV7640AA.pdf" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Doc\OV7640_IG (1.3).pdf" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Doc\ds_note.pdf" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Doc\ds_7140_7640.pdf" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Doc\QuickUSB Adapter Board to OV7141 Board.pdf" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\AVIFile256.bas" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.sys" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\mssccprj.scc" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141.txt" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\ov7141diag.vbp" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.inf" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\BitCheckBox.ctl" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\CAMERA.ICO" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\frmAbout.frm" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Grayscale.ctl" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23.ism" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.bas" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\frmAbout.frx" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141Diag.vbw" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Display.frm" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\Display.frx" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUsbCtl.ctl" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUSB.dll" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+	** Error: -1501: Could not compress "C:\Bhenry\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\QuickUsbOV7141Diag.exe" into "C:\Projects\Bitwise\QuickUSB\Library\Software\QuickUsbOv7141Diag\OV7141 Diagnostics v1.0.23\Express\SingleImage\DiskImages\DISK1\Data1.cab"
+Data1.cab built
+Files built
+Media table successfully built
+Setup.exe created
+Express\SingleImage build completed with 96 errors, 0 warnings
+================= Logging stopped at 7/20/2006 06:59:59 AM ==================

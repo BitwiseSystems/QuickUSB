@@ -1,0 +1,359 @@
+0 EP26CONFIGH
+	Bit 0: EP2 Buffering[0]\n    00 - Quad\n    01 - Invalid\n    10 - Double\n    11 - Triple
+	Bit 1: EP2 Buffering[1]\n    00 - Quad\n    01 - Invalid\n    10 - Double\n    11 - Triple
+	Bit 2: Reserved
+	Bit 3: EP2 Buffer Size\n    0 - 512 bytes\n    1 - 1024 bytes
+	Bit 4: EP2 Type[0]\n    00 - Invalid\n    01 - Isochronous\n    10 - Bulk\n    11 - Interrupt
+	Bit 5: EP2 Type[0]\n    00 - Invalid\n    01 - Isochronous\n    10 - Bulk\n    11 - Interrupt
+	Bit 6: EP2 Direction\n    0 - Output\n    1 - Input
+	Bit 7: EP2 Valid\n    0 - Not activated\n    1 - Activated
+
+0 EP26CONFIGL
+	Bit 0: EP6 Buffering[0]\n    00 - Quad\n    01 - Invalid\n    10 - Double\n    11 - Triple
+	Bit 1: EP6 Buffering[1]\n    00 - Quad\n    01 - Invalid\n    10 - Double\n    11 - Triple
+	Bit 2: Reserved
+	Bit 3: EP6 Buffer Size\n    0 - 512 bytes\n    1 - 1024 bytes
+	Bit 4: EP6 Type[0]\n    00 - Invalid\n    01 - Isochronous\n    10 - Bulk\n    11 - Interrupt
+	Bit 5: EP6 Type[0]\n    00 - Invalid\n    01 - Isochronous\n    10 - Bulk\n    11 - Interrupt
+	Bit 6: EP6 Direction\n    0 - Output\n    1 - Input
+	Bit 7: EP6 Valid\n    0 - Not activated\n    1 - Activated
+
+1 WORDWIDEH
+	Bit 0: Reserved
+	Bit 1: Reserved
+	Bit 2: Reserved
+	Bit 3: Reserved
+	Bit 4: Reserved
+	Bit 5: Reserved
+	Bit 6: Reserved
+	Bit 7: Reserved
+
+1 WORDWIDEL
+	Bit 0: WORDWIDE Data Width\n    0 - 8-bits\n    1 - 16-bits
+	Bit 1: Reserved
+	Bit 2: Reserved
+	Bit 3: Reserved
+	Bit 4: Reserved
+	Bit 5: Reserved
+	Bit 6: Reserved
+	Bit 7: Reserved
+
+2 DATAADDRESSH
+	Bit 0: GPIFADR[8]
+	Bit 1: Reserved
+	Bit 2: Reserved
+	Bit 3: Reserved
+	Bit 4: Reserved
+	Bit 5: Reserved
+	Bit 6: Disable Address Bus\n    0 - Enable address bus\n    1 - Disable address bus
+	Bit 7: Disable Auto-Increment of Address Bus\n    0 - Auto-increment address bus\n    1 - Dont auto-increment address bus
+
+2 DATAADDRESSL
+	Bit 0: GPIFADR[0] - GPIF Adddress Bit 0
+	Bit 1: GPIFADR[1] - GPIF Adddress Bit 1
+	Bit 2: GPIFADR[2] - GPIF Adddress Bit 2
+	Bit 3: GPIFADR[3] - GPIF Adddress Bit 3
+	Bit 4: GPIFADR[4] - GPIF Adddress Bit 4
+	Bit 5: GPIFADR[5] - GPIF Adddress Bit 5
+	Bit 6: GPIFADR[6] - GPIF Adddress Bit 6
+	Bit 7: GPIFADR[7] - GPIF Adddress Bit 7
+
+3 FIFOCONFIGH
+	Bit 0: FF - FIFO Full Flag Polarity\n    0 - Active low\n    1 - Active high
+	Bit 1: EF - FIFO Empty Flag Polarity\n    0 - Active low\n    1 - Active high
+	Bit 2: SLWR - FIFO Write Polarity\n    0 - Active low\n    1 - Active high
+	Bit 3: SLRD - FIFO Read Polarity\n    0 - Active low\n    1 - Active high
+	Bit 4: SLOE - FIFO Output Enable Polarity\n    0 - Active low\n    1 - Active high
+	Bit 5: PKTEND - FIFO Packet End Polarity\n    0 - Active low\n    1 - Active high
+	Bit 6: Reserved
+	Bit 7: Reserved
+
+3 FIFOCONFIGL
+	Bit 0: IFCFG[0] - HSPP Configuration Bit 0\n    00 - IO ports\n    01 - Reserved\n    10 - GPIF master mode\n    11 - Slave FIFO mode
+	Bit 1: IFCFG[1] - HSPP Configuration Bit 1\n    00 - IO ports\n    01 - Reserved\n    10 - GPIF master mode\n    11 - Slave FIFO mode
+	Bit 2: Reserved
+	Bit 3: ASYNC - GPIF Clock Mode Select\n    0 - Synchronous\n    1 - Asynchronous
+	Bit 4: IFCLKPOL - IFCLK Polarity Select\n    0 - Normal\n    1 - Inverted
+	Bit 5: IFCLKOE - IFCLK Output Enable\n    0 - Tri-state the IFCLK pin\n    1 - Drive the IFCLK pin
+	Bit 6: 3048MHZ - IFCLK Speed Select\n    0 - 30 MHz\n    1 - 48 MHz
+	Bit 7: IFCLKSRC - IFCLK Source\n    0 - External\n    1 - Internal
+
+4 FPGATYPEH
+	Bit 0: Reserved
+	Bit 1: Reserved
+	Bit 2: Reserved
+	Bit 3: Reserved
+	Bit 4: Reserved
+	Bit 5: Reserved
+	Bit 6: Reserved
+	Bit 7: Reserved
+
+4 FPGATYPEL
+	Bit 0: FPGATYPE\n    0 - Altera (Passive Serial)\n    1 - Xilinx (Slave Serial)
+	Bit 1: Reserved
+	Bit 2: Reserved
+	Bit 3: Reserved
+	Bit 4: Reserved
+	Bit 5: Reserved
+	Bit 6: Reserved
+	Bit 7: Reserved
+
+5 CPUCONFIGH
+	Bit 0: Reserved
+	Bit 1: Reserved
+	Bit 2: Reserved
+	Bit 3: Reserved
+	Bit 4: Reserved
+	Bit 5: Reserved
+	Bit 6: Reserved
+	Bit 7: USB Bus Speed\n    0 - Force Full-Speed (12 Mbps)\n    1 - Allow High-Speed (480 Mbps)
+
+5 CPUCONFIGL
+	Bit 0: Reserved
+	Bit 1: CLKOE - CLKOUT Output Enable\n    0 - Tri-state the CLKOUT Pin\n    1 - Drive the CLKOUT Pin
+	Bit 2: CLKINV - Invert CLKOUT Pin\n    0 - Nomal\n    1 - Invert
+	Bit 3: CLKSPD[0] - CPU Clock Speed\n    00 - 12 MHz\n    01 - 24 MHz\n    10 - 48 MHz\n    11=Reserved
+	Bit 4: CLKSPD[1] - CPU Clock Speed\n    00 - 12 MHz\n    01 - 24 MHz\n    10 - 48 MHz\n    11=Reserved
+	Bit 5: Reserved
+	Bit 6: Reserved
+	Bit 7: Reserved
+
+6 SPICONFIGH
+	Bit 0: Reserved
+	Bit 1: Reserved
+	Bit 2: Reserved
+	Bit 3: Reserved
+	Bit 4: Reserved
+	Bit 5: Reserved
+	Bit 6: Reserved
+	Bit 7: GPIFA[8] - Enable GPIF Address Pins\n    0 - Configure PE[7] as GPIO\n    1 - Configure PE[7] as GPIFADR[8] output
+
+6 SPICONFIGL
+	Bit 0: SPIENDIAN - SPI Bit Endianness\n    0 - LSBit to MSBit\n    1 - MSBit to LSBit
+	Bit 1: SPICPOL - SPI Clock Polarity\n    0 - Normal\n    1 - Inverted
+	Bit 2: SPICPHA - SPI Clock Phase\n    0 - Sample Then Clock\n    1 - Clock Then Sample
+	Bit 3: SPIPORT - Select Port for SPI/FPGA communication\n    0 - Use Port E\n    1 - Use Port A
+	Bit 4: NCEPIN - Select the pin for the nCE line\n    0 - nCE is on pin 2 of SPIPORT\n    1 - nCE is on pin 7 of SPIPORT
+	Bit 5: MISOPIN - Select the port for the MISO line\n    0 - MISO is on pin 5 of SPIPORT\n    1 - MISO is on pin 2 of SPIPORT
+	Bit 6: Reserved
+	Bit 7: Reserved
+
+7 SLAVEFIFOFLAGSH
+	Bit 0: EP6 Full Flag
+	Bit 1: EP6 Empty Flag
+	Bit 2: Reserved
+	Bit 3: RDY[0] - Pin Status
+	Bit 4: Reserved
+	Bit 5: Reserved
+	Bit 6: Reserved
+	Bit 7: Reserved
+
+7 SLAVEFIFOFLAGSL
+	Bit 0: EP2 Full Flag
+	Bit 1: EP2 Empty Flag
+	Bit 2: Reserved
+	Bit 3: RDY[1] Pin Status
+	Bit 4: Reserved
+	Bit 5: Reserved
+	Bit 6: Reserved
+	Bit 7: Reserved]
+
+8 I2CTLH
+	Bit 0: Last I2C Read Status Bit 0\n    00000110 - Bus error\n    00000111 - No ACK\n    00001000 - Normal completion\n    00001010 - Slave wait\n    00001011 - Timeout
+	Bit 1: Last I2C Read Status Bit 1\n    00000110 - Bus error\n    00000111 - No ACK\n    00001000 - Normal completion\n    00001010 - Slave wait\n    00001011 - Timeout
+	Bit 2: Last I2C Read Status Bit 2\n    00000110 - Bus error\n    00000111 - No ACK\n    00001000 - Normal completion\n    00001010 - Slave wait\n    00001011 - Timeout
+	Bit 3: Last I2C Read Status Bit 3\n    00000110 - Bus error\n    00000111 - No ACK\n    00001000 - Normal completion\n    00001010 - Slave wait\n    00001011 - Timeout
+	Bit 4: Last I2C Read Status Bit 4\n    00000110 - Bus error\n    00000111 - No ACK\n    00001000 - Normal completion\n    00001010 - Slave wait\n    00001011 - Timeout
+	Bit 5: Last I2C Read Status Bit 5\n    00000110 - Bus error\n    00000111 - No ACK\n    00001000 - Normal completion\n    00001010 - Slave wait\n    00001011 - Timeout
+	Bit 6: Last I2C Read Status Bit 6\n    00000110 - Bus error\n    00000111 - No ACK\n    00001000 - Normal completion\n    00001010 - Slave wait\n    00001011 - Timeout
+	Bit 7: Last I2C Read Status Bit 7\n    00000110 - Bus error\n    00000111 - No ACK\n    00001000 - Normal completion\n    00001010 - Slave wait\n    00001011 - Timeout
+
+8 I2CTLL
+	Bit 0: I2C Bus Clock Speed\n    0 - Appoximately 100 kHz\n    1 - Appoximately 400 kHz
+	Bit 1: Reserved
+	Bit 2: Reserved
+	Bit 3: Reserved
+	Bit 4: Reserved
+	Bit 5: Reserved
+	Bit 6: Reserved
+	Bit 7: IgnoreACK\n    0 - Handle ACK for normal I2C traffic\n    1 - Process I2C traffic regardless of ACK
+
+9 PORTAH
+	Bit 0: PA[0] Output Enable\n    0 - Input\n    1 - Output
+	Bit 1: PA[1] Output Enable\n    0 - Input\n    1 - Output
+	Bit 2: PA[2] Output Enable\n    0 - Input\n    1 - Output
+	Bit 3: PA[3] Output Enable\n    0 - Input\n    1 - Output
+	Bit 4: PA[4] Output Enable\n    0 - Input\n    1 - Output
+	Bit 5: PA[5] Output Enable\n    0 - Input\n    1 - Output
+	Bit 6: PA[6] Output Enable\n    0 - Input\n    1 - Output
+	Bit 7: PA[7] Output Enable\n    0 - Input\n    1 - Output
+
+9 PORTAL
+	Bit 0: PA[0] Value
+	Bit 1: PA[1] Value
+	Bit 2: PA[2] Value
+	Bit 3: PA[3] Value
+	Bit 4: PA[4] Value
+	Bit 5: PA[5] Value
+	Bit 6: PA[6] Value
+	Bit 7: PA[7] Value
+
+10 PORTBH
+	Bit 0: PB[0] Output Enable\n    0 - Input\n    1 - Output
+	Bit 1: PB[1] Output Enable\n    0 - Input\n    1 - Output
+	Bit 2: PB[2] Output Enable\n    0 - Input\n    1 - Output
+	Bit 3: PB[3] Output Enable\n    0 - Input\n    1 - Output
+	Bit 4: PB[4] Output Enable\n    0 - Input\n    1 - Output
+	Bit 5: PB[5] Output Enable\n    0 - Input\n    1 - Output
+	Bit 6: PB[6] Output Enable\n    0 - Input\n    1 - Output
+	Bit 7: PB[7] Output Enable\n    0 - Input\n    1 - Output
+
+10 PORTBL
+	Bit 0: PB[0] Value
+	Bit 1: PB[1] Value
+	Bit 2: PB[2] Value
+	Bit 3: PB[3] Value
+	Bit 4: PB[4] Value
+	Bit 5: PB[5] Value
+	Bit 6: PB[6] Value
+	Bit 7: PB[7] Value
+
+11 PORTCH
+	Bit 0: PC[0] Output Enable\n    0 - Input\n    1 - Output
+	Bit 1: PC[1] Output Enable\n    0 - Input\n    1 - Output
+	Bit 2: PC[2] Output Enable\n    0 - Input\n    1 - Output
+	Bit 3: PC[3] Output Enable\n    0 - Input\n    1 - Output
+	Bit 4: PC[4] Output Enable\n    0 - Input\n    1 - Output
+	Bit 5: PC[5] Output Enable\n    0 - Input\n    1 - Output
+	Bit 6: PC[6] Output Enable\n    0 - Input\n    1 - Output
+	Bit 7: PC[7] Output Enable\n    0 - Input\n    1 - Output
+
+11 PORTCL
+	Bit 0: PC[0] Value
+	Bit 1: PC[1] Value
+	Bit 2: PC[2] Value
+	Bit 3: PC[3] Value
+	Bit 4: PC[4] Value
+	Bit 5: PC[5] Value
+	Bit 6: PC[6] Value
+	Bit 7: PC[7] Value
+
+12 PORTDH
+	Bit 0: PD[0] Output Enable\n    0 - Input\n    1 - Output
+	Bit 1: PD[1] Output Enable\n    0 - Input\n    1 - Output
+	Bit 2: PD[2] Output Enable\n    0 - Input\n    1 - Output
+	Bit 3: PD[3] Output Enable\n    0 - Input\n    1 - Output
+	Bit 4: PD[4] Output Enable\n    0 - Input\n    1 - Output
+	Bit 5: PD[5] Output Enable\n    0 - Input\n    1 - Output
+	Bit 6: PD[6] Output Enable\n    0 - Input\n    1 - Output
+	Bit 7: PD[7] Output Enable\n    0 - Input\n    1 - Output
+
+12 PORTDL
+	Bit 0: PD[0] Value
+	Bit 1: PD[1] Value
+	Bit 2: PD[2] Value
+	Bit 3: PD[3] Value
+	Bit 4: PD[4] Value
+	Bit 5: PD[5] Value
+	Bit 6: PD[6] Value
+	Bit 7: PD[7] Value
+
+13 PORTEH
+	Bit 0: PE[0] Output Enable\n    0 - Input\n    1 - Output
+	Bit 1: PE[1] Output Enable\n    0 - Input\n    1 - Output
+	Bit 2: PE[2] Output Enable\n    0 - Input\n    1 - Output
+	Bit 3: PE[3] Output Enable\n    0 - Input\n    1 - Output
+	Bit 4: PE[4] Output Enable\n    0 - Input\n    1 - Output
+	Bit 5: PE[5] Output Enable\n    0 - Input\n    1 - Output
+	Bit 6: PE[6] Output Enable\n    0 - Input\n    1 - Output
+	Bit 7: PE[7] Output Enable\n    0 - Input\n    1 - Output
+
+13 PORTEL
+	Bit 0: PE[0] Value
+	Bit 1: PE[1] Value
+	Bit 2: PE[2] Value
+	Bit 3: PE[3] Value
+	Bit 4: PE[4] Value
+	Bit 5: PE[5] Value
+	Bit 6: PE[6] Value
+	Bit 7: PE[7] Value
+
+14 PORTACCFGH
+	Bit 0: INT0 - Interrupt 0 Alternate Configuration\n    0 - PA[0] not configured as interrupt\n    1 - PA[0] configured as interrupt input\nNOTE: INT0 is currently not used
+	Bit 1: INT1 - Interrupt 1 Alternate Configuration\n    0 - PA[1] not configured as interrupt\n    1 - PA[1] configured as interrupt input\nNOTE: INT1 is currently not used
+	Bit 2: Reserved
+	Bit 3: Reserved
+	Bit 4: Reserved
+	Bit 5: Reserved
+	Bit 6: SLCS - Slave FIFO Chip Select Alternate Configuration\n    0 - PA[7] not configured as SLCS input in Slave Mode\n    1 - PA[7] confiured as SLCS input in Slave Mode\nNote: If both bit 15 (FLAGD) and bit 14 (SLCS) are set\nPA[7] will be configured to give the FLAGD status
+	Bit 7: FLAGD - Flag D Alternate Configuration\n    0 - PA[7] does not give FLAGD status in Slave Mode\n    1 - PA[7] gives FLAGD status when in Slave Mode\nNote: If both bit 15 (FLAGD) and bit 14 (SLCS) are set\nPA[7] will be configured to give the FLAGD status
+
+14 PORTACCFGL
+	Bit 0: GPIFA[0] - Enable GPIF Address Pins\n    0 - Configure PC[0] as GPIO\n    1 - Configure PC[0] as GPIFADR[7] output
+	Bit 1: GPIFA[1] - Enable GPIF Address Pins\n    0 - Configure PC[1] as GPIO\n    1 - Configure PC[1] as GPIFADR[7] output
+	Bit 2: GPIFA[2] - Enable GPIF Address Pins\n    0 - Configure PC[2] as GPIO\n    1 - Configure PC[2] as GPIFADR[7] output
+	Bit 3: GPIFA[3] - Enable GPIF Address Pins\n    0 - Configure PC[3] as GPIO\n    1 - Configure PC[3] as GPIFADR[7] output
+	Bit 4: GPIFA[4] - Enable GPIF Address Pins\n    0 - Configure PC[4] as GPIO\n    1 - Configure PC[4] as GPIFADR[7] output
+	Bit 5: GPIFA[5] - Enable GPIF Address Pins\n    0 - Configure PC[5] as GPIO\n    1 - Configure PC[5] as GPIFADR[7] output
+	Bit 6: GPIFA[6] - Enable GPIF Address Pins\n    0 - Configure PC[6] as GPIO\n    1 - Configure PC[6] as GPIFADR[7] output
+	Bit 7: GPIFA[7] - Enable GPIF Address Pins\n    0 - Configure PC[7] as GPIO\n    1 - Configure PC[7] as GPIFADR[7] output
+
+15 PINFLAGSH
+	Bit 0: FLAGA[0]
+	Bit 1: FLAGA[1]
+	Bit 2: FLAGA[2]
+	Bit 3: FLAGA[3]
+	Bit 4: FLAGB[0]
+	Bit 5: FLAGB[1]
+	Bit 6: FLAGB[2]
+	Bit 7: FLAGB[3]
+
+15 PINFLAGSL
+	Bit 0: FLAGC[0]
+	Bit 1: FLAGC[1]
+	Bit 2: FLAGC[2]
+	Bit 3: FLAGC[3]
+	Bit 4: FLAGD[0]
+	Bit 5: FLAGD[1]
+	Bit 6: FLAGD[2]
+	Bit 7: FLAGD[3]
+
+16 VERSIONBUILDH
+	Bit 0: Reserved
+	Bit 1: Reserved
+	Bit 2: Reserved
+	Bit 3: Reserved
+	Bit 4: Reserved
+	Bit 5: Reserved
+	Bit 6: Reserved
+	Bit 7: Reserved
+
+16 VERSIONBUILDL
+	Bit 0: Reserved
+	Bit 1: Reserved
+	Bit 2: Reserved
+	Bit 3: Reserved
+	Bit 4: Reserved
+	Bit 5: Reserved
+	Bit 6: Reserved
+	Bit 7: Reserved
+
+17 VERSIONSPEEDH
+	Bit 0: HARDWAREREV[0]\n    00000000 - CYC68013 Rev A/B\n    00000001 - CYC68013A Rev A\n    00000010 - CYC68013 Rev C/D\n    00000100 - CYC68013 Rev E
+	Bit 1: HARDWAREREV[1]\n    00000000 - CYC68013 Rev A/B\n    00000001 - CYC68013A Rev A\n    00000010 - CYC68013 Rev C/D\n    00000100 - CYC68013 Rev E
+	Bit 2: HARDWAREREV[2]\n    00000000 - CYC68013 Rev A/B\n    00000001 - CYC68013A Rev A\n    00000010 - CYC68013 Rev C/D\n    00000100 - CYC68013 Rev E
+	Bit 3: HARDWAREREV[3]\n    00000000 - CYC68013 Rev A/B\n    00000001 - CYC68013A Rev A\n    00000010 - CYC68013 Rev C/D\n    00000100 - CYC68013 Rev E
+	Bit 4: HARDWAREREV[4]\n    00000000 - CYC68013 Rev A/B\n    00000001 - CYC68013A Rev A\n    00000010 - CYC68013 Rev C/D\n    00000100 - CYC68013 Rev E
+	Bit 5: HARDWAREREV[5]\n    00000000 - CYC68013 Rev A/B\n    00000001 - CYC68013A Rev A\n    00000010 - CYC68013 Rev C/D\n    00000100 - CYC68013 Rev E
+	Bit 6: HARDWAREREV[6]\n    00000000 - CYC68013 Rev A/B\n    00000001 - CYC68013A Rev A\n    00000010 - CYC68013 Rev C/D\n    00000100 - CYC68013 Rev E
+	Bit 7: HARDWAREREV[7]\n    00000000 - CYC68013 Rev A/B\n    00000001 - CYC68013A Rev A\n    00000010 - CYC68013 Rev C/D\n    00000100 - CYC68013 Rev E
+
+17 VERSIONSPEEDL
+	Bit 0: Reserved
+	Bit 1: Reserved
+	Bit 2: Reserved
+	Bit 3: Reserved
+	Bit 4: Reserved
+	Bit 5: Reserved
+	Bit 6: Reserved
+	Bit 7: USB Bus Speed\n    0 - Full-Speed (12 Mbps)\n    1 - High-Speed (480 Mbps)
