@@ -66,8 +66,8 @@ struct file_operations qusb_fops = {
     // By not specifying the .read and .write callbacks reads and writes
     // will be forwarded to the .aio_read and .aio_write methods with the
     // IOCBs marked as synchronous.
-    .aio_read = qusb_aio_read,
-    .aio_write = qusb_aio_write,
+    .read_iter = qusb_read_iter,
+    .write_iter = qusb_write_iter,
 #else
     .read = qusb_read,
     .write = qusb_write,

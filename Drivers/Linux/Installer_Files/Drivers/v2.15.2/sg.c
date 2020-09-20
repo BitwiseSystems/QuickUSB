@@ -120,14 +120,14 @@ void qusb_sg_complete(struct urb *urb)
             }
 
             // Unlock the page
-            page_cache_release(req->pages[k]);
+            put_page(req->pages[k]);
         }
 
         // Signal that the operation has completed
         complete(&io->complete);
 
         // Complete the asynchronous request
-        aio_complete(req->iocb, io->status, req->io.bytes);
+        req->iocb->ki_complete(req->iocb, io->status, req->io.bytes);
         QUSB_PRINTK(("Asynchronous request complete (%i, %i, %p)\n", (int)io->status, (int)req->io.bytes, req->iocb));
         
         // Handle internal request serialization

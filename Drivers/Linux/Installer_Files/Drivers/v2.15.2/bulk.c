@@ -36,8 +36,13 @@ ssize_t qusb_sync(struct file *file, char __user *buf, size_t count, BOOL read, 
     int retval, bytes, totalBytes;
     int offset;
     struct qusb_dev *dev;
-    ULONG readlen;
     size_t blocksize;
+    ULONG* pReadlen = kmalloc(sizeof(ULONG), GFP_KERNEL);
+    if (!pReadlen)
+    {
+        QUSB_PRINTK(("Not enough memory.\n"));
+        return -ENOMEM;
+    }
 
     //QUSB_PRINTK(("qusb_sync() for %li bytes\n", count));
 
@@ -45,6 +50,7 @@ ssize_t qusb_sync(struct file *file, char __user *buf, size_t count, BOOL read, 
     dev = file->private_data;
     if ((dev == NULL) || (dev->udev == NULL)) {
         QUSB_PRINTK(("Invalid device.\n"));
+        kfree(pReadlen);
         return -ENODEV;
     }
 
@@ -62,12 +68,13 @@ ssize_t qusb_sync(struct file *file, char __user *buf, size_t count, BOOL read, 
 #if IMPLEMENT_ASYNC
         mutex_unlock(&dev->io_mutex);
 #endif
+        kfree(pReadlen);
         return -ENODEV;
     }
 
     // For reads, send a control packet of the total number of bytes to read
     if (read && sendReadLength) {
-        readlen = (ULONG) count;
+        *pReadlen = (ULONG) count;
         retval = usb_control_msg(
             dev->udev,                     // Device
             usb_sndctrlpipe(dev->udev, 0), // Pipe
@@ -75,7 +82,7 @@ ssize_t qusb_sync(struct file *file, char __user *buf, size_t count, BOOL read, 
             USB_DIR_OUT | USB_TYPE_VENDOR | USB_RECIP_DEVICE,   // Request type
             0,                             // Value
             0,                             // Index
-            &readlen,                      // Data
+            pReadlen,                      // Data
             sizeof(ULONG),                 // Size
             dev->timeout);                 // Timeout
 
@@ -85,10 +92,13 @@ ssize_t qusb_sync(struct file *file, char __user *buf, size_t count, BOOL read, 
 #if IMPLEMENT_ASYNC
             mutex_unlock(&dev->io_mutex);
 #endif
+            kfree(pReadlen);
             return retval;
         }
-        QUSB_PRINTK(("Sent length control packet for %li bytes\n", (unsigned long)readlen));
+        QUSB_PRINTK(("Sent length control packet for %li bytes\n", (unsigned long)*pReadlen));
     }
+
+    kfree(pReadlen);
 
     // Break the read into transfers no larger than QUSB_INTERNAL_BUFFER_SIZE in size
     offset = 0;
@@ -180,28 +190,29 @@ extern ssize_t qusb_write(struct file *filp, const char __user *buf, size_t coun
 
 #if IMPLEMENT_ASYNC
 
-ssize_t qusb_aio_read(struct kiocb *iocb, const struct iovec *vec, unsigned long count, loff_t offset) {
+ssize_t qusb_read_iter(struct kiocb *iocb, struct iov_iter *vec)
+{
     int k;
 
     //QUSB_PRINTK(("qusb_aio_read() (%li requests)\n", count));
 
     // Currently, only 'count=1' is supported
-    for (k = 0; k < count; ++k) {
+    for (k = 0; k < vec->count; ++k) {
         // Check for zero-length requests
-        if (vec[k].iov_len == 0) {
+        if (vec->iov[k].iov_len == 0) {
             return 0;
         }
 
         // Check for 'special' commands
-        if ((vec[k].iov_base == NULL)) {
-            if (vec[k].iov_len == QUSB_THREAD_CMD_RUN) {
+        if ((vec->iov[k].iov_base == NULL)) {
+            if (vec->iov[k].iov_len == QUSB_THREAD_CMD_RUN) {
                 QUSB_PRINTK(("Run command\n"));
-                return vec[k].iov_len;
-            } else if (vec[k].iov_len == QUSB_THREAD_CMD_SHUTDOWN) {
+                return vec->iov[k].iov_len;
+            } else if (vec->iov[k].iov_len == QUSB_THREAD_CMD_SHUTDOWN) {
                 QUSB_PRINTK(("Shutdown command\n"));
-                return vec[k].iov_len;
+                return vec->iov[k].iov_len;
             } else {
-                QUSB_PRINTK(("Unknown command: 0x%x\n", (int)vec[k].iov_len));
+                QUSB_PRINTK(("Unknown command: 0x%x\n", (int)vec->iov[k].iov_len));
                 return -EINVAL;
             }
         }
@@ -210,44 +221,43 @@ ssize_t qusb_aio_read(struct kiocb *iocb, const struct iovec *vec, unsigned long
         if (is_sync_kiocb(iocb)) {
             // Synchronous IOCBs must complete their operation immediately and
             // return their result
-            return qusb_sync(iocb->ki_filp, vec[k].iov_base, vec[k].iov_len, true, true);
+            return qusb_sync(iocb->ki_filp, vec->iov[k].iov_base, vec->iov[k].iov_len, true, true);
         } else {
             // Asynchronous requests may either complete their operation immediately
             // and return their result (as in the synchronous case), or issue
             // asynchronous requests and return EIOCBQUEUED.  If EIOCBQUEUED is
             // returned, then aio_complete must be called on the IOCB when
             // the asynchronous requests have completed.
-            return qusb_async(iocb, vec[k].iov_base, vec[k].iov_len, true);
+            return qusb_async(iocb, vec->iov[k].iov_base, vec->iov[k].iov_len, true);
         }
     }
 
     return -EINVAL;
 }
 
-
-
-ssize_t qusb_aio_write(struct kiocb *iocb, const struct iovec *vec, unsigned long count, loff_t pos) {
+ssize_t qusb_write_iter(struct kiocb *iocb, struct iov_iter *vec) 
+{
     int k;
 
     //QUSB_PRINTK(("qusb_aio_write() (%li requests)\n", count));
 
     // Currently, only 'count=1' is supported
-    for (k = 0; k < count; ++k) {
+    for (k = 0; k < vec->count; ++k) {
         // Check for zero-length requests
-        if (vec[k].iov_len == 0) {
+        if (vec->iov[k].iov_len == 0) {
             return 0;
         }
 
         // Check for 'special' commands
-        if ((vec[k].iov_base == NULL)) {
-            if (vec[k].iov_len == QUSB_THREAD_CMD_RUN) {
+        if ((vec->iov[k].iov_base == NULL)) {
+            if (vec->iov[k].iov_len == QUSB_THREAD_CMD_RUN) {
                 QUSB_PRINTK(("Run command\n"));
-                return vec[k].iov_len;
-            } else if (vec[k].iov_len == QUSB_THREAD_CMD_SHUTDOWN) {
+                return vec->iov[k].iov_len;
+            } else if (vec->iov[k].iov_len == QUSB_THREAD_CMD_SHUTDOWN) {
                 QUSB_PRINTK(("Shutdown command\n"));
-                return vec[k].iov_len;
+                return vec->iov[k].iov_len;
             } else {
-                QUSB_PRINTK(("Unknown command: 0x%x\n", (int)vec[k].iov_len));
+                QUSB_PRINTK(("Unknown command: 0x%x\n", (int)vec->iov[k].iov_len));
                 return -EINVAL;
             }
         }
@@ -256,14 +266,14 @@ ssize_t qusb_aio_write(struct kiocb *iocb, const struct iovec *vec, unsigned lon
         if (is_sync_kiocb(iocb)) {
             // Synchronous IOCBs must complete their operation immediately and
             // return their result
-            return qusb_sync(iocb->ki_filp, vec[k].iov_base, vec[k].iov_len, false, false);
+            return qusb_sync(iocb->ki_filp, vec->iov[k].iov_base, vec->iov[k].iov_len, false, false);
         } else {
             // Asynchronous requests may either complete their operation immediately
             // and return their result (as in the synchronous case), or issue
             // asynchronous requests and return EIOCBQUEUED.  If EIOCBQUEUED is
             // returned, then aio_complete must be called on the IOCB when
             // the asynchronous requests have completed.
-            return qusb_async(iocb, vec[k].iov_base, vec[k].iov_len, false);
+            return qusb_async(iocb, vec->iov[k].iov_base, vec->iov[k].iov_len, false);
         }
     }
 
@@ -281,8 +291,8 @@ ssize_t qusb_aio_write(struct kiocb *iocb, const struct iovec *vec, unsigned lon
     return 0;
 }*/
 
-static void async_request_timeout(unsigned long data) {
-    struct async_request_context *req = (struct async_request_context*) data;
+static void async_request_timeout(struct timer_list *t){
+    struct async_request_context *req = (struct async_request_context*) from_timer(req, t, timer);
     QUSB_PRINTK(("Async request has timed out and will be unlinked\n"));
 
     qusb_sg_timedout(&req->io);
@@ -303,10 +313,16 @@ ssize_t qusb_async(struct kiocb *iocb, char __user *buf, size_t count, BOOL read
     char __user *addr = buf;
     BOOL aligned;
     int totalBytes = 0;
-    ULONG readlen;
+    ULONG* pReadlen = kmalloc(sizeof(ULONG), GFP_KERNEL);
     size_t unalignedCount = 0;
     struct async_request_context *req;
     unsigned long expire;
+
+    if (!pReadlen)
+    {
+        QUSB_PRINTK(("Not enough memory.\n"));
+        return -ENOMEM;
+    }
     
     QUSB_PRINTK(("qusb_async() %s for %li bytes (0x%p)\n", (read ? "read" : "write"), (long)count, iocb));
 
@@ -314,6 +330,7 @@ ssize_t qusb_async(struct kiocb *iocb, char __user *buf, size_t count, BOOL read
     dev = iocb->ki_filp->private_data;
     if ((dev == NULL) || (dev->udev == NULL)) {
         QUSB_PRINTK(("Invalid device.\n"));
+        kfree(pReadlen);
         return -ENODEV;
     }
 
@@ -322,12 +339,14 @@ ssize_t qusb_async(struct kiocb *iocb, char __user *buf, size_t count, BOOL read
     unalignedCount = (long unsigned int)addr & (512 - 1);
     if (unalignedCount != 0) {
         QUSB_PRINTK(("User buffer not 512-byte aligned (At 0x%p)\n", addr));
+        kfree(pReadlen);
         return -EINVAL;
     }
 
     // Allocate asynchronous request object
     req = (struct async_request_context *) kzalloc(sizeof(struct async_request_context), GFP_KERNEL);
     if (!req) {
+        kfree(pReadlen);
         return -ENOMEM;
     }
 
@@ -352,21 +371,23 @@ ssize_t qusb_async(struct kiocb *iocb, char __user *buf, size_t count, BOOL read
     req->pages = (struct page **) kmalloc(sizeof(struct page *) * req->numPages, GFP_KERNEL);
     if (!req->pages) {
         kfree(req);
+        kfree(pReadlen);
         return -ENOMEM;
     }
     down_read(&current->mm->mmap_sem);
-    req->lockedPages = get_user_pages(current, current->mm, (unsigned long)addr, req->numPages, read, 0, req->pages, NULL);
+    req->lockedPages = get_user_pages_remote(current, current->mm, (unsigned long)addr, req->numPages, 0, req->pages, NULL, NULL);
     up_read(&current->mm->mmap_sem);
     if (req->lockedPages != req->numPages) {
         QUSB_PRINTK(("Not all pages locked.\n"));
         
         // Release the locked user pages
         for (k = 0; k < req->numPages; ++k) {
-            page_cache_release(req->pages[k]);
+            put_page(req->pages[k]);
         }
 
         kfree(req->pages);
         kfree(req);
+        kfree(pReadlen);
         return -EFAULT;
     }
     //QUSB_PRINTK(("Locked %i user pages\n", req->numPages));
@@ -375,11 +396,12 @@ ssize_t qusb_async(struct kiocb *iocb, char __user *buf, size_t count, BOOL read
     if (!req->sgl) {
         // Release the locked user pages
         for (k = 0; k < req->numPages; ++k) {
-            page_cache_release(req->pages[k]);
+            put_page(req->pages[k]);
         }
 
         kfree(req->pages);
         kfree(req);
+        kfree(pReadlen);
         return -ENOMEM;
     }
 
@@ -428,12 +450,13 @@ ssize_t qusb_async(struct kiocb *iocb, char __user *buf, size_t count, BOOL read
         
         // Release the locked user pages
         for (k = 0; k < req->numPages; ++k) {
-            page_cache_release(req->pages[k]);
+            put_page(req->pages[k]);
         }
 
         kfree(req->pages);
         kfree(req->sgl);
         kfree(req);
+        kfree(pReadlen);
         return -ENODEV;
     }
 
@@ -448,12 +471,13 @@ ssize_t qusb_async(struct kiocb *iocb, char __user *buf, size_t count, BOOL read
 
             // Release the locked user pages
             for (k = 0; k < req->numPages; ++k) {
-                page_cache_release(req->pages[k]);
+                put_page(req->pages[k]);
             }
 
             kfree(req->pages);
             kfree(req->sgl);
             kfree(req);
+            kfree(pReadlen);
             return -ETIMEDOUT;
         }
     } else {
@@ -465,19 +489,20 @@ ssize_t qusb_async(struct kiocb *iocb, char __user *buf, size_t count, BOOL read
 
             // Release the locked user pages
             for (k = 0; k < req->numPages; ++k) {
-                page_cache_release(req->pages[k]);
+                put_page(req->pages[k]);
             }
 
             kfree(req->pages);
             kfree(req->sgl);
             kfree(req);
+            kfree(pReadlen);
             return -ETIMEDOUT;
         }
     }
 
     // For reads, send the control packet telling firmware how many bytes we want to read
     if (read) {
-        readlen = (count - unalignedCount);
+        *pReadlen = (count - unalignedCount);
 
         // Allocate the URB
         /*req->ctrlRequest = usb_alloc_urb(0, GFP_KERNEL);
@@ -573,7 +598,7 @@ ssize_t qusb_async(struct kiocb *iocb, char __user *buf, size_t count, BOOL read
             USB_DIR_OUT | USB_TYPE_VENDOR | USB_RECIP_DEVICE,   // Request type
             0,                             // Value
             0,                             // Index
-            &readlen,                      // Data
+            pReadlen,                      // Data
             sizeof(ULONG),                 // Size
             dev->timeout);                 // Timeout
 
@@ -584,7 +609,7 @@ ssize_t qusb_async(struct kiocb *iocb, char __user *buf, size_t count, BOOL read
 
             // Release the locked user pages
             for (k = 0; k < req->numPages; ++k) {
-                page_cache_release(req->pages[k]);
+                put_page(req->pages[k]);
             }
 
             //kfree(req->setup_packet);
@@ -592,10 +617,13 @@ ssize_t qusb_async(struct kiocb *iocb, char __user *buf, size_t count, BOOL read
             kfree(req->pages);
             kfree(req->sgl);
             kfree(req);
+            kfree(pReadlen);
             return retval;
         }
         //QUSB_PRINTK(("Sent length control packet for %li bytes\n", (unsigned long)readlen));
     }
+
+    kfree(pReadlen);
 
     // Initialize scatter/gather list, URBs, etc.
     //QUSB_PRINTK(("Issuing USB scatter-gather operation\n"));
@@ -605,7 +633,7 @@ ssize_t qusb_async(struct kiocb *iocb, char __user *buf, size_t count, BOOL read
 
         // Release the locked user pages
         for (k = 0; k < req->numPages; ++k) {
-            page_cache_release(req->pages[k]);
+            put_page(req->pages[k]);
         }
 
         kfree(req->pages);
@@ -628,12 +656,8 @@ ssize_t qusb_async(struct kiocb *iocb, char __user *buf, size_t count, BOOL read
     //QUSB_PRINTK(("Unaligned count: %i\n", (unsigned long)unalignedCount));
 
     // Initialize the timeout timer for the request
-    init_timer(&req->timer);
-    req->timer.expires = jiffies + (HZ * dev->timeout) / 1000;
-    req->timer.function = async_request_timeout;
-    req->timer.data = (unsigned long)req;
-    add_timer(&req->timer);
-
+    timer_setup(&req->timer, async_request_timeout, 0);
+    mod_timer(&req->timer, jiffies + (HZ * dev->timeout) / 1000);
     // Submit the scatter/gather URBs asynchronously
     qusb_sg_submit_async(&req->io, (read ? &dev->pendingAsyncReadUrbs : &dev->pendingAsyncWriteUrbs));
     QUSB_PRINTK(("Asynchronous %s request issued for %i bytes\n", (read ? "read" : "write"), (int)(totalBytes - unalignedCount)));
