@@ -28,6 +28,9 @@ History      :
 #include <asm/errno.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
+
+#include <linux/aio.h>
+
 #include <linux/fs.h>
 #include <linux/highmem.h>
 #include <linux/init.h>
