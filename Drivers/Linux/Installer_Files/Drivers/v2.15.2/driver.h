@@ -25,9 +25,10 @@ History      :
  IN THE SOFTWARE.
 
 =============================================================================*/
-#include <asm/errno.h>
-#include <asm/io.h>
-#include <asm/uaccess.h>
+#include <linux/errno.h>
+#include <linux/io.h>
+#include <linux/uio.h>
+#include <linux/uaccess.h>
 #include <linux/fs.h>
 #include <linux/highmem.h>
 #include <linux/init.h>
@@ -184,9 +185,8 @@ extern void qusb_delete(struct kref *kref);
 extern ssize_t qusb_sync(struct file *filp, char __user *buf, size_t count, BOOL read, BOOL sendReadLength);
 
 #if IMPLEMENT_ASYNC
-extern ssize_t qusb_aio_read(struct kiocb *iocb, const struct iovec *vec, unsigned long count, loff_t pos);
-extern ssize_t qusb_aio_write(struct kiocb *iocb, const struct iovec *vec, unsigned long count, loff_t pos);
-extern int qusb_aio_cancel(struct kiocb *iocb, struct io_event *event);
+extern ssize_t qusb_read_iter(struct kiocb *, struct iov_iter *);
+extern ssize_t qusb_write_iter(struct kiocb *, struct iov_iter *);
 extern ssize_t qusb_async(struct kiocb *iocb, char __user *buf, size_t count, BOOL read);
 #else
 extern ssize_t qusb_read(struct file *filp, char __user *buf, size_t count, loff_t *pos);

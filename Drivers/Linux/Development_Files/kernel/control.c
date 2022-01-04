@@ -33,6 +33,7 @@ History      :
 long qusb_GetStringDescriptor(struct file *filp, UCHAR index, PVOID buffer, ULONG length) {
     struct qusb_dev *dev;
     int result;//, k;
+    void* kBuffer;
 
     //QUSB_PRINTK(("Retrieving String #%d, length=%d\n", (int)index, (int)length));
 
@@ -59,6 +60,7 @@ long qusb_GetStringDescriptor(struct file *filp, UCHAR index, PVOID buffer, ULON
         return -ENODEV;
     }
 
+    kBuffer = kmalloc(MAX_STRING_DESCRIPTOR_OUT_LENGTH, GFP_KERNEL);
     // Retrieve string descriptor
     result = usb_control_msg(
         dev->udev,                        // Device
@@ -67,9 +69,12 @@ long qusb_GetStringDescriptor(struct file *filp, UCHAR index, PVOID buffer, ULON
         USB_DIR_IN,                       // Request type
         (USB_DT_STRING<<8)|index,         // Value
         0,                                // Index
-        buffer,                           // Data
+        kBuffer,                           // Data
         MAX_STRING_DESCRIPTOR_OUT_LENGTH, // Size
         dev->timeout);                    // Timeout
+
+    memcpy(buffer, kBuffer, MAX_STRING_DESCRIPTOR_OUT_LENGTH);
+    kfree(kBuffer);
 
 #if IMPLEMENT_ASYNC
     // Release the IO hold so subsequent transactions may be issued
@@ -97,6 +102,7 @@ long qusb_GetStringDescriptor(struct file *filp, UCHAR index, PVOID buffer, ULON
 long qusb_GetDeviceDescriptor(struct file *filp, struct usb_device_descriptor *device_descriptor) {
     struct qusb_dev *dev;
     int result;
+    void* devDescBuffer;
 
     // Validate the device
     dev = filp->private_data;
@@ -127,6 +133,7 @@ long qusb_GetDeviceDescriptor(struct file *filp, struct usb_device_descriptor *d
         return -ENODEV;
     }
 
+    devDescBuffer = kmalloc(sizeof(struct usb_device_descriptor), GFP_KERNEL);
     // Retrieve device descriptor
     result = usb_control_msg(dev->udev,       // Device
         usb_rcvctrlpipe(dev->udev, 0),        // Pipe
@@ -134,9 +141,12 @@ long qusb_GetDeviceDescriptor(struct file *filp, struct usb_device_descriptor *d
         USB_DIR_IN,                           // Request type
         (USB_DT_DEVICE<<8),                   // Value
         0,                                    // Index
-        device_descriptor,                    // Data
+        devDescBuffer,                        // Data
         sizeof(struct usb_device_descriptor), // Size
         dev->timeout);                        // Timeout
+
+    memcpy(device_descriptor, devDescBuffer, sizeof(struct usb_device_descriptor));
+    kfree(devDescBuffer);
 
 #if IMPLEMENT_ASYNC
     // Release the IO hold so subsequent transactions may be issued
@@ -360,10 +370,10 @@ int qusb_ioctl(struct file *filp, unsigned int cmd, void __user *arg, BYTE compa
 
     // Verify arg address
     if (_IOC_DIR(cmd) & _IOC_READ) {
-        result = !access_ok(VERIFY_WRITE, arg, _IOC_SIZE(cmd));
+        result = !access_ok(arg, _IOC_SIZE(cmd));
     }
     else if ( _IOC_DIR( cmd ) & _IOC_WRITE ) {
-        result = !access_ok(VERIFY_READ, arg, _IOC_SIZE(cmd));
+        result = !access_ok(arg, _IOC_SIZE(cmd));
     }
     if (result) {
         QUSB_PRINTK(("Invalid argument\n"));
